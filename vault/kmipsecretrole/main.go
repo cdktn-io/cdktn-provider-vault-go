@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package kmipsecretrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRole",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		reflect.TypeOf((*KmipSecretRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,26 +53,54 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "operationAllInput", GoGetter: "OperationAllInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationCreate", GoGetter: "OperationCreate"},
 			_jsii_.MemberProperty{JsiiProperty: "operationCreateInput", GoGetter: "OperationCreateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationCreateKeyPair", GoGetter: "OperationCreateKeyPair"},
+			_jsii_.MemberProperty{JsiiProperty: "operationCreateKeyPairInput", GoGetter: "OperationCreateKeyPairInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationDecrypt", GoGetter: "OperationDecrypt"},
+			_jsii_.MemberProperty{JsiiProperty: "operationDecryptInput", GoGetter: "OperationDecryptInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationDeleteAttribute", GoGetter: "OperationDeleteAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "operationDeleteAttributeInput", GoGetter: "OperationDeleteAttributeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationDestroy", GoGetter: "OperationDestroy"},
 			_jsii_.MemberProperty{JsiiProperty: "operationDestroyInput", GoGetter: "OperationDestroyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationDiscoverVersions", GoGetter: "OperationDiscoverVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "operationDiscoverVersionsInput", GoGetter: "OperationDiscoverVersionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationEncrypt", GoGetter: "OperationEncrypt"},
+			_jsii_.MemberProperty{JsiiProperty: "operationEncryptInput", GoGetter: "OperationEncryptInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationGet", GoGetter: "OperationGet"},
 			_jsii_.MemberProperty{JsiiProperty: "operationGetAttributeList", GoGetter: "OperationGetAttributeList"},
 			_jsii_.MemberProperty{JsiiProperty: "operationGetAttributeListInput", GoGetter: "OperationGetAttributeListInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationGetAttributes", GoGetter: "OperationGetAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "operationGetAttributesInput", GoGetter: "OperationGetAttributesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationGetInput", GoGetter: "OperationGetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationImport", GoGetter: "OperationImport"},
+			_jsii_.MemberProperty{JsiiProperty: "operationImportInput", GoGetter: "OperationImportInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationLocate", GoGetter: "OperationLocate"},
 			_jsii_.MemberProperty{JsiiProperty: "operationLocateInput", GoGetter: "OperationLocateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationMac", GoGetter: "OperationMac"},
+			_jsii_.MemberProperty{JsiiProperty: "operationMacInput", GoGetter: "OperationMacInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationMacVerify", GoGetter: "OperationMacVerify"},
+			_jsii_.MemberProperty{JsiiProperty: "operationMacVerifyInput", GoGetter: "OperationMacVerifyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationModifyAttribute", GoGetter: "OperationModifyAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "operationModifyAttributeInput", GoGetter: "OperationModifyAttributeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationNone", GoGetter: "OperationNone"},
 			_jsii_.MemberProperty{JsiiProperty: "operationNoneInput", GoGetter: "OperationNoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationQuery", GoGetter: "OperationQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "operationQueryInput", GoGetter: "OperationQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationRegister", GoGetter: "OperationRegister"},
 			_jsii_.MemberProperty{JsiiProperty: "operationRegisterInput", GoGetter: "OperationRegisterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationRekey", GoGetter: "OperationRekey"},
 			_jsii_.MemberProperty{JsiiProperty: "operationRekeyInput", GoGetter: "OperationRekeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationRekeyKeyPair", GoGetter: "OperationRekeyKeyPair"},
+			_jsii_.MemberProperty{JsiiProperty: "operationRekeyKeyPairInput", GoGetter: "OperationRekeyKeyPairInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationRevoke", GoGetter: "OperationRevoke"},
 			_jsii_.MemberProperty{JsiiProperty: "operationRevokeInput", GoGetter: "OperationRevokeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationRngRetrieve", GoGetter: "OperationRngRetrieve"},
+			_jsii_.MemberProperty{JsiiProperty: "operationRngRetrieveInput", GoGetter: "OperationRngRetrieveInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationRngSeed", GoGetter: "OperationRngSeed"},
+			_jsii_.MemberProperty{JsiiProperty: "operationRngSeedInput", GoGetter: "OperationRngSeedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationSign", GoGetter: "OperationSign"},
+			_jsii_.MemberProperty{JsiiProperty: "operationSignatureVerify", GoGetter: "OperationSignatureVerify"},
+			_jsii_.MemberProperty{JsiiProperty: "operationSignatureVerifyInput", GoGetter: "OperationSignatureVerifyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operationSignInput", GoGetter: "OperationSignInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
 			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
@@ -85,16 +113,30 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationAddAttribute", GoMethod: "ResetOperationAddAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationAll", GoMethod: "ResetOperationAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationCreate", GoMethod: "ResetOperationCreate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationCreateKeyPair", GoMethod: "ResetOperationCreateKeyPair"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationDecrypt", GoMethod: "ResetOperationDecrypt"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationDeleteAttribute", GoMethod: "ResetOperationDeleteAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationDestroy", GoMethod: "ResetOperationDestroy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationDiscoverVersions", GoMethod: "ResetOperationDiscoverVersions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationEncrypt", GoMethod: "ResetOperationEncrypt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationGet", GoMethod: "ResetOperationGet"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationGetAttributeList", GoMethod: "ResetOperationGetAttributeList"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationGetAttributes", GoMethod: "ResetOperationGetAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationImport", GoMethod: "ResetOperationImport"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationLocate", GoMethod: "ResetOperationLocate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationMac", GoMethod: "ResetOperationMac"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationMacVerify", GoMethod: "ResetOperationMacVerify"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationModifyAttribute", GoMethod: "ResetOperationModifyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationNone", GoMethod: "ResetOperationNone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationQuery", GoMethod: "ResetOperationQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationRegister", GoMethod: "ResetOperationRegister"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationRekey", GoMethod: "ResetOperationRekey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationRekeyKeyPair", GoMethod: "ResetOperationRekeyKeyPair"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationRevoke", GoMethod: "ResetOperationRevoke"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationRngRetrieve", GoMethod: "ResetOperationRngRetrieve"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationRngSeed", GoMethod: "ResetOperationRngSeed"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationSign", GoMethod: "ResetOperationSign"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationSignatureVerify", GoMethod: "ResetOperationSignatureVerify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsClientKeyBits", GoMethod: "ResetTlsClientKeyBits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsClientKeyType", GoMethod: "ResetTlsClientKeyType"},
@@ -121,12 +163,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmipSecretRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRoleConfig",
 		reflect.TypeOf((*KmipSecretRoleConfig)(nil)).Elem(),
 	)
 }

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretbackendconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretBackendConnectionMongodbOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -58,21 +58,30 @@ type DatabaseSecretBackendConnectionMongodbOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TlsCa() *string
+	SetTlsCa(val *string)
+	TlsCaInput() *string
+	TlsCertificateKey() *string
+	SetTlsCertificateKey(val *string)
+	TlsCertificateKeyInput() *string
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
 	UsernameTemplate() *string
 	SetUsernameTemplate(val *string)
 	UsernameTemplateInput() *string
+	WriteConcern() *string
+	SetWriteConcern(val *string)
+	WriteConcernInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +97,9 @@ type DatabaseSecretBackendConnectionMongodbOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetConnectionUrl()
 	ResetMaxConnectionLifetime()
 	ResetMaxIdleConnections()
@@ -98,11 +107,14 @@ type DatabaseSecretBackendConnectionMongodbOutputReference interface {
 	ResetPassword()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
+	ResetTlsCa()
+	ResetTlsCertificateKey()
 	ResetUsername()
 	ResetUsernameTemplate()
+	ResetWriteConcern()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,7 +124,7 @@ type DatabaseSecretBackendConnectionMongodbOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretBackendConnectionMongodbOutputReference
 type jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) ComplexObjectIndex() interface{} {
@@ -315,11 +327,51 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) TlsCa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) TlsCaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) TlsCertificateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) TlsCertificateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificateKeyInput",
 		&returns,
 	)
 	return returns
@@ -365,8 +417,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) Userna
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) WriteConcern() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"writeConcern",
+		&returns,
+	)
+	return returns
+}
 
-func NewDatabaseSecretBackendConnectionMongodbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMongodbOutputReference {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) WriteConcernInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"writeConcernInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDatabaseSecretBackendConnectionMongodbOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMongodbOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretBackendConnectionMongodbOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -375,7 +447,7 @@ func NewDatabaseSecretBackendConnectionMongodbOutputReference(terraformResource 
 	j := jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -383,11 +455,11 @@ func NewDatabaseSecretBackendConnectionMongodbOutputReference(terraformResource 
 	return &j
 }
 
-func NewDatabaseSecretBackendConnectionMongodbOutputReference_Override(d DatabaseSecretBackendConnectionMongodbOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatabaseSecretBackendConnectionMongodbOutputReference_Override(d DatabaseSecretBackendConnectionMongodbOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -514,13 +586,35 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference)SetTlsCa(val *string) {
+	if err := j.validateSetTlsCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference)SetTlsCertificateKey(val *string) {
+	if err := j.validateSetTlsCertificateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCertificateKey",
 		val,
 	)
 }
@@ -543,6 +637,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference)SetUser
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference)SetWriteConcern(val *string) {
+	if err := j.validateSetWriteConcernParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"writeConcern",
 		val,
 	)
 }
@@ -576,11 +681,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -704,8 +809,8 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -717,11 +822,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -789,6 +894,22 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) ResetP
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) ResetTlsCa() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCa",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) ResetTlsCertificateKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCertificateKey",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) ResetUsername() {
 	_jsii_.InvokeVoid(
 		d,
@@ -805,7 +926,15 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) ResetU
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) ResetWriteConcern() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWriteConcern",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

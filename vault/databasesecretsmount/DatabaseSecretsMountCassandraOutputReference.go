@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretsmount/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretsmount/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretsMountCassandraOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedRoles() *[]*string
 	SetAllowedRoles(val *[]*string)
 	AllowedRolesInput() *[]*string
@@ -29,6 +29,9 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 	ConnectTimeout() *float64
 	SetConnectTimeout(val *float64)
 	ConnectTimeoutInput() *float64
+	Consistency() *string
+	SetConsistency(val *string)
+	ConsistencyInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -50,6 +53,9 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 	InsecureTlsInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LocalDatacenter() *string
+	SetLocalDatacenter(val *string)
+	LocalDatacenterInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -86,20 +92,29 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 	SkipVerification() interface{}
 	SetSkipVerification(val interface{})
 	SkipVerificationInput() interface{}
+	SocketKeepAlive() *string
+	SetSocketKeepAlive(val *string)
+	SocketKeepAliveInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() interface{}
 	SetTls(val interface{})
 	TlsInput() interface{}
+	TlsServerName() *string
+	SetTlsServerName(val *string)
+	TlsServerNameInput() *string
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
+	UsernameTemplate() *string
+	SetUsernameTemplate(val *string)
+	UsernameTemplateInput() *string
 	VerifyConnection() interface{}
 	SetVerifyConnection(val interface{})
 	VerifyConnectionInput() interface{}
@@ -108,7 +123,7 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -124,15 +139,17 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedRoles()
 	ResetConnectTimeout()
+	ResetConsistency()
 	ResetData()
 	ResetDisableAutomatedRotation()
 	ResetHosts()
 	ResetInsecureTls()
+	ResetLocalDatacenter()
 	ResetPassword()
 	ResetPemBundle()
 	ResetPemJson()
@@ -144,12 +161,15 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 	ResetRotationSchedule()
 	ResetRotationWindow()
 	ResetSkipVerification()
+	ResetSocketKeepAlive()
 	ResetTls()
+	ResetTlsServerName()
 	ResetUsername()
+	ResetUsernameTemplate()
 	ResetVerifyConnection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -159,7 +179,7 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretsMountCassandraOutputReference
 type jsiiProxy_DatabaseSecretsMountCassandraOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) AllowedRoles() *[]*string {
@@ -217,6 +237,26 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ConnectTimeoutI
 	_jsii_.Get(
 		j,
 		"connectTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) Consistency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consistency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ConsistencyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consistencyInput",
 		&returns,
 	)
 	return returns
@@ -327,6 +367,26 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) LocalDatacenter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localDatacenter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) LocalDatacenterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localDatacenterInput",
 		&returns,
 	)
 	return returns
@@ -572,6 +632,26 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) SkipVerificatio
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) SocketKeepAlive() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"socketKeepAlive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) SocketKeepAliveInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"socketKeepAliveInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -582,8 +662,8 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -612,6 +692,26 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) TlsInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) TlsServerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsServerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) TlsServerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsServerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) Username() *string {
 	var returns *string
 	_jsii_.Get(
@@ -627,6 +727,26 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) UsernameInput()
 	_jsii_.Get(
 		j,
 		"usernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) UsernameTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) UsernameTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameTemplateInput",
 		&returns,
 	)
 	return returns
@@ -653,7 +773,7 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) VerifyConnectio
 }
 
 
-func NewDatabaseSecretsMountCassandraOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountCassandraOutputReference {
+func NewDatabaseSecretsMountCassandraOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountCassandraOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretsMountCassandraOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -662,7 +782,7 @@ func NewDatabaseSecretsMountCassandraOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DatabaseSecretsMountCassandraOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -670,11 +790,11 @@ func NewDatabaseSecretsMountCassandraOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewDatabaseSecretsMountCassandraOutputReference_Override(d DatabaseSecretsMountCassandraOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDatabaseSecretsMountCassandraOutputReference_Override(d DatabaseSecretsMountCassandraOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -720,6 +840,17 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetConnectTimeou
 	_jsii_.Set(
 		j,
 		"connectTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetConsistency(val *string) {
+	if err := j.validateSetConsistencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"consistency",
 		val,
 	)
 }
@@ -775,6 +906,17 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetLocalDatacenter(val *string) {
+	if err := j.validateSetLocalDatacenterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localDatacenter",
 		val,
 	)
 }
@@ -911,6 +1053,17 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetSkipVerificat
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetSocketKeepAlive(val *string) {
+	if err := j.validateSetSocketKeepAliveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"socketKeepAlive",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -922,7 +1075,7 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -944,6 +1097,17 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetTls(val inter
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetTlsServerName(val *string) {
+	if err := j.validateSetTlsServerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsServerName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
@@ -951,6 +1115,17 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetUsername(val 
 	_jsii_.Set(
 		j,
 		"username",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameTemplate",
 		val,
 	)
 }
@@ -995,11 +1170,11 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1123,8 +1298,8 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1136,11 +1311,11 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) InterpolationAs
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1164,6 +1339,14 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetConnectTim
 	_jsii_.InvokeVoid(
 		d,
 		"resetConnectTimeout",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetConsistency() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConsistency",
 		nil, // no parameters
 	)
 }
@@ -1196,6 +1379,14 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetInsecureTl
 	_jsii_.InvokeVoid(
 		d,
 		"resetInsecureTls",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetLocalDatacenter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocalDatacenter",
 		nil, // no parameters
 	)
 }
@@ -1288,10 +1479,26 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetSkipVerifi
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetSocketKeepAlive() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSocketKeepAlive",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetTls() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTls",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetTlsServerName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsServerName",
 		nil, // no parameters
 	)
 }
@@ -1304,6 +1511,14 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetUsername()
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetUsernameTemplate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsernameTemplate",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetVerifyConnection() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1312,7 +1527,7 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetVerifyConn
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultidentityentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultidentityentity/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataVaultIdentityEntityAliasesList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type DataVaultIdentityEntityAliasesList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type DataVaultIdentityEntityAliasesList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataVaultIdentityEntityAliasesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type DataVaultIdentityEntityAliasesList interface {
 
 // The jsii proxy struct for DataVaultIdentityEntityAliasesList
 type jsiiProxy_DataVaultIdentityEntityAliasesList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataVaultIdentityEntityAliasesList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesList) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntityAliasesList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataVaultIdentityEntityAliasesList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesList) WrapsSet() *bool {
 }
 
 
-func NewDataVaultIdentityEntityAliasesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultIdentityEntityAliasesList {
+func NewDataVaultIdentityEntityAliasesList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultIdentityEntityAliasesList {
 	_init_.Initialize()
 
 	if err := validateNewDataVaultIdentityEntityAliasesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewDataVaultIdentityEntityAliasesList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataVaultIdentityEntityAliasesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesList",
+		"@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewDataVaultIdentityEntityAliasesList(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewDataVaultIdentityEntityAliasesList_Override(d DataVaultIdentityEntityAliasesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataVaultIdentityEntityAliasesList_Override(d DataVaultIdentityEntityAliasesList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesList",
+		"@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntityAliasesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataVaultIdentityEntityAliasesList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DataVaultIdentityEntityAliasesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataVaultIdentityEntityAliasesList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -208,7 +208,7 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesList) Get(index *float64) DataV
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultIdentityEntityAliasesList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataVaultIdentityEntityAliasesList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

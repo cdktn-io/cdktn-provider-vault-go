@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ldapsecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend",
 		reflect.TypeOf((*LdapSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -29,6 +29,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "binddnInput", GoGetter: "BinddnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bindpass", GoGetter: "Bindpass"},
 			_jsii_.MemberProperty{JsiiProperty: "bindpassInput", GoGetter: "BindpassInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bindpassWo", GoGetter: "BindpassWo"},
+			_jsii_.MemberProperty{JsiiProperty: "bindpassWoInput", GoGetter: "BindpassWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bindpassWoVersion", GoGetter: "BindpassWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "bindpassWoVersionInput", GoGetter: "BindpassWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateInput", GoGetter: "CertificateInput"},
@@ -112,6 +116,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedResponseHeaders", GoMethod: "ResetAllowedResponseHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuditNonHmacRequestKeys", GoMethod: "ResetAuditNonHmacRequestKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuditNonHmacResponseKeys", GoMethod: "ResetAuditNonHmacResponseKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBindpass", GoMethod: "ResetBindpass"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBindpassWo", GoMethod: "ResetBindpassWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBindpassWoVersion", GoMethod: "ResetBindpassWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificate", GoMethod: "ResetCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientTlsCert", GoMethod: "ResetClientTlsCert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientTlsKey", GoMethod: "ResetClientTlsKey"},
@@ -183,12 +190,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LdapSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackendConfig",
 		reflect.TypeOf((*LdapSecretBackendConfig)(nil)).Elem(),
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azuresecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackend",
 		reflect.TypeOf((*AzureSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -30,6 +30,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecret", GoGetter: "ClientSecret"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecretInput", GoGetter: "ClientSecretInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSecretWo", GoGetter: "ClientSecretWo"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSecretWoInput", GoGetter: "ClientSecretWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSecretWoVersion", GoGetter: "ClientSecretWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSecretWoVersionInput", GoGetter: "ClientSecretWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -104,6 +108,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAuditNonHmacResponseKeys", GoMethod: "ResetAuditNonHmacResponseKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientSecret", GoMethod: "ResetClientSecret"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientSecretWo", GoMethod: "ResetClientSecretWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientSecretWoVersion", GoMethod: "ResetClientSecretWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultLeaseTtlSeconds", GoMethod: "ResetDefaultLeaseTtlSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDelegatedAuthAccessors", GoMethod: "ResetDelegatedAuthAccessors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -156,12 +162,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackendConfig",
 		reflect.TypeOf((*AzureSecretBackendConfig)(nil)).Elem(),
 	)
 }

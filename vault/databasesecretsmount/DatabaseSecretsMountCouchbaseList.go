@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretsmount/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretsmount/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretsMountCouchbaseList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type DatabaseSecretsMountCouchbaseList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type DatabaseSecretsMountCouchbaseList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DatabaseSecretsMountCouchbaseOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type DatabaseSecretsMountCouchbaseList interface {
 
 // The jsii proxy struct for DatabaseSecretsMountCouchbaseList
 type jsiiProxy_DatabaseSecretsMountCouchbaseList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) WrapsSet() *bool {
 }
 
 
-func NewDatabaseSecretsMountCouchbaseList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountCouchbaseList {
+func NewDatabaseSecretsMountCouchbaseList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountCouchbaseList {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretsMountCouchbaseListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewDatabaseSecretsMountCouchbaseList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DatabaseSecretsMountCouchbaseList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewDatabaseSecretsMountCouchbaseList(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewDatabaseSecretsMountCouchbaseList_Override(d DatabaseSecretsMountCouchbaseList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDatabaseSecretsMountCouchbaseList_Override(d DatabaseSecretsMountCouchbaseList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +231,7 @@ func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) Get(index *float64) Databa
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

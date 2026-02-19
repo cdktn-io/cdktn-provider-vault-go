@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package authbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.authBackend.AuthBackend",
+		"@cdktn/provider-vault.authBackend.AuthBackend",
 		reflect.TypeOf((*AuthBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -86,20 +86,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.authBackend.AuthBackendConfig",
+		"@cdktn/provider-vault.authBackend.AuthBackendConfig",
 		reflect.TypeOf((*AuthBackendConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.authBackend.AuthBackendTune",
+		"@cdktn/provider-vault.authBackend.AuthBackendTune",
 		reflect.TypeOf((*AuthBackendTune)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.authBackend.AuthBackendTuneList",
+		"@cdktn/provider-vault.authBackend.AuthBackendTuneList",
 		reflect.TypeOf((*AuthBackendTuneList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -116,12 +116,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthBackendTuneList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.authBackend.AuthBackendTuneOutputReference",
 		reflect.TypeOf((*AuthBackendTuneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeaders", GoGetter: "AllowedResponseHeaders"},
@@ -172,7 +172,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthBackendTuneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package approleauthbackendlogin
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLogin",
+		"@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLogin",
 		reflect.TypeOf((*ApproleAuthBackendLogin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -63,10 +63,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretId", GoMethod: "ResetSecretId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretIdWo", GoMethod: "ResetSecretIdWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretIdWoVersion", GoMethod: "ResetSecretIdWoVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "roleId", GoGetter: "RoleId"},
 			_jsii_.MemberProperty{JsiiProperty: "roleIdInput", GoGetter: "RoleIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretId", GoGetter: "SecretId"},
 			_jsii_.MemberProperty{JsiiProperty: "secretIdInput", GoGetter: "SecretIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secretIdWo", GoGetter: "SecretIdWo"},
+			_jsii_.MemberProperty{JsiiProperty: "secretIdWoInput", GoGetter: "SecretIdWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secretIdWoVersion", GoGetter: "SecretIdWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "secretIdWoVersionInput", GoGetter: "SecretIdWoVersionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -79,12 +85,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApproleAuthBackendLogin{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig",
+		"@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig",
 		reflect.TypeOf((*ApproleAuthBackendLoginConfig)(nil)).Elem(),
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package gcpauthbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackend",
 		reflect.TypeOf((*GcpAuthBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -27,6 +27,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "credentials", GoGetter: "Credentials"},
 			_jsii_.MemberProperty{JsiiProperty: "credentialsInput", GoGetter: "CredentialsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "credentialsWo", GoGetter: "CredentialsWo"},
+			_jsii_.MemberProperty{JsiiProperty: "credentialsWoInput", GoGetter: "CredentialsWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "credentialsWoVersion", GoGetter: "CredentialsWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "credentialsWoVersionInput", GoGetter: "CredentialsWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "customEndpoint", GoGetter: "CustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "customEndpointInput", GoGetter: "CustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -91,6 +95,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetClientEmail", GoMethod: "ResetClientEmail"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentials", GoMethod: "ResetCredentials"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCredentialsWo", GoMethod: "ResetCredentialsWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCredentialsWoVersion", GoMethod: "ResetCredentialsWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomEndpoint", GoMethod: "ResetCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableAutomatedRotation", GoMethod: "ResetDisableAutomatedRotation"},
@@ -136,20 +142,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpAuthBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackendConfig",
 		reflect.TypeOf((*GcpAuthBackendConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpoint",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpoint",
 		reflect.TypeOf((*GcpAuthBackendCustomEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpointOutputReference",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpointOutputReference",
 		reflect.TypeOf((*GcpAuthBackendCustomEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "api", GoGetter: "Api"},
@@ -188,16 +194,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpAuthBackendCustomEndpointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackendTune",
 		reflect.TypeOf((*GcpAuthBackendTune)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTuneList",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackendTuneList",
 		reflect.TypeOf((*GcpAuthBackendTuneList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -214,12 +220,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpAuthBackendTuneList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackendTuneOutputReference",
 		reflect.TypeOf((*GcpAuthBackendTuneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeaders", GoGetter: "AllowedResponseHeaders"},
@@ -270,7 +276,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpAuthBackendTuneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

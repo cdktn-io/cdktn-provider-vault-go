@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultazureaccesscredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultazureaccesscredentials/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultazureaccesscredentials/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials}.
 type DataVaultAzureAccessCredentials interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientId() *string
 	ClientSecret() *string
 	// Experimental.
@@ -36,9 +36,9 @@ type DataVaultAzureAccessCredentials interface {
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,12 +48,12 @@ type DataVaultAzureAccessCredentials interface {
 	IdInput() *string
 	LeaseDuration() *float64
 	LeaseId() *string
-	LeaseRenewable() cdktf.IResolvable
+	LeaseRenewable() cdktn.IResolvable
 	LeaseStartTime() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxCredValidationSeconds() *float64
 	SetMaxCredValidationSeconds(val *float64)
 	MaxCredValidationSecondsInput() *float64
@@ -69,9 +69,9 @@ type DataVaultAzureAccessCredentials interface {
 	SetNumSequentialSuccesses(val *float64)
 	NumSequentialSuccessesInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Role() *string
@@ -84,7 +84,7 @@ type DataVaultAzureAccessCredentials interface {
 	SetTenantId(val *string)
 	TenantIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -97,7 +97,7 @@ type DataVaultAzureAccessCredentials interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -113,7 +113,7 @@ type DataVaultAzureAccessCredentials interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -145,7 +145,7 @@ type DataVaultAzureAccessCredentials interface {
 
 // The jsii proxy struct for DataVaultAzureAccessCredentials
 type jsiiProxy_DataVaultAzureAccessCredentials struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataVaultAzureAccessCredentials) Backend() *string {
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultAzureAccessCredentials) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) EnvironmentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultAzureAccessCredentials) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) LeaseId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) LeaseRenewable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataVaultAzureAccessCredentials) LeaseRenewable() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"leaseRenewable",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) LeaseStartTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultAzureAccessCredentials) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) NumSequentialSuccessesInput(
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultAzureAccessCredentials) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) TenantIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultAzureAccessCredentials) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -569,7 +569,7 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) ValidateCredsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials} Data Source.
 func NewDataVaultAzureAccessCredentials(scope constructs.Construct, id *string, config *DataVaultAzureAccessCredentialsConfig) DataVaultAzureAccessCredentials {
 	_init_.Initialize()
 
@@ -579,7 +579,7 @@ func NewDataVaultAzureAccessCredentials(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataVaultAzureAccessCredentials{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -587,12 +587,12 @@ func NewDataVaultAzureAccessCredentials(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials} Data Source.
 func NewDataVaultAzureAccessCredentials_Override(d DataVaultAzureAccessCredentials, scope constructs.Construct, id *string, config *DataVaultAzureAccessCredentialsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -639,7 +639,7 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetEnvironment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -658,7 +658,7 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +713,7 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetNumSequentialSuccesses(val
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -765,17 +765,17 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetValidateCreds(val interfac
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultAzureAccessCredentials resource upon running "cdktf plan <stack-name>".
-func DataVaultAzureAccessCredentials_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultAzureAccessCredentials resource upon running "cdktn plan <stack-name>".
+func DataVaultAzureAccessCredentials_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultAzureAccessCredentials_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -810,7 +810,7 @@ func DataVaultAzureAccessCredentials_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func DataVaultAzureAccessCredentials_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -848,7 +848,7 @@ func DataVaultAzureAccessCredentials_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -861,7 +861,7 @@ func DataVaultAzureAccessCredentials_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials",
 		"tfResourceType",
 		&returns,
 	)
@@ -895,11 +895,11 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1023,11 +1023,11 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultAzureAccessCredentials) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultAzureAccessCredentials) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

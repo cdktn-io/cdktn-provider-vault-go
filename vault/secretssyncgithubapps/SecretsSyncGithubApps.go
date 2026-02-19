@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncgithubapps
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncgithubapps/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncgithubapps/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
 type SecretsSyncGithubApps interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AppId() *float64
 	SetAppId(val *float64)
 	AppIdInput() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -36,9 +36,9 @@ type SecretsSyncGithubApps interface {
 	SetDependsOn(val *[]*string)
 	Fingerprint() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -47,9 +47,9 @@ type SecretsSyncGithubApps interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -62,9 +62,9 @@ type SecretsSyncGithubApps interface {
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -72,7 +72,7 @@ type SecretsSyncGithubApps interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -85,7 +85,7 @@ type SecretsSyncGithubApps interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -103,9 +103,9 @@ type SecretsSyncGithubApps interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -140,7 +140,7 @@ type SecretsSyncGithubApps interface {
 
 // The jsii proxy struct for SecretsSyncGithubApps
 type jsiiProxy_SecretsSyncGithubApps struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_SecretsSyncGithubApps) AppId() *float64 {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_SecretsSyncGithubApps) AppIdInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGithubApps) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SecretsSyncGithubApps) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_SecretsSyncGithubApps) Fingerprint() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGithubApps) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SecretsSyncGithubApps) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_SecretsSyncGithubApps) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGithubApps) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SecretsSyncGithubApps) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_SecretsSyncGithubApps) PrivateKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGithubApps) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SecretsSyncGithubApps) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_SecretsSyncGithubApps) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGithubApps) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SecretsSyncGithubApps) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_SecretsSyncGithubApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
 func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *SecretsSyncGithubAppsConfig) SecretsSyncGithubApps {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *Se
 	j := jsiiProxy_SecretsSyncGithubApps{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
+		"@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -432,12 +432,12 @@ func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
 func NewSecretsSyncGithubApps_Override(s SecretsSyncGithubApps, scope constructs.Construct, id *string, config *SecretsSyncGithubAppsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
+		"@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -484,7 +484,7 @@ func (j *jsiiProxy_SecretsSyncGithubApps)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncGithubApps)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecretsSyncGithubApps)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +503,7 @@ func (j *jsiiProxy_SecretsSyncGithubApps)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncGithubApps)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecretsSyncGithubApps)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +547,7 @@ func (j *jsiiProxy_SecretsSyncGithubApps)SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncGithubApps)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecretsSyncGithubApps)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -566,17 +566,17 @@ func (j *jsiiProxy_SecretsSyncGithubApps)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a SecretsSyncGithubApps resource upon running "cdktf plan <stack-name>".
-func SecretsSyncGithubApps_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SecretsSyncGithubApps resource upon running "cdktn plan <stack-name>".
+func SecretsSyncGithubApps_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSecretsSyncGithubApps_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
+		"@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -611,7 +611,7 @@ func SecretsSyncGithubApps_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
+		"@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func SecretsSyncGithubApps_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
+		"@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func SecretsSyncGithubApps_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
+		"@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -662,7 +662,7 @@ func SecretsSyncGithubApps_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
+		"@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps",
 		"tfResourceType",
 		&returns,
 	)
@@ -707,11 +707,11 @@ func (s *jsiiProxy_SecretsSyncGithubApps) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncGithubApps) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretsSyncGithubApps) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -848,7 +848,7 @@ func (s *jsiiProxy_SecretsSyncGithubApps) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncGithubApps) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SecretsSyncGithubApps) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -859,11 +859,11 @@ func (s *jsiiProxy_SecretsSyncGithubApps) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (s *jsiiProxy_SecretsSyncGithubApps) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretsSyncGithubApps) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

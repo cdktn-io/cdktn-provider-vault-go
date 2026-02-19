@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -119,6 +119,14 @@ func (j *jsiiProxy_GcpAuthBackend) validateSetCredentialsParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_GcpAuthBackend) validateSetCredentialsWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetCredentialsWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpAuthBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -163,7 +171,7 @@ func (j *jsiiProxy_GcpAuthBackend) validateSetIdentityTokenTtlParameters(val *fl
 	return nil
 }
 
-func (j *jsiiProxy_GcpAuthBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GcpAuthBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

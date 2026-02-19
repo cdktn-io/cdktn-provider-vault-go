@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretbackendconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthType() *string
 	SetAuthType(val *string)
 	AuthTypeInput() *string
@@ -76,9 +76,9 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TlsCa() *string
 	SetTlsCa(val *string)
 	TlsCaInput() *string
@@ -96,7 +96,7 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -112,9 +112,9 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthType()
 	ResetConnectionUrl()
 	ResetDisableEscaping()
@@ -134,7 +134,7 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,7 +144,7 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretBackendConnectionPostgresqlOutputReference
 type jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) AuthType() *string {
@@ -467,8 +467,8 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -558,7 +558,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Use
 }
 
 
-func NewDatabaseSecretBackendConnectionPostgresqlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionPostgresqlOutputReference {
+func NewDatabaseSecretBackendConnectionPostgresqlOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionPostgresqlOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretBackendConnectionPostgresqlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -567,7 +567,7 @@ func NewDatabaseSecretBackendConnectionPostgresqlOutputReference(terraformResour
 	j := jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -575,11 +575,11 @@ func NewDatabaseSecretBackendConnectionPostgresqlOutputReference(terraformResour
 	return &j
 }
 
-func NewDatabaseSecretBackendConnectionPostgresqlOutputReference_Override(d DatabaseSecretBackendConnectionPostgresqlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatabaseSecretBackendConnectionPostgresqlOutputReference_Override(d DatabaseSecretBackendConnectionPostgresqlOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -772,7 +772,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,11 +856,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -984,8 +984,8 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -997,11 +997,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1149,7 +1149,7 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Res
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

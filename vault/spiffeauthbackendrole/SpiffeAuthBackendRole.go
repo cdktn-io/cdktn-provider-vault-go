@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package spiffeauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/spiffeauthbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffeauthbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role}.
 type SpiffeAuthBackendRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
 	AliasMetadataInput() *map[string]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,17 +38,17 @@ type SpiffeAuthBackendRole interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Mount() *string
 	SetMount(val *string)
 	MountInput() *string
@@ -61,9 +61,9 @@ type SpiffeAuthBackendRole interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -71,7 +71,7 @@ type SpiffeAuthBackendRole interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -114,7 +114,7 @@ type SpiffeAuthBackendRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -132,9 +132,9 @@ type SpiffeAuthBackendRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -180,7 +180,7 @@ type SpiffeAuthBackendRole interface {
 
 // The jsii proxy struct for SpiffeAuthBackendRole
 type jsiiProxy_SpiffeAuthBackendRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_SpiffeAuthBackendRole) AliasMetadata() *map[string]*string {
@@ -203,8 +203,8 @@ func (j *jsiiProxy_SpiffeAuthBackendRole) AliasMetadataInput() *map[string]*stri
 	return returns
 }
 
-func (j *jsiiProxy_SpiffeAuthBackendRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SpiffeAuthBackendRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_SpiffeAuthBackendRole) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpiffeAuthBackendRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SpiffeAuthBackendRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_SpiffeAuthBackendRole) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpiffeAuthBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SpiffeAuthBackendRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_SpiffeAuthBackendRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SpiffeAuthBackendRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SpiffeAuthBackendRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_SpiffeAuthBackendRole) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpiffeAuthBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SpiffeAuthBackendRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -644,7 +644,7 @@ func (j *jsiiProxy_SpiffeAuthBackendRole) WorkloadIdPatternsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
 func NewSpiffeAuthBackendRole(scope constructs.Construct, id *string, config *SpiffeAuthBackendRoleConfig) SpiffeAuthBackendRole {
 	_init_.Initialize()
 
@@ -654,7 +654,7 @@ func NewSpiffeAuthBackendRole(scope constructs.Construct, id *string, config *Sp
 	j := jsiiProxy_SpiffeAuthBackendRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
+		"@cdktn/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -662,12 +662,12 @@ func NewSpiffeAuthBackendRole(scope constructs.Construct, id *string, config *Sp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
 func NewSpiffeAuthBackendRole_Override(s SpiffeAuthBackendRole, scope constructs.Construct, id *string, config *SpiffeAuthBackendRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
+		"@cdktn/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -725,7 +725,7 @@ func (j *jsiiProxy_SpiffeAuthBackendRole)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpiffeAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpiffeAuthBackendRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -733,7 +733,7 @@ func (j *jsiiProxy_SpiffeAuthBackendRole)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_SpiffeAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpiffeAuthBackendRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +777,7 @@ func (j *jsiiProxy_SpiffeAuthBackendRole)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpiffeAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpiffeAuthBackendRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -906,17 +906,17 @@ func (j *jsiiProxy_SpiffeAuthBackendRole)SetWorkloadIdPatterns(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a SpiffeAuthBackendRole resource upon running "cdktf plan <stack-name>".
-func SpiffeAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SpiffeAuthBackendRole resource upon running "cdktn plan <stack-name>".
+func SpiffeAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSpiffeAuthBackendRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
+		"@cdktn/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -951,7 +951,7 @@ func SpiffeAuthBackendRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
+		"@cdktn/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -970,7 +970,7 @@ func SpiffeAuthBackendRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
+		"@cdktn/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -989,7 +989,7 @@ func SpiffeAuthBackendRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
+		"@cdktn/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1002,7 +1002,7 @@ func SpiffeAuthBackendRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
+		"@cdktn/provider-vault.spiffeAuthBackendRole.SpiffeAuthBackendRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -1047,11 +1047,11 @@ func (s *jsiiProxy_SpiffeAuthBackendRole) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (s *jsiiProxy_SpiffeAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SpiffeAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1188,7 +1188,7 @@ func (s *jsiiProxy_SpiffeAuthBackendRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SpiffeAuthBackendRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SpiffeAuthBackendRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1199,11 +1199,11 @@ func (s *jsiiProxy_SpiffeAuthBackendRole) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (s *jsiiProxy_SpiffeAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SpiffeAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

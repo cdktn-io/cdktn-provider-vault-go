@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -95,7 +95,15 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateSetTlsCaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateSetTlsCertificateKeyParameters(val *string) error {
 	return nil
 }
 
@@ -107,7 +115,11 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) valida
 	return nil
 }
 
-func validateNewDatabaseSecretBackendConnectionMongodbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateSetWriteConcernParameters(val *string) error {
+	return nil
+}
+
+func validateNewDatabaseSecretBackendConnectionMongodbOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

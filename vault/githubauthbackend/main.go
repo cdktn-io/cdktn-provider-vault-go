@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package githubauthbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackend",
 		reflect.TypeOf((*GithubAuthBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -116,20 +116,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GithubAuthBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackendConfig",
 		reflect.TypeOf((*GithubAuthBackendConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackendTune",
 		reflect.TypeOf((*GithubAuthBackendTune)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackendTuneList",
 		reflect.TypeOf((*GithubAuthBackendTuneList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -146,12 +146,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GithubAuthBackendTuneList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference",
 		reflect.TypeOf((*GithubAuthBackendTuneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeaders", GoGetter: "AllowedResponseHeaders"},
@@ -202,7 +202,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GithubAuthBackendTuneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

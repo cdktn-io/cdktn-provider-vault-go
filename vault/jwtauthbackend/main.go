@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package jwtauthbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.jwtAuthBackend.JwtAuthBackend",
+		"@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend",
 		reflect.TypeOf((*JwtAuthBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -72,6 +72,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "oidcClientIdInput", GoGetter: "OidcClientIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "oidcClientSecret", GoGetter: "OidcClientSecret"},
 			_jsii_.MemberProperty{JsiiProperty: "oidcClientSecretInput", GoGetter: "OidcClientSecretInput"},
+			_jsii_.MemberProperty{JsiiProperty: "oidcClientSecretWo", GoGetter: "OidcClientSecretWo"},
+			_jsii_.MemberProperty{JsiiProperty: "oidcClientSecretWoInput", GoGetter: "OidcClientSecretWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "oidcClientSecretWoVersion", GoGetter: "OidcClientSecretWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "oidcClientSecretWoVersionInput", GoGetter: "OidcClientSecretWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "oidcDiscoveryCaPem", GoGetter: "OidcDiscoveryCaPem"},
 			_jsii_.MemberProperty{JsiiProperty: "oidcDiscoveryCaPemInput", GoGetter: "OidcDiscoveryCaPemInput"},
 			_jsii_.MemberProperty{JsiiProperty: "oidcDiscoveryUrl", GoGetter: "OidcDiscoveryUrl"},
@@ -104,6 +108,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespaceInState", GoMethod: "ResetNamespaceInState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOidcClientId", GoMethod: "ResetOidcClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOidcClientSecret", GoMethod: "ResetOidcClientSecret"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOidcClientSecretWo", GoMethod: "ResetOidcClientSecretWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOidcClientSecretWoVersion", GoMethod: "ResetOidcClientSecretWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOidcDiscoveryCaPem", GoMethod: "ResetOidcDiscoveryCaPem"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOidcDiscoveryUrl", GoMethod: "ResetOidcDiscoveryUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOidcResponseMode", GoMethod: "ResetOidcResponseMode"},
@@ -129,20 +135,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JwtAuthBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.jwtAuthBackend.JwtAuthBackendConfig",
+		"@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig",
 		reflect.TypeOf((*JwtAuthBackendConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.jwtAuthBackend.JwtAuthBackendTune",
+		"@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune",
 		reflect.TypeOf((*JwtAuthBackendTune)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.jwtAuthBackend.JwtAuthBackendTuneList",
+		"@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTuneList",
 		reflect.TypeOf((*JwtAuthBackendTuneList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -159,12 +165,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JwtAuthBackendTuneList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.jwtAuthBackend.JwtAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTuneOutputReference",
 		reflect.TypeOf((*JwtAuthBackendTuneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeaders", GoGetter: "AllowedResponseHeaders"},
@@ -215,7 +221,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JwtAuthBackendTuneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

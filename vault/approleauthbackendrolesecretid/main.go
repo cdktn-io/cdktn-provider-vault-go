@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package approleauthbackendrolesecretid
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId",
+		"@cdktn/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId",
 		reflect.TypeOf((*ApproleAuthBackendRoleSecretId)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNumUses", GoMethod: "ResetNumUses"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretId", GoMethod: "ResetSecretId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenBoundCidrs", GoMethod: "ResetTokenBoundCidrs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWithWrappedAccessor", GoMethod: "ResetWithWrappedAccessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWrappingTtl", GoMethod: "ResetWrappingTtl"},
@@ -79,6 +80,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenBoundCidrs", GoGetter: "TokenBoundCidrs"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenBoundCidrsInput", GoGetter: "TokenBoundCidrsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -93,12 +96,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApproleAuthBackendRoleSecretId{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig",
+		"@cdktn/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig",
 		reflect.TypeOf((*ApproleAuthBackendRoleSecretIdConfig)(nil)).Elem(),
 	)
 }

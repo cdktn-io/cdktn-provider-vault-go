@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azuresecretbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole",
+		"@cdktn/provider-vault.azureSecretBackendRole.AzureSecretBackendRole",
 		reflect.TypeOf((*AzureSecretBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -104,16 +104,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureSecretBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroups",
+		"@cdktn/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroups",
 		reflect.TypeOf((*AzureSecretBackendRoleAzureGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroupsList",
+		"@cdktn/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroupsList",
 		reflect.TypeOf((*AzureSecretBackendRoleAzureGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -130,12 +130,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureSecretBackendRoleAzureGroupsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroupsOutputReference",
+		"@cdktn/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroupsOutputReference",
 		reflect.TypeOf((*AzureSecretBackendRoleAzureGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -165,16 +165,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles",
+		"@cdktn/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles",
 		reflect.TypeOf((*AzureSecretBackendRoleAzureRoles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRolesList",
+		"@cdktn/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRolesList",
 		reflect.TypeOf((*AzureSecretBackendRoleAzureRolesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -191,12 +191,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureSecretBackendRoleAzureRolesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRolesOutputReference",
+		"@cdktn/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRolesOutputReference",
 		reflect.TypeOf((*AzureSecretBackendRoleAzureRolesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -231,12 +231,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig",
+		"@cdktn/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig",
 		reflect.TypeOf((*AzureSecretBackendRoleConfig)(nil)).Elem(),
 	)
 }

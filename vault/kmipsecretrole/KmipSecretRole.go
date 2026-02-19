@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package kmipsecretrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/kmipsecretrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kmip_secret_role vault_kmip_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_role vault_kmip_secret_role}.
 type KmipSecretRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,9 +32,9 @@ type KmipSecretRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -43,9 +43,9 @@ type KmipSecretRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -63,12 +63,24 @@ type KmipSecretRole interface {
 	OperationCreate() interface{}
 	SetOperationCreate(val interface{})
 	OperationCreateInput() interface{}
+	OperationCreateKeyPair() interface{}
+	SetOperationCreateKeyPair(val interface{})
+	OperationCreateKeyPairInput() interface{}
+	OperationDecrypt() interface{}
+	SetOperationDecrypt(val interface{})
+	OperationDecryptInput() interface{}
+	OperationDeleteAttribute() interface{}
+	SetOperationDeleteAttribute(val interface{})
+	OperationDeleteAttributeInput() interface{}
 	OperationDestroy() interface{}
 	SetOperationDestroy(val interface{})
 	OperationDestroyInput() interface{}
 	OperationDiscoverVersions() interface{}
 	SetOperationDiscoverVersions(val interface{})
 	OperationDiscoverVersionsInput() interface{}
+	OperationEncrypt() interface{}
+	SetOperationEncrypt(val interface{})
+	OperationEncryptInput() interface{}
 	OperationGet() interface{}
 	SetOperationGet(val interface{})
 	OperationGetAttributeList() interface{}
@@ -78,28 +90,58 @@ type KmipSecretRole interface {
 	SetOperationGetAttributes(val interface{})
 	OperationGetAttributesInput() interface{}
 	OperationGetInput() interface{}
+	OperationImport() interface{}
+	SetOperationImport(val interface{})
+	OperationImportInput() interface{}
 	OperationLocate() interface{}
 	SetOperationLocate(val interface{})
 	OperationLocateInput() interface{}
+	OperationMac() interface{}
+	SetOperationMac(val interface{})
+	OperationMacInput() interface{}
+	OperationMacVerify() interface{}
+	SetOperationMacVerify(val interface{})
+	OperationMacVerifyInput() interface{}
+	OperationModifyAttribute() interface{}
+	SetOperationModifyAttribute(val interface{})
+	OperationModifyAttributeInput() interface{}
 	OperationNone() interface{}
 	SetOperationNone(val interface{})
 	OperationNoneInput() interface{}
+	OperationQuery() interface{}
+	SetOperationQuery(val interface{})
+	OperationQueryInput() interface{}
 	OperationRegister() interface{}
 	SetOperationRegister(val interface{})
 	OperationRegisterInput() interface{}
 	OperationRekey() interface{}
 	SetOperationRekey(val interface{})
 	OperationRekeyInput() interface{}
+	OperationRekeyKeyPair() interface{}
+	SetOperationRekeyKeyPair(val interface{})
+	OperationRekeyKeyPairInput() interface{}
 	OperationRevoke() interface{}
 	SetOperationRevoke(val interface{})
 	OperationRevokeInput() interface{}
+	OperationRngRetrieve() interface{}
+	SetOperationRngRetrieve(val interface{})
+	OperationRngRetrieveInput() interface{}
+	OperationRngSeed() interface{}
+	SetOperationRngSeed(val interface{})
+	OperationRngSeedInput() interface{}
+	OperationSign() interface{}
+	SetOperationSign(val interface{})
+	OperationSignatureVerify() interface{}
+	SetOperationSignatureVerify(val interface{})
+	OperationSignatureVerifyInput() interface{}
+	OperationSignInput() interface{}
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -113,7 +155,7 @@ type KmipSecretRole interface {
 	SetScope(val *string)
 	ScopeInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -135,7 +177,7 @@ type KmipSecretRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -153,9 +195,9 @@ type KmipSecretRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -176,16 +218,30 @@ type KmipSecretRole interface {
 	ResetOperationAddAttribute()
 	ResetOperationAll()
 	ResetOperationCreate()
+	ResetOperationCreateKeyPair()
+	ResetOperationDecrypt()
+	ResetOperationDeleteAttribute()
 	ResetOperationDestroy()
 	ResetOperationDiscoverVersions()
+	ResetOperationEncrypt()
 	ResetOperationGet()
 	ResetOperationGetAttributeList()
 	ResetOperationGetAttributes()
+	ResetOperationImport()
 	ResetOperationLocate()
+	ResetOperationMac()
+	ResetOperationMacVerify()
+	ResetOperationModifyAttribute()
 	ResetOperationNone()
+	ResetOperationQuery()
 	ResetOperationRegister()
 	ResetOperationRekey()
+	ResetOperationRekeyKeyPair()
 	ResetOperationRevoke()
+	ResetOperationRngRetrieve()
+	ResetOperationRngSeed()
+	ResetOperationSign()
+	ResetOperationSignatureVerify()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -207,11 +263,11 @@ type KmipSecretRole interface {
 
 // The jsii proxy struct for KmipSecretRole
 type jsiiProxy_KmipSecretRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_KmipSecretRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_KmipSecretRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -260,8 +316,8 @@ func (j *jsiiProxy_KmipSecretRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_KmipSecretRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_KmipSecretRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -310,8 +366,8 @@ func (j *jsiiProxy_KmipSecretRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KmipSecretRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_KmipSecretRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -430,6 +486,66 @@ func (j *jsiiProxy_KmipSecretRole) OperationCreateInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmipSecretRole) OperationCreateKeyPair() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationCreateKeyPair",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationCreateKeyPairInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationCreateKeyPairInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationDecrypt() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationDecrypt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationDecryptInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationDecryptInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationDeleteAttribute() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationDeleteAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationDeleteAttributeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationDeleteAttributeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmipSecretRole) OperationDestroy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -465,6 +581,26 @@ func (j *jsiiProxy_KmipSecretRole) OperationDiscoverVersionsInput() interface{} 
 	_jsii_.Get(
 		j,
 		"operationDiscoverVersionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationEncrypt() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationEncrypt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationEncryptInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationEncryptInput",
 		&returns,
 	)
 	return returns
@@ -530,6 +666,26 @@ func (j *jsiiProxy_KmipSecretRole) OperationGetInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmipSecretRole) OperationImport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationImport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationImportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationImportInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmipSecretRole) OperationLocate() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -550,6 +706,66 @@ func (j *jsiiProxy_KmipSecretRole) OperationLocateInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmipSecretRole) OperationMac() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationMac",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationMacInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationMacInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationMacVerify() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationMacVerify",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationMacVerifyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationMacVerifyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationModifyAttribute() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationModifyAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationModifyAttributeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationModifyAttributeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmipSecretRole) OperationNone() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -565,6 +781,26 @@ func (j *jsiiProxy_KmipSecretRole) OperationNoneInput() interface{} {
 	_jsii_.Get(
 		j,
 		"operationNoneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationQuery() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationQueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationQueryInput",
 		&returns,
 	)
 	return returns
@@ -610,6 +846,26 @@ func (j *jsiiProxy_KmipSecretRole) OperationRekeyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmipSecretRole) OperationRekeyKeyPair() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationRekeyKeyPair",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationRekeyKeyPairInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationRekeyKeyPairInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmipSecretRole) OperationRevoke() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -625,6 +881,86 @@ func (j *jsiiProxy_KmipSecretRole) OperationRevokeInput() interface{} {
 	_jsii_.Get(
 		j,
 		"operationRevokeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationRngRetrieve() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationRngRetrieve",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationRngRetrieveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationRngRetrieveInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationRngSeed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationRngSeed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationRngSeedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationRngSeedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationSign() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationSign",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationSignatureVerify() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationSignatureVerify",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationSignatureVerifyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationSignatureVerifyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) OperationSignInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationSignInput",
 		&returns,
 	)
 	return returns
@@ -650,8 +986,8 @@ func (j *jsiiProxy_KmipSecretRole) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KmipSecretRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_KmipSecretRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -720,8 +1056,8 @@ func (j *jsiiProxy_KmipSecretRole) ScopeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KmipSecretRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_KmipSecretRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -811,7 +1147,7 @@ func (j *jsiiProxy_KmipSecretRole) TlsClientTtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
 func NewKmipSecretRole(scope constructs.Construct, id *string, config *KmipSecretRoleConfig) KmipSecretRole {
 	_init_.Initialize()
 
@@ -821,7 +1157,7 @@ func NewKmipSecretRole(scope constructs.Construct, id *string, config *KmipSecre
 	j := jsiiProxy_KmipSecretRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRole",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -829,12 +1165,12 @@ func NewKmipSecretRole(scope constructs.Construct, id *string, config *KmipSecre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
 func NewKmipSecretRole_Override(k KmipSecretRole, scope constructs.Construct, id *string, config *KmipSecretRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRole",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -870,7 +1206,7 @@ func (j *jsiiProxy_KmipSecretRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmipSecretRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -889,7 +1225,7 @@ func (j *jsiiProxy_KmipSecretRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmipSecretRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -955,6 +1291,39 @@ func (j *jsiiProxy_KmipSecretRole)SetOperationCreate(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_KmipSecretRole)SetOperationCreateKeyPair(val interface{}) {
+	if err := j.validateSetOperationCreateKeyPairParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationCreateKeyPair",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationDecrypt(val interface{}) {
+	if err := j.validateSetOperationDecryptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationDecrypt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationDeleteAttribute(val interface{}) {
+	if err := j.validateSetOperationDeleteAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationDeleteAttribute",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmipSecretRole)SetOperationDestroy(val interface{}) {
 	if err := j.validateSetOperationDestroyParameters(val); err != nil {
 		panic(err)
@@ -973,6 +1342,17 @@ func (j *jsiiProxy_KmipSecretRole)SetOperationDiscoverVersions(val interface{}) 
 	_jsii_.Set(
 		j,
 		"operationDiscoverVersions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationEncrypt(val interface{}) {
+	if err := j.validateSetOperationEncryptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationEncrypt",
 		val,
 	)
 }
@@ -1010,6 +1390,17 @@ func (j *jsiiProxy_KmipSecretRole)SetOperationGetAttributes(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_KmipSecretRole)SetOperationImport(val interface{}) {
+	if err := j.validateSetOperationImportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationImport",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmipSecretRole)SetOperationLocate(val interface{}) {
 	if err := j.validateSetOperationLocateParameters(val); err != nil {
 		panic(err)
@@ -1021,6 +1412,39 @@ func (j *jsiiProxy_KmipSecretRole)SetOperationLocate(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_KmipSecretRole)SetOperationMac(val interface{}) {
+	if err := j.validateSetOperationMacParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationMac",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationMacVerify(val interface{}) {
+	if err := j.validateSetOperationMacVerifyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationMacVerify",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationModifyAttribute(val interface{}) {
+	if err := j.validateSetOperationModifyAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationModifyAttribute",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmipSecretRole)SetOperationNone(val interface{}) {
 	if err := j.validateSetOperationNoneParameters(val); err != nil {
 		panic(err)
@@ -1028,6 +1452,17 @@ func (j *jsiiProxy_KmipSecretRole)SetOperationNone(val interface{}) {
 	_jsii_.Set(
 		j,
 		"operationNone",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationQuery(val interface{}) {
+	if err := j.validateSetOperationQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationQuery",
 		val,
 	)
 }
@@ -1054,6 +1489,17 @@ func (j *jsiiProxy_KmipSecretRole)SetOperationRekey(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_KmipSecretRole)SetOperationRekeyKeyPair(val interface{}) {
+	if err := j.validateSetOperationRekeyKeyPairParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationRekeyKeyPair",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmipSecretRole)SetOperationRevoke(val interface{}) {
 	if err := j.validateSetOperationRevokeParameters(val); err != nil {
 		panic(err)
@@ -1061,6 +1507,50 @@ func (j *jsiiProxy_KmipSecretRole)SetOperationRevoke(val interface{}) {
 	_jsii_.Set(
 		j,
 		"operationRevoke",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationRngRetrieve(val interface{}) {
+	if err := j.validateSetOperationRngRetrieveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationRngRetrieve",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationRngSeed(val interface{}) {
+	if err := j.validateSetOperationRngSeedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationRngSeed",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationSign(val interface{}) {
+	if err := j.validateSetOperationSignParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationSign",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetOperationSignatureVerify(val interface{}) {
+	if err := j.validateSetOperationSignatureVerifyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationSignatureVerify",
 		val,
 	)
 }
@@ -1076,7 +1566,7 @@ func (j *jsiiProxy_KmipSecretRole)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmipSecretRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1150,17 +1640,17 @@ func (j *jsiiProxy_KmipSecretRole)SetTlsClientTtl(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a KmipSecretRole resource upon running "cdktf plan <stack-name>".
-func KmipSecretRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a KmipSecretRole resource upon running "cdktn plan <stack-name>".
+func KmipSecretRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateKmipSecretRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRole",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1195,7 +1685,7 @@ func KmipSecretRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRole",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1214,7 +1704,7 @@ func KmipSecretRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRole",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1233,7 +1723,7 @@ func KmipSecretRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRole",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1246,7 +1736,7 @@ func KmipSecretRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.kmipSecretRole.KmipSecretRole",
+		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -1291,11 +1781,11 @@ func (k *jsiiProxy_KmipSecretRole) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (k *jsiiProxy_KmipSecretRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KmipSecretRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -1432,7 +1922,7 @@ func (k *jsiiProxy_KmipSecretRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmipSecretRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (k *jsiiProxy_KmipSecretRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := k.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1443,11 +1933,11 @@ func (k *jsiiProxy_KmipSecretRole) ImportFrom(id *string, provider cdktf.Terrafo
 	)
 }
 
-func (k *jsiiProxy_KmipSecretRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KmipSecretRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -1551,6 +2041,30 @@ func (k *jsiiProxy_KmipSecretRole) ResetOperationCreate() {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretRole) ResetOperationCreateKeyPair() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationCreateKeyPair",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationDecrypt() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationDecrypt",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationDeleteAttribute() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationDeleteAttribute",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretRole) ResetOperationDestroy() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1563,6 +2077,14 @@ func (k *jsiiProxy_KmipSecretRole) ResetOperationDiscoverVersions() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOperationDiscoverVersions",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationEncrypt() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationEncrypt",
 		nil, // no parameters
 	)
 }
@@ -1591,6 +2113,14 @@ func (k *jsiiProxy_KmipSecretRole) ResetOperationGetAttributes() {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretRole) ResetOperationImport() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationImport",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretRole) ResetOperationLocate() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1599,10 +2129,42 @@ func (k *jsiiProxy_KmipSecretRole) ResetOperationLocate() {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretRole) ResetOperationMac() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationMac",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationMacVerify() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationMacVerify",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationModifyAttribute() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationModifyAttribute",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretRole) ResetOperationNone() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOperationNone",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationQuery() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationQuery",
 		nil, // no parameters
 	)
 }
@@ -1623,10 +2185,50 @@ func (k *jsiiProxy_KmipSecretRole) ResetOperationRekey() {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretRole) ResetOperationRekeyKeyPair() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationRekeyKeyPair",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretRole) ResetOperationRevoke() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOperationRevoke",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationRngRetrieve() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationRngRetrieve",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationRngSeed() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationRngSeed",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationSign() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationSign",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretRole) ResetOperationSignatureVerify() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOperationSignatureVerify",
 		nil, // no parameters
 	)
 }

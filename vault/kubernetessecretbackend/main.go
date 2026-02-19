@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package kubernetessecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
 		reflect.TypeOf((*KubernetesSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -114,10 +114,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPluginVersion", GoMethod: "ResetPluginVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSealWrap", GoMethod: "ResetSealWrap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccountJwt", GoMethod: "ResetServiceAccountJwt"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccountJwtWo", GoMethod: "ResetServiceAccountJwtWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccountJwtWoVersion", GoMethod: "ResetServiceAccountJwtWoVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "sealWrap", GoGetter: "SealWrap"},
 			_jsii_.MemberProperty{JsiiProperty: "sealWrapInput", GoGetter: "SealWrapInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountJwt", GoGetter: "ServiceAccountJwt"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountJwtInput", GoGetter: "ServiceAccountJwtInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccountJwtWo", GoGetter: "ServiceAccountJwtWo"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccountJwtWoInput", GoGetter: "ServiceAccountJwtWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccountJwtWoVersion", GoGetter: "ServiceAccountJwtWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccountJwtWoVersionInput", GoGetter: "ServiceAccountJwtWoVersionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -130,12 +136,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig",
 		reflect.TypeOf((*KubernetesSecretBackendConfig)(nil)).Elem(),
 	)
 }

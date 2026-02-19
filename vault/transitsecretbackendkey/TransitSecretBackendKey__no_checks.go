@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -107,6 +107,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetContextParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetConvergentEncryptionParameters(val interface{}) error {
 	return nil
 }
@@ -143,7 +147,15 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetKeySizeParameters(val *fl
 	return nil
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetManagedKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetManagedKeyNameParameters(val *string) error {
 	return nil
 }
 

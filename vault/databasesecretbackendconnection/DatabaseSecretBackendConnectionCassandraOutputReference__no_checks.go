@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -63,6 +63,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetConsistencyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetHostsParameters(val *[]*string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) vali
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetInternalValueParameters(val *DatabaseSecretBackendConnectionCassandra) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetLocalDatacenterParameters(val *string) error {
 	return nil
 }
 
@@ -99,11 +107,15 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetSocketKeepAliveParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -111,11 +123,19 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetTlsServerNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetUsernameParameters(val *string) error {
 	return nil
 }
 
-func validateNewDatabaseSecretBackendConnectionCassandraOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetUsernameTemplateParameters(val *string) error {
+	return nil
+}
+
+func validateNewDatabaseSecretBackendConnectionCassandraOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

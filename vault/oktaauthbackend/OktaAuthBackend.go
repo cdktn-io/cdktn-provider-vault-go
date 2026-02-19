@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oktaauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/oktaauthbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
 type OktaAuthBackend interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Accessor() *string
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
@@ -26,7 +26,7 @@ type OktaAuthBackend interface {
 	SetBypassOktaMfa(val interface{})
 	BypassOktaMfaInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -48,9 +48,9 @@ type OktaAuthBackend interface {
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -61,9 +61,9 @@ type OktaAuthBackend interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -76,9 +76,9 @@ type OktaAuthBackend interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -86,7 +86,7 @@ type OktaAuthBackend interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -133,7 +133,7 @@ type OktaAuthBackend interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -151,9 +151,9 @@ type OktaAuthBackend interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -210,7 +210,7 @@ type OktaAuthBackend interface {
 
 // The jsii proxy struct for OktaAuthBackend
 type jsiiProxy_OktaAuthBackend struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_OktaAuthBackend) Accessor() *string {
@@ -283,8 +283,8 @@ func (j *jsiiProxy_OktaAuthBackend) BypassOktaMfaInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackend) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_OktaAuthBackend) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_OktaAuthBackend) DisableRemountInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackend) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_OktaAuthBackend) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_OktaAuthBackend) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_OktaAuthBackend) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -523,8 +523,8 @@ func (j *jsiiProxy_OktaAuthBackend) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackend) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_OktaAuthBackend) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -553,8 +553,8 @@ func (j *jsiiProxy_OktaAuthBackend) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_OktaAuthBackend) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -824,7 +824,7 @@ func (j *jsiiProxy_OktaAuthBackend) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuthBackendConfig) OktaAuthBackend {
 	_init_.Initialize()
 
@@ -834,7 +834,7 @@ func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuth
 	j := jsiiProxy_OktaAuthBackend{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -842,12 +842,12 @@ func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend_Override(o OktaAuthBackend, scope constructs.Construct, id *string, config *OktaAuthBackendConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -938,7 +938,7 @@ func (j *jsiiProxy_OktaAuthBackend)SetDisableRemount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackend)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OktaAuthBackend)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -957,7 +957,7 @@ func (j *jsiiProxy_OktaAuthBackend)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OktaAuthBackend)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1001,7 +1001,7 @@ func (j *jsiiProxy_OktaAuthBackend)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackend)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OktaAuthBackend)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1130,17 +1130,17 @@ func (j *jsiiProxy_OktaAuthBackend)SetTokenType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a OktaAuthBackend resource upon running "cdktf plan <stack-name>".
-func OktaAuthBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a OktaAuthBackend resource upon running "cdktn plan <stack-name>".
+func OktaAuthBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateOktaAuthBackend_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1175,7 +1175,7 @@ func OktaAuthBackend_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1194,7 +1194,7 @@ func OktaAuthBackend_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1213,7 +1213,7 @@ func OktaAuthBackend_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1226,7 +1226,7 @@ func OktaAuthBackend_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		"tfResourceType",
 		&returns,
 	)
@@ -1271,11 +1271,11 @@ func (o *jsiiProxy_OktaAuthBackend) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (o *jsiiProxy_OktaAuthBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OktaAuthBackend) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -1412,7 +1412,7 @@ func (o *jsiiProxy_OktaAuthBackend) HasResourceMove() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OktaAuthBackend) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (o *jsiiProxy_OktaAuthBackend) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1423,11 +1423,11 @@ func (o *jsiiProxy_OktaAuthBackend) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (o *jsiiProxy_OktaAuthBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OktaAuthBackend) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,

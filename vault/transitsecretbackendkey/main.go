@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package transitsecretbackendkey
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		reflect.TypeOf((*TransitSecretBackendKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -25,6 +25,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "context", GoGetter: "Context"},
+			_jsii_.MemberProperty{JsiiProperty: "contextInput", GoGetter: "ContextInput"},
 			_jsii_.MemberProperty{JsiiProperty: "convergentEncryption", GoGetter: "ConvergentEncryption"},
 			_jsii_.MemberProperty{JsiiProperty: "convergentEncryptionInput", GoGetter: "ConvergentEncryptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -61,6 +63,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keySizeInput", GoGetter: "KeySizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "latestVersion", GoGetter: "LatestVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "managedKeyId", GoGetter: "ManagedKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "managedKeyIdInput", GoGetter: "ManagedKeyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "managedKeyName", GoGetter: "ManagedKeyName"},
+			_jsii_.MemberProperty{JsiiProperty: "managedKeyNameInput", GoGetter: "ManagedKeyNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minAvailableVersion", GoGetter: "MinAvailableVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "minDecryptionVersion", GoGetter: "MinDecryptionVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "minDecryptionVersionInput", GoGetter: "MinDecryptionVersionInput"},
@@ -82,6 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowPlaintextBackup", GoMethod: "ResetAllowPlaintextBackup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoRotatePeriod", GoMethod: "ResetAutoRotatePeriod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContext", GoMethod: "ResetContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConvergentEncryption", GoMethod: "ResetConvergentEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionAllowed", GoMethod: "ResetDeletionAllowed"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDerived", GoMethod: "ResetDerived"},
@@ -90,6 +97,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHybridKeyTypePqc", GoMethod: "ResetHybridKeyTypePqc"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeySize", GoMethod: "ResetKeySize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManagedKeyId", GoMethod: "ResetManagedKeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManagedKeyName", GoMethod: "ResetManagedKeyName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinDecryptionVersion", GoMethod: "ResetMinDecryptionVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinEncryptionVersion", GoMethod: "ResetMinEncryptionVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
@@ -114,12 +123,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TransitSecretBackendKey{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig",
 		reflect.TypeOf((*TransitSecretBackendKeyConfig)(nil)).Elem(),
 	)
 }

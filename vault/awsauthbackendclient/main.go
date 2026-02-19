@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package awsauthbackendclient
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient",
+		"@cdktn/provider-vault.awsAuthBackendClient.AwsAuthBackendClient",
 		reflect.TypeOf((*AwsAuthBackendClient)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
@@ -87,6 +87,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationSchedule", GoMethod: "ResetRotationSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindow", GoMethod: "ResetRotationWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretKey", GoMethod: "ResetSecretKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretKeyWo", GoMethod: "ResetSecretKeyWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretKeyWoVersion", GoMethod: "ResetSecretKeyWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStsEndpoint", GoMethod: "ResetStsEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStsRegion", GoMethod: "ResetStsRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseStsRegionFromClient", GoMethod: "ResetUseStsRegionFromClient"},
@@ -100,6 +102,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rotationWindowInput", GoGetter: "RotationWindowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretKey", GoGetter: "SecretKey"},
 			_jsii_.MemberProperty{JsiiProperty: "secretKeyInput", GoGetter: "SecretKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secretKeyWo", GoGetter: "SecretKeyWo"},
+			_jsii_.MemberProperty{JsiiProperty: "secretKeyWoInput", GoGetter: "SecretKeyWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secretKeyWoVersion", GoGetter: "SecretKeyWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "secretKeyWoVersionInput", GoGetter: "SecretKeyWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "stsEndpoint", GoGetter: "StsEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "stsEndpointInput", GoGetter: "StsEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "stsRegion", GoGetter: "StsRegion"},
@@ -118,12 +124,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AwsAuthBackendClient{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig",
+		"@cdktn/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig",
 		reflect.TypeOf((*AwsAuthBackendClientConfig)(nil)).Elem(),
 	)
 }

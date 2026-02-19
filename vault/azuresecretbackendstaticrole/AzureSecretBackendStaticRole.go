@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azuresecretbackendstaticrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/azuresecretbackendstaticrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/azuresecretbackendstaticrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
 type AzureSecretBackendStaticRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ApplicationObjectId() *string
 	SetApplicationObjectId(val *string)
 	ApplicationObjectIdInput() *string
@@ -22,7 +22,7 @@ type AzureSecretBackendStaticRole interface {
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientSecret() *string
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
@@ -44,18 +44,18 @@ type AzureSecretBackendStaticRole interface {
 	SetExpiration(val *string)
 	ExpirationInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Metadata() *map[string]*string
 	SetMetadata(val *map[string]*string)
 	MetadataInput() *map[string]*string
@@ -65,9 +65,9 @@ type AzureSecretBackendStaticRole interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -84,7 +84,7 @@ type AzureSecretBackendStaticRole interface {
 	SetSkipImportRotation(val interface{})
 	SkipImportRotationInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -100,7 +100,7 @@ type AzureSecretBackendStaticRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -118,9 +118,9 @@ type AzureSecretBackendStaticRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -160,7 +160,7 @@ type AzureSecretBackendStaticRole interface {
 
 // The jsii proxy struct for AzureSecretBackendStaticRole
 type jsiiProxy_AzureSecretBackendStaticRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AzureSecretBackendStaticRole) ApplicationObjectId() *string {
@@ -203,8 +203,8 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackendStaticRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AzureSecretBackendStaticRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) ExpirationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackendStaticRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AzureSecretBackendStaticRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackendStaticRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AzureSecretBackendStaticRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackendStaticRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AzureSecretBackendStaticRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) SkipImportRotationInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackendStaticRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AzureSecretBackendStaticRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -534,7 +534,7 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
 func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, config *AzureSecretBackendStaticRoleConfig) AzureSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, con
 	j := jsiiProxy_AzureSecretBackendStaticRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
+		"@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -552,12 +552,12 @@ func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
 func NewAzureSecretBackendStaticRole_Override(a AzureSecretBackendStaticRole, scope constructs.Construct, id *string, config *AzureSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
+		"@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -637,7 +637,7 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole)SetExpiration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendStaticRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AzureSecretBackendStaticRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +645,7 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendStaticRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AzureSecretBackendStaticRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +678,7 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendStaticRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AzureSecretBackendStaticRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -741,17 +741,17 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole)SetTtl(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a AzureSecretBackendStaticRole resource upon running "cdktf plan <stack-name>".
-func AzureSecretBackendStaticRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AzureSecretBackendStaticRole resource upon running "cdktn plan <stack-name>".
+func AzureSecretBackendStaticRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAzureSecretBackendStaticRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
+		"@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -786,7 +786,7 @@ func AzureSecretBackendStaticRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
+		"@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -805,7 +805,7 @@ func AzureSecretBackendStaticRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
+		"@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -824,7 +824,7 @@ func AzureSecretBackendStaticRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
+		"@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -837,7 +837,7 @@ func AzureSecretBackendStaticRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
+		"@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -882,11 +882,11 @@ func (a *jsiiProxy_AzureSecretBackendStaticRole) GetAnyMapAttribute(terraformAtt
 	return returns
 }
 
-func (a *jsiiProxy_AzureSecretBackendStaticRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AzureSecretBackendStaticRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1023,7 +1023,7 @@ func (a *jsiiProxy_AzureSecretBackendStaticRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AzureSecretBackendStaticRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AzureSecretBackendStaticRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1034,11 +1034,11 @@ func (a *jsiiProxy_AzureSecretBackendStaticRole) ImportFrom(id *string, provider
 	)
 }
 
-func (a *jsiiProxy_AzureSecretBackendStaticRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AzureSecretBackendStaticRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

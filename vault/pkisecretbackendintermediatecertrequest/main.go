@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pkisecretbackendintermediatecertrequest
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendIntermediateCertRequest.PkiSecretBackendIntermediateCertRequest",
+		"@cdktn/provider-vault.pkiSecretBackendIntermediateCertRequest.PkiSecretBackendIntermediateCertRequest",
 		reflect.TypeOf((*PkiSecretBackendIntermediateCertRequest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addBasicConstraints", GoGetter: "AddBasicConstraints"},
@@ -146,12 +146,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendIntermediateCertRequest{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendIntermediateCertRequest.PkiSecretBackendIntermediateCertRequestConfig",
+		"@cdktn/provider-vault.pkiSecretBackendIntermediateCertRequest.PkiSecretBackendIntermediateCertRequestConfig",
 		reflect.TypeOf((*PkiSecretBackendIntermediateCertRequestConfig)(nil)).Elem(),
 	)
 }

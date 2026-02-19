@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package nomadsecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend",
 		reflect.TypeOf((*NomadSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -36,6 +36,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clientCertInput", GoGetter: "ClientCertInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientKey", GoGetter: "ClientKey"},
 			_jsii_.MemberProperty{JsiiProperty: "clientKeyInput", GoGetter: "ClientKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientKeyWo", GoGetter: "ClientKeyWo"},
+			_jsii_.MemberProperty{JsiiProperty: "clientKeyWoInput", GoGetter: "ClientKeyWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientKeyWoVersion", GoGetter: "ClientKeyWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "clientKeyWoVersionInput", GoGetter: "ClientKeyWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -107,6 +111,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCaCert", GoMethod: "ResetCaCert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientCert", GoMethod: "ResetClientCert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientKey", GoMethod: "ResetClientKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientKeyWo", GoMethod: "ResetClientKeyWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientKeyWoVersion", GoMethod: "ResetClientKeyWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultLeaseTtlSeconds", GoMethod: "ResetDefaultLeaseTtlSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDelegatedAuthAccessors", GoMethod: "ResetDelegatedAuthAccessors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -127,6 +133,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPluginVersion", GoMethod: "ResetPluginVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSealWrap", GoMethod: "ResetSealWrap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetToken", GoMethod: "ResetToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenWo", GoMethod: "ResetTokenWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenWoVersion", GoMethod: "ResetTokenWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "sealWrap", GoGetter: "SealWrap"},
 			_jsii_.MemberProperty{JsiiProperty: "sealWrapInput", GoGetter: "SealWrapInput"},
@@ -138,6 +146,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "token", GoGetter: "Token"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenInput", GoGetter: "TokenInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenWo", GoGetter: "TokenWo"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenWoInput", GoGetter: "TokenWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenWoVersion", GoGetter: "TokenWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenWoVersionInput", GoGetter: "TokenWoVersionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -146,12 +158,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NomadSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig",
 		reflect.TypeOf((*NomadSecretBackendConfig)(nil)).Elem(),
 	)
 }

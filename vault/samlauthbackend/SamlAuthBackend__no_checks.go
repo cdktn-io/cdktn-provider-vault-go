@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -139,7 +139,7 @@ func (j *jsiiProxy_SamlAuthBackend) validateSetIdpSsoUrlParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_SamlAuthBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SamlAuthBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -152,6 +152,14 @@ func (j *jsiiProxy_SamlAuthBackend) validateSetPathParameters(val *string) error
 }
 
 func (j *jsiiProxy_SamlAuthBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SamlAuthBackend) validateSetValidateAssertionSignatureParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SamlAuthBackend) validateSetValidateResponseSignatureParameters(val interface{}) error {
 	return nil
 }
 

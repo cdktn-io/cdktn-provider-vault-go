@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultidentitygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultidentitygroup/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentitygroup/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group vault_identity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group vault_identity_group}.
 type DataVaultIdentityGroup interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AliasCanonicalId() *string
 	AliasCreationTime() *string
 	AliasId() *string
@@ -22,7 +22,7 @@ type DataVaultIdentityGroup interface {
 	AliasIdInput() *string
 	AliasLastUpdateTime() *string
 	AliasMergedFromCanonicalIds() *[]*string
-	AliasMetadata() cdktf.StringMap
+	AliasMetadata() cdktn.StringMap
 	AliasMountAccessor() *string
 	SetAliasMountAccessor(val *string)
 	AliasMountAccessorInput() *string
@@ -32,7 +32,7 @@ type DataVaultIdentityGroup interface {
 	SetAliasName(val *string)
 	AliasNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -46,9 +46,9 @@ type DataVaultIdentityGroup interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -64,12 +64,12 @@ type DataVaultIdentityGroup interface {
 	IdInput() *string
 	LastUpdateTime() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MemberEntityIds() *[]*string
 	MemberGroupIds() *[]*string
-	Metadata() cdktf.StringMap
+	Metadata() cdktn.StringMap
 	ModifyIndex() *float64
 	Namespace() *string
 	SetNamespace(val *string)
@@ -80,13 +80,13 @@ type DataVaultIdentityGroup interface {
 	ParentGroupIds() *[]*string
 	Policies() *[]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -97,7 +97,7 @@ type DataVaultIdentityGroup interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -113,7 +113,7 @@ type DataVaultIdentityGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -143,7 +143,7 @@ type DataVaultIdentityGroup interface {
 
 // The jsii proxy struct for DataVaultIdentityGroup
 type jsiiProxy_DataVaultIdentityGroup struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataVaultIdentityGroup) AliasCanonicalId() *string {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_DataVaultIdentityGroup) AliasMergedFromCanonicalIds() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup) AliasMetadata() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataVaultIdentityGroup) AliasMetadata() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"aliasMetadata",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DataVaultIdentityGroup) AliasNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultIdentityGroup) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_DataVaultIdentityGroup) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultIdentityGroup) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_DataVaultIdentityGroup) LastUpdateTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultIdentityGroup) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_DataVaultIdentityGroup) MemberGroupIds() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup) Metadata() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataVaultIdentityGroup) Metadata() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"metadata",
@@ -546,8 +546,8 @@ func (j *jsiiProxy_DataVaultIdentityGroup) Policies() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultIdentityGroup) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_DataVaultIdentityGroup) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultIdentityGroup) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -607,7 +607,7 @@ func (j *jsiiProxy_DataVaultIdentityGroup) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group vault_identity_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group vault_identity_group} Data Source.
 func NewDataVaultIdentityGroup(scope constructs.Construct, id *string, config *DataVaultIdentityGroupConfig) DataVaultIdentityGroup {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewDataVaultIdentityGroup(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataVaultIdentityGroup{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
+		"@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -625,12 +625,12 @@ func NewDataVaultIdentityGroup(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group vault_identity_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group vault_identity_group} Data Source.
 func NewDataVaultIdentityGroup_Override(d DataVaultIdentityGroup, scope constructs.Construct, id *string, config *DataVaultIdentityGroupConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
+		"@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -688,7 +688,7 @@ func (j *jsiiProxy_DataVaultIdentityGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultIdentityGroup)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -729,7 +729,7 @@ func (j *jsiiProxy_DataVaultIdentityGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultIdentityGroup)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +751,7 @@ func (j *jsiiProxy_DataVaultIdentityGroup)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultIdentityGroup)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -759,17 +759,17 @@ func (j *jsiiProxy_DataVaultIdentityGroup)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultIdentityGroup resource upon running "cdktf plan <stack-name>".
-func DataVaultIdentityGroup_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultIdentityGroup resource upon running "cdktn plan <stack-name>".
+func DataVaultIdentityGroup_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultIdentityGroup_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
+		"@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -804,7 +804,7 @@ func DataVaultIdentityGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
+		"@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -823,7 +823,7 @@ func DataVaultIdentityGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
+		"@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func DataVaultIdentityGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
+		"@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -855,7 +855,7 @@ func DataVaultIdentityGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
+		"@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup",
 		"tfResourceType",
 		&returns,
 	)
@@ -889,11 +889,11 @@ func (d *jsiiProxy_DataVaultIdentityGroup) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultIdentityGroup) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultIdentityGroup) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1017,11 +1017,11 @@ func (d *jsiiProxy_DataVaultIdentityGroup) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultIdentityGroup) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultIdentityGroup) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultkubernetesserviceaccounttoken
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountToken",
+		"@cdktn/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountToken",
 		reflect.TypeOf((*DataVaultKubernetesServiceAccountToken)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,12 +74,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultKubernetesServiceAccountToken{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountTokenConfig",
+		"@cdktn/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountTokenConfig",
 		reflect.TypeOf((*DataVaultKubernetesServiceAccountTokenConfig)(nil)).Elem(),
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretsmount
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMount",
 		reflect.TypeOf((*DatabaseSecretsMount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -191,16 +191,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra",
 		reflect.TypeOf((*DatabaseSecretsMountCassandra)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList",
 		reflect.TypeOf((*DatabaseSecretsMountCassandraList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -217,12 +217,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountCassandraList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountCassandraOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -232,6 +232,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "connectTimeout", GoGetter: "ConnectTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "connectTimeoutInput", GoGetter: "ConnectTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "consistency", GoGetter: "Consistency"},
+			_jsii_.MemberProperty{JsiiProperty: "consistencyInput", GoGetter: "ConsistencyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "data", GoGetter: "Data"},
 			_jsii_.MemberProperty{JsiiProperty: "dataInput", GoGetter: "DataInput"},
@@ -254,6 +256,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "localDatacenter", GoGetter: "LocalDatacenter"},
+			_jsii_.MemberProperty{JsiiProperty: "localDatacenterInput", GoGetter: "LocalDatacenterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
@@ -270,10 +274,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "protocolVersionInput", GoGetter: "ProtocolVersionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedRoles", GoMethod: "ResetAllowedRoles"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectTimeout", GoMethod: "ResetConnectTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConsistency", GoMethod: "ResetConsistency"},
 			_jsii_.MemberMethod{JsiiMethod: "resetData", GoMethod: "ResetData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableAutomatedRotation", GoMethod: "ResetDisableAutomatedRotation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHosts", GoMethod: "ResetHosts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsecureTls", GoMethod: "ResetInsecureTls"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocalDatacenter", GoMethod: "ResetLocalDatacenter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPemBundle", GoMethod: "ResetPemBundle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPemJson", GoMethod: "ResetPemJson"},
@@ -285,8 +291,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationSchedule", GoMethod: "ResetRotationSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindow", GoMethod: "ResetRotationWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipVerification", GoMethod: "ResetSkipVerification"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSocketKeepAlive", GoMethod: "ResetSocketKeepAlive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTls", GoMethod: "ResetTls"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTlsServerName", GoMethod: "ResetTlsServerName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsernameTemplate", GoMethod: "ResetUsernameTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVerifyConnection", GoMethod: "ResetVerifyConnection"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rootRotationStatements", GoGetter: "RootRotationStatements"},
@@ -299,32 +308,38 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rotationWindowInput", GoGetter: "RotationWindowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skipVerification", GoGetter: "SkipVerification"},
 			_jsii_.MemberProperty{JsiiProperty: "skipVerificationInput", GoGetter: "SkipVerificationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "socketKeepAlive", GoGetter: "SocketKeepAlive"},
+			_jsii_.MemberProperty{JsiiProperty: "socketKeepAliveInput", GoGetter: "SocketKeepAliveInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "tls", GoGetter: "Tls"},
 			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsServerName", GoGetter: "TlsServerName"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsServerNameInput", GoGetter: "TlsServerNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnection", GoGetter: "VerifyConnection"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnectionInput", GoGetter: "VerifyConnectionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountCassandraOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig",
 		reflect.TypeOf((*DatabaseSecretsMountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase",
 		reflect.TypeOf((*DatabaseSecretsMountCouchbase)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList",
 		reflect.TypeOf((*DatabaseSecretsMountCouchbaseList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -341,12 +356,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountCouchbaseList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountCouchbaseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -423,16 +438,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch",
 		reflect.TypeOf((*DatabaseSecretsMountElasticsearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList",
 		reflect.TypeOf((*DatabaseSecretsMountElasticsearchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -449,12 +464,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountElasticsearchList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountElasticsearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -537,16 +552,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana",
 		reflect.TypeOf((*DatabaseSecretsMountHana)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList",
 		reflect.TypeOf((*DatabaseSecretsMountHanaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -563,12 +578,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountHanaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountHanaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -631,6 +646,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationSchedule", GoMethod: "ResetRotationSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindow", GoMethod: "ResetRotationWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsernameTemplate", GoMethod: "ResetUsernameTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVerifyConnection", GoMethod: "ResetVerifyConnection"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rootRotationStatements", GoGetter: "RootRotationStatements"},
@@ -646,21 +662,23 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnection", GoGetter: "VerifyConnection"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnectionInput", GoGetter: "VerifyConnectionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountHanaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb",
 		reflect.TypeOf((*DatabaseSecretsMountInfluxdb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList",
 		reflect.TypeOf((*DatabaseSecretsMountInfluxdbList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -677,12 +695,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountInfluxdbList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountInfluxdbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -765,16 +783,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb",
 		reflect.TypeOf((*DatabaseSecretsMountMongodb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList",
 		reflect.TypeOf((*DatabaseSecretsMountMongodbList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -791,12 +809,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMongodbList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountMongodbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -855,9 +873,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationPeriod", GoMethod: "ResetRotationPeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationSchedule", GoMethod: "ResetRotationSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindow", GoMethod: "ResetRotationWindow"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTlsCa", GoMethod: "ResetTlsCa"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTlsCertificateKey", GoMethod: "ResetTlsCertificateKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsernameTemplate", GoMethod: "ResetUsernameTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVerifyConnection", GoMethod: "ResetVerifyConnection"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWriteConcern", GoMethod: "ResetWriteConcern"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rootRotationStatements", GoGetter: "RootRotationStatements"},
 			_jsii_.MemberProperty{JsiiProperty: "rootRotationStatementsInput", GoGetter: "RootRotationStatementsInput"},
@@ -869,6 +890,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rotationWindowInput", GoGetter: "RotationWindowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsCa", GoGetter: "TlsCa"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsCaInput", GoGetter: "TlsCaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsCertificateKey", GoGetter: "TlsCertificateKey"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsCertificateKeyInput", GoGetter: "TlsCertificateKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
@@ -876,19 +901,21 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnection", GoGetter: "VerifyConnection"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnectionInput", GoGetter: "VerifyConnectionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "writeConcern", GoGetter: "WriteConcern"},
+			_jsii_.MemberProperty{JsiiProperty: "writeConcernInput", GoGetter: "WriteConcernInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMongodbOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas",
 		reflect.TypeOf((*DatabaseSecretsMountMongodbatlas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList",
 		reflect.TypeOf((*DatabaseSecretsMountMongodbatlasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -905,12 +932,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMongodbatlasList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountMongodbatlasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -954,6 +981,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationPeriod", GoMethod: "ResetRotationPeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationSchedule", GoMethod: "ResetRotationSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindow", GoMethod: "ResetRotationWindow"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsernameTemplate", GoMethod: "ResetUsernameTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVerifyConnection", GoMethod: "ResetVerifyConnection"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rootRotationStatements", GoGetter: "RootRotationStatements"},
@@ -967,21 +995,23 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnection", GoGetter: "VerifyConnection"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnectionInput", GoGetter: "VerifyConnectionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql",
 		reflect.TypeOf((*DatabaseSecretsMountMssql)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList",
 		reflect.TypeOf((*DatabaseSecretsMountMssqlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -998,12 +1028,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMssqlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountMssqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -1092,20 +1122,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMssqlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql",
 		reflect.TypeOf((*DatabaseSecretsMountMysql)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlAurora)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlAuroraList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1122,12 +1152,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMysqlAuroraList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlAuroraOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -1222,16 +1252,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlLegacy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlLegacyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1248,12 +1278,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMysqlLegacyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlLegacyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -1348,12 +1378,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1370,12 +1400,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMysqlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -1470,16 +1500,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMysqlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlRds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlRdsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1496,12 +1526,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMysqlRdsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlRdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -1596,16 +1626,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle",
 		reflect.TypeOf((*DatabaseSecretsMountOracle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList",
 		reflect.TypeOf((*DatabaseSecretsMountOracleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1622,12 +1652,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountOracleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountOracleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -1719,16 +1749,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountOracleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql",
 		reflect.TypeOf((*DatabaseSecretsMountPostgresql)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList",
 		reflect.TypeOf((*DatabaseSecretsMountPostgresqlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1745,12 +1775,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountPostgresqlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountPostgresqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -1857,20 +1887,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis",
 		reflect.TypeOf((*DatabaseSecretsMountRedis)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache",
 		reflect.TypeOf((*DatabaseSecretsMountRedisElasticache)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList",
 		reflect.TypeOf((*DatabaseSecretsMountRedisElasticacheList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1887,12 +1917,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountRedisElasticacheList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountRedisElasticacheOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -1959,12 +1989,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList",
 		reflect.TypeOf((*DatabaseSecretsMountRedisList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1981,12 +2011,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountRedisList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountRedisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -2060,16 +2090,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountRedisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift",
 		reflect.TypeOf((*DatabaseSecretsMountRedshift)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList",
 		reflect.TypeOf((*DatabaseSecretsMountRedshiftList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2086,12 +2116,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountRedshiftList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountRedshiftOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -2177,16 +2207,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountRedshiftOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake",
 		reflect.TypeOf((*DatabaseSecretsMountSnowflake)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList",
 		reflect.TypeOf((*DatabaseSecretsMountSnowflakeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2203,12 +2233,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountSnowflakeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference",
 		reflect.TypeOf((*DatabaseSecretsMountSnowflakeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
@@ -2297,7 +2327,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

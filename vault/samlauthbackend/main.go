@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package samlauthbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend",
 		reflect.TypeOf((*SamlAuthBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acsUrls", GoGetter: "AcsUrls"},
@@ -79,6 +79,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTune", GoMethod: "ResetTune"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValidateAssertionSignature", GoMethod: "ResetValidateAssertionSignature"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValidateResponseSignature", GoMethod: "ResetValidateResponseSignature"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVerboseLogging", GoMethod: "ResetVerboseLogging"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
@@ -91,25 +93,29 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tune", GoGetter: "Tune"},
 			_jsii_.MemberProperty{JsiiProperty: "tuneInput", GoGetter: "TuneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "validateAssertionSignature", GoGetter: "ValidateAssertionSignature"},
+			_jsii_.MemberProperty{JsiiProperty: "validateAssertionSignatureInput", GoGetter: "ValidateAssertionSignatureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "validateResponseSignature", GoGetter: "ValidateResponseSignature"},
+			_jsii_.MemberProperty{JsiiProperty: "validateResponseSignatureInput", GoGetter: "ValidateResponseSignatureInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verboseLogging", GoGetter: "VerboseLogging"},
 			_jsii_.MemberProperty{JsiiProperty: "verboseLoggingInput", GoGetter: "VerboseLoggingInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SamlAuthBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig",
 		reflect.TypeOf((*SamlAuthBackendConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendTune",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune",
 		reflect.TypeOf((*SamlAuthBackendTune)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendTuneList",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTuneList",
 		reflect.TypeOf((*SamlAuthBackendTuneList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -126,12 +132,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SamlAuthBackendTuneList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTuneOutputReference",
 		reflect.TypeOf((*SamlAuthBackendTuneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeaders", GoGetter: "AllowedResponseHeaders"},
@@ -182,7 +188,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SamlAuthBackendTuneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

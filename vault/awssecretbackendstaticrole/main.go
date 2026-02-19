@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package awssecretbackendstaticrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole",
+		"@cdktn/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole",
 		reflect.TypeOf((*AwsSecretBackendStaticRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -82,12 +82,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AwsSecretBackendStaticRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig",
+		"@cdktn/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig",
 		reflect.TypeOf((*AwsSecretBackendStaticRoleConfig)(nil)).Elem(),
 	)
 }

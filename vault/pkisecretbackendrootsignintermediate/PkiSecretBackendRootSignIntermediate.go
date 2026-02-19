@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pkisecretbackendrootsignintermediate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendrootsignintermediate/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendrootsignintermediate/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
 type PkiSecretBackendRootSignIntermediate interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AltNames() *[]*string
 	SetAltNames(val *[]*string)
 	AltNamesInput() *[]*string
@@ -23,7 +23,7 @@ type PkiSecretBackendRootSignIntermediate interface {
 	BackendInput() *string
 	CaChain() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Certificate() *string
 	CertificateBundle() *string
 	CommonName() *string
@@ -65,9 +65,9 @@ type PkiSecretBackendRootSignIntermediate interface {
 	SetExcludedUriDomains(val *[]*string)
 	ExcludedUriDomainsInput() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	Format() *string
 	SetFormat(val *string)
 	FormatInput() *string
@@ -89,9 +89,9 @@ type PkiSecretBackendRootSignIntermediate interface {
 	SetKeyUsage(val *[]*string)
 	KeyUsageInput() *[]*string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Locality() *string
 	SetLocality(val *string)
 	LocalityInput() *string
@@ -134,9 +134,9 @@ type PkiSecretBackendRootSignIntermediate interface {
 	SetPostalCode(val *string)
 	PostalCodeInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	Province() *string
 	SetProvince(val *string)
 	ProvinceInput() *string
@@ -160,7 +160,7 @@ type PkiSecretBackendRootSignIntermediate interface {
 	SetStreetAddress(val *string)
 	StreetAddressInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -185,7 +185,7 @@ type PkiSecretBackendRootSignIntermediate interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -203,9 +203,9 @@ type PkiSecretBackendRootSignIntermediate interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -272,7 +272,7 @@ type PkiSecretBackendRootSignIntermediate interface {
 
 // The jsii proxy struct for PkiSecretBackendRootSignIntermediate
 type jsiiProxy_PkiSecretBackendRootSignIntermediate struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) AltNames() *[]*string {
@@ -325,8 +325,8 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) CaChain() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -555,8 +555,8 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) ExcludedUriDomainsInput
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -695,8 +695,8 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) KeyUsageInput() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -975,8 +975,8 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) PostalCodeInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -1115,8 +1115,8 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) StreetAddressInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -1226,7 +1226,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) UsePssInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) PkiSecretBackendRootSignIntermediate {
 	_init_.Initialize()
 
@@ -1236,7 +1236,7 @@ func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *str
 	j := jsiiProxy_PkiSecretBackendRootSignIntermediate{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
+		"@cdktn/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1244,12 +1244,12 @@ func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate_Override(p PkiSecretBackendRootSignIntermediate, scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
+		"@cdktn/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -1395,7 +1395,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetExcludedUriDomains(va
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1458,7 +1458,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetKeyUsage(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1612,7 +1612,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetPostalCode(val *strin
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1730,17 +1730,17 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetUsePss(val interface{
 	)
 }
 
-// Generates CDKTF code for importing a PkiSecretBackendRootSignIntermediate resource upon running "cdktf plan <stack-name>".
-func PkiSecretBackendRootSignIntermediate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a PkiSecretBackendRootSignIntermediate resource upon running "cdktn plan <stack-name>".
+func PkiSecretBackendRootSignIntermediate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePkiSecretBackendRootSignIntermediate_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
+		"@cdktn/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1775,7 +1775,7 @@ func PkiSecretBackendRootSignIntermediate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
+		"@cdktn/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1794,7 +1794,7 @@ func PkiSecretBackendRootSignIntermediate_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
+		"@cdktn/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1813,7 +1813,7 @@ func PkiSecretBackendRootSignIntermediate_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
+		"@cdktn/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1826,7 +1826,7 @@ func PkiSecretBackendRootSignIntermediate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
+		"@cdktn/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate",
 		"tfResourceType",
 		&returns,
 	)
@@ -1871,11 +1871,11 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -2012,7 +2012,7 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) HasResourceMove() inter
 	return returns
 }
 
-func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -2023,11 +2023,11 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ImportFrom(id *string, 
 	)
 }
 
-func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,

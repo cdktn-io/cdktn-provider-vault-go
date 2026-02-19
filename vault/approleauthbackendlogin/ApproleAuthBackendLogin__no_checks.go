@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -107,7 +107,7 @@ func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -124,6 +124,14 @@ func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetRoleIdParameters(val *str
 }
 
 func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetSecretIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetSecretIdWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetSecretIdWoVersionParameters(val *float64) error {
 	return nil
 }
 

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultkvsecretslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultkvsecretslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list}.
 type DataVaultKvSecretsList interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataVaultKvSecretsList interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -39,9 +39,9 @@ type DataVaultKvSecretsList interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Names() *[]*string
 	Namespace() *string
 	SetNamespace(val *string)
@@ -52,13 +52,13 @@ type DataVaultKvSecretsList interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type DataVaultKvSecretsList interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,7 +84,7 @@ type DataVaultKvSecretsList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -109,11 +109,11 @@ type DataVaultKvSecretsList interface {
 
 // The jsii proxy struct for DataVaultKvSecretsList
 type jsiiProxy_DataVaultKvSecretsList struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataVaultKvSecretsList) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultKvSecretsList) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataVaultKvSecretsList) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKvSecretsList) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultKvSecretsList) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DataVaultKvSecretsList) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKvSecretsList) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultKvSecretsList) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_DataVaultKvSecretsList) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKvSecretsList) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultKvSecretsList) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_DataVaultKvSecretsList) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKvSecretsList) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultKvSecretsList) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataVaultKvSecretsList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list} Data Source.
 func NewDataVaultKvSecretsList(scope constructs.Construct, id *string, config *DataVaultKvSecretsListConfig) DataVaultKvSecretsList {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataVaultKvSecretsList(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataVaultKvSecretsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
+		"@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -341,12 +341,12 @@ func NewDataVaultKvSecretsList(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list} Data Source.
 func NewDataVaultKvSecretsList_Override(d DataVaultKvSecretsList, scope constructs.Construct, id *string, config *DataVaultKvSecretsListConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
+		"@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataVaultKvSecretsList)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultKvSecretsList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultKvSecretsList)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataVaultKvSecretsList)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultKvSecretsList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultKvSecretsList)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataVaultKvSecretsList)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultKvSecretsList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultKvSecretsList)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -431,17 +431,17 @@ func (j *jsiiProxy_DataVaultKvSecretsList)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultKvSecretsList resource upon running "cdktf plan <stack-name>".
-func DataVaultKvSecretsList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultKvSecretsList resource upon running "cdktn plan <stack-name>".
+func DataVaultKvSecretsList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultKvSecretsList_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
+		"@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -476,7 +476,7 @@ func DataVaultKvSecretsList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
+		"@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -495,7 +495,7 @@ func DataVaultKvSecretsList_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
+		"@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -514,7 +514,7 @@ func DataVaultKvSecretsList_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
+		"@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func DataVaultKvSecretsList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
+		"@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList",
 		"tfResourceType",
 		&returns,
 	)
@@ -561,11 +561,11 @@ func (d *jsiiProxy_DataVaultKvSecretsList) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultKvSecretsList) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultKvSecretsList) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -689,11 +689,11 @@ func (d *jsiiProxy_DataVaultKvSecretsList) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultKvSecretsList) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultKvSecretsList) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

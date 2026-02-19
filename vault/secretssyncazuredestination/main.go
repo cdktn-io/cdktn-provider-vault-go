@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncazuredestination
@@ -11,11 +11,17 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
 		reflect.TypeOf((*SecretsSyncAzureDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv4Addresses", GoGetter: "AllowedIpv4Addresses"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv4AddressesInput", GoGetter: "AllowedIpv4AddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv6Addresses", GoGetter: "AllowedIpv6Addresses"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv6AddressesInput", GoGetter: "AllowedIpv6AddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedPorts", GoGetter: "AllowedPorts"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedPortsInput", GoGetter: "AllowedPortsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -29,6 +35,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "customTags", GoGetter: "CustomTags"},
 			_jsii_.MemberProperty{JsiiProperty: "customTagsInput", GoGetter: "CustomTagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "disableStrictNetworking", GoGetter: "DisableStrictNetworking"},
+			_jsii_.MemberProperty{JsiiProperty: "disableStrictNetworkingInput", GoGetter: "DisableStrictNetworkingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -63,10 +71,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIpv4Addresses", GoMethod: "ResetAllowedIpv4Addresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIpv6Addresses", GoMethod: "ResetAllowedIpv6Addresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedPorts", GoMethod: "ResetAllowedPorts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientSecret", GoMethod: "ResetClientSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloud", GoMethod: "ResetCloud"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomTags", GoMethod: "ResetCustomTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableStrictNetworking", GoMethod: "ResetDisableStrictNetworking"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGranularity", GoMethod: "ResetGranularity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyVaultUri", GoMethod: "ResetKeyVaultUri"},
@@ -91,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretsSyncAzureDestination{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig",
 		reflect.TypeOf((*SecretsSyncAzureDestinationConfig)(nil)).Elem(),
 	)
 }

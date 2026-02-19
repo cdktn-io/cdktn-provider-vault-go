@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -167,7 +167,7 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetIdentityTokenTtlParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_AwsSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AwsSecretBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -236,6 +236,14 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetSealWrapParameters(val interface
 }
 
 func (j *jsiiProxy_AwsSecretBackend) validateSetSecretKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetSecretKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetSecretKeyWoVersionParameters(val *float64) error {
 	return nil
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretbackendconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretBackendConnectionCassandraOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -26,6 +26,9 @@ type DatabaseSecretBackendConnectionCassandraOutputReference interface {
 	ConnectTimeout() *float64
 	SetConnectTimeout(val *float64)
 	ConnectTimeoutInput() *float64
+	Consistency() *string
+	SetConsistency(val *string)
+	ConsistencyInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -41,6 +44,9 @@ type DatabaseSecretBackendConnectionCassandraOutputReference interface {
 	InsecureTlsInput() interface{}
 	InternalValue() *DatabaseSecretBackendConnectionCassandra
 	SetInternalValue(val *DatabaseSecretBackendConnectionCassandra)
+	LocalDatacenter() *string
+	SetLocalDatacenter(val *string)
+	LocalDatacenterInput() *string
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
@@ -59,26 +65,35 @@ type DatabaseSecretBackendConnectionCassandraOutputReference interface {
 	SkipVerification() interface{}
 	SetSkipVerification(val interface{})
 	SkipVerificationInput() interface{}
+	SocketKeepAlive() *string
+	SetSocketKeepAlive(val *string)
+	SocketKeepAliveInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() interface{}
 	SetTls(val interface{})
 	TlsInput() interface{}
+	TlsServerName() *string
+	SetTlsServerName(val *string)
+	TlsServerNameInput() *string
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
+	UsernameTemplate() *string
+	SetUsernameTemplate(val *string)
+	UsernameTemplateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,23 +109,28 @@ type DatabaseSecretBackendConnectionCassandraOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetConnectTimeout()
+	ResetConsistency()
 	ResetHosts()
 	ResetInsecureTls()
+	ResetLocalDatacenter()
 	ResetPassword()
 	ResetPemBundle()
 	ResetPemJson()
 	ResetPort()
 	ResetProtocolVersion()
 	ResetSkipVerification()
+	ResetSocketKeepAlive()
 	ResetTls()
+	ResetTlsServerName()
 	ResetUsername()
+	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,7 +140,7 @@ type DatabaseSecretBackendConnectionCassandraOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretBackendConnectionCassandraOutputReference
 type jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ComplexObjectIndex() interface{} {
@@ -158,6 +178,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Conn
 	_jsii_.Get(
 		j,
 		"connectTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Consistency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consistency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ConsistencyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consistencyInput",
 		&returns,
 	)
 	return returns
@@ -228,6 +268,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) LocalDatacenter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localDatacenter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) LocalDatacenterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localDatacenterInput",
 		&returns,
 	)
 	return returns
@@ -353,6 +413,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Skip
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) SocketKeepAlive() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"socketKeepAlive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) SocketKeepAliveInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"socketKeepAliveInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -363,8 +443,8 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -393,6 +473,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) TlsI
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) TlsServerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsServerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) TlsServerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsServerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Username() *string {
 	var returns *string
 	_jsii_.Get(
@@ -413,8 +513,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) User
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) UsernameTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameTemplate",
+		&returns,
+	)
+	return returns
+}
 
-func NewDatabaseSecretBackendConnectionCassandraOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionCassandraOutputReference {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) UsernameTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDatabaseSecretBackendConnectionCassandraOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionCassandraOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretBackendConnectionCassandraOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -423,7 +543,7 @@ func NewDatabaseSecretBackendConnectionCassandraOutputReference(terraformResourc
 	j := jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandraOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandraOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -431,11 +551,11 @@ func NewDatabaseSecretBackendConnectionCassandraOutputReference(terraformResourc
 	return &j
 }
 
-func NewDatabaseSecretBackendConnectionCassandraOutputReference_Override(d DatabaseSecretBackendConnectionCassandraOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatabaseSecretBackendConnectionCassandraOutputReference_Override(d DatabaseSecretBackendConnectionCassandraOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandraOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandraOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -474,6 +594,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetCo
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetConsistency(val *string) {
+	if err := j.validateSetConsistencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"consistency",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetHosts(val *[]*string) {
 	if err := j.validateSetHostsParameters(val); err != nil {
 		panic(err)
@@ -503,6 +634,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetLocalDatacenter(val *string) {
+	if err := j.validateSetLocalDatacenterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localDatacenter",
 		val,
 	)
 }
@@ -573,6 +715,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetSk
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetSocketKeepAlive(val *string) {
+	if err := j.validateSetSocketKeepAliveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"socketKeepAlive",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -584,7 +737,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,6 +759,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetTl
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetTlsServerName(val *string) {
+	if err := j.validateSetTlsServerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsServerName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
@@ -613,6 +777,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetUs
 	_jsii_.Set(
 		j,
 		"username",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameTemplate",
 		val,
 	)
 }
@@ -646,11 +821,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -774,8 +949,8 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -787,11 +962,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -811,6 +986,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Rese
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ResetConsistency() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConsistency",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ResetHosts() {
 	_jsii_.InvokeVoid(
 		d,
@@ -823,6 +1006,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetInsecureTls",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ResetLocalDatacenter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocalDatacenter",
 		nil, // no parameters
 	)
 }
@@ -875,10 +1066,26 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Rese
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ResetSocketKeepAlive() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSocketKeepAlive",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ResetTls() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTls",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ResetTlsServerName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsServerName",
 		nil, // no parameters
 	)
 }
@@ -891,7 +1098,15 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ResetUsernameTemplate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsernameTemplate",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

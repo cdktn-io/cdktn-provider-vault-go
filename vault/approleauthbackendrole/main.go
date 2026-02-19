@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package approleauthbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
 		reflect.TypeOf((*ApproleAuthBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "localSecretIds", GoGetter: "LocalSecretIds"},
+			_jsii_.MemberProperty{JsiiProperty: "localSecretIdsInput", GoGetter: "LocalSecretIdsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBackend", GoMethod: "ResetBackend"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBindSecretId", GoMethod: "ResetBindSecretId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocalSecretIds", GoMethod: "ResetLocalSecretIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoleId", GoMethod: "ResetRoleId"},
@@ -114,12 +117,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApproleAuthBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig",
 		reflect.TypeOf((*ApproleAuthBackendRoleConfig)(nil)).Elem(),
 	)
 }

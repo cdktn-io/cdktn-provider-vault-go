@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -127,6 +127,14 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetClientKeyParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) validateSetClientKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetClientKeyWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -167,7 +175,7 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetIdentityTokenKeyParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ConsulSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConsulSecretBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -216,6 +224,14 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetSealWrapParameters(val interf
 }
 
 func (j *jsiiProxy_ConsulSecretBackend) validateSetTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetTokenWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetTokenWoVersionParameters(val *float64) error {
 	return nil
 }
 

@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package awssecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/awssecretbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awssecretbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
 type AwsSecretBackendRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -44,9 +44,9 @@ type AwsSecretBackendRole interface {
 	SetExternalId(val *string)
 	ExternalIdInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -61,9 +61,9 @@ type AwsSecretBackendRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxStsTtl() *float64
 	SetMaxStsTtl(val *float64)
 	MaxStsTtlInput() *float64
@@ -88,9 +88,9 @@ type AwsSecretBackendRole interface {
 	SetPolicyDocument(val *string)
 	PolicyDocumentInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -104,7 +104,7 @@ type AwsSecretBackendRole interface {
 	SetSessionTags(val *map[string]*string)
 	SessionTagsInput() *map[string]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -120,7 +120,7 @@ type AwsSecretBackendRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -138,9 +138,9 @@ type AwsSecretBackendRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -187,7 +187,7 @@ type AwsSecretBackendRole interface {
 
 // The jsii proxy struct for AwsSecretBackendRole
 type jsiiProxy_AwsSecretBackendRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AwsSecretBackendRole) Backend() *string {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_AwsSecretBackendRole) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AwsSecretBackendRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_AwsSecretBackendRole) ExternalIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AwsSecretBackendRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_AwsSecretBackendRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AwsSecretBackendRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -570,8 +570,8 @@ func (j *jsiiProxy_AwsSecretBackendRole) PolicyDocumentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AwsSecretBackendRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -640,8 +640,8 @@ func (j *jsiiProxy_AwsSecretBackendRole) SessionTagsInput() *map[string]*string 
 	return returns
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AwsSecretBackendRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -691,7 +691,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) UserPathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) AwsSecretBackendRole {
 	_init_.Initialize()
 
@@ -701,7 +701,7 @@ func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *Aws
 	j := jsiiProxy_AwsSecretBackendRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
+		"@cdktn/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -709,12 +709,12 @@ func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole_Override(a AwsSecretBackendRole, scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
+		"@cdktn/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -794,7 +794,7 @@ func (j *jsiiProxy_AwsSecretBackendRole)SetExternalId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -835,7 +835,7 @@ func (j *jsiiProxy_AwsSecretBackendRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +923,7 @@ func (j *jsiiProxy_AwsSecretBackendRole)SetPolicyDocument(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -975,17 +975,17 @@ func (j *jsiiProxy_AwsSecretBackendRole)SetUserPath(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a AwsSecretBackendRole resource upon running "cdktf plan <stack-name>".
-func AwsSecretBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AwsSecretBackendRole resource upon running "cdktn plan <stack-name>".
+func AwsSecretBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAwsSecretBackendRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
+		"@cdktn/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1020,7 +1020,7 @@ func AwsSecretBackendRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
+		"@cdktn/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1039,7 +1039,7 @@ func AwsSecretBackendRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
+		"@cdktn/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1058,7 +1058,7 @@ func AwsSecretBackendRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
+		"@cdktn/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1071,7 +1071,7 @@ func AwsSecretBackendRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
+		"@cdktn/provider-vault.awsSecretBackendRole.AwsSecretBackendRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -1116,11 +1116,11 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (a *jsiiProxy_AwsSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AwsSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1257,7 +1257,7 @@ func (a *jsiiProxy_AwsSecretBackendRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AwsSecretBackendRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AwsSecretBackendRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1268,11 +1268,11 @@ func (a *jsiiProxy_AwsSecretBackendRole) ImportFrom(id *string, provider cdktf.T
 	)
 }
 
-func (a *jsiiProxy_AwsSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AwsSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

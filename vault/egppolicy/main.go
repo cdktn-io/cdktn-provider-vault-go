@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package egppolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.egpPolicy.EgpPolicy",
+		"@cdktn/provider-vault.egpPolicy.EgpPolicy",
 		reflect.TypeOf((*EgpPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,12 +72,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EgpPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.egpPolicy.EgpPolicyConfig",
+		"@cdktn/provider-vault.egpPolicy.EgpPolicyConfig",
 		reflect.TypeOf((*EgpPolicyConfig)(nil)).Elem(),
 	)
 }

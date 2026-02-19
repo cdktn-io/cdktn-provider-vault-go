@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ldapauthbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend",
+		"@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackend",
 		reflect.TypeOf((*LdapAuthBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -25,6 +25,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "binddnInput", GoGetter: "BinddnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bindpass", GoGetter: "Bindpass"},
 			_jsii_.MemberProperty{JsiiProperty: "bindpassInput", GoGetter: "BindpassInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bindpassWo", GoGetter: "BindpassWo"},
+			_jsii_.MemberProperty{JsiiProperty: "bindpassWoInput", GoGetter: "BindpassWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bindpassWoVersion", GoGetter: "BindpassWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "bindpassWoVersionInput", GoGetter: "BindpassWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caseSensitiveNames", GoGetter: "CaseSensitiveNames"},
 			_jsii_.MemberProperty{JsiiProperty: "caseSensitiveNamesInput", GoGetter: "CaseSensitiveNamesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -103,6 +107,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAnonymousGroupSearch", GoMethod: "ResetAnonymousGroupSearch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBinddn", GoMethod: "ResetBinddn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBindpass", GoMethod: "ResetBindpass"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBindpassWo", GoMethod: "ResetBindpassWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBindpassWoVersion", GoMethod: "ResetBindpassWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaseSensitiveNames", GoMethod: "ResetCaseSensitiveNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificate", GoMethod: "ResetCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientTlsCert", GoMethod: "ResetClientTlsCert"},
@@ -206,20 +212,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LdapAuthBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig",
+		"@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackendConfig",
 		reflect.TypeOf((*LdapAuthBackendConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune",
+		"@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackendTune",
 		reflect.TypeOf((*LdapAuthBackendTune)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList",
+		"@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList",
 		reflect.TypeOf((*LdapAuthBackendTuneList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -236,12 +242,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LdapAuthBackendTuneList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference",
 		reflect.TypeOf((*LdapAuthBackendTuneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeaders", GoGetter: "AllowedResponseHeaders"},
@@ -292,7 +298,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LdapAuthBackendTuneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

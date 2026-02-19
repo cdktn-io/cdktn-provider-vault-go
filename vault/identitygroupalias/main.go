@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package identitygroupalias
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias",
+		"@cdktn/provider-vault.identityGroupAlias.IdentityGroupAlias",
 		reflect.TypeOf((*IdentityGroupAlias)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -70,12 +70,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityGroupAlias{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig",
+		"@cdktn/provider-vault.identityGroupAlias.IdentityGroupAliasConfig",
 		reflect.TypeOf((*IdentityGroupAliasConfig)(nil)).Elem(),
 	)
 }

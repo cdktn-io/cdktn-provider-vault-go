@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretbackendconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CaCert() *string
 	SetCaCert(val *string)
 	CaCertInput() *string
@@ -55,9 +55,9 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TlsServerName() *string
 	SetTlsServerName(val *string)
 	TlsServerNameInput() *string
@@ -75,7 +75,7 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCaCert()
 	ResetCaPath()
 	ResetClientCert()
@@ -103,7 +103,7 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretBackendConnectionElasticsearchOutputReference
 type jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) CaCert() *string {
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 
-func NewDatabaseSecretBackendConnectionElasticsearchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionElasticsearchOutputReference {
+func NewDatabaseSecretBackendConnectionElasticsearchOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionElasticsearchOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretBackendConnectionElasticsearchOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -396,7 +396,7 @@ func NewDatabaseSecretBackendConnectionElasticsearchOutputReference(terraformRes
 	j := jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearchOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewDatabaseSecretBackendConnectionElasticsearchOutputReference(terraformRes
 	return &j
 }
 
-func NewDatabaseSecretBackendConnectionElasticsearchOutputReference_Override(d DatabaseSecretBackendConnectionElasticsearchOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatabaseSecretBackendConnectionElasticsearchOutputReference_Override(d DatabaseSecretBackendConnectionElasticsearchOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearchOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -524,7 +524,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,11 +608,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -736,8 +736,8 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -749,11 +749,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -821,7 +821,7 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

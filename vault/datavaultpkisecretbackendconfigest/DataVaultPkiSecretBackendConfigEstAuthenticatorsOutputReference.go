@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultpkisecretbackendconfigest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultpkisecretbackendconfigest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference interface {
-	cdktf.ComplexObject
-	Cert() cdktf.StringMap
+	cdktn.ComplexObject
+	Cert() cdktn.StringMap
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,16 +38,16 @@ type DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Userpass() cdktf.StringMap
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Userpass() cdktn.StringMap
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,11 +78,11 @@ type DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference interface {
 
 // The jsii proxy struct for DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference
 type jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) Cert() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) Cert() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"cert",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) Userpass() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) Userpass() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"userpass",
@@ -172,7 +172,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferen
 }
 
 
-func NewDataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference {
+func NewDataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -181,7 +181,7 @@ func NewDataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference(terrafor
 	j := jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultPkiSecretBackendConfigEst.DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference",
+		"@cdktn/provider-vault.dataVaultPkiSecretBackendConfigEst.DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -189,11 +189,11 @@ func NewDataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference(terrafor
 	return &j
 }
 
-func NewDataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference_Override(d DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference_Override(d DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultPkiSecretBackendConfigEst.DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference",
+		"@cdktn/provider-vault.dataVaultPkiSecretBackendConfigEst.DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -283,11 +283,11 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -411,8 +411,8 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,11 +424,11 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -440,7 +440,7 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

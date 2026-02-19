@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretbackendconnection
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection",
 		reflect.TypeOf((*DatabaseSecretBackendConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -167,16 +167,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnection{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandra",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandra",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionCassandra)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandraOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandraOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionCassandraOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -184,6 +184,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "connectTimeout", GoGetter: "ConnectTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "connectTimeoutInput", GoGetter: "ConnectTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "consistency", GoGetter: "Consistency"},
+			_jsii_.MemberProperty{JsiiProperty: "consistencyInput", GoGetter: "ConsistencyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
@@ -202,6 +204,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "localDatacenter", GoGetter: "LocalDatacenter"},
+			_jsii_.MemberProperty{JsiiProperty: "localDatacenterInput", GoGetter: "LocalDatacenterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
 			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pemBundle", GoGetter: "PemBundle"},
@@ -213,43 +217,54 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "protocolVersion", GoGetter: "ProtocolVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "protocolVersionInput", GoGetter: "ProtocolVersionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectTimeout", GoMethod: "ResetConnectTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConsistency", GoMethod: "ResetConsistency"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHosts", GoMethod: "ResetHosts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsecureTls", GoMethod: "ResetInsecureTls"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocalDatacenter", GoMethod: "ResetLocalDatacenter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPemBundle", GoMethod: "ResetPemBundle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPemJson", GoMethod: "ResetPemJson"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocolVersion", GoMethod: "ResetProtocolVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipVerification", GoMethod: "ResetSkipVerification"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSocketKeepAlive", GoMethod: "ResetSocketKeepAlive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTls", GoMethod: "ResetTls"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTlsServerName", GoMethod: "ResetTlsServerName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsernameTemplate", GoMethod: "ResetUsernameTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "skipVerification", GoGetter: "SkipVerification"},
 			_jsii_.MemberProperty{JsiiProperty: "skipVerificationInput", GoGetter: "SkipVerificationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "socketKeepAlive", GoGetter: "SocketKeepAlive"},
+			_jsii_.MemberProperty{JsiiProperty: "socketKeepAliveInput", GoGetter: "SocketKeepAliveInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "tls", GoGetter: "Tls"},
 			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsServerName", GoGetter: "TlsServerName"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsServerNameInput", GoGetter: "TlsServerNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbase",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbase",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionCouchbase)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbaseOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbaseOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionCouchbaseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "base64Pem", GoGetter: "Base64Pem"},
@@ -297,16 +312,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearch",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearch",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionElasticsearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearchOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearchOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionElasticsearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCert", GoGetter: "CaCert"},
@@ -360,16 +375,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHana",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHana",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionHana)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionHanaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -414,25 +429,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPasswordWo", GoMethod: "ResetPasswordWo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPasswordWoVersion", GoMethod: "ResetPasswordWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsernameTemplate", GoMethod: "ResetUsernameTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdb",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdb",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionInfluxdb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdbOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdbOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionInfluxdbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -486,16 +504,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionInfluxdbOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodb",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodb",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMongodb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMongodbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -536,29 +554,38 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPasswordWo", GoMethod: "ResetPasswordWo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPasswordWoVersion", GoMethod: "ResetPasswordWoVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTlsCa", GoMethod: "ResetTlsCa"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTlsCertificateKey", GoMethod: "ResetTlsCertificateKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsernameTemplate", GoMethod: "ResetUsernameTemplate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWriteConcern", GoMethod: "ResetWriteConcern"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsCa", GoGetter: "TlsCa"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsCaInput", GoGetter: "TlsCaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsCertificateKey", GoGetter: "TlsCertificateKey"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsCertificateKeyInput", GoGetter: "TlsCertificateKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "writeConcern", GoGetter: "WriteConcern"},
+			_jsii_.MemberProperty{JsiiProperty: "writeConcernInput", GoGetter: "WriteConcernInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlas",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlas",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMongodbatlas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlasOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlasOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMongodbatlasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -584,23 +611,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKey", GoGetter: "PublicKey"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKeyInput", GoGetter: "PublicKeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsernameTemplate", GoMethod: "ResetUsernameTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionMongodbatlasOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssql",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssql",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMssql)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssqlOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMssqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -660,20 +690,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysql",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysql",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMysql)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMysqlAurora)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMysqlAuroraOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
@@ -739,16 +769,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMysqlLegacy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMysqlLegacyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
@@ -814,12 +844,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMysqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
@@ -885,16 +915,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMysqlRds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionMysqlRdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
@@ -960,16 +990,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracle",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracle",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionOracle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracleOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracleOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionOracleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1032,16 +1062,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresql",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresql",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionPostgresql)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionPostgresqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
@@ -1119,20 +1149,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedis",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedis",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionRedis)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticache",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticache",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionRedisElasticache)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticacheOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticacheOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionRedisElasticacheOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1170,12 +1200,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionRedisElasticacheOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionRedisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCert", GoGetter: "CaCert"},
@@ -1220,16 +1250,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionRedisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshift",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshift",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionRedshift)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshiftOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshiftOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionRedshiftOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1286,16 +1316,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflake",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflake",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionSnowflake)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflakeOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflakeOutputReference",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionSnowflakeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1355,7 +1385,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

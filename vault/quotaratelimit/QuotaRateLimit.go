@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package quotaratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/quotaratelimit/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/quotaratelimit/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
 type QuotaRateLimit interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	BlockInterval() *float64
 	SetBlockInterval(val *float64)
 	BlockIntervalInput() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type QuotaRateLimit interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -55,9 +55,9 @@ type QuotaRateLimit interface {
 	SetInterval(val *float64)
 	IntervalInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -70,9 +70,9 @@ type QuotaRateLimit interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type QuotaRateLimit interface {
 	SetSecondaryRate(val *float64)
 	SecondaryRateInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -102,7 +102,7 @@ type QuotaRateLimit interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -120,9 +120,9 @@ type QuotaRateLimit interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -164,7 +164,7 @@ type QuotaRateLimit interface {
 
 // The jsii proxy struct for QuotaRateLimit
 type jsiiProxy_QuotaRateLimit struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_QuotaRateLimit) BlockInterval() *float64 {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_QuotaRateLimit) BlockIntervalInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_QuotaRateLimit) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_QuotaRateLimit) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_QuotaRateLimit) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_QuotaRateLimit) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_QuotaRateLimit) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_QuotaRateLimit) IntervalInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_QuotaRateLimit) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_QuotaRateLimit) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_QuotaRateLimit) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QuotaRateLimit) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_QuotaRateLimit) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_QuotaRateLimit) SecondaryRateInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_QuotaRateLimit) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_QuotaRateLimit) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -548,7 +548,7 @@ func (j *jsiiProxy_QuotaRateLimit) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRateLimitConfig) QuotaRateLimit {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRate
 	j := jsiiProxy_QuotaRateLimit{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit",
+		"@cdktn/provider-vault.quotaRateLimit.QuotaRateLimit",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -566,12 +566,12 @@ func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit_Override(q QuotaRateLimit, scope constructs.Construct, id *string, config *QuotaRateLimitConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit",
+		"@cdktn/provider-vault.quotaRateLimit.QuotaRateLimit",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -618,7 +618,7 @@ func (j *jsiiProxy_QuotaRateLimit)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_QuotaRateLimit)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -670,7 +670,7 @@ func (j *jsiiProxy_QuotaRateLimit)SetInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_QuotaRateLimit)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +714,7 @@ func (j *jsiiProxy_QuotaRateLimit)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_QuotaRateLimit)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -766,17 +766,17 @@ func (j *jsiiProxy_QuotaRateLimit)SetSecondaryRate(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a QuotaRateLimit resource upon running "cdktf plan <stack-name>".
-func QuotaRateLimit_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a QuotaRateLimit resource upon running "cdktn plan <stack-name>".
+func QuotaRateLimit_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateQuotaRateLimit_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit",
+		"@cdktn/provider-vault.quotaRateLimit.QuotaRateLimit",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -811,7 +811,7 @@ func QuotaRateLimit_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit",
+		"@cdktn/provider-vault.quotaRateLimit.QuotaRateLimit",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -830,7 +830,7 @@ func QuotaRateLimit_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit",
+		"@cdktn/provider-vault.quotaRateLimit.QuotaRateLimit",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -849,7 +849,7 @@ func QuotaRateLimit_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit",
+		"@cdktn/provider-vault.quotaRateLimit.QuotaRateLimit",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func QuotaRateLimit_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit",
+		"@cdktn/provider-vault.quotaRateLimit.QuotaRateLimit",
 		"tfResourceType",
 		&returns,
 	)
@@ -907,11 +907,11 @@ func (q *jsiiProxy_QuotaRateLimit) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (q *jsiiProxy_QuotaRateLimit) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QuotaRateLimit) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -1048,7 +1048,7 @@ func (q *jsiiProxy_QuotaRateLimit) HasResourceMove() interface{} {
 	return returns
 }
 
-func (q *jsiiProxy_QuotaRateLimit) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (q *jsiiProxy_QuotaRateLimit) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := q.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1059,11 +1059,11 @@ func (q *jsiiProxy_QuotaRateLimit) ImportFrom(id *string, provider cdktf.Terrafo
 	)
 }
 
-func (q *jsiiProxy_QuotaRateLimit) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QuotaRateLimit) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,

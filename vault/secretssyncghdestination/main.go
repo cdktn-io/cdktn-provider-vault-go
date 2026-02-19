@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncghdestination
@@ -11,13 +11,19 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
 		reflect.TypeOf((*SecretsSyncGhDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv4Addresses", GoGetter: "AllowedIpv4Addresses"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv4AddressesInput", GoGetter: "AllowedIpv4AddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv6Addresses", GoGetter: "AllowedIpv6Addresses"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv6AddressesInput", GoGetter: "AllowedIpv6AddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedPorts", GoGetter: "AllowedPorts"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedPortsInput", GoGetter: "AllowedPortsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appName", GoGetter: "AppName"},
 			_jsii_.MemberProperty{JsiiProperty: "appNameInput", GoGetter: "AppNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -25,6 +31,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "disableStrictNetworking", GoGetter: "DisableStrictNetworking"},
+			_jsii_.MemberProperty{JsiiProperty: "disableStrictNetworkingInput", GoGetter: "DisableStrictNetworkingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentName", GoGetter: "EnvironmentName"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentNameInput", GoGetter: "EnvironmentNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -64,7 +74,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "repositoryOwner", GoGetter: "RepositoryOwner"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryOwnerInput", GoGetter: "RepositoryOwnerInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessToken", GoMethod: "ResetAccessToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIpv4Addresses", GoMethod: "ResetAllowedIpv4Addresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIpv6Addresses", GoMethod: "ResetAllowedIpv6Addresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedPorts", GoMethod: "ResetAllowedPorts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppName", GoMethod: "ResetAppName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableStrictNetworking", GoMethod: "ResetDisableStrictNetworking"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentName", GoMethod: "ResetEnvironmentName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGranularity", GoMethod: "ResetGranularity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstallationId", GoMethod: "ResetInstallationId"},
@@ -73,8 +88,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRepositoryName", GoMethod: "ResetRepositoryName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRepositoryOwner", GoMethod: "ResetRepositoryOwner"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretNameTemplate", GoMethod: "ResetSecretNameTemplate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretsLocation", GoMethod: "ResetSecretsLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "secretNameTemplate", GoGetter: "SecretNameTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "secretNameTemplateInput", GoGetter: "SecretNameTemplateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secretsLocation", GoGetter: "SecretsLocation"},
+			_jsii_.MemberProperty{JsiiProperty: "secretsLocationInput", GoGetter: "SecretsLocationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -88,12 +106,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretsSyncGhDestination{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig",
 		reflect.TypeOf((*SecretsSyncGhDestinationConfig)(nil)).Elem(),
 	)
 }

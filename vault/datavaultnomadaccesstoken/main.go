@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultnomadaccesstoken
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken",
+		"@cdktn/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken",
 		reflect.TypeOf((*DataVaultNomadAccessToken)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessorId", GoGetter: "AccessorId"},
@@ -62,12 +62,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultNomadAccessToken{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig",
+		"@cdktn/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig",
 		reflect.TypeOf((*DataVaultNomadAccessTokenConfig)(nil)).Elem(),
 	)
 }

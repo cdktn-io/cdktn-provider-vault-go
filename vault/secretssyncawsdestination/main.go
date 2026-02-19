@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncawsdestination
@@ -11,13 +11,19 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination",
+		"@cdktn/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination",
 		reflect.TypeOf((*SecretsSyncAwsDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv4Addresses", GoGetter: "AllowedIpv4Addresses"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv4AddressesInput", GoGetter: "AllowedIpv4AddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv6Addresses", GoGetter: "AllowedIpv6Addresses"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv6AddressesInput", GoGetter: "AllowedIpv6AddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedPorts", GoGetter: "AllowedPorts"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedPortsInput", GoGetter: "AllowedPortsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -25,6 +31,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "customTags", GoGetter: "CustomTags"},
 			_jsii_.MemberProperty{JsiiProperty: "customTagsInput", GoGetter: "CustomTagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "disableStrictNetworking", GoGetter: "DisableStrictNetworking"},
+			_jsii_.MemberProperty{JsiiProperty: "disableStrictNetworkingInput", GoGetter: "DisableStrictNetworkingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "externalId", GoGetter: "ExternalId"},
 			_jsii_.MemberProperty{JsiiProperty: "externalIdInput", GoGetter: "ExternalIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
@@ -62,7 +70,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessKeyId", GoMethod: "ResetAccessKeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIpv4Addresses", GoMethod: "ResetAllowedIpv4Addresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIpv6Addresses", GoMethod: "ResetAllowedIpv6Addresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedPorts", GoMethod: "ResetAllowedPorts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomTags", GoMethod: "ResetCustomTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableStrictNetworking", GoMethod: "ResetDisableStrictNetworking"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExternalId", GoMethod: "ResetExternalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGranularity", GoMethod: "ResetGranularity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -91,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretsSyncAwsDestination{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig",
+		"@cdktn/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig",
 		reflect.TypeOf((*SecretsSyncAwsDestinationConfig)(nil)).Elem(),
 	)
 }

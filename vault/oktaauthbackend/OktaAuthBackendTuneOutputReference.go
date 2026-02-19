@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oktaauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/oktaauthbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OktaAuthBackendTuneOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedResponseHeaders() *[]*string
 	SetAllowedResponseHeaders(val *[]*string)
 	AllowedResponseHeadersInput() *[]*string
@@ -58,9 +58,9 @@ type OktaAuthBackendTuneOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenType() *string
 	SetTokenType(val *string)
 	TokenTypeInput() *string
@@ -69,7 +69,7 @@ type OktaAuthBackendTuneOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type OktaAuthBackendTuneOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedResponseHeaders()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
@@ -98,7 +98,7 @@ type OktaAuthBackendTuneOutputReference interface {
 	ResetTokenType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type OktaAuthBackendTuneOutputReference interface {
 
 // The jsii proxy struct for OktaAuthBackendTuneOutputReference
 type jsiiProxy_OktaAuthBackendTuneOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OktaAuthBackendTuneOutputReference) AllowedResponseHeaders() *[]*string {
@@ -311,8 +311,8 @@ func (j *jsiiProxy_OktaAuthBackendTuneOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackendTuneOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OktaAuthBackendTuneOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -342,7 +342,7 @@ func (j *jsiiProxy_OktaAuthBackendTuneOutputReference) TokenTypeInput() *string 
 }
 
 
-func NewOktaAuthBackendTuneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OktaAuthBackendTuneOutputReference {
+func NewOktaAuthBackendTuneOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OktaAuthBackendTuneOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOktaAuthBackendTuneOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -351,7 +351,7 @@ func NewOktaAuthBackendTuneOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_OktaAuthBackendTuneOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -359,11 +359,11 @@ func NewOktaAuthBackendTuneOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewOktaAuthBackendTuneOutputReference_Override(o OktaAuthBackendTuneOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOktaAuthBackendTuneOutputReference_Override(o OktaAuthBackendTuneOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -490,7 +490,7 @@ func (j *jsiiProxy_OktaAuthBackendTuneOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackendTuneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OktaAuthBackendTuneOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,11 +541,11 @@ func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -669,8 +669,8 @@ func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -682,11 +682,11 @@ func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -762,7 +762,7 @@ func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) ResetTokenType() {
 	)
 }
 
-func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OktaAuthBackendTuneOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

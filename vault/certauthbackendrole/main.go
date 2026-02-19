@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package certauthbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		reflect.TypeOf((*CertAuthBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,10 +73,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ocspEnabledInput", GoGetter: "OcspEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ocspFailOpen", GoGetter: "OcspFailOpen"},
 			_jsii_.MemberProperty{JsiiProperty: "ocspFailOpenInput", GoGetter: "OcspFailOpenInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ocspMaxRetries", GoGetter: "OcspMaxRetries"},
+			_jsii_.MemberProperty{JsiiProperty: "ocspMaxRetriesInput", GoGetter: "OcspMaxRetriesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ocspQueryAllServers", GoGetter: "OcspQueryAllServers"},
 			_jsii_.MemberProperty{JsiiProperty: "ocspQueryAllServersInput", GoGetter: "OcspQueryAllServersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ocspServersOverride", GoGetter: "OcspServersOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "ocspServersOverrideInput", GoGetter: "OcspServersOverrideInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ocspThisUpdateMaxAge", GoGetter: "OcspThisUpdateMaxAge"},
+			_jsii_.MemberProperty{JsiiProperty: "ocspThisUpdateMaxAgeInput", GoGetter: "OcspThisUpdateMaxAgeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
@@ -97,8 +101,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOcspCaCertificates", GoMethod: "ResetOcspCaCertificates"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOcspEnabled", GoMethod: "ResetOcspEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOcspFailOpen", GoMethod: "ResetOcspFailOpen"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOcspMaxRetries", GoMethod: "ResetOcspMaxRetries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOcspQueryAllServers", GoMethod: "ResetOcspQueryAllServers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOcspServersOverride", GoMethod: "ResetOcspServersOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOcspThisUpdateMaxAge", GoMethod: "ResetOcspThisUpdateMaxAge"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequiredExtensions", GoMethod: "ResetRequiredExtensions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenBoundCidrs", GoMethod: "ResetTokenBoundCidrs"},
@@ -140,12 +146,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertAuthBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig",
 		reflect.TypeOf((*CertAuthBackendRoleConfig)(nil)).Elem(),
 	)
 }

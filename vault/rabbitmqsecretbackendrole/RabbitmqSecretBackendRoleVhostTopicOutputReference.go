@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rabbitmqsecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/rabbitmqsecretbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rabbitmqsecretbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type RabbitmqSecretBackendRoleVhostTopicOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type RabbitmqSecretBackendRoleVhostTopicOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Vhost() RabbitmqSecretBackendRoleVhostTopicVhostList
 	VhostInput() interface{}
 	// Experimental.
@@ -50,7 +50,7 @@ type RabbitmqSecretBackendRoleVhostTopicOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type RabbitmqSecretBackendRoleVhostTopicOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutVhost(value interface{})
 	ResetVhost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type RabbitmqSecretBackendRoleVhostTopicOutputReference interface {
 
 // The jsii proxy struct for RabbitmqSecretBackendRoleVhostTopicOutputReference
 type jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) ComplexObjectIndex() interface{} {
@@ -166,8 +166,8 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) VhostInpu
 }
 
 
-func NewRabbitmqSecretBackendRoleVhostTopicOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostTopicOutputReference {
+func NewRabbitmqSecretBackendRoleVhostTopicOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostTopicOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRabbitmqSecretBackendRoleVhostTopicOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -206,7 +206,7 @@ func NewRabbitmqSecretBackendRoleVhostTopicOutputReference(terraformResource cdk
 	j := jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicOutputReference",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewRabbitmqSecretBackendRoleVhostTopicOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewRabbitmqSecretBackendRoleVhostTopicOutputReference_Override(r RabbitmqSecretBackendRoleVhostTopicOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRabbitmqSecretBackendRoleVhostTopicOutputReference_Override(r RabbitmqSecretBackendRoleVhostTopicOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicOutputReference",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
@@ -279,7 +279,7 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -319,11 +319,11 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetAnyMap
 	return returns
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -447,8 +447,8 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetString
 	return returns
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -460,11 +460,11 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) Interpola
 	return returns
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -495,7 +495,7 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) ResetVhos
 	)
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

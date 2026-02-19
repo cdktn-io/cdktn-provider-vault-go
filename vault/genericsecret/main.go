@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package genericsecret
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.genericSecret.GenericSecret",
+		"@cdktn/provider-vault.genericSecret.GenericSecret",
 		reflect.TypeOf((*GenericSecret)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -75,12 +75,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GenericSecret{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.genericSecret.GenericSecretConfig",
+		"@cdktn/provider-vault.genericSecret.GenericSecretConfig",
 		reflect.TypeOf((*GenericSecretConfig)(nil)).Elem(),
 	)
 }

@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package plugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/plugin/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/plugin/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin vault_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin vault_plugin}.
 type Plugin interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Args() *[]*string
 	SetArgs(val *[]*string)
 	ArgsInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Command() *string
 	SetCommand(val *string)
 	CommandInput() *string
@@ -41,9 +41,9 @@ type Plugin interface {
 	SetEnv(val *[]*string)
 	EnvInput() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,9 +52,9 @@ type Plugin interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -64,9 +64,9 @@ type Plugin interface {
 	SetOciImage(val *string)
 	OciImageInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -80,7 +80,7 @@ type Plugin interface {
 	SetSha256(val *string)
 	Sha256Input() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -99,7 +99,7 @@ type Plugin interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -117,9 +117,9 @@ type Plugin interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -158,7 +158,7 @@ type Plugin interface {
 
 // The jsii proxy struct for Plugin
 type jsiiProxy_Plugin struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Plugin) Args() *[]*string {
@@ -181,8 +181,8 @@ func (j *jsiiProxy_Plugin) ArgsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Plugin) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Plugin) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_Plugin) EnvInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Plugin) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Plugin) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_Plugin) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Plugin) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Plugin) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_Plugin) OciImageInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Plugin) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Plugin) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_Plugin) Sha256Input() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Plugin) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Plugin) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_Plugin) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin vault_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin vault_plugin} Resource.
 func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plugin {
 	_init_.Initialize()
 
@@ -532,7 +532,7 @@ func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plu
 	j := jsiiProxy_Plugin{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.plugin.Plugin",
+		"@cdktn/provider-vault.plugin.Plugin",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -540,12 +540,12 @@ func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin vault_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin vault_plugin} Resource.
 func NewPlugin_Override(p Plugin, scope constructs.Construct, id *string, config *PluginConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.plugin.Plugin",
+		"@cdktn/provider-vault.plugin.Plugin",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -614,7 +614,7 @@ func (j *jsiiProxy_Plugin)SetEnv(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Plugin)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Plugin)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -633,7 +633,7 @@ func (j *jsiiProxy_Plugin)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Plugin)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Plugin)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +666,7 @@ func (j *jsiiProxy_Plugin)SetOciImage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Plugin)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Plugin)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -729,17 +729,17 @@ func (j *jsiiProxy_Plugin)SetVersion(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Plugin resource upon running "cdktf plan <stack-name>".
-func Plugin_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Plugin resource upon running "cdktn plan <stack-name>".
+func Plugin_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePlugin_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.plugin.Plugin",
+		"@cdktn/provider-vault.plugin.Plugin",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -774,7 +774,7 @@ func Plugin_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.plugin.Plugin",
+		"@cdktn/provider-vault.plugin.Plugin",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -793,7 +793,7 @@ func Plugin_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.plugin.Plugin",
+		"@cdktn/provider-vault.plugin.Plugin",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -812,7 +812,7 @@ func Plugin_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.plugin.Plugin",
+		"@cdktn/provider-vault.plugin.Plugin",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -825,7 +825,7 @@ func Plugin_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.plugin.Plugin",
+		"@cdktn/provider-vault.plugin.Plugin",
 		"tfResourceType",
 		&returns,
 	)
@@ -870,11 +870,11 @@ func (p *jsiiProxy_Plugin) GetAnyMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
-func (p *jsiiProxy_Plugin) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_Plugin) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1011,7 +1011,7 @@ func (p *jsiiProxy_Plugin) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Plugin) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_Plugin) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1022,11 +1022,11 @@ func (p *jsiiProxy_Plugin) ImportFrom(id *string, provider cdktf.TerraformProvid
 	)
 }
 
-func (p *jsiiProxy_Plugin) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_Plugin) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,

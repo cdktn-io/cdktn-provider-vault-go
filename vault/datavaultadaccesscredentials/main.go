@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultadaccesscredentials
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentials",
 		reflect.TypeOf((*DataVaultAdAccessCredentials)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,12 +63,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultAdAccessCredentials{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig",
+		"@cdktn/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig",
 		reflect.TypeOf((*DataVaultAdAccessCredentialsConfig)(nil)).Elem(),
 	)
 }

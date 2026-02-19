@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package consulsecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend",
 		reflect.TypeOf((*ConsulSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -36,6 +36,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clientCertInput", GoGetter: "ClientCertInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientKey", GoGetter: "ClientKey"},
 			_jsii_.MemberProperty{JsiiProperty: "clientKeyInput", GoGetter: "ClientKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientKeyWo", GoGetter: "ClientKeyWo"},
+			_jsii_.MemberProperty{JsiiProperty: "clientKeyWoInput", GoGetter: "ClientKeyWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientKeyWoVersion", GoGetter: "ClientKeyWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "clientKeyWoVersionInput", GoGetter: "ClientKeyWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -104,6 +108,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCaCert", GoMethod: "ResetCaCert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientCert", GoMethod: "ResetClientCert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientKey", GoMethod: "ResetClientKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientKeyWo", GoMethod: "ResetClientKeyWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientKeyWoVersion", GoMethod: "ResetClientKeyWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultLeaseTtlSeconds", GoMethod: "ResetDefaultLeaseTtlSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDelegatedAuthAccessors", GoMethod: "ResetDelegatedAuthAccessors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -124,6 +130,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetScheme", GoMethod: "ResetScheme"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSealWrap", GoMethod: "ResetSealWrap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetToken", GoMethod: "ResetToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenWo", GoMethod: "ResetTokenWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenWoVersion", GoMethod: "ResetTokenWoVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "scheme", GoGetter: "Scheme"},
 			_jsii_.MemberProperty{JsiiProperty: "schemeInput", GoGetter: "SchemeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sealWrap", GoGetter: "SealWrap"},
@@ -136,18 +144,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "token", GoGetter: "Token"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenInput", GoGetter: "TokenInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenWo", GoGetter: "TokenWo"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenWoInput", GoGetter: "TokenWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenWoVersion", GoGetter: "TokenWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenWoVersionInput", GoGetter: "TokenWoVersionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ConsulSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackendConfig",
 		reflect.TypeOf((*ConsulSecretBackendConfig)(nil)).Elem(),
 	)
 }

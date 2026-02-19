@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -103,7 +103,7 @@ func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -116,6 +116,14 @@ func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetNamespaceParameters(val
 }
 
 func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetPrivateKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetPrivateKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetPrivateKeyWoVersionParameters(val *float64) error {
 	return nil
 }
 

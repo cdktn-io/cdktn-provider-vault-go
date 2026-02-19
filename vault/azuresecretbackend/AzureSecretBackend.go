@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azuresecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/azuresecretbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/azuresecretbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
 type AzureSecretBackend interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Accessor() *string
 	AllowedManagedKeys() *[]*string
 	SetAllowedManagedKeys(val *[]*string)
@@ -29,13 +29,19 @@ type AzureSecretBackend interface {
 	SetAuditNonHmacResponseKeys(val *[]*string)
 	AuditNonHmacResponseKeysInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
 	ClientSecret() *string
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
+	ClientSecretWo() *string
+	SetClientSecretWo(val *string)
+	ClientSecretWoInput() *string
+	ClientSecretWoVersion() *float64
+	SetClientSecretWoVersion(val *float64)
+	ClientSecretWoVersionInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -75,9 +81,9 @@ type AzureSecretBackend interface {
 	SetForceNoCache(val interface{})
 	ForceNoCacheInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -95,9 +101,9 @@ type AzureSecretBackend interface {
 	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ListingVisibility() *string
 	SetListingVisibility(val *string)
 	ListingVisibilityInput() *string
@@ -125,9 +131,9 @@ type AzureSecretBackend interface {
 	SetPluginVersion(val *string)
 	PluginVersionInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -156,7 +162,7 @@ type AzureSecretBackend interface {
 	SetTenantId(val *string)
 	TenantIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -169,7 +175,7 @@ type AzureSecretBackend interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -187,9 +193,9 @@ type AzureSecretBackend interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -210,6 +216,8 @@ type AzureSecretBackend interface {
 	ResetAuditNonHmacResponseKeys()
 	ResetClientId()
 	ResetClientSecret()
+	ResetClientSecretWo()
+	ResetClientSecretWoVersion()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDelegatedAuthAccessors()
 	ResetDescription()
@@ -253,7 +261,7 @@ type AzureSecretBackend interface {
 
 // The jsii proxy struct for AzureSecretBackend
 type jsiiProxy_AzureSecretBackend struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AzureSecretBackend) Accessor() *string {
@@ -346,8 +354,8 @@ func (j *jsiiProxy_AzureSecretBackend) AuditNonHmacResponseKeysInput() *[]*strin
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackend) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AzureSecretBackend) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -391,6 +399,46 @@ func (j *jsiiProxy_AzureSecretBackend) ClientSecretInput() *string {
 	_jsii_.Get(
 		j,
 		"clientSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ClientSecretWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ClientSecretWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ClientSecretWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientSecretWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ClientSecretWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientSecretWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -596,8 +644,8 @@ func (j *jsiiProxy_AzureSecretBackend) ForceNoCacheInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackend) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AzureSecretBackend) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -706,8 +754,8 @@ func (j *jsiiProxy_AzureSecretBackend) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AzureSecretBackend) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -886,8 +934,8 @@ func (j *jsiiProxy_AzureSecretBackend) PluginVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackend) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AzureSecretBackend) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -1056,8 +1104,8 @@ func (j *jsiiProxy_AzureSecretBackend) TenantIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AzureSecretBackend) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -1087,7 +1135,7 @@ func (j *jsiiProxy_AzureSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) AzureSecretBackend {
 	_init_.Initialize()
 
@@ -1097,7 +1145,7 @@ func NewAzureSecretBackend(scope constructs.Construct, id *string, config *Azure
 	j := jsiiProxy_AzureSecretBackend{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackend",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1105,12 +1153,12 @@ func NewAzureSecretBackend(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Construct, id *string, config *AzureSecretBackendConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackend",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1178,6 +1226,28 @@ func (j *jsiiProxy_AzureSecretBackend)SetClientSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"clientSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetClientSecretWo(val *string) {
+	if err := j.validateSetClientSecretWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientSecretWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetClientSecretWoVersion(val *float64) {
+	if err := j.validateSetClientSecretWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientSecretWoVersion",
 		val,
 	)
 }
@@ -1300,7 +1370,7 @@ func (j *jsiiProxy_AzureSecretBackend)SetForceNoCache(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AzureSecretBackend)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1352,7 +1422,7 @@ func (j *jsiiProxy_AzureSecretBackend)SetIdentityTokenTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AzureSecretBackend)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1451,7 +1521,7 @@ func (j *jsiiProxy_AzureSecretBackend)SetPluginVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AzureSecretBackend)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1547,17 +1617,17 @@ func (j *jsiiProxy_AzureSecretBackend)SetTenantId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a AzureSecretBackend resource upon running "cdktf plan <stack-name>".
-func AzureSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AzureSecretBackend resource upon running "cdktn plan <stack-name>".
+func AzureSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAzureSecretBackend_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackend",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1592,7 +1662,7 @@ func AzureSecretBackend_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackend",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1611,7 +1681,7 @@ func AzureSecretBackend_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackend",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1630,7 +1700,7 @@ func AzureSecretBackend_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackend",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1643,7 +1713,7 @@ func AzureSecretBackend_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
+		"@cdktn/provider-vault.azureSecretBackend.AzureSecretBackend",
 		"tfResourceType",
 		&returns,
 	)
@@ -1688,11 +1758,11 @@ func (a *jsiiProxy_AzureSecretBackend) GetAnyMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (a *jsiiProxy_AzureSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AzureSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1829,7 +1899,7 @@ func (a *jsiiProxy_AzureSecretBackend) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AzureSecretBackend) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AzureSecretBackend) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1840,11 +1910,11 @@ func (a *jsiiProxy_AzureSecretBackend) ImportFrom(id *string, provider cdktf.Ter
 	)
 }
 
-func (a *jsiiProxy_AzureSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AzureSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1944,6 +2014,22 @@ func (a *jsiiProxy_AzureSecretBackend) ResetClientSecret() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetClientSecretWo() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientSecretWo",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetClientSecretWoVersion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientSecretWoVersion",
 		nil, // no parameters
 	)
 }

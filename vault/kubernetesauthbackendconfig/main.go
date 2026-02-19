@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package kubernetesauthbackendconfig
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfig",
+		"@cdktn/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfig",
 		reflect.TypeOf((*KubernetesAuthBackendConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,6 +73,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPemKeys", GoMethod: "ResetPemKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenReviewerJwt", GoMethod: "ResetTokenReviewerJwt"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenReviewerJwtWo", GoMethod: "ResetTokenReviewerJwtWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenReviewerJwtWoVersion", GoMethod: "ResetTokenReviewerJwtWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseAnnotationsAsAliasMetadata", GoMethod: "ResetUseAnnotationsAsAliasMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
@@ -82,6 +84,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenReviewerJwt", GoGetter: "TokenReviewerJwt"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenReviewerJwtInput", GoGetter: "TokenReviewerJwtInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenReviewerJwtWo", GoGetter: "TokenReviewerJwtWo"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenReviewerJwtWoInput", GoGetter: "TokenReviewerJwtWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenReviewerJwtWoVersion", GoGetter: "TokenReviewerJwtWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenReviewerJwtWoVersionInput", GoGetter: "TokenReviewerJwtWoVersionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -90,12 +96,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesAuthBackendConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfigConfig",
+		"@cdktn/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfigConfig",
 		reflect.TypeOf((*KubernetesAuthBackendConfigConfig)(nil)).Elem(),
 	)
 }

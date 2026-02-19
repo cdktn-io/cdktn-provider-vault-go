@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package gcpsecretstaticaccount
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccount",
+		"@cdktn/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccount",
 		reflect.TypeOf((*GcpSecretStaticAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -81,16 +81,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretStaticAccount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBinding",
+		"@cdktn/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBinding",
 		reflect.TypeOf((*GcpSecretStaticAccountBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingList",
+		"@cdktn/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingList",
 		reflect.TypeOf((*GcpSecretStaticAccountBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -107,12 +107,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretStaticAccountBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingOutputReference",
+		"@cdktn/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingOutputReference",
 		reflect.TypeOf((*GcpSecretStaticAccountBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,12 +143,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretStaticAccountBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountConfig",
+		"@cdktn/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountConfig",
 		reflect.TypeOf((*GcpSecretStaticAccountConfig)(nil)).Elem(),
 	)
 }

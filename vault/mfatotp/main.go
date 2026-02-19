@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mfatotp
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.mfaTotp.MfaTotp",
+		"@cdktn/provider-vault.mfaTotp.MfaTotp",
 		reflect.TypeOf((*MfaTotp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keySize", GoGetter: "KeySize"},
 			_jsii_.MemberProperty{JsiiProperty: "keySizeInput", GoGetter: "KeySizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "maxValidationAttempts", GoGetter: "MaxValidationAttempts"},
+			_jsii_.MemberProperty{JsiiProperty: "maxValidationAttemptsInput", GoGetter: "MaxValidationAttemptsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDigits", GoMethod: "ResetDigits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeySize", GoMethod: "ResetKeySize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxValidationAttempts", GoMethod: "ResetMaxValidationAttempts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPeriod", GoMethod: "ResetPeriod"},
@@ -86,12 +89,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MfaTotp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.mfaTotp.MfaTotpConfig",
+		"@cdktn/provider-vault.mfaTotp.MfaTotpConfig",
 		reflect.TypeOf((*MfaTotpConfig)(nil)).Elem(),
 	)
 }

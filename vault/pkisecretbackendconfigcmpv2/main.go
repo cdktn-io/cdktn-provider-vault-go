@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pkisecretbackendconfigcmpv2
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigCmpv2.PkiSecretBackendConfigCmpv2",
+		"@cdktn/provider-vault.pkiSecretBackendConfigCmpv2.PkiSecretBackendConfigCmpv2",
 		reflect.TypeOf((*PkiSecretBackendConfigCmpv2)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -86,16 +86,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigCmpv2{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendConfigCmpv2.PkiSecretBackendConfigCmpv2Authenticators",
+		"@cdktn/provider-vault.pkiSecretBackendConfigCmpv2.PkiSecretBackendConfigCmpv2Authenticators",
 		reflect.TypeOf((*PkiSecretBackendConfigCmpv2Authenticators)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigCmpv2.PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference",
+		"@cdktn/provider-vault.pkiSecretBackendConfigCmpv2.PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference",
 		reflect.TypeOf((*PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
@@ -125,12 +125,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendConfigCmpv2.PkiSecretBackendConfigCmpv2Config",
+		"@cdktn/provider-vault.pkiSecretBackendConfigCmpv2.PkiSecretBackendConfigCmpv2Config",
 		reflect.TypeOf((*PkiSecretBackendConfigCmpv2Config)(nil)).Elem(),
 	)
 }

@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ldapsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/ldapsecretbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapsecretbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
 type LdapSecretBackend interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Accessor() *string
 	AllowedManagedKeys() *[]*string
 	SetAllowedManagedKeys(val *[]*string)
@@ -34,8 +34,14 @@ type LdapSecretBackend interface {
 	Bindpass() *string
 	SetBindpass(val *string)
 	BindpassInput() *string
+	BindpassWo() *string
+	SetBindpassWo(val *string)
+	BindpassWoInput() *string
+	BindpassWoVersion() *float64
+	SetBindpassWoVersion(val *float64)
+	BindpassWoVersionInput() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Certificate() *string
 	SetCertificate(val *string)
 	CertificateInput() *string
@@ -87,9 +93,9 @@ type LdapSecretBackend interface {
 	SetForceNoCache(val interface{})
 	ForceNoCacheInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -104,9 +110,9 @@ type LdapSecretBackend interface {
 	SetInsecureTls(val interface{})
 	InsecureTlsInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ListingVisibility() *string
 	SetListingVisibility(val *string)
 	ListingVisibilityInput() *string
@@ -137,9 +143,9 @@ type LdapSecretBackend interface {
 	SetPluginVersion(val *string)
 	PluginVersionInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -171,7 +177,7 @@ type LdapSecretBackend interface {
 	SetStarttls(val interface{})
 	StarttlsInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -196,7 +202,7 @@ type LdapSecretBackend interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -214,9 +220,9 @@ type LdapSecretBackend interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -235,6 +241,9 @@ type LdapSecretBackend interface {
 	ResetAllowedResponseHeaders()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
+	ResetBindpass()
+	ResetBindpassWo()
+	ResetBindpassWoVersion()
 	ResetCertificate()
 	ResetClientTlsCert()
 	ResetClientTlsKey()
@@ -289,7 +298,7 @@ type LdapSecretBackend interface {
 
 // The jsii proxy struct for LdapSecretBackend
 type jsiiProxy_LdapSecretBackend struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_LdapSecretBackend) Accessor() *string {
@@ -422,8 +431,48 @@ func (j *jsiiProxy_LdapSecretBackend) BindpassInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LdapSecretBackend) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_LdapSecretBackend) BindpassWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bindpassWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) BindpassWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bindpassWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) BindpassWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bindpassWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) BindpassWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bindpassWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -712,8 +761,8 @@ func (j *jsiiProxy_LdapSecretBackend) ForceNoCacheInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LdapSecretBackend) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_LdapSecretBackend) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -802,8 +851,8 @@ func (j *jsiiProxy_LdapSecretBackend) InsecureTlsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LdapSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_LdapSecretBackend) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -1002,8 +1051,8 @@ func (j *jsiiProxy_LdapSecretBackend) PluginVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LdapSecretBackend) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_LdapSecretBackend) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -1192,8 +1241,8 @@ func (j *jsiiProxy_LdapSecretBackend) StarttlsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LdapSecretBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_LdapSecretBackend) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -1303,7 +1352,7 @@ func (j *jsiiProxy_LdapSecretBackend) UserdnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSecretBackendConfig) LdapSecretBackend {
 	_init_.Initialize()
 
@@ -1313,7 +1362,7 @@ func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSe
 	j := jsiiProxy_LdapSecretBackend{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1321,12 +1370,12 @@ func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend_Override(l LdapSecretBackend, scope constructs.Construct, id *string, config *LdapSecretBackendConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1394,6 +1443,28 @@ func (j *jsiiProxy_LdapSecretBackend)SetBindpass(val *string) {
 	_jsii_.Set(
 		j,
 		"bindpass",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetBindpassWo(val *string) {
+	if err := j.validateSetBindpassWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bindpassWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetBindpassWoVersion(val *float64) {
+	if err := j.validateSetBindpassWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bindpassWoVersion",
 		val,
 	)
 }
@@ -1560,7 +1631,7 @@ func (j *jsiiProxy_LdapSecretBackend)SetForceNoCache(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LdapSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LdapSecretBackend)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1601,7 +1672,7 @@ func (j *jsiiProxy_LdapSecretBackend)SetInsecureTls(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LdapSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LdapSecretBackend)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1711,7 +1782,7 @@ func (j *jsiiProxy_LdapSecretBackend)SetPluginVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LdapSecretBackend)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LdapSecretBackend)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1862,17 +1933,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetUserdn(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a LdapSecretBackend resource upon running "cdktf plan <stack-name>".
-func LdapSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a LdapSecretBackend resource upon running "cdktn plan <stack-name>".
+func LdapSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateLdapSecretBackend_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1907,7 +1978,7 @@ func LdapSecretBackend_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1926,7 +1997,7 @@ func LdapSecretBackend_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1945,7 +2016,7 @@ func LdapSecretBackend_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1958,7 +2029,7 @@ func LdapSecretBackend_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend",
+		"@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend",
 		"tfResourceType",
 		&returns,
 	)
@@ -2003,11 +2074,11 @@ func (l *jsiiProxy_LdapSecretBackend) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (l *jsiiProxy_LdapSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LdapSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -2144,7 +2215,7 @@ func (l *jsiiProxy_LdapSecretBackend) HasResourceMove() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LdapSecretBackend) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (l *jsiiProxy_LdapSecretBackend) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -2155,11 +2226,11 @@ func (l *jsiiProxy_LdapSecretBackend) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (l *jsiiProxy_LdapSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LdapSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -2243,6 +2314,30 @@ func (l *jsiiProxy_LdapSecretBackend) ResetAuditNonHmacResponseKeys() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAuditNonHmacResponseKeys",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetBindpass() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetBindpass",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetBindpassWo() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetBindpassWo",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetBindpassWoVersion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetBindpassWoVersion",
 		nil, // no parameters
 	)
 }

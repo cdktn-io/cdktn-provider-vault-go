@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sshsecretbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.sshSecretBackendRole.SshSecretBackendRole",
+		"@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRole",
 		reflect.TypeOf((*SshSecretBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -140,16 +140,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SshSecretBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfig",
+		"@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfig",
 		reflect.TypeOf((*SshSecretBackendRoleAllowedUserKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfigList",
+		"@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfigList",
 		reflect.TypeOf((*SshSecretBackendRoleAllowedUserKeyConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -166,12 +166,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfigOutputReference",
+		"@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfigOutputReference",
 		reflect.TypeOf((*SshSecretBackendRoleAllowedUserKeyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,12 +202,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.sshSecretBackendRole.SshSecretBackendRoleConfig",
+		"@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRoleConfig",
 		reflect.TypeOf((*SshSecretBackendRoleConfig)(nil)).Elem(),
 	)
 }

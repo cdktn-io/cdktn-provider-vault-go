@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rgppolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rgpPolicy.RgpPolicy",
+		"@cdktn/provider-vault.rgpPolicy.RgpPolicy",
 		reflect.TypeOf((*RgpPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -70,12 +70,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RgpPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig",
+		"@cdktn/provider-vault.rgpPolicy.RgpPolicyConfig",
 		reflect.TypeOf((*RgpPolicyConfig)(nil)).Elem(),
 	)
 }

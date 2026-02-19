@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pkisecretbackendconfigca
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigCa.PkiSecretBackendConfigCa",
+		"@cdktn/provider-vault.pkiSecretBackendConfigCa.PkiSecretBackendConfigCa",
 		reflect.TypeOf((*PkiSecretBackendConfigCa)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -68,12 +68,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigCa{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendConfigCa.PkiSecretBackendConfigCaConfig",
+		"@cdktn/provider-vault.pkiSecretBackendConfigCa.PkiSecretBackendConfigCaConfig",
 		reflect.TypeOf((*PkiSecretBackendConfigCaConfig)(nil)).Elem(),
 	)
 }

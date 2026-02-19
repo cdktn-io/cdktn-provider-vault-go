@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package kubernetessecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/kubernetessecretbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetessecretbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}.
 type KubernetesSecretBackend interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Accessor() *string
 	AllowedManagedKeys() *[]*string
 	SetAllowedManagedKeys(val *[]*string)
@@ -29,7 +29,7 @@ type KubernetesSecretBackend interface {
 	SetAuditNonHmacResponseKeys(val *[]*string)
 	AuditNonHmacResponseKeysInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -63,9 +63,9 @@ type KubernetesSecretBackend interface {
 	SetForceNoCache(val interface{})
 	ForceNoCacheInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -83,9 +83,9 @@ type KubernetesSecretBackend interface {
 	SetKubernetesHost(val *string)
 	KubernetesHostInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ListingVisibility() *string
 	SetListingVisibility(val *string)
 	ListingVisibilityInput() *string
@@ -113,9 +113,9 @@ type KubernetesSecretBackend interface {
 	SetPluginVersion(val *string)
 	PluginVersionInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -128,8 +128,14 @@ type KubernetesSecretBackend interface {
 	ServiceAccountJwt() *string
 	SetServiceAccountJwt(val *string)
 	ServiceAccountJwtInput() *string
+	ServiceAccountJwtWo() *string
+	SetServiceAccountJwtWo(val *string)
+	ServiceAccountJwtWoInput() *string
+	ServiceAccountJwtWoVersion() *float64
+	SetServiceAccountJwtWoVersion(val *float64)
+	ServiceAccountJwtWoVersionInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -142,7 +148,7 @@ type KubernetesSecretBackend interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -160,9 +166,9 @@ type KubernetesSecretBackend interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -203,6 +209,8 @@ type KubernetesSecretBackend interface {
 	ResetPluginVersion()
 	ResetSealWrap()
 	ResetServiceAccountJwt()
+	ResetServiceAccountJwtWo()
+	ResetServiceAccountJwtWoVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -218,7 +226,7 @@ type KubernetesSecretBackend interface {
 
 // The jsii proxy struct for KubernetesSecretBackend
 type jsiiProxy_KubernetesSecretBackend struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_KubernetesSecretBackend) Accessor() *string {
@@ -311,8 +319,8 @@ func (j *jsiiProxy_KubernetesSecretBackend) AuditNonHmacResponseKeysInput() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_KubernetesSecretBackend) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -481,8 +489,8 @@ func (j *jsiiProxy_KubernetesSecretBackend) ForceNoCacheInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_KubernetesSecretBackend) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -591,8 +599,8 @@ func (j *jsiiProxy_KubernetesSecretBackend) KubernetesHostInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_KubernetesSecretBackend) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -771,8 +779,8 @@ func (j *jsiiProxy_KubernetesSecretBackend) PluginVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_KubernetesSecretBackend) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -841,8 +849,48 @@ func (j *jsiiProxy_KubernetesSecretBackend) ServiceAccountJwtInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_KubernetesSecretBackend) ServiceAccountJwtWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJwtWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) ServiceAccountJwtWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJwtWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) ServiceAccountJwtWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serviceAccountJwtWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) ServiceAccountJwtWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serviceAccountJwtWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -872,7 +920,7 @@ func (j *jsiiProxy_KubernetesSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
 func NewKubernetesSecretBackend(scope constructs.Construct, id *string, config *KubernetesSecretBackendConfig) KubernetesSecretBackend {
 	_init_.Initialize()
 
@@ -882,7 +930,7 @@ func NewKubernetesSecretBackend(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_KubernetesSecretBackend{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -890,12 +938,12 @@ func NewKubernetesSecretBackend(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
 func NewKubernetesSecretBackend_Override(k KubernetesSecretBackend, scope constructs.Construct, id *string, config *KubernetesSecretBackendConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -1041,7 +1089,7 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetForceNoCache(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KubernetesSecretBackend)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1093,7 +1141,7 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetKubernetesHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KubernetesSecretBackend)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1192,7 +1240,7 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetPluginVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KubernetesSecretBackend)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1233,17 +1281,39 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetServiceAccountJwt(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a KubernetesSecretBackend resource upon running "cdktf plan <stack-name>".
-func KubernetesSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+func (j *jsiiProxy_KubernetesSecretBackend)SetServiceAccountJwtWo(val *string) {
+	if err := j.validateSetServiceAccountJwtWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountJwtWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend)SetServiceAccountJwtWoVersion(val *float64) {
+	if err := j.validateSetServiceAccountJwtWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountJwtWoVersion",
+		val,
+	)
+}
+
+// Generates CDKTN code for importing a KubernetesSecretBackend resource upon running "cdktn plan <stack-name>".
+func KubernetesSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateKubernetesSecretBackend_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1278,7 +1348,7 @@ func KubernetesSecretBackend_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1297,7 +1367,7 @@ func KubernetesSecretBackend_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1316,7 +1386,7 @@ func KubernetesSecretBackend_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1329,7 +1399,7 @@ func KubernetesSecretBackend_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
+		"@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend",
 		"tfResourceType",
 		&returns,
 	)
@@ -1374,11 +1444,11 @@ func (k *jsiiProxy_KubernetesSecretBackend) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (k *jsiiProxy_KubernetesSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KubernetesSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -1515,7 +1585,7 @@ func (k *jsiiProxy_KubernetesSecretBackend) HasResourceMove() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KubernetesSecretBackend) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (k *jsiiProxy_KubernetesSecretBackend) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := k.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1526,11 +1596,11 @@ func (k *jsiiProxy_KubernetesSecretBackend) ImportFrom(id *string, provider cdkt
 	)
 }
 
-func (k *jsiiProxy_KubernetesSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KubernetesSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -1774,6 +1844,22 @@ func (k *jsiiProxy_KubernetesSecretBackend) ResetServiceAccountJwt() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetServiceAccountJwt",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) ResetServiceAccountJwtWo() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetServiceAccountJwtWo",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) ResetServiceAccountJwtWoVersion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetServiceAccountJwtWoVersion",
 		nil, // no parameters
 	)
 }

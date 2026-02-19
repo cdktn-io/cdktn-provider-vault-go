@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mongodbatlassecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend",
+		"@cdktn/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend",
 		reflect.TypeOf((*MongodbatlasSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKey", GoGetter: "PrivateKey"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKeyInput", GoGetter: "PrivateKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "privateKeyWo", GoGetter: "PrivateKeyWo"},
+			_jsii_.MemberProperty{JsiiProperty: "privateKeyWoInput", GoGetter: "PrivateKeyWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "privateKeyWoVersion", GoGetter: "PrivateKeyWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "privateKeyWoVersionInput", GoGetter: "PrivateKeyWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKey", GoGetter: "PublicKey"},
@@ -59,6 +63,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrivateKey", GoMethod: "ResetPrivateKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrivateKeyWo", GoMethod: "ResetPrivateKeyWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrivateKeyWoVersion", GoMethod: "ResetPrivateKeyWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -71,12 +78,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MongodbatlasSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig",
+		"@cdktn/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig",
 		reflect.TypeOf((*MongodbatlasSecretBackendConfig)(nil)).Elem(),
 	)
 }

@@ -1,22 +1,31 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncazuredestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncazuredestination/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncazuredestination/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
 type SecretsSyncAzureDestination interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
+	AllowedIpv4Addresses() *[]*string
+	SetAllowedIpv4Addresses(val *[]*string)
+	AllowedIpv4AddressesInput() *[]*string
+	AllowedIpv6Addresses() *[]*string
+	SetAllowedIpv6Addresses(val *[]*string)
+	AllowedIpv6AddressesInput() *[]*string
+	AllowedPorts() *[]*float64
+	SetAllowedPorts(val *[]*float64)
+	AllowedPortsInput() *[]*float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -43,10 +52,13 @@ type SecretsSyncAzureDestination interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableStrictNetworking() interface{}
+	SetDisableStrictNetworking(val interface{})
+	DisableStrictNetworkingInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -61,9 +73,9 @@ type SecretsSyncAzureDestination interface {
 	SetKeyVaultUri(val *string)
 	KeyVaultUriInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -73,9 +85,9 @@ type SecretsSyncAzureDestination interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -89,7 +101,7 @@ type SecretsSyncAzureDestination interface {
 	SetTenantId(val *string)
 	TenantIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -103,7 +115,7 @@ type SecretsSyncAzureDestination interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -121,9 +133,9 @@ type SecretsSyncAzureDestination interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -138,10 +150,14 @@ type SecretsSyncAzureDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowedIpv4Addresses()
+	ResetAllowedIpv6Addresses()
+	ResetAllowedPorts()
 	ResetClientId()
 	ResetClientSecret()
 	ResetCloud()
 	ResetCustomTags()
+	ResetDisableStrictNetworking()
 	ResetGranularity()
 	ResetId()
 	ResetKeyVaultUri()
@@ -166,11 +182,71 @@ type SecretsSyncAzureDestination interface {
 
 // The jsii proxy struct for SecretsSyncAzureDestination
 type jsiiProxy_SecretsSyncAzureDestination struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SecretsSyncAzureDestination) AllowedIpv4Addresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpv4Addresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) AllowedIpv4AddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpv4AddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) AllowedIpv6Addresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpv6Addresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) AllowedIpv6AddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpv6AddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) AllowedPorts() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"allowedPorts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) AllowedPortsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"allowedPortsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -299,8 +375,28 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SecretsSyncAzureDestination) DisableStrictNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableStrictNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) DisableStrictNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableStrictNetworkingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -389,8 +485,8 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) KeyVaultUriInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SecretsSyncAzureDestination) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -449,8 +545,8 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SecretsSyncAzureDestination) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -519,8 +615,8 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) TenantIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SecretsSyncAzureDestination) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -560,7 +656,7 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
 func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, config *SecretsSyncAzureDestinationConfig) SecretsSyncAzureDestination {
 	_init_.Initialize()
 
@@ -570,7 +666,7 @@ func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_SecretsSyncAzureDestination{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -578,14 +674,47 @@ func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
 func NewSecretsSyncAzureDestination_Override(s SecretsSyncAzureDestination, scope constructs.Construct, id *string, config *SecretsSyncAzureDestinationConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetAllowedIpv4Addresses(val *[]*string) {
+	if err := j.validateSetAllowedIpv4AddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedIpv4Addresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetAllowedIpv6Addresses(val *[]*string) {
+	if err := j.validateSetAllowedIpv6AddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedIpv6Addresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetAllowedPorts(val *[]*float64) {
+	if err := j.validateSetAllowedPortsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedPorts",
+		val,
 	)
 }
 
@@ -663,7 +792,18 @@ func (j *jsiiProxy_SecretsSyncAzureDestination)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetDisableStrictNetworking(val interface{}) {
+	if err := j.validateSetDisableStrictNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableStrictNetworking",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -704,7 +844,7 @@ func (j *jsiiProxy_SecretsSyncAzureDestination)SetKeyVaultUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +877,7 @@ func (j *jsiiProxy_SecretsSyncAzureDestination)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -778,17 +918,17 @@ func (j *jsiiProxy_SecretsSyncAzureDestination)SetTenantId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a SecretsSyncAzureDestination resource upon running "cdktf plan <stack-name>".
-func SecretsSyncAzureDestination_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SecretsSyncAzureDestination resource upon running "cdktn plan <stack-name>".
+func SecretsSyncAzureDestination_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSecretsSyncAzureDestination_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -823,7 +963,7 @@ func SecretsSyncAzureDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +982,7 @@ func SecretsSyncAzureDestination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -861,7 +1001,7 @@ func SecretsSyncAzureDestination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -874,7 +1014,7 @@ func SecretsSyncAzureDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
+		"@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination",
 		"tfResourceType",
 		&returns,
 	)
@@ -919,11 +1059,11 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncAzureDestination) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretsSyncAzureDestination) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1060,7 +1200,7 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncAzureDestination) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SecretsSyncAzureDestination) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1071,11 +1211,11 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) ImportFrom(id *string, provider 
 	)
 }
 
-func (s *jsiiProxy_SecretsSyncAzureDestination) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretsSyncAzureDestination) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1131,6 +1271,30 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetAllowedIpv4Addresses() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedIpv4Addresses",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetAllowedIpv6Addresses() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedIpv6Addresses",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetAllowedPorts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedPorts",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretsSyncAzureDestination) ResetClientId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1159,6 +1323,14 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) ResetCustomTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCustomTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetDisableStrictNetworking() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDisableStrictNetworking",
 		nil, // no parameters
 	)
 }

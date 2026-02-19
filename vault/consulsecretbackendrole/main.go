@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package consulsecretbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.consulSecretBackendRole.ConsulSecretBackendRole",
+		"@cdktn/provider-vault.consulSecretBackendRole.ConsulSecretBackendRole",
 		reflect.TypeOf((*ConsulSecretBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -99,12 +99,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConsulSecretBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.consulSecretBackendRole.ConsulSecretBackendRoleConfig",
+		"@cdktn/provider-vault.consulSecretBackendRole.ConsulSecretBackendRoleConfig",
 		reflect.TypeOf((*ConsulSecretBackendRoleConfig)(nil)).Elem(),
 	)
 }

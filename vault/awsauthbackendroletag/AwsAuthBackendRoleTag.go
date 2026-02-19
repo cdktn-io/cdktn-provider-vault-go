@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package awsauthbackendroletag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/awsauthbackendroletag/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awsauthbackendroletag/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}.
 type AwsAuthBackendRoleTag interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AllowInstanceMigration() interface{}
 	SetAllowInstanceMigration(val interface{})
 	AllowInstanceMigrationInput() interface{}
@@ -22,7 +22,7 @@ type AwsAuthBackendRoleTag interface {
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type AwsAuthBackendRoleTag interface {
 	SetDisallowReauthentication(val interface{})
 	DisallowReauthenticationInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -55,9 +55,9 @@ type AwsAuthBackendRoleTag interface {
 	SetInstanceId(val *string)
 	InstanceIdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxTtl() *string
 	SetMaxTtl(val *string)
 	MaxTtlInput() *string
@@ -70,9 +70,9 @@ type AwsAuthBackendRoleTag interface {
 	SetPolicies(val *[]*string)
 	PoliciesInput() *[]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -85,7 +85,7 @@ type AwsAuthBackendRoleTag interface {
 	TagKey() *string
 	TagValue() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -98,7 +98,7 @@ type AwsAuthBackendRoleTag interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -116,9 +116,9 @@ type AwsAuthBackendRoleTag interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -159,7 +159,7 @@ type AwsAuthBackendRoleTag interface {
 
 // The jsii proxy struct for AwsAuthBackendRoleTag
 type jsiiProxy_AwsAuthBackendRoleTag struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AwsAuthBackendRoleTag) AllowInstanceMigration() interface{} {
@@ -202,8 +202,8 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AwsAuthBackendRoleTag) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) DisallowReauthenticationInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AwsAuthBackendRoleTag) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) InstanceIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AwsAuthBackendRoleTag) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) PoliciesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AwsAuthBackendRoleTag) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) TagValue() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AwsAuthBackendRoleTag) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -523,7 +523,7 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
 func NewAwsAuthBackendRoleTag(scope constructs.Construct, id *string, config *AwsAuthBackendRoleTagConfig) AwsAuthBackendRoleTag {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewAwsAuthBackendRoleTag(scope constructs.Construct, id *string, config *Aw
 	j := jsiiProxy_AwsAuthBackendRoleTag{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
+		"@cdktn/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -541,12 +541,12 @@ func NewAwsAuthBackendRoleTag(scope constructs.Construct, id *string, config *Aw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
 func NewAwsAuthBackendRoleTag_Override(a AwsAuthBackendRoleTag, scope constructs.Construct, id *string, config *AwsAuthBackendRoleTagConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
+		"@cdktn/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -615,7 +615,7 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag)SetDisallowReauthentication(val interfa
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AwsAuthBackendRoleTag)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +645,7 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AwsAuthBackendRoleTag)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +689,7 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag)SetPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AwsAuthBackendRoleTag)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -719,17 +719,17 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag)SetRole(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a AwsAuthBackendRoleTag resource upon running "cdktf plan <stack-name>".
-func AwsAuthBackendRoleTag_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AwsAuthBackendRoleTag resource upon running "cdktn plan <stack-name>".
+func AwsAuthBackendRoleTag_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAwsAuthBackendRoleTag_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
+		"@cdktn/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -764,7 +764,7 @@ func AwsAuthBackendRoleTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
+		"@cdktn/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func AwsAuthBackendRoleTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
+		"@cdktn/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -802,7 +802,7 @@ func AwsAuthBackendRoleTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
+		"@cdktn/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -815,7 +815,7 @@ func AwsAuthBackendRoleTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
+		"@cdktn/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag",
 		"tfResourceType",
 		&returns,
 	)
@@ -860,11 +860,11 @@ func (a *jsiiProxy_AwsAuthBackendRoleTag) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (a *jsiiProxy_AwsAuthBackendRoleTag) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AwsAuthBackendRoleTag) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1001,7 +1001,7 @@ func (a *jsiiProxy_AwsAuthBackendRoleTag) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AwsAuthBackendRoleTag) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AwsAuthBackendRoleTag) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1012,11 +1012,11 @@ func (a *jsiiProxy_AwsAuthBackendRoleTag) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (a *jsiiProxy_AwsAuthBackendRoleTag) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AwsAuthBackendRoleTag) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

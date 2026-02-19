@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package terraformcloudsecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend",
+		"@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend",
 		reflect.TypeOf((*TerraformCloudSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -137,12 +137,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TerraformCloudSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig",
+		"@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig",
 		reflect.TypeOf((*TerraformCloudSecretBackendConfig)(nil)).Elem(),
 	)
 }

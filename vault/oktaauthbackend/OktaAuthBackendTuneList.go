@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oktaauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/oktaauthbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OktaAuthBackendTuneList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type OktaAuthBackendTuneList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type OktaAuthBackendTuneList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) OktaAuthBackendTuneOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type OktaAuthBackendTuneList interface {
 
 // The jsii proxy struct for OktaAuthBackendTuneList
 type jsiiProxy_OktaAuthBackendTuneList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_OktaAuthBackendTuneList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_OktaAuthBackendTuneList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackendTuneList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OktaAuthBackendTuneList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_OktaAuthBackendTuneList) WrapsSet() *bool {
 }
 
 
-func NewOktaAuthBackendTuneList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OktaAuthBackendTuneList {
+func NewOktaAuthBackendTuneList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OktaAuthBackendTuneList {
 	_init_.Initialize()
 
 	if err := validateNewOktaAuthBackendTuneListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewOktaAuthBackendTuneList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_OktaAuthBackendTuneList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewOktaAuthBackendTuneList(terraformResource cdktf.IInterpolatingParent, te
 	return &j
 }
 
-func NewOktaAuthBackendTuneList_Override(o OktaAuthBackendTuneList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewOktaAuthBackendTuneList_Override(o OktaAuthBackendTuneList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_OktaAuthBackendTuneList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackendTuneList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OktaAuthBackendTuneList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_OktaAuthBackendTuneList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (o *jsiiProxy_OktaAuthBackendTuneList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (o *jsiiProxy_OktaAuthBackendTuneList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := o.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		o,
@@ -231,7 +231,7 @@ func (o *jsiiProxy_OktaAuthBackendTuneList) Get(index *float64) OktaAuthBackendT
 	return returns
 }
 
-func (o *jsiiProxy_OktaAuthBackendTuneList) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OktaAuthBackendTuneList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

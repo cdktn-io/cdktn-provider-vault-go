@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package managedkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/managedkeys/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/managedkeys/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ManagedKeysAzureList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type ManagedKeysAzureList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type ManagedKeysAzureList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ManagedKeysAzureOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type ManagedKeysAzureList interface {
 
 // The jsii proxy struct for ManagedKeysAzureList
 type jsiiProxy_ManagedKeysAzureList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ManagedKeysAzureList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ManagedKeysAzureList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKeysAzureList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ManagedKeysAzureList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_ManagedKeysAzureList) WrapsSet() *bool {
 }
 
 
-func NewManagedKeysAzureList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysAzureList {
+func NewManagedKeysAzureList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysAzureList {
 	_init_.Initialize()
 
 	if err := validateNewManagedKeysAzureListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewManagedKeysAzureList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_ManagedKeysAzureList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysAzureList",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysAzureList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewManagedKeysAzureList(terraformResource cdktf.IInterpolatingParent, terra
 	return &j
 }
 
-func NewManagedKeysAzureList_Override(m ManagedKeysAzureList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewManagedKeysAzureList_Override(m ManagedKeysAzureList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysAzureList",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysAzureList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_ManagedKeysAzureList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKeysAzureList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedKeysAzureList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_ManagedKeysAzureList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (m *jsiiProxy_ManagedKeysAzureList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (m *jsiiProxy_ManagedKeysAzureList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := m.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		m,
@@ -231,7 +231,7 @@ func (m *jsiiProxy_ManagedKeysAzureList) Get(index *float64) ManagedKeysAzureOut
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKeysAzureList) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ManagedKeysAzureList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

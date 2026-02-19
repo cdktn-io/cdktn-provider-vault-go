@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package managedkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/managedkeys/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/managedkeys/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ManagedKeysPkcsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowGenerateKey() interface{}
 	SetAllowGenerateKey(val interface{})
 	AllowGenerateKeyInput() interface{}
@@ -79,9 +79,9 @@ type ManagedKeysPkcsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenLabel() *string
 	SetTokenLabel(val *string)
 	TokenLabelInput() *string
@@ -91,7 +91,7 @@ type ManagedKeysPkcsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -107,9 +107,9 @@ type ManagedKeysPkcsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowGenerateKey()
 	ResetAllowReplaceKey()
 	ResetAllowStoreKey()
@@ -117,11 +117,13 @@ type ManagedKeysPkcsOutputReference interface {
 	ResetCurve()
 	ResetForceRwSession()
 	ResetKeyBits()
+	ResetKeyId()
+	ResetKeyLabel()
 	ResetSlot()
 	ResetTokenLabel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -131,7 +133,7 @@ type ManagedKeysPkcsOutputReference interface {
 
 // The jsii proxy struct for ManagedKeysPkcsOutputReference
 type jsiiProxy_ManagedKeysPkcsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference) AllowGenerateKey() interface{} {
@@ -474,8 +476,8 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKeysPkcsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -515,7 +517,7 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) Uuid() *string {
 }
 
 
-func NewManagedKeysPkcsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ManagedKeysPkcsOutputReference {
+func NewManagedKeysPkcsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ManagedKeysPkcsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewManagedKeysPkcsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -524,7 +526,7 @@ func NewManagedKeysPkcsOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_ManagedKeysPkcsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -532,11 +534,11 @@ func NewManagedKeysPkcsOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewManagedKeysPkcsOutputReference_Override(m ManagedKeysPkcsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewManagedKeysPkcsOutputReference_Override(m ManagedKeysPkcsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -740,7 +742,7 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,11 +793,11 @@ func (m *jsiiProxy_ManagedKeysPkcsOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKeysPkcsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -919,8 +921,8 @@ func (m *jsiiProxy_ManagedKeysPkcsOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKeysPkcsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -932,11 +934,11 @@ func (m *jsiiProxy_ManagedKeysPkcsOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKeysPkcsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1004,6 +1006,22 @@ func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetKeyBits() {
 	)
 }
 
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetKeyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetKeyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetKeyLabel() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetKeyLabel",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetSlot() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1020,7 +1038,7 @@ func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetTokenLabel() {
 	)
 }
 
-func (m *jsiiProxy_ManagedKeysPkcsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

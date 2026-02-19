@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package transitsecretcacheconfig
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig",
+		"@cdktn/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig",
 		reflect.TypeOf((*TransitSecretCacheConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -68,12 +68,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TransitSecretCacheConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig",
+		"@cdktn/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig",
 		reflect.TypeOf((*TransitSecretCacheConfigConfig)(nil)).Elem(),
 	)
 }

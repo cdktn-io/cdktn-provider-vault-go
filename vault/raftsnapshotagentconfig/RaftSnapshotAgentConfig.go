@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package raftsnapshotagentconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/raftsnapshotagentconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/raftsnapshotagentconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
 type RaftSnapshotAgentConfig interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AwsAccessKeyId() *string
 	SetAwsAccessKeyId(val *string)
 	AwsAccessKeyIdInput() *string
@@ -64,7 +64,7 @@ type RaftSnapshotAgentConfig interface {
 	SetAzureEndpoint(val *string)
 	AzureEndpointInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -83,9 +83,9 @@ type RaftSnapshotAgentConfig interface {
 	SetFilePrefix(val *string)
 	FilePrefixInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -109,9 +109,9 @@ type RaftSnapshotAgentConfig interface {
 	SetIntervalSeconds(val *float64)
 	IntervalSecondsInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LocalMaxSpace() *float64
 	SetLocalMaxSpace(val *float64)
 	LocalMaxSpaceInput() *float64
@@ -127,9 +127,9 @@ type RaftSnapshotAgentConfig interface {
 	SetPathPrefix(val *string)
 	PathPrefixInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -143,7 +143,7 @@ type RaftSnapshotAgentConfig interface {
 	SetStorageType(val *string)
 	StorageTypeInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -156,7 +156,7 @@ type RaftSnapshotAgentConfig interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -174,9 +174,9 @@ type RaftSnapshotAgentConfig interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -234,7 +234,7 @@ type RaftSnapshotAgentConfig interface {
 
 // The jsii proxy struct for RaftSnapshotAgentConfig
 type jsiiProxy_RaftSnapshotAgentConfig struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsAccessKeyId() *string {
@@ -557,8 +557,8 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureEndpointInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_RaftSnapshotAgentConfig) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) FilePrefixInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_RaftSnapshotAgentConfig) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -777,8 +777,8 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) IntervalSecondsInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -877,8 +877,8 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) PathPrefixInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -947,8 +947,8 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) StorageTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -978,7 +978,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
 func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) RaftSnapshotAgentConfig {
 	_init_.Initialize()
 
@@ -988,7 +988,7 @@ func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_RaftSnapshotAgentConfig{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
+		"@cdktn/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -996,12 +996,12 @@ func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
 func NewRaftSnapshotAgentConfig_Override(r RaftSnapshotAgentConfig, scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
+		"@cdktn/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -1224,7 +1224,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetFilePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1298,7 +1298,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetIntervalSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1353,7 +1353,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetPathPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1394,17 +1394,17 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetStorageType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a RaftSnapshotAgentConfig resource upon running "cdktf plan <stack-name>".
-func RaftSnapshotAgentConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a RaftSnapshotAgentConfig resource upon running "cdktn plan <stack-name>".
+func RaftSnapshotAgentConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateRaftSnapshotAgentConfig_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
+		"@cdktn/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1439,7 +1439,7 @@ func RaftSnapshotAgentConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
+		"@cdktn/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1458,7 +1458,7 @@ func RaftSnapshotAgentConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
+		"@cdktn/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1477,7 +1477,7 @@ func RaftSnapshotAgentConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
+		"@cdktn/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1490,7 +1490,7 @@ func RaftSnapshotAgentConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
+		"@cdktn/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
 		"tfResourceType",
 		&returns,
 	)
@@ -1535,11 +1535,11 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (r *jsiiProxy_RaftSnapshotAgentConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -1676,7 +1676,7 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RaftSnapshotAgentConfig) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1687,11 +1687,11 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) ImportFrom(id *string, provider cdkt
 	)
 }
 
-func (r *jsiiProxy_RaftSnapshotAgentConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RaftSnapshotAgentConfig) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,

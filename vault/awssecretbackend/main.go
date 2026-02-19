@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package awssecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend",
+		"@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend",
 		reflect.TypeOf((*AwsSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
@@ -134,6 +134,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindow", GoMethod: "ResetRotationWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSealWrap", GoMethod: "ResetSealWrap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretKey", GoMethod: "ResetSecretKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretKeyWo", GoMethod: "ResetSecretKeyWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretKeyWoVersion", GoMethod: "ResetSecretKeyWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStsEndpoint", GoMethod: "ResetStsEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStsFallbackEndpoints", GoMethod: "ResetStsFallbackEndpoints"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStsFallbackRegions", GoMethod: "ResetStsFallbackRegions"},
@@ -151,6 +153,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sealWrapInput", GoGetter: "SealWrapInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretKey", GoGetter: "SecretKey"},
 			_jsii_.MemberProperty{JsiiProperty: "secretKeyInput", GoGetter: "SecretKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secretKeyWo", GoGetter: "SecretKeyWo"},
+			_jsii_.MemberProperty{JsiiProperty: "secretKeyWoInput", GoGetter: "SecretKeyWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secretKeyWoVersion", GoGetter: "SecretKeyWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "secretKeyWoVersionInput", GoGetter: "SecretKeyWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "stsEndpoint", GoGetter: "StsEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "stsEndpointInput", GoGetter: "StsEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "stsFallbackEndpoints", GoGetter: "StsFallbackEndpoints"},
@@ -173,12 +179,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AwsSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig",
+		"@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig",
 		reflect.TypeOf((*AwsSecretBackendConfig)(nil)).Elem(),
 	)
 }

@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package transitsecretbackendkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/transitsecretbackendkey/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretbackendkey/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 type TransitSecretBackendKey interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AllowPlaintextBackup() interface{}
 	SetAllowPlaintextBackup(val interface{})
 	AllowPlaintextBackupInput() interface{}
@@ -25,13 +25,16 @@ type TransitSecretBackendKey interface {
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Context() *string
+	SetContext(val *string)
+	ContextInput() *string
 	ConvergentEncryption() interface{}
 	SetConvergentEncryption(val interface{})
 	ConvergentEncryptionInput() interface{}
@@ -53,9 +56,9 @@ type TransitSecretBackendKey interface {
 	SetExportable(val interface{})
 	ExportableInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -69,15 +72,21 @@ type TransitSecretBackendKey interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Keys() cdktf.StringMapList
+	Keys() cdktn.StringMapList
 	KeySize() *float64
 	SetKeySize(val *float64)
 	KeySizeInput() *float64
 	LatestVersion() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	ManagedKeyId() *string
+	SetManagedKeyId(val *string)
+	ManagedKeyIdInput() *string
+	ManagedKeyName() *string
+	SetManagedKeyName(val *string)
+	ManagedKeyNameInput() *string
 	MinAvailableVersion() *float64
 	MinDecryptionVersion() *float64
 	SetMinDecryptionVersion(val *float64)
@@ -97,21 +106,21 @@ type TransitSecretBackendKey interface {
 	SetParameterSet(val *string)
 	ParameterSetInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SupportsDecryption() cdktf.IResolvable
-	SupportsDerivation() cdktf.IResolvable
-	SupportsEncryption() cdktf.IResolvable
-	SupportsSigning() cdktf.IResolvable
+	SupportsDecryption() cdktn.IResolvable
+	SupportsDerivation() cdktn.IResolvable
+	SupportsEncryption() cdktn.IResolvable
+	SupportsSigning() cdktn.IResolvable
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -127,7 +136,7 @@ type TransitSecretBackendKey interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -145,9 +154,9 @@ type TransitSecretBackendKey interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -164,6 +173,7 @@ type TransitSecretBackendKey interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAllowPlaintextBackup()
 	ResetAutoRotatePeriod()
+	ResetContext()
 	ResetConvergentEncryption()
 	ResetDeletionAllowed()
 	ResetDerived()
@@ -172,6 +182,8 @@ type TransitSecretBackendKey interface {
 	ResetHybridKeyTypePqc()
 	ResetId()
 	ResetKeySize()
+	ResetManagedKeyId()
+	ResetManagedKeyName()
 	ResetMinDecryptionVersion()
 	ResetMinEncryptionVersion()
 	ResetNamespace()
@@ -195,7 +207,7 @@ type TransitSecretBackendKey interface {
 
 // The jsii proxy struct for TransitSecretBackendKey
 type jsiiProxy_TransitSecretBackendKey struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_TransitSecretBackendKey) AllowPlaintextBackup() interface{} {
@@ -258,8 +270,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_TransitSecretBackendKey) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -283,6 +295,26 @@ func (j *jsiiProxy_TransitSecretBackendKey) ConstructNodeMetadata() *map[string]
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) Context() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"context",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) ContextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contextInput",
 		&returns,
 	)
 	return returns
@@ -388,8 +420,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) ExportableInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_TransitSecretBackendKey) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -478,8 +510,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) Keys() cdktf.StringMapList {
-	var returns cdktf.StringMapList
+func (j *jsiiProxy_TransitSecretBackendKey) Keys() cdktn.StringMapList {
+	var returns cdktn.StringMapList
 	_jsii_.Get(
 		j,
 		"keys",
@@ -518,11 +550,51 @@ func (j *jsiiProxy_TransitSecretBackendKey) LatestVersion() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_TransitSecretBackendKey) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) ManagedKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) ManagedKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) ManagedKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) ManagedKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -648,8 +720,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) ParameterSetInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_TransitSecretBackendKey) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -678,8 +750,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SupportsDecryption() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_TransitSecretBackendKey) SupportsDecryption() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"supportsDecryption",
@@ -688,8 +760,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) SupportsDecryption() cdktf.IResolvab
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SupportsDerivation() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_TransitSecretBackendKey) SupportsDerivation() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"supportsDerivation",
@@ -698,8 +770,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) SupportsDerivation() cdktf.IResolvab
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SupportsEncryption() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_TransitSecretBackendKey) SupportsEncryption() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"supportsEncryption",
@@ -708,8 +780,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) SupportsEncryption() cdktf.IResolvab
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SupportsSigning() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_TransitSecretBackendKey) SupportsSigning() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"supportsSigning",
@@ -718,8 +790,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) SupportsSigning() cdktf.IResolvable 
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_TransitSecretBackendKey) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -769,7 +841,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) TransitSecretBackendKey {
 	_init_.Initialize()
 
@@ -779,7 +851,7 @@ func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_TransitSecretBackendKey{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -787,12 +859,12 @@ func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey_Override(t TransitSecretBackendKey, scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -838,6 +910,17 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey)SetContext(val *string) {
+	if err := j.validateSetContextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"context",
 		val,
 	)
 }
@@ -905,7 +988,7 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetExportable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -957,13 +1040,35 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetKeySize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey)SetManagedKeyId(val *string) {
+	if err := j.validateSetManagedKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey)SetManagedKeyName(val *string) {
+	if err := j.validateSetManagedKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedKeyName",
 		val,
 	)
 }
@@ -1023,7 +1128,7 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetParameterSet(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1053,17 +1158,17 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a TransitSecretBackendKey resource upon running "cdktf plan <stack-name>".
-func TransitSecretBackendKey_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a TransitSecretBackendKey resource upon running "cdktn plan <stack-name>".
+func TransitSecretBackendKey_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateTransitSecretBackendKey_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1098,7 +1203,7 @@ func TransitSecretBackendKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1117,7 +1222,7 @@ func TransitSecretBackendKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1136,7 +1241,7 @@ func TransitSecretBackendKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1149,7 +1254,7 @@ func TransitSecretBackendKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		"tfResourceType",
 		&returns,
 	)
@@ -1194,11 +1299,11 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (t *jsiiProxy_TransitSecretBackendKey) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TransitSecretBackendKey) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -1335,7 +1440,7 @@ func (t *jsiiProxy_TransitSecretBackendKey) HasResourceMove() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TransitSecretBackendKey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (t *jsiiProxy_TransitSecretBackendKey) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1346,11 +1451,11 @@ func (t *jsiiProxy_TransitSecretBackendKey) ImportFrom(id *string, provider cdkt
 	)
 }
 
-func (t *jsiiProxy_TransitSecretBackendKey) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TransitSecretBackendKey) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -1422,6 +1527,14 @@ func (t *jsiiProxy_TransitSecretBackendKey) ResetAutoRotatePeriod() {
 	)
 }
 
+func (t *jsiiProxy_TransitSecretBackendKey) ResetContext() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetContext",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TransitSecretBackendKey) ResetConvergentEncryption() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1482,6 +1595,22 @@ func (t *jsiiProxy_TransitSecretBackendKey) ResetKeySize() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetKeySize",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransitSecretBackendKey) ResetManagedKeyId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetManagedKeyId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransitSecretBackendKey) ResetManagedKeyName() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetManagedKeyName",
 		nil, // no parameters
 	)
 }

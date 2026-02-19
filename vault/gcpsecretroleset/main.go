@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package gcpsecretroleset
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset",
+		"@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRoleset",
 		reflect.TypeOf((*GcpSecretRoleset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -80,16 +80,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretRoleset{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetBinding",
+		"@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetBinding",
 		reflect.TypeOf((*GcpSecretRolesetBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetBindingList",
+		"@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetBindingList",
 		reflect.TypeOf((*GcpSecretRolesetBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -106,12 +106,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretRolesetBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetBindingOutputReference",
+		"@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetBindingOutputReference",
 		reflect.TypeOf((*GcpSecretRolesetBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,12 +142,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretRolesetBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig",
+		"@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig",
 		reflect.TypeOf((*GcpSecretRolesetConfig)(nil)).Elem(),
 	)
 }

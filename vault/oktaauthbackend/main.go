@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oktaauthbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		reflect.TypeOf((*OktaAuthBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -127,20 +127,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OktaAuthBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendConfig",
 		reflect.TypeOf((*OktaAuthBackendConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendGroup",
 		reflect.TypeOf((*OktaAuthBackendGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroupList",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendGroupList",
 		reflect.TypeOf((*OktaAuthBackendGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -157,12 +157,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OktaAuthBackendGroupList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroupOutputReference",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendGroupOutputReference",
 		reflect.TypeOf((*OktaAuthBackendGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,16 +195,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OktaAuthBackendGroupOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendTune",
 		reflect.TypeOf((*OktaAuthBackendTune)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList",
 		reflect.TypeOf((*OktaAuthBackendTuneList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -221,12 +221,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OktaAuthBackendTuneList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference",
 		reflect.TypeOf((*OktaAuthBackendTuneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeaders", GoGetter: "AllowedResponseHeaders"},
@@ -277,16 +277,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OktaAuthBackendTuneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendUser",
 		reflect.TypeOf((*OktaAuthBackendUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUserList",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendUserList",
 		reflect.TypeOf((*OktaAuthBackendUserList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -303,12 +303,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OktaAuthBackendUserList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUserOutputReference",
+		"@cdktn/provider-vault.oktaAuthBackend.OktaAuthBackendUserOutputReference",
 		reflect.TypeOf((*OktaAuthBackendUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -344,7 +344,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OktaAuthBackendUserOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

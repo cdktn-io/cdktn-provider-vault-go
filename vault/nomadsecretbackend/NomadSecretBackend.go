@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package nomadsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/nomadsecretbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/nomadsecretbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}.
 type NomadSecretBackend interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Accessor() *string
 	Address() *string
 	SetAddress(val *string)
@@ -38,13 +38,19 @@ type NomadSecretBackend interface {
 	SetCaCert(val *string)
 	CaCertInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientCert() *string
 	SetClientCert(val *string)
 	ClientCertInput() *string
 	ClientKey() *string
 	SetClientKey(val *string)
 	ClientKeyInput() *string
+	ClientKeyWo() *string
+	SetClientKeyWo(val *string)
+	ClientKeyWoInput() *string
+	ClientKeyWoVersion() *float64
+	SetClientKeyWoVersion(val *float64)
+	ClientKeyWoVersionInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -78,9 +84,9 @@ type NomadSecretBackend interface {
 	SetForceNoCache(val interface{})
 	ForceNoCacheInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -92,9 +98,9 @@ type NomadSecretBackend interface {
 	IdentityTokenKeyInput() *string
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ListingVisibility() *string
 	SetListingVisibility(val *string)
 	ListingVisibilityInput() *string
@@ -125,9 +131,9 @@ type NomadSecretBackend interface {
 	SetPluginVersion(val *string)
 	PluginVersionInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -138,7 +144,7 @@ type NomadSecretBackend interface {
 	SetSealWrap(val interface{})
 	SealWrapInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -146,6 +152,12 @@ type NomadSecretBackend interface {
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
+	TokenWo() *string
+	SetTokenWo(val *string)
+	TokenWoInput() *string
+	TokenWoVersion() *float64
+	SetTokenWoVersion(val *float64)
+	TokenWoVersionInput() *float64
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
@@ -157,7 +169,7 @@ type NomadSecretBackend interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -175,9 +187,9 @@ type NomadSecretBackend interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -201,6 +213,8 @@ type NomadSecretBackend interface {
 	ResetCaCert()
 	ResetClientCert()
 	ResetClientKey()
+	ResetClientKeyWo()
+	ResetClientKeyWoVersion()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDelegatedAuthAccessors()
 	ResetDescription()
@@ -223,6 +237,8 @@ type NomadSecretBackend interface {
 	ResetPluginVersion()
 	ResetSealWrap()
 	ResetToken()
+	ResetTokenWo()
+	ResetTokenWoVersion()
 	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -239,7 +255,7 @@ type NomadSecretBackend interface {
 
 // The jsii proxy struct for NomadSecretBackend
 type jsiiProxy_NomadSecretBackend struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_NomadSecretBackend) Accessor() *string {
@@ -392,8 +408,8 @@ func (j *jsiiProxy_NomadSecretBackend) CaCertInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NomadSecretBackend) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_NomadSecretBackend) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -437,6 +453,46 @@ func (j *jsiiProxy_NomadSecretBackend) ClientKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"clientKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) ClientKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) ClientKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) ClientKeyWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) ClientKeyWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeyWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -602,8 +658,8 @@ func (j *jsiiProxy_NomadSecretBackend) ForceNoCacheInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NomadSecretBackend) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_NomadSecretBackend) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -672,8 +728,8 @@ func (j *jsiiProxy_NomadSecretBackend) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NomadSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_NomadSecretBackend) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -872,8 +928,8 @@ func (j *jsiiProxy_NomadSecretBackend) PluginVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NomadSecretBackend) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_NomadSecretBackend) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -922,8 +978,8 @@ func (j *jsiiProxy_NomadSecretBackend) SealWrapInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NomadSecretBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_NomadSecretBackend) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -972,6 +1028,46 @@ func (j *jsiiProxy_NomadSecretBackend) TokenInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NomadSecretBackend) TokenWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) TokenWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) TokenWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) TokenWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NomadSecretBackend) Ttl() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -993,7 +1089,7 @@ func (j *jsiiProxy_NomadSecretBackend) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource.
 func NewNomadSecretBackend(scope constructs.Construct, id *string, config *NomadSecretBackendConfig) NomadSecretBackend {
 	_init_.Initialize()
 
@@ -1003,7 +1099,7 @@ func NewNomadSecretBackend(scope constructs.Construct, id *string, config *Nomad
 	j := jsiiProxy_NomadSecretBackend{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1011,12 +1107,12 @@ func NewNomadSecretBackend(scope constructs.Construct, id *string, config *Nomad
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource.
 func NewNomadSecretBackend_Override(n NomadSecretBackend, scope constructs.Construct, id *string, config *NomadSecretBackendConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -1121,6 +1217,28 @@ func (j *jsiiProxy_NomadSecretBackend)SetClientKey(val *string) {
 	)
 }
 
+func (j *jsiiProxy_NomadSecretBackend)SetClientKeyWo(val *string) {
+	if err := j.validateSetClientKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NomadSecretBackend)SetClientKeyWoVersion(val *float64) {
+	if err := j.validateSetClientKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientKeyWoVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NomadSecretBackend)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1217,7 +1335,7 @@ func (j *jsiiProxy_NomadSecretBackend)SetForceNoCache(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NomadSecretBackend)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1247,7 +1365,7 @@ func (j *jsiiProxy_NomadSecretBackend)SetIdentityTokenKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NomadSecretBackend)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1357,7 +1475,7 @@ func (j *jsiiProxy_NomadSecretBackend)SetPluginVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NomadSecretBackend)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1398,6 +1516,28 @@ func (j *jsiiProxy_NomadSecretBackend)SetToken(val *string) {
 	)
 }
 
+func (j *jsiiProxy_NomadSecretBackend)SetTokenWo(val *string) {
+	if err := j.validateSetTokenWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NomadSecretBackend)SetTokenWoVersion(val *float64) {
+	if err := j.validateSetTokenWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenWoVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NomadSecretBackend)SetTtl(val *float64) {
 	if err := j.validateSetTtlParameters(val); err != nil {
 		panic(err)
@@ -1409,17 +1549,17 @@ func (j *jsiiProxy_NomadSecretBackend)SetTtl(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a NomadSecretBackend resource upon running "cdktf plan <stack-name>".
-func NomadSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a NomadSecretBackend resource upon running "cdktn plan <stack-name>".
+func NomadSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateNomadSecretBackend_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1454,7 +1594,7 @@ func NomadSecretBackend_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1473,7 +1613,7 @@ func NomadSecretBackend_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1492,7 +1632,7 @@ func NomadSecretBackend_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1505,7 +1645,7 @@ func NomadSecretBackend_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend",
+		"@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend",
 		"tfResourceType",
 		&returns,
 	)
@@ -1550,11 +1690,11 @@ func (n *jsiiProxy_NomadSecretBackend) GetAnyMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (n *jsiiProxy_NomadSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NomadSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -1691,7 +1831,7 @@ func (n *jsiiProxy_NomadSecretBackend) HasResourceMove() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NomadSecretBackend) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (n *jsiiProxy_NomadSecretBackend) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1702,11 +1842,11 @@ func (n *jsiiProxy_NomadSecretBackend) ImportFrom(id *string, provider cdktf.Ter
 	)
 }
 
-func (n *jsiiProxy_NomadSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NomadSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -1830,6 +1970,22 @@ func (n *jsiiProxy_NomadSecretBackend) ResetClientKey() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetClientKey",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NomadSecretBackend) ResetClientKeyWo() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetClientKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NomadSecretBackend) ResetClientKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetClientKeyWoVersion",
 		nil, // no parameters
 	)
 }
@@ -1990,6 +2146,22 @@ func (n *jsiiProxy_NomadSecretBackend) ResetToken() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetToken",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NomadSecretBackend) ResetTokenWo() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTokenWo",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NomadSecretBackend) ResetTokenWoVersion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTokenWoVersion",
 		nil, // no parameters
 	)
 }

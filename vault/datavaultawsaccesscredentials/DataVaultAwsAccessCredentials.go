@@ -1,26 +1,26 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultawsaccesscredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultawsaccesscredentials/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultawsaccesscredentials/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials}.
 type DataVaultAwsAccessCredentials interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccessKey() *string
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -32,9 +32,9 @@ type DataVaultAwsAccessCredentials interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -44,21 +44,21 @@ type DataVaultAwsAccessCredentials interface {
 	IdInput() *string
 	LeaseDuration() *float64
 	LeaseId() *string
-	LeaseRenewable() cdktf.IResolvable
+	LeaseRenewable() cdktn.IResolvable
 	LeaseStartTime() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
@@ -73,7 +73,7 @@ type DataVaultAwsAccessCredentials interface {
 	SecretKey() *string
 	SecurityToken() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type DataVaultAwsAccessCredentials interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -105,7 +105,7 @@ type DataVaultAwsAccessCredentials interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -134,7 +134,7 @@ type DataVaultAwsAccessCredentials interface {
 
 // The jsii proxy struct for DataVaultAwsAccessCredentials
 type jsiiProxy_DataVaultAwsAccessCredentials struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataVaultAwsAccessCredentials) AccessKey() *string {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultAwsAccessCredentials) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultAwsAccessCredentials) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) LeaseId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials) LeaseRenewable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataVaultAwsAccessCredentials) LeaseRenewable() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"leaseRenewable",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) LeaseStartTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultAwsAccessCredentials) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultAwsAccessCredentials) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) SecurityToken() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultAwsAccessCredentials) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -508,7 +508,7 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials} Data Source.
 func NewDataVaultAwsAccessCredentials(scope constructs.Construct, id *string, config *DataVaultAwsAccessCredentialsConfig) DataVaultAwsAccessCredentials {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewDataVaultAwsAccessCredentials(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataVaultAwsAccessCredentials{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -526,12 +526,12 @@ func NewDataVaultAwsAccessCredentials(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials} Data Source.
 func NewDataVaultAwsAccessCredentials_Override(d DataVaultAwsAccessCredentials, scope constructs.Construct, id *string, config *DataVaultAwsAccessCredentialsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -567,7 +567,7 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -586,7 +586,7 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +608,7 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -671,17 +671,17 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials)SetType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultAwsAccessCredentials resource upon running "cdktf plan <stack-name>".
-func DataVaultAwsAccessCredentials_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultAwsAccessCredentials resource upon running "cdktn plan <stack-name>".
+func DataVaultAwsAccessCredentials_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultAwsAccessCredentials_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -716,7 +716,7 @@ func DataVaultAwsAccessCredentials_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func DataVaultAwsAccessCredentials_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -754,7 +754,7 @@ func DataVaultAwsAccessCredentials_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -767,7 +767,7 @@ func DataVaultAwsAccessCredentials_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
+		"@cdktn/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials",
 		"tfResourceType",
 		&returns,
 	)
@@ -801,11 +801,11 @@ func (d *jsiiProxy_DataVaultAwsAccessCredentials) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultAwsAccessCredentials) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultAwsAccessCredentials) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -929,11 +929,11 @@ func (d *jsiiProxy_DataVaultAwsAccessCredentials) GetStringMapAttribute(terrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultAwsAccessCredentials) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultAwsAccessCredentials) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

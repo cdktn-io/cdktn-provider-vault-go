@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package approleauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/approleauthbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/approleauthbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role}.
 type ApproleAuthBackendRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
 	AliasMetadataInput() *map[string]*string
@@ -25,7 +25,7 @@ type ApproleAuthBackendRole interface {
 	SetBindSecretId(val interface{})
 	BindSecretIdInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type ApproleAuthBackendRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,18 +52,21 @@ type ApproleAuthBackendRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LocalSecretIds() interface{}
+	SetLocalSecretIds(val interface{})
+	LocalSecretIdsInput() interface{}
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -86,7 +89,7 @@ type ApproleAuthBackendRole interface {
 	SetSecretIdTtl(val *float64)
 	SecretIdTtlInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -126,7 +129,7 @@ type ApproleAuthBackendRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -144,9 +147,9 @@ type ApproleAuthBackendRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -165,6 +168,7 @@ type ApproleAuthBackendRole interface {
 	ResetBackend()
 	ResetBindSecretId()
 	ResetId()
+	ResetLocalSecretIds()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -197,7 +201,7 @@ type ApproleAuthBackendRole interface {
 
 // The jsii proxy struct for ApproleAuthBackendRole
 type jsiiProxy_ApproleAuthBackendRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ApproleAuthBackendRole) AliasMetadata() *map[string]*string {
@@ -260,8 +264,8 @@ func (j *jsiiProxy_ApproleAuthBackendRole) BindSecretIdInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ApproleAuthBackendRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -310,8 +314,8 @@ func (j *jsiiProxy_ApproleAuthBackendRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ApproleAuthBackendRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -360,11 +364,31 @@ func (j *jsiiProxy_ApproleAuthBackendRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ApproleAuthBackendRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApproleAuthBackendRole) LocalSecretIds() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localSecretIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApproleAuthBackendRole) LocalSecretIdsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localSecretIdsInput",
 		&returns,
 	)
 	return returns
@@ -400,8 +424,8 @@ func (j *jsiiProxy_ApproleAuthBackendRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ApproleAuthBackendRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -530,8 +554,8 @@ func (j *jsiiProxy_ApproleAuthBackendRole) SecretIdTtlInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ApproleAuthBackendRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -741,7 +765,7 @@ func (j *jsiiProxy_ApproleAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role} Resource.
 func NewApproleAuthBackendRole(scope constructs.Construct, id *string, config *ApproleAuthBackendRoleConfig) ApproleAuthBackendRole {
 	_init_.Initialize()
 
@@ -751,7 +775,7 @@ func NewApproleAuthBackendRole(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_ApproleAuthBackendRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -759,12 +783,12 @@ func NewApproleAuthBackendRole(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role} Resource.
 func NewApproleAuthBackendRole_Override(a ApproleAuthBackendRole, scope constructs.Construct, id *string, config *ApproleAuthBackendRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -833,7 +857,7 @@ func (j *jsiiProxy_ApproleAuthBackendRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApproleAuthBackendRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -852,13 +876,24 @@ func (j *jsiiProxy_ApproleAuthBackendRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApproleAuthBackendRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApproleAuthBackendRole)SetLocalSecretIds(val interface{}) {
+	if err := j.validateSetLocalSecretIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSecretIds",
 		val,
 	)
 }
@@ -874,7 +909,7 @@ func (j *jsiiProxy_ApproleAuthBackendRole)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApproleAuthBackendRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1047,17 +1082,17 @@ func (j *jsiiProxy_ApproleAuthBackendRole)SetTokenType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ApproleAuthBackendRole resource upon running "cdktf plan <stack-name>".
-func ApproleAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ApproleAuthBackendRole resource upon running "cdktn plan <stack-name>".
+func ApproleAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateApproleAuthBackendRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1092,7 +1127,7 @@ func ApproleAuthBackendRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1111,7 +1146,7 @@ func ApproleAuthBackendRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1130,7 +1165,7 @@ func ApproleAuthBackendRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1143,7 +1178,7 @@ func ApproleAuthBackendRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
+		"@cdktn/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -1188,11 +1223,11 @@ func (a *jsiiProxy_ApproleAuthBackendRole) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (a *jsiiProxy_ApproleAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApproleAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1329,7 +1364,7 @@ func (a *jsiiProxy_ApproleAuthBackendRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApproleAuthBackendRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_ApproleAuthBackendRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1340,11 +1375,11 @@ func (a *jsiiProxy_ApproleAuthBackendRole) ImportFrom(id *string, provider cdktf
 	)
 }
 
-func (a *jsiiProxy_ApproleAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApproleAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1428,6 +1463,14 @@ func (a *jsiiProxy_ApproleAuthBackendRole) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApproleAuthBackendRole) ResetLocalSecretIds() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLocalSecretIds",
 		nil, // no parameters
 	)
 }

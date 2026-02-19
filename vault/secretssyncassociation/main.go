@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncassociation
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociation",
+		"@cdktn/provider-vault.secretsSyncAssociation.SecretsSyncAssociation",
 		reflect.TypeOf((*SecretsSyncAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,20 +73,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretsSyncAssociation{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig",
+		"@cdktn/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig",
 		reflect.TypeOf((*SecretsSyncAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadata",
+		"@cdktn/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadata",
 		reflect.TypeOf((*SecretsSyncAssociationMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataList",
+		"@cdktn/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataList",
 		reflect.TypeOf((*SecretsSyncAssociationMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -102,12 +102,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretsSyncAssociationMetadataList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataOutputReference",
+		"@cdktn/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataOutputReference",
 		reflect.TypeOf((*SecretsSyncAssociationMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,7 +137,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretsSyncAssociationMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (g *jsiiProxy_GcpSecretStaticAccountBindingList) validateGetParameters(inde
 	return nil
 }
 
-func (g *jsiiProxy_GcpSecretStaticAccountBindingList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GcpSecretStaticAccountBindingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_GcpSecretStaticAccountBindingList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_GcpSecretStaticAccountBindingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GcpSecretStaticAccountBindingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_GcpSecretStaticAccountBindingList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewGcpSecretStaticAccountBindingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGcpSecretStaticAccountBindingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

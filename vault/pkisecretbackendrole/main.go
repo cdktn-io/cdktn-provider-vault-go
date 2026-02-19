@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pkisecretbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole",
+		"@cdktn/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole",
 		reflect.TypeOf((*PkiSecretBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -216,20 +216,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig",
+		"@cdktn/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig",
 		reflect.TypeOf((*PkiSecretBackendRoleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifier",
+		"@cdktn/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifier",
 		reflect.TypeOf((*PkiSecretBackendRolePolicyIdentifier)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierList",
+		"@cdktn/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierList",
 		reflect.TypeOf((*PkiSecretBackendRolePolicyIdentifierList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -246,12 +246,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendRolePolicyIdentifierList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierOutputReference",
+		"@cdktn/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierOutputReference",
 		reflect.TypeOf((*PkiSecretBackendRolePolicyIdentifierOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -286,7 +286,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

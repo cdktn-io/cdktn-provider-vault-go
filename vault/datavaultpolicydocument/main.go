@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultpolicydocument
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocument",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocument",
 		reflect.TypeOf((*DataVaultPolicyDocument)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,24 +61,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultPolicyDocument{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentConfig",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentConfig",
 		reflect.TypeOf((*DataVaultPolicyDocumentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRule",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRule",
 		reflect.TypeOf((*DataVaultPolicyDocumentRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameter",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameter",
 		reflect.TypeOf((*DataVaultPolicyDocumentRuleAllowedParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameterList",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameterList",
 		reflect.TypeOf((*DataVaultPolicyDocumentRuleAllowedParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -95,12 +95,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultPolicyDocumentRuleAllowedParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameterOutputReference",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameterOutputReference",
 		reflect.TypeOf((*DataVaultPolicyDocumentRuleAllowedParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,16 +131,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultPolicyDocumentRuleAllowedParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameter",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameter",
 		reflect.TypeOf((*DataVaultPolicyDocumentRuleDeniedParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameterList",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameterList",
 		reflect.TypeOf((*DataVaultPolicyDocumentRuleDeniedParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -157,12 +157,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultPolicyDocumentRuleDeniedParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameterOutputReference",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameterOutputReference",
 		reflect.TypeOf((*DataVaultPolicyDocumentRuleDeniedParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,12 +193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultPolicyDocumentRuleDeniedParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleList",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleList",
 		reflect.TypeOf((*DataVaultPolicyDocumentRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -215,12 +215,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultPolicyDocumentRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleOutputReference",
+		"@cdktn/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleOutputReference",
 		reflect.TypeOf((*DataVaultPolicyDocumentRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedParameter", GoGetter: "AllowedParameter"},
@@ -274,7 +274,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultPolicyDocumentRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

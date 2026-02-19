@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azureauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/azureauthbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/azureauthbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role}.
 type AzureAuthBackendRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
 	AliasMetadataInput() *map[string]*string
@@ -40,7 +40,7 @@ type AzureAuthBackendRole interface {
 	SetBoundSubscriptionIds(val *[]*string)
 	BoundSubscriptionIdsInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -56,9 +56,9 @@ type AzureAuthBackendRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -67,18 +67,18 @@ type AzureAuthBackendRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type AzureAuthBackendRole interface {
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -129,7 +129,7 @@ type AzureAuthBackendRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -147,9 +147,9 @@ type AzureAuthBackendRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -201,7 +201,7 @@ type AzureAuthBackendRole interface {
 
 // The jsii proxy struct for AzureAuthBackendRole
 type jsiiProxy_AzureAuthBackendRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AzureAuthBackendRole) AliasMetadata() *map[string]*string {
@@ -364,8 +364,8 @@ func (j *jsiiProxy_AzureAuthBackendRole) BoundSubscriptionIdsInput() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AzureAuthBackendRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_AzureAuthBackendRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AzureAuthBackendRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_AzureAuthBackendRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AzureAuthBackendRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_AzureAuthBackendRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AzureAuthBackendRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -554,8 +554,8 @@ func (j *jsiiProxy_AzureAuthBackendRole) RoleInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AzureAuthBackendRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -765,7 +765,7 @@ func (j *jsiiProxy_AzureAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role} Resource.
 func NewAzureAuthBackendRole(scope constructs.Construct, id *string, config *AzureAuthBackendRoleConfig) AzureAuthBackendRole {
 	_init_.Initialize()
 
@@ -775,7 +775,7 @@ func NewAzureAuthBackendRole(scope constructs.Construct, id *string, config *Azu
 	j := jsiiProxy_AzureAuthBackendRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"@cdktn/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -783,12 +783,12 @@ func NewAzureAuthBackendRole(scope constructs.Construct, id *string, config *Azu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role} Resource.
 func NewAzureAuthBackendRole_Override(a AzureAuthBackendRole, scope constructs.Construct, id *string, config *AzureAuthBackendRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"@cdktn/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -912,7 +912,7 @@ func (j *jsiiProxy_AzureAuthBackendRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -931,7 +931,7 @@ func (j *jsiiProxy_AzureAuthBackendRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -953,7 +953,7 @@ func (j *jsiiProxy_AzureAuthBackendRole)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1082,17 +1082,17 @@ func (j *jsiiProxy_AzureAuthBackendRole)SetTokenType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a AzureAuthBackendRole resource upon running "cdktf plan <stack-name>".
-func AzureAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AzureAuthBackendRole resource upon running "cdktn plan <stack-name>".
+func AzureAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAzureAuthBackendRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"@cdktn/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1127,7 +1127,7 @@ func AzureAuthBackendRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"@cdktn/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1146,7 +1146,7 @@ func AzureAuthBackendRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"@cdktn/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1165,7 +1165,7 @@ func AzureAuthBackendRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"@cdktn/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1178,7 +1178,7 @@ func AzureAuthBackendRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"@cdktn/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -1223,11 +1223,11 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (a *jsiiProxy_AzureAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AzureAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1364,7 +1364,7 @@ func (a *jsiiProxy_AzureAuthBackendRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AzureAuthBackendRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AzureAuthBackendRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1375,11 +1375,11 @@ func (a *jsiiProxy_AzureAuthBackendRole) ImportFrom(id *string, provider cdktf.T
 	)
 }
 
-func (a *jsiiProxy_AzureAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AzureAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultkubernetesauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultkubernetesauthbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkubernetesauthbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
 type DataVaultKubernetesAuthBackendRole interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
 	AliasMetadataInput() *map[string]*string
@@ -29,7 +29,7 @@ type DataVaultKubernetesAuthBackendRole interface {
 	BoundServiceAccountNamespaces() *[]*string
 	BoundServiceAccountNamespaceSelector() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type DataVaultKubernetesAuthBackendRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,25 +52,25 @@ type DataVaultKubernetesAuthBackendRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type DataVaultKubernetesAuthBackendRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -123,7 +123,7 @@ type DataVaultKubernetesAuthBackendRole interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -160,7 +160,7 @@ type DataVaultKubernetesAuthBackendRole interface {
 
 // The jsii proxy struct for DataVaultKubernetesAuthBackendRole
 type jsiiProxy_DataVaultKubernetesAuthBackendRole struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) AliasMetadata() *map[string]*string {
@@ -263,8 +263,8 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) BoundServiceAccountNamesp
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) RoleNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -644,7 +644,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) TokenTypeInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Data Source.
 func NewDataVaultKubernetesAuthBackendRole(scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendRoleConfig) DataVaultKubernetesAuthBackendRole {
 	_init_.Initialize()
 
@@ -654,7 +654,7 @@ func NewDataVaultKubernetesAuthBackendRole(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataVaultKubernetesAuthBackendRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
+		"@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -662,12 +662,12 @@ func NewDataVaultKubernetesAuthBackendRole(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Data Source.
 func NewDataVaultKubernetesAuthBackendRole_Override(d DataVaultKubernetesAuthBackendRole, scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
+		"@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -725,7 +725,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -744,7 +744,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +766,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetNamespace(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -884,17 +884,17 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenType(val *string) 
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultKubernetesAuthBackendRole resource upon running "cdktf plan <stack-name>".
-func DataVaultKubernetesAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultKubernetesAuthBackendRole resource upon running "cdktn plan <stack-name>".
+func DataVaultKubernetesAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultKubernetesAuthBackendRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
+		"@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -929,7 +929,7 @@ func DataVaultKubernetesAuthBackendRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
+		"@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -948,7 +948,7 @@ func DataVaultKubernetesAuthBackendRole_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
+		"@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -967,7 +967,7 @@ func DataVaultKubernetesAuthBackendRole_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
+		"@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -980,7 +980,7 @@ func DataVaultKubernetesAuthBackendRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
+		"@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -1014,11 +1014,11 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1142,11 +1142,11 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetStringMapAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

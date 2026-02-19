@@ -1,28 +1,37 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncghdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncghdestination/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncghdestination/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}.
 type SecretsSyncGhDestination interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccessToken() *string
 	SetAccessToken(val *string)
 	AccessTokenInput() *string
+	AllowedIpv4Addresses() *[]*string
+	SetAllowedIpv4Addresses(val *[]*string)
+	AllowedIpv4AddressesInput() *[]*string
+	AllowedIpv6Addresses() *[]*string
+	SetAllowedIpv6Addresses(val *[]*string)
+	AllowedIpv6AddressesInput() *[]*string
+	AllowedPorts() *[]*float64
+	SetAllowedPorts(val *[]*float64)
+	AllowedPortsInput() *[]*float64
 	AppName() *string
 	SetAppName(val *string)
 	AppNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,10 +46,16 @@ type SecretsSyncGhDestination interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableStrictNetworking() interface{}
+	SetDisableStrictNetworking(val interface{})
+	DisableStrictNetworkingInput() interface{}
+	EnvironmentName() *string
+	SetEnvironmentName(val *string)
+	EnvironmentNameInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -55,9 +70,9 @@ type SecretsSyncGhDestination interface {
 	SetInstallationId(val *float64)
 	InstallationIdInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -67,9 +82,9 @@ type SecretsSyncGhDestination interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -85,8 +100,11 @@ type SecretsSyncGhDestination interface {
 	SecretNameTemplate() *string
 	SetSecretNameTemplate(val *string)
 	SecretNameTemplateInput() *string
+	SecretsLocation() *string
+	SetSecretsLocation(val *string)
+	SecretsLocationInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -100,7 +118,7 @@ type SecretsSyncGhDestination interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -118,9 +136,9 @@ type SecretsSyncGhDestination interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -136,7 +154,12 @@ type SecretsSyncGhDestination interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessToken()
+	ResetAllowedIpv4Addresses()
+	ResetAllowedIpv6Addresses()
+	ResetAllowedPorts()
 	ResetAppName()
+	ResetDisableStrictNetworking()
+	ResetEnvironmentName()
 	ResetGranularity()
 	ResetId()
 	ResetInstallationId()
@@ -147,6 +170,7 @@ type SecretsSyncGhDestination interface {
 	ResetRepositoryName()
 	ResetRepositoryOwner()
 	ResetSecretNameTemplate()
+	ResetSecretsLocation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -162,7 +186,7 @@ type SecretsSyncGhDestination interface {
 
 // The jsii proxy struct for SecretsSyncGhDestination
 type jsiiProxy_SecretsSyncGhDestination struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_SecretsSyncGhDestination) AccessToken() *string {
@@ -180,6 +204,66 @@ func (j *jsiiProxy_SecretsSyncGhDestination) AccessTokenInput() *string {
 	_jsii_.Get(
 		j,
 		"accessTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) AllowedIpv4Addresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpv4Addresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) AllowedIpv4AddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpv4AddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) AllowedIpv6Addresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpv6Addresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) AllowedIpv6AddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIpv6AddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) AllowedPorts() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"allowedPorts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) AllowedPortsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"allowedPortsInput",
 		&returns,
 	)
 	return returns
@@ -205,8 +289,8 @@ func (j *jsiiProxy_SecretsSyncGhDestination) AppNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGhDestination) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SecretsSyncGhDestination) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -255,8 +339,48 @@ func (j *jsiiProxy_SecretsSyncGhDestination) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGhDestination) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SecretsSyncGhDestination) DisableStrictNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableStrictNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) DisableStrictNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableStrictNetworkingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) EnvironmentName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) EnvironmentNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -345,8 +469,8 @@ func (j *jsiiProxy_SecretsSyncGhDestination) InstallationIdInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGhDestination) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SecretsSyncGhDestination) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -405,8 +529,8 @@ func (j *jsiiProxy_SecretsSyncGhDestination) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGhDestination) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SecretsSyncGhDestination) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -495,8 +619,28 @@ func (j *jsiiProxy_SecretsSyncGhDestination) SecretNameTemplateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncGhDestination) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SecretsSyncGhDestination) SecretsLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretsLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) SecretsLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretsLocationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -536,7 +680,7 @@ func (j *jsiiProxy_SecretsSyncGhDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
 func NewSecretsSyncGhDestination(scope constructs.Construct, id *string, config *SecretsSyncGhDestinationConfig) SecretsSyncGhDestination {
 	_init_.Initialize()
 
@@ -546,7 +690,7 @@ func NewSecretsSyncGhDestination(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_SecretsSyncGhDestination{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -554,12 +698,12 @@ func NewSecretsSyncGhDestination(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
 func NewSecretsSyncGhDestination_Override(s SecretsSyncGhDestination, scope constructs.Construct, id *string, config *SecretsSyncGhDestinationConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -572,6 +716,39 @@ func (j *jsiiProxy_SecretsSyncGhDestination)SetAccessToken(val *string) {
 	_jsii_.Set(
 		j,
 		"accessToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination)SetAllowedIpv4Addresses(val *[]*string) {
+	if err := j.validateSetAllowedIpv4AddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedIpv4Addresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination)SetAllowedIpv6Addresses(val *[]*string) {
+	if err := j.validateSetAllowedIpv6AddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedIpv6Addresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination)SetAllowedPorts(val *[]*float64) {
+	if err := j.validateSetAllowedPortsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedPorts",
 		val,
 	)
 }
@@ -617,7 +794,29 @@ func (j *jsiiProxy_SecretsSyncGhDestination)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncGhDestination)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecretsSyncGhDestination)SetDisableStrictNetworking(val interface{}) {
+	if err := j.validateSetDisableStrictNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableStrictNetworking",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination)SetEnvironmentName(val *string) {
+	if err := j.validateSetEnvironmentNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -658,7 +857,7 @@ func (j *jsiiProxy_SecretsSyncGhDestination)SetInstallationId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncGhDestination)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecretsSyncGhDestination)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +890,7 @@ func (j *jsiiProxy_SecretsSyncGhDestination)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncGhDestination)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecretsSyncGhDestination)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -743,17 +942,28 @@ func (j *jsiiProxy_SecretsSyncGhDestination)SetSecretNameTemplate(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a SecretsSyncGhDestination resource upon running "cdktf plan <stack-name>".
-func SecretsSyncGhDestination_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+func (j *jsiiProxy_SecretsSyncGhDestination)SetSecretsLocation(val *string) {
+	if err := j.validateSetSecretsLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretsLocation",
+		val,
+	)
+}
+
+// Generates CDKTN code for importing a SecretsSyncGhDestination resource upon running "cdktn plan <stack-name>".
+func SecretsSyncGhDestination_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSecretsSyncGhDestination_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -788,7 +998,7 @@ func SecretsSyncGhDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +1017,7 @@ func SecretsSyncGhDestination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -826,7 +1036,7 @@ func SecretsSyncGhDestination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +1049,7 @@ func SecretsSyncGhDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
+		"@cdktn/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination",
 		"tfResourceType",
 		&returns,
 	)
@@ -884,11 +1094,11 @@ func (s *jsiiProxy_SecretsSyncGhDestination) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncGhDestination) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretsSyncGhDestination) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1025,7 +1235,7 @@ func (s *jsiiProxy_SecretsSyncGhDestination) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncGhDestination) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SecretsSyncGhDestination) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1036,11 +1246,11 @@ func (s *jsiiProxy_SecretsSyncGhDestination) ImportFrom(id *string, provider cdk
 	)
 }
 
-func (s *jsiiProxy_SecretsSyncGhDestination) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretsSyncGhDestination) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1104,10 +1314,50 @@ func (s *jsiiProxy_SecretsSyncGhDestination) ResetAccessToken() {
 	)
 }
 
+func (s *jsiiProxy_SecretsSyncGhDestination) ResetAllowedIpv4Addresses() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedIpv4Addresses",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGhDestination) ResetAllowedIpv6Addresses() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedIpv6Addresses",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGhDestination) ResetAllowedPorts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedPorts",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretsSyncGhDestination) ResetAppName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAppName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGhDestination) ResetDisableStrictNetworking() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDisableStrictNetworking",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGhDestination) ResetEnvironmentName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnvironmentName",
 		nil, // no parameters
 	)
 }
@@ -1172,6 +1422,14 @@ func (s *jsiiProxy_SecretsSyncGhDestination) ResetSecretNameTemplate() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSecretNameTemplate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGhDestination) ResetSecretsLocation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretsLocation",
 		nil, // no parameters
 	)
 }

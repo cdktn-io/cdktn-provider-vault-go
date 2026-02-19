@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mfapingid
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.mfaPingid.MfaPingid",
+		"@cdktn/provider-vault.mfaPingid.MfaPingid",
 		reflect.TypeOf((*MfaPingid)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -80,12 +80,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MfaPingid{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.mfaPingid.MfaPingidConfig",
+		"@cdktn/provider-vault.mfaPingid.MfaPingidConfig",
 		reflect.TypeOf((*MfaPingidConfig)(nil)).Elem(),
 	)
 }

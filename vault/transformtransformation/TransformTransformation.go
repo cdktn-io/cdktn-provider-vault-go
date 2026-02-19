@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package transformtransformation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformtransformation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation vault_transform_transformation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation vault_transform_transformation}.
 type TransformTransformation interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AllowedRoles() *[]*string
 	SetAllowedRoles(val *[]*string)
 	AllowedRolesInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type TransformTransformation interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,9 +49,9 @@ type TransformTransformation interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaskingCharacter() *string
 	SetMaskingCharacter(val *string)
 	MaskingCharacterInput() *string
@@ -67,9 +67,9 @@ type TransformTransformation interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type TransformTransformation interface {
 	SetTemplates(val *[]*string)
 	TemplatesInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -102,7 +102,7 @@ type TransformTransformation interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -120,9 +120,9 @@ type TransformTransformation interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -164,7 +164,7 @@ type TransformTransformation interface {
 
 // The jsii proxy struct for TransformTransformation
 type jsiiProxy_TransformTransformation struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_TransformTransformation) AllowedRoles() *[]*string {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_TransformTransformation) AllowedRolesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformTransformation) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_TransformTransformation) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_TransformTransformation) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformTransformation) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_TransformTransformation) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_TransformTransformation) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformTransformation) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_TransformTransformation) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_TransformTransformation) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformTransformation) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_TransformTransformation) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_TransformTransformation) TemplatesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformTransformation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_TransformTransformation) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -548,7 +548,7 @@ func (j *jsiiProxy_TransformTransformation) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
 func NewTransformTransformation(scope constructs.Construct, id *string, config *TransformTransformationConfig) TransformTransformation {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewTransformTransformation(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_TransformTransformation{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.transformTransformation.TransformTransformation",
+		"@cdktn/provider-vault.transformTransformation.TransformTransformation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -566,12 +566,12 @@ func NewTransformTransformation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
 func NewTransformTransformation_Override(t TransformTransformation, scope constructs.Construct, id *string, config *TransformTransformationConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.transformTransformation.TransformTransformation",
+		"@cdktn/provider-vault.transformTransformation.TransformTransformation",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -629,7 +629,7 @@ func (j *jsiiProxy_TransformTransformation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TransformTransformation)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -648,7 +648,7 @@ func (j *jsiiProxy_TransformTransformation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TransformTransformation)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +703,7 @@ func (j *jsiiProxy_TransformTransformation)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TransformTransformation)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -766,17 +766,17 @@ func (j *jsiiProxy_TransformTransformation)SetType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a TransformTransformation resource upon running "cdktf plan <stack-name>".
-func TransformTransformation_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a TransformTransformation resource upon running "cdktn plan <stack-name>".
+func TransformTransformation_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateTransformTransformation_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transformTransformation.TransformTransformation",
+		"@cdktn/provider-vault.transformTransformation.TransformTransformation",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -811,7 +811,7 @@ func TransformTransformation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transformTransformation.TransformTransformation",
+		"@cdktn/provider-vault.transformTransformation.TransformTransformation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -830,7 +830,7 @@ func TransformTransformation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transformTransformation.TransformTransformation",
+		"@cdktn/provider-vault.transformTransformation.TransformTransformation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -849,7 +849,7 @@ func TransformTransformation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transformTransformation.TransformTransformation",
+		"@cdktn/provider-vault.transformTransformation.TransformTransformation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func TransformTransformation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.transformTransformation.TransformTransformation",
+		"@cdktn/provider-vault.transformTransformation.TransformTransformation",
 		"tfResourceType",
 		&returns,
 	)
@@ -907,11 +907,11 @@ func (t *jsiiProxy_TransformTransformation) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (t *jsiiProxy_TransformTransformation) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TransformTransformation) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -1048,7 +1048,7 @@ func (t *jsiiProxy_TransformTransformation) HasResourceMove() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TransformTransformation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (t *jsiiProxy_TransformTransformation) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1059,11 +1059,11 @@ func (t *jsiiProxy_TransformTransformation) ImportFrom(id *string, provider cdkt
 	)
 }
 
-func (t *jsiiProxy_TransformTransformation) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TransformTransformation) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,

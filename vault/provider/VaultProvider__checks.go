@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -11,7 +11,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (v *jsiiProxy_VaultProvider) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -76,7 +76,7 @@ func validateVaultProvider_IsTerraformProviderParameters(x interface{}) error {
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLogin:
 		val := val.(*[]*VaultProviderAuthLogin)
@@ -95,7 +95,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginParameters(val interface{}
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLogin; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLogin; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginParameters(val interface{}
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAwsParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginAws:
 		val := val.(*[]*VaultProviderAuthLoginAws)
@@ -123,7 +123,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAwsParameters(val interfac
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginAws; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginAws; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -132,7 +132,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAwsParameters(val interfac
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAzureParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginAzure:
 		val := val.(*[]*VaultProviderAuthLoginAzure)
@@ -151,7 +151,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAzureParameters(val interf
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginAzure; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginAzure; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -160,7 +160,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAzureParameters(val interf
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginCertParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginCert:
 		val := val.(*[]*VaultProviderAuthLoginCert)
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginCertParameters(val interfa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginCert; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginCert; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -188,7 +188,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginCertParameters(val interfa
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginGcpParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginGcp:
 		val := val.(*[]*VaultProviderAuthLoginGcp)
@@ -207,7 +207,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginGcpParameters(val interfac
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginGcp; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginGcp; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -216,7 +216,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginGcpParameters(val interfac
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginJwtParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginJwt:
 		val := val.(*[]*VaultProviderAuthLoginJwt)
@@ -235,7 +235,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginJwtParameters(val interfac
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginJwt; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginJwt; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -244,7 +244,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginJwtParameters(val interfac
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginKerberosParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginKerberos:
 		val := val.(*[]*VaultProviderAuthLoginKerberos)
@@ -263,7 +263,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginKerberosParameters(val int
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginKerberos; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginKerberos; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -272,7 +272,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginKerberosParameters(val int
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOciParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginOci:
 		val := val.(*[]*VaultProviderAuthLoginOci)
@@ -291,7 +291,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOciParameters(val interfac
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginOci; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginOci; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -300,7 +300,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOciParameters(val interfac
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOidcParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginOidc:
 		val := val.(*[]*VaultProviderAuthLoginOidc)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOidcParameters(val interfa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginOidc; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginOidc; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -328,7 +328,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOidcParameters(val interfa
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginRadiusParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginRadius:
 		val := val.(*[]*VaultProviderAuthLoginRadius)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginRadiusParameters(val inter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginRadius; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginRadius; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -356,7 +356,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginRadiusParameters(val inter
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginTokenFileParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginTokenFile:
 		val := val.(*[]*VaultProviderAuthLoginTokenFile)
@@ -375,7 +375,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginTokenFileParameters(val in
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginTokenFile; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginTokenFile; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -384,7 +384,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginTokenFileParameters(val in
 
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginUserpassParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderAuthLoginUserpass:
 		val := val.(*[]*VaultProviderAuthLoginUserpass)
@@ -403,7 +403,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginUserpassParameters(val int
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderAuthLoginUserpass; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderAuthLoginUserpass; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -412,7 +412,7 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginUserpassParameters(val int
 
 func (j *jsiiProxy_VaultProvider) validateSetClientAuthParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderClientAuth:
 		val := val.(*[]*VaultProviderClientAuth)
@@ -431,7 +431,7 @@ func (j *jsiiProxy_VaultProvider) validateSetClientAuthParameters(val interface{
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderClientAuth; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderClientAuth; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -440,7 +440,7 @@ func (j *jsiiProxy_VaultProvider) validateSetClientAuthParameters(val interface{
 
 func (j *jsiiProxy_VaultProvider) validateSetHeadersParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*VaultProviderHeaders:
 		val := val.(*[]*VaultProviderHeaders)
@@ -459,7 +459,7 @@ func (j *jsiiProxy_VaultProvider) validateSetHeadersParameters(val interface{}) 
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*VaultProviderHeaders; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*VaultProviderHeaders; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -472,11 +472,11 @@ func (j *jsiiProxy_VaultProvider) validateSetSetNamespaceFromTokenParameters(val
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -489,11 +489,11 @@ func (j *jsiiProxy_VaultProvider) validateSetSkipChildTokenParameters(val interf
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -506,11 +506,11 @@ func (j *jsiiProxy_VaultProvider) validateSetSkipGetVaultVersionParameters(val i
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -523,11 +523,11 @@ func (j *jsiiProxy_VaultProvider) validateSetSkipTlsVerifyParameters(val interfa
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

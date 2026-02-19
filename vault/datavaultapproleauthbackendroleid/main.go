@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultapproleauthbackendroleid
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultApproleAuthBackendRoleId.DataVaultApproleAuthBackendRoleId",
+		"@cdktn/provider-vault.dataVaultApproleAuthBackendRoleId.DataVaultApproleAuthBackendRoleId",
 		reflect.TypeOf((*DataVaultApproleAuthBackendRoleId)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,12 +62,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultApproleAuthBackendRoleId{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultApproleAuthBackendRoleId.DataVaultApproleAuthBackendRoleIdConfig",
+		"@cdktn/provider-vault.dataVaultApproleAuthBackendRoleId.DataVaultApproleAuthBackendRoleIdConfig",
 		reflect.TypeOf((*DataVaultApproleAuthBackendRoleIdConfig)(nil)).Elem(),
 	)
 }

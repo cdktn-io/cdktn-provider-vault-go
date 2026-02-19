@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package samlauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/samlauthbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
 type SamlAuthBackend interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AcsUrls() *[]*string
 	SetAcsUrls(val *[]*string)
 	AcsUrlsInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -44,9 +44,9 @@ type SamlAuthBackend interface {
 	SetEntityId(val *string)
 	EntityIdInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -67,9 +67,9 @@ type SamlAuthBackend interface {
 	SetIdpSsoUrl(val *string)
 	IdpSsoUrlInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -79,9 +79,9 @@ type SamlAuthBackend interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -89,13 +89,19 @@ type SamlAuthBackend interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
 	Tune() SamlAuthBackendTuneList
 	TuneInput() interface{}
+	ValidateAssertionSignature() interface{}
+	SetValidateAssertionSignature(val interface{})
+	ValidateAssertionSignatureInput() interface{}
+	ValidateResponseSignature() interface{}
+	SetValidateResponseSignature(val interface{})
+	ValidateResponseSignatureInput() interface{}
 	VerboseLogging() interface{}
 	SetVerboseLogging(val interface{})
 	VerboseLoggingInput() interface{}
@@ -107,7 +113,7 @@ type SamlAuthBackend interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -125,9 +131,9 @@ type SamlAuthBackend interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -156,6 +162,8 @@ type SamlAuthBackend interface {
 	ResetOverrideLogicalId()
 	ResetPath()
 	ResetTune()
+	ResetValidateAssertionSignature()
+	ResetValidateResponseSignature()
 	ResetVerboseLogging()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -172,7 +180,7 @@ type SamlAuthBackend interface {
 
 // The jsii proxy struct for SamlAuthBackend
 type jsiiProxy_SamlAuthBackend struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_SamlAuthBackend) AcsUrls() *[]*string {
@@ -195,8 +203,8 @@ func (j *jsiiProxy_SamlAuthBackend) AcsUrlsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SamlAuthBackend) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SamlAuthBackend) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -305,8 +313,8 @@ func (j *jsiiProxy_SamlAuthBackend) EntityIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SamlAuthBackend) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SamlAuthBackend) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -435,8 +443,8 @@ func (j *jsiiProxy_SamlAuthBackend) IdpSsoUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SamlAuthBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SamlAuthBackend) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -495,8 +503,8 @@ func (j *jsiiProxy_SamlAuthBackend) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SamlAuthBackend) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SamlAuthBackend) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -525,8 +533,8 @@ func (j *jsiiProxy_SamlAuthBackend) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SamlAuthBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SamlAuthBackend) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -575,6 +583,46 @@ func (j *jsiiProxy_SamlAuthBackend) TuneInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SamlAuthBackend) ValidateAssertionSignature() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validateAssertionSignature",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SamlAuthBackend) ValidateAssertionSignatureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validateAssertionSignatureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SamlAuthBackend) ValidateResponseSignature() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validateResponseSignature",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SamlAuthBackend) ValidateResponseSignatureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validateResponseSignatureInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SamlAuthBackend) VerboseLogging() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -596,7 +644,7 @@ func (j *jsiiProxy_SamlAuthBackend) VerboseLoggingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
 func NewSamlAuthBackend(scope constructs.Construct, id *string, config *SamlAuthBackendConfig) SamlAuthBackend {
 	_init_.Initialize()
 
@@ -606,7 +654,7 @@ func NewSamlAuthBackend(scope constructs.Construct, id *string, config *SamlAuth
 	j := jsiiProxy_SamlAuthBackend{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -614,12 +662,12 @@ func NewSamlAuthBackend(scope constructs.Construct, id *string, config *SamlAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
 func NewSamlAuthBackend_Override(s SamlAuthBackend, scope constructs.Construct, id *string, config *SamlAuthBackendConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -699,7 +747,7 @@ func (j *jsiiProxy_SamlAuthBackend)SetEntityId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlAuthBackend)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SamlAuthBackend)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -762,7 +810,7 @@ func (j *jsiiProxy_SamlAuthBackend)SetIdpSsoUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlAuthBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SamlAuthBackend)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +843,7 @@ func (j *jsiiProxy_SamlAuthBackend)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlAuthBackend)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SamlAuthBackend)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -814,6 +862,28 @@ func (j *jsiiProxy_SamlAuthBackend)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_SamlAuthBackend)SetValidateAssertionSignature(val interface{}) {
+	if err := j.validateSetValidateAssertionSignatureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validateAssertionSignature",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SamlAuthBackend)SetValidateResponseSignature(val interface{}) {
+	if err := j.validateSetValidateResponseSignatureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validateResponseSignature",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SamlAuthBackend)SetVerboseLogging(val interface{}) {
 	if err := j.validateSetVerboseLoggingParameters(val); err != nil {
 		panic(err)
@@ -825,17 +895,17 @@ func (j *jsiiProxy_SamlAuthBackend)SetVerboseLogging(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a SamlAuthBackend resource upon running "cdktf plan <stack-name>".
-func SamlAuthBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SamlAuthBackend resource upon running "cdktn plan <stack-name>".
+func SamlAuthBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSamlAuthBackend_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -870,7 +940,7 @@ func SamlAuthBackend_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -889,7 +959,7 @@ func SamlAuthBackend_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -908,7 +978,7 @@ func SamlAuthBackend_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -921,7 +991,7 @@ func SamlAuthBackend_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend",
+		"@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend",
 		"tfResourceType",
 		&returns,
 	)
@@ -966,11 +1036,11 @@ func (s *jsiiProxy_SamlAuthBackend) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (s *jsiiProxy_SamlAuthBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SamlAuthBackend) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1107,7 +1177,7 @@ func (s *jsiiProxy_SamlAuthBackend) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SamlAuthBackend) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SamlAuthBackend) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1118,11 +1188,11 @@ func (s *jsiiProxy_SamlAuthBackend) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (s *jsiiProxy_SamlAuthBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SamlAuthBackend) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1273,6 +1343,22 @@ func (s *jsiiProxy_SamlAuthBackend) ResetTune() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTune",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SamlAuthBackend) ResetValidateAssertionSignature() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValidateAssertionSignature",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SamlAuthBackend) ResetValidateResponseSignature() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValidateResponseSignature",
 		nil, // no parameters
 	)
 }

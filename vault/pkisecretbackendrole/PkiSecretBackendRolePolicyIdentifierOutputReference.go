@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pkisecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PkiSecretBackendRolePolicyIdentifierOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type PkiSecretBackendRolePolicyIdentifierOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type PkiSecretBackendRolePolicyIdentifierOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCps()
 	ResetNotice()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type PkiSecretBackendRolePolicyIdentifierOutputReference interface {
 
 // The jsii proxy struct for PkiSecretBackendRolePolicyIdentifierOutputReference
 type jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) ComplexObjectIndex() interface{} {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) Terrafor
 }
 
 
-func NewPkiSecretBackendRolePolicyIdentifierOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PkiSecretBackendRolePolicyIdentifierOutputReference {
+func NewPkiSecretBackendRolePolicyIdentifierOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PkiSecretBackendRolePolicyIdentifierOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPkiSecretBackendRolePolicyIdentifierOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -230,7 +230,7 @@ func NewPkiSecretBackendRolePolicyIdentifierOutputReference(terraformResource cd
 	j := jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierOutputReference",
+		"@cdktn/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewPkiSecretBackendRolePolicyIdentifierOutputReference(terraformResource cd
 	return &j
 }
 
-func NewPkiSecretBackendRolePolicyIdentifierOutputReference_Override(p PkiSecretBackendRolePolicyIdentifierOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPkiSecretBackendRolePolicyIdentifierOutputReference_Override(p PkiSecretBackendRolePolicyIdentifierOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierOutputReference",
+		"@cdktn/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) GetAnyMa
 	return returns
 }
 
-func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -493,8 +493,8 @@ func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) GetStrin
 	return returns
 }
 
-func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -506,11 +506,11 @@ func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) Interpol
 	return returns
 }
 
-func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -538,7 +538,7 @@ func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) ResetNot
 	)
 }
 
-func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

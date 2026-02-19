@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -91,6 +91,18 @@ func validateSecretsSyncAzureDestination_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetAllowedIpv4AddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetAllowedIpv6AddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetAllowedPortsParameters(val *[]*float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetClientIdParameters(val *string) error {
 	return nil
 }
@@ -115,6 +127,10 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetCustomTagsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetDisableStrictNetworkingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetGranularityParameters(val *string) error {
 	return nil
 }
@@ -127,7 +143,7 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetKeyVaultUriParameters
 	return nil
 }
 
-func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

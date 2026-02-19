@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -91,6 +91,18 @@ func validateSecretsSyncGcpDestination_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetAllowedIpv4AddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetAllowedIpv6AddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetAllowedPortsParameters(val *[]*float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -107,6 +119,14 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetCustomTagsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetDisableStrictNetworkingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetGlobalKmsKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetGranularityParameters(val *string) error {
 	return nil
 }
@@ -115,7 +135,11 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetLocationalKmsKeysParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -132,6 +156,10 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetProjectIdParameters(val
 }
 
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetReplicationLocationsParameters(val *[]*string) error {
 	return nil
 }
 

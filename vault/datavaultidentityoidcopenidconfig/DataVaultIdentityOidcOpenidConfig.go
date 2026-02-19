@@ -1,23 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultidentityoidcopenidconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultidentityoidcopenidconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityoidcopenidconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config}.
 type DataVaultIdentityOidcOpenidConfig interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AuthorizationEndpoint() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,9 +29,9 @@ type DataVaultIdentityOidcOpenidConfig interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -44,9 +44,9 @@ type DataVaultIdentityOidcOpenidConfig interface {
 	Issuer() *string
 	JwksUri() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -56,17 +56,17 @@ type DataVaultIdentityOidcOpenidConfig interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	RequestUriParameterSupported() cdktf.IResolvable
+	RequestUriParameterSupported() cdktn.IResolvable
 	ResponseTypesSupported() *[]*string
 	ScopesSupported() *[]*string
 	SubjectTypesSupported() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -79,7 +79,7 @@ type DataVaultIdentityOidcOpenidConfig interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -95,7 +95,7 @@ type DataVaultIdentityOidcOpenidConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -120,7 +120,7 @@ type DataVaultIdentityOidcOpenidConfig interface {
 
 // The jsii proxy struct for DataVaultIdentityOidcOpenidConfig
 type jsiiProxy_DataVaultIdentityOidcOpenidConfig struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) AuthorizationEndpoint() *string {
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) AuthorizationEndpoint() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) JwksUri() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) RawOverrides() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) RequestUriParameterSupported() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) RequestUriParameterSupported() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"requestUriParameterSupported",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) SubjectTypesSupported() *[
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -444,7 +444,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) UserinfoEndpoint() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config} Data Source.
 func NewDataVaultIdentityOidcOpenidConfig(scope constructs.Construct, id *string, config *DataVaultIdentityOidcOpenidConfigConfig) DataVaultIdentityOidcOpenidConfig {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataVaultIdentityOidcOpenidConfig(scope constructs.Construct, id *string
 	j := jsiiProxy_DataVaultIdentityOidcOpenidConfig{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
+		"@cdktn/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,12 +462,12 @@ func NewDataVaultIdentityOidcOpenidConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config} Data Source.
 func NewDataVaultIdentityOidcOpenidConfig_Override(d DataVaultIdentityOidcOpenidConfig, scope constructs.Construct, id *string, config *DataVaultIdentityOidcOpenidConfigConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
+		"@cdktn/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -492,7 +492,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -511,7 +511,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +544,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -552,17 +552,17 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig)SetProvider(val cdktf.Terra
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultIdentityOidcOpenidConfig resource upon running "cdktf plan <stack-name>".
-func DataVaultIdentityOidcOpenidConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultIdentityOidcOpenidConfig resource upon running "cdktn plan <stack-name>".
+func DataVaultIdentityOidcOpenidConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultIdentityOidcOpenidConfig_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
+		"@cdktn/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -597,7 +597,7 @@ func DataVaultIdentityOidcOpenidConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
+		"@cdktn/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +616,7 @@ func DataVaultIdentityOidcOpenidConfig_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
+		"@cdktn/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func DataVaultIdentityOidcOpenidConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
+		"@cdktn/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func DataVaultIdentityOidcOpenidConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
+		"@cdktn/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig",
 		"tfResourceType",
 		&returns,
 	)
@@ -682,11 +682,11 @@ func (d *jsiiProxy_DataVaultIdentityOidcOpenidConfig) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultIdentityOidcOpenidConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultIdentityOidcOpenidConfig) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -810,11 +810,11 @@ func (d *jsiiProxy_DataVaultIdentityOidcOpenidConfig) GetStringMapAttribute(terr
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultIdentityOidcOpenidConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultIdentityOidcOpenidConfig) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

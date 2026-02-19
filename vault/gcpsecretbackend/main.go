@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package gcpsecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend",
+		"@cdktn/provider-vault.gcpSecretBackend.GcpSecretBackend",
 		reflect.TypeOf((*GcpSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -158,12 +158,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig",
+		"@cdktn/provider-vault.gcpSecretBackend.GcpSecretBackendConfig",
 		reflect.TypeOf((*GcpSecretBackendConfig)(nil)).Elem(),
 	)
 }

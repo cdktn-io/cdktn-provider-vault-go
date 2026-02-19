@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package consulsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/consulsecretbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/consulsecretbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
 type ConsulSecretBackend interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Accessor() *string
 	Address() *string
 	SetAddress(val *string)
@@ -38,13 +38,19 @@ type ConsulSecretBackend interface {
 	SetCaCert(val *string)
 	CaCertInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientCert() *string
 	SetClientCert(val *string)
 	ClientCertInput() *string
 	ClientKey() *string
 	SetClientKey(val *string)
 	ClientKeyInput() *string
+	ClientKeyWo() *string
+	SetClientKeyWo(val *string)
+	ClientKeyWoInput() *string
+	ClientKeyWoVersion() *float64
+	SetClientKeyWoVersion(val *float64)
+	ClientKeyWoVersionInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -78,9 +84,9 @@ type ConsulSecretBackend interface {
 	SetForceNoCache(val interface{})
 	ForceNoCacheInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -92,9 +98,9 @@ type ConsulSecretBackend interface {
 	IdentityTokenKeyInput() *string
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ListingVisibility() *string
 	SetListingVisibility(val *string)
 	ListingVisibilityInput() *string
@@ -122,9 +128,9 @@ type ConsulSecretBackend interface {
 	SetPluginVersion(val *string)
 	PluginVersionInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -138,7 +144,7 @@ type ConsulSecretBackend interface {
 	SetSealWrap(val interface{})
 	SealWrapInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -146,6 +152,12 @@ type ConsulSecretBackend interface {
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
+	TokenWo() *string
+	SetTokenWo(val *string)
+	TokenWoInput() *string
+	TokenWoVersion() *float64
+	SetTokenWoVersion(val *float64)
+	TokenWoVersionInput() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -154,7 +166,7 @@ type ConsulSecretBackend interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -172,9 +184,9 @@ type ConsulSecretBackend interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -197,6 +209,8 @@ type ConsulSecretBackend interface {
 	ResetCaCert()
 	ResetClientCert()
 	ResetClientKey()
+	ResetClientKeyWo()
+	ResetClientKeyWoVersion()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDelegatedAuthAccessors()
 	ResetDescription()
@@ -219,6 +233,8 @@ type ConsulSecretBackend interface {
 	ResetScheme()
 	ResetSealWrap()
 	ResetToken()
+	ResetTokenWo()
+	ResetTokenWoVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -234,7 +250,7 @@ type ConsulSecretBackend interface {
 
 // The jsii proxy struct for ConsulSecretBackend
 type jsiiProxy_ConsulSecretBackend struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ConsulSecretBackend) Accessor() *string {
@@ -387,8 +403,8 @@ func (j *jsiiProxy_ConsulSecretBackend) CaCertInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulSecretBackend) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ConsulSecretBackend) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -432,6 +448,46 @@ func (j *jsiiProxy_ConsulSecretBackend) ClientKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"clientKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ClientKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ClientKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ClientKeyWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ClientKeyWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeyWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -597,8 +653,8 @@ func (j *jsiiProxy_ConsulSecretBackend) ForceNoCacheInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulSecretBackend) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ConsulSecretBackend) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -667,8 +723,8 @@ func (j *jsiiProxy_ConsulSecretBackend) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ConsulSecretBackend) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -847,8 +903,8 @@ func (j *jsiiProxy_ConsulSecretBackend) PluginVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulSecretBackend) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ConsulSecretBackend) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -917,8 +973,8 @@ func (j *jsiiProxy_ConsulSecretBackend) SealWrapInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulSecretBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ConsulSecretBackend) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -967,8 +1023,48 @@ func (j *jsiiProxy_ConsulSecretBackend) TokenInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) TokenWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenWo",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
+func (j *jsiiProxy_ConsulSecretBackend) TokenWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) TokenWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) TokenWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
 func NewConsulSecretBackend(scope constructs.Construct, id *string, config *ConsulSecretBackendConfig) ConsulSecretBackend {
 	_init_.Initialize()
 
@@ -978,7 +1074,7 @@ func NewConsulSecretBackend(scope constructs.Construct, id *string, config *Cons
 	j := jsiiProxy_ConsulSecretBackend{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -986,12 +1082,12 @@ func NewConsulSecretBackend(scope constructs.Construct, id *string, config *Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
 func NewConsulSecretBackend_Override(c ConsulSecretBackend, scope constructs.Construct, id *string, config *ConsulSecretBackendConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1096,6 +1192,28 @@ func (j *jsiiProxy_ConsulSecretBackend)SetClientKey(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ConsulSecretBackend)SetClientKeyWo(val *string) {
+	if err := j.validateSetClientKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetClientKeyWoVersion(val *float64) {
+	if err := j.validateSetClientKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientKeyWoVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ConsulSecretBackend)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1192,7 +1310,7 @@ func (j *jsiiProxy_ConsulSecretBackend)SetForceNoCache(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ConsulSecretBackend)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1222,7 +1340,7 @@ func (j *jsiiProxy_ConsulSecretBackend)SetIdentityTokenKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ConsulSecretBackend)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1321,7 +1439,7 @@ func (j *jsiiProxy_ConsulSecretBackend)SetPluginVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackend)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ConsulSecretBackend)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1373,17 +1491,39 @@ func (j *jsiiProxy_ConsulSecretBackend)SetToken(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ConsulSecretBackend resource upon running "cdktf plan <stack-name>".
-func ConsulSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+func (j *jsiiProxy_ConsulSecretBackend)SetTokenWo(val *string) {
+	if err := j.validateSetTokenWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetTokenWoVersion(val *float64) {
+	if err := j.validateSetTokenWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenWoVersion",
+		val,
+	)
+}
+
+// Generates CDKTN code for importing a ConsulSecretBackend resource upon running "cdktn plan <stack-name>".
+func ConsulSecretBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateConsulSecretBackend_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1418,7 +1558,7 @@ func ConsulSecretBackend_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1437,7 +1577,7 @@ func ConsulSecretBackend_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1456,7 +1596,7 @@ func ConsulSecretBackend_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1469,7 +1609,7 @@ func ConsulSecretBackend_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend",
+		"@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend",
 		"tfResourceType",
 		&returns,
 	)
@@ -1514,11 +1654,11 @@ func (c *jsiiProxy_ConsulSecretBackend) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (c *jsiiProxy_ConsulSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ConsulSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1655,7 +1795,7 @@ func (c *jsiiProxy_ConsulSecretBackend) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ConsulSecretBackend) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_ConsulSecretBackend) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1666,11 +1806,11 @@ func (c *jsiiProxy_ConsulSecretBackend) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (c *jsiiProxy_ConsulSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ConsulSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1786,6 +1926,22 @@ func (c *jsiiProxy_ConsulSecretBackend) ResetClientKey() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetClientKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetClientKeyWo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClientKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetClientKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClientKeyWoVersion",
 		nil, // no parameters
 	)
 }
@@ -1946,6 +2102,22 @@ func (c *jsiiProxy_ConsulSecretBackend) ResetToken() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetToken",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetTokenWo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTokenWo",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetTokenWoVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTokenWoVersion",
 		nil, // no parameters
 	)
 }

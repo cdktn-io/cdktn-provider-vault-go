@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package awsauthbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.awsAuthBackendRole.AwsAuthBackendRole",
+		"@cdktn/provider-vault.awsAuthBackendRole.AwsAuthBackendRole",
 		reflect.TypeOf((*AwsAuthBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -148,12 +148,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AwsAuthBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.awsAuthBackendRole.AwsAuthBackendRoleConfig",
+		"@cdktn/provider-vault.awsAuthBackendRole.AwsAuthBackendRoleConfig",
 		reflect.TypeOf((*AwsAuthBackendRoleConfig)(nil)).Elem(),
 	)
 }

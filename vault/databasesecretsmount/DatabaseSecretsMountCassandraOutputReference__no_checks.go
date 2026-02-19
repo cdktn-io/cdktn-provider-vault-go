@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateInterpo
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,6 +64,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetComp
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetConnectTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetConsistencyParameters(val *string) error {
 	return nil
 }
 
@@ -84,6 +88,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetInse
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetLocalDatacenterParameters(val *string) error {
 	return nil
 }
 
@@ -135,11 +143,15 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetSkip
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetSocketKeepAliveParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -147,7 +159,15 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetTlsP
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetTlsServerNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetUsernameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetUsernameTemplateParameters(val *string) error {
 	return nil
 }
 
@@ -155,7 +175,7 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetVeri
 	return nil
 }
 
-func validateNewDatabaseSecretsMountCassandraOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDatabaseSecretsMountCassandraOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

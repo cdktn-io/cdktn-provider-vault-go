@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretbackendconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretBackendConnectionCouchbaseOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Base64Pem() *string
 	SetBase64Pem(val *string)
 	Base64PemInput() *string
@@ -52,9 +52,9 @@ type DatabaseSecretBackendConnectionCouchbaseOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() interface{}
 	SetTls(val interface{})
 	TlsInput() interface{}
@@ -69,7 +69,7 @@ type DatabaseSecretBackendConnectionCouchbaseOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type DatabaseSecretBackendConnectionCouchbaseOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBase64Pem()
 	ResetBucketName()
 	ResetInsecureTls()
@@ -95,7 +95,7 @@ type DatabaseSecretBackendConnectionCouchbaseOutputReference interface {
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type DatabaseSecretBackendConnectionCouchbaseOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretBackendConnectionCouchbaseOutputReference
 type jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Base64Pem() *string {
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) User
 }
 
 
-func NewDatabaseSecretBackendConnectionCouchbaseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionCouchbaseOutputReference {
+func NewDatabaseSecretBackendConnectionCouchbaseOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionCouchbaseOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretBackendConnectionCouchbaseOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewDatabaseSecretBackendConnectionCouchbaseOutputReference(terraformResourc
 	j := jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbaseOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbaseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewDatabaseSecretBackendConnectionCouchbaseOutputReference(terraformResourc
 	return &j
 }
 
-func NewDatabaseSecretBackendConnectionCouchbaseOutputReference_Override(d DatabaseSecretBackendConnectionCouchbaseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatabaseSecretBackendConnectionCouchbaseOutputReference_Override(d DatabaseSecretBackendConnectionCouchbaseOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbaseOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbaseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -465,7 +465,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,11 +538,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -666,8 +666,8 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -679,11 +679,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -735,7 +735,7 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pkisecretbackendconfigest
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigEst.PkiSecretBackendConfigEst",
+		"@cdktn/provider-vault.pkiSecretBackendConfigEst.PkiSecretBackendConfigEst",
 		reflect.TypeOf((*PkiSecretBackendConfigEst)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -89,16 +89,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigEst{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendConfigEst.PkiSecretBackendConfigEstAuthenticators",
+		"@cdktn/provider-vault.pkiSecretBackendConfigEst.PkiSecretBackendConfigEstAuthenticators",
 		reflect.TypeOf((*PkiSecretBackendConfigEstAuthenticators)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigEst.PkiSecretBackendConfigEstAuthenticatorsOutputReference",
+		"@cdktn/provider-vault.pkiSecretBackendConfigEst.PkiSecretBackendConfigEstAuthenticatorsOutputReference",
 		reflect.TypeOf((*PkiSecretBackendConfigEstAuthenticatorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
@@ -131,12 +131,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigEstAuthenticatorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendConfigEst.PkiSecretBackendConfigEstConfig",
+		"@cdktn/provider-vault.pkiSecretBackendConfigEst.PkiSecretBackendConfigEstConfig",
 		reflect.TypeOf((*PkiSecretBackendConfigEstConfig)(nil)).Elem(),
 	)
 }

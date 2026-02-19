@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretsmount/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretsmount/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretsMountMssqlOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedRoles() *[]*string
 	SetAllowedRoles(val *[]*string)
 	AllowedRolesInput() *[]*string
@@ -91,9 +91,9 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -108,7 +108,7 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -124,9 +124,9 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedRoles()
 	ResetConnectionUrl()
 	ResetContainedDb()
@@ -149,7 +149,7 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 	ResetVerifyConnection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -159,7 +159,7 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretsMountMssqlOutputReference
 type jsiiProxy_DatabaseSecretsMountMssqlOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) AllowedRoles() *[]*string {
@@ -582,8 +582,8 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -653,7 +653,7 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) VerifyConnectionInp
 }
 
 
-func NewDatabaseSecretsMountMssqlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountMssqlOutputReference {
+func NewDatabaseSecretsMountMssqlOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountMssqlOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretsMountMssqlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -662,7 +662,7 @@ func NewDatabaseSecretsMountMssqlOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DatabaseSecretsMountMssqlOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -670,11 +670,11 @@ func NewDatabaseSecretsMountMssqlOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewDatabaseSecretsMountMssqlOutputReference_Override(d DatabaseSecretsMountMssqlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDatabaseSecretsMountMssqlOutputReference_Override(d DatabaseSecretsMountMssqlOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -922,7 +922,7 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,11 +995,11 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1123,8 +1123,8 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1136,11 +1136,11 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) InterpolationAsList
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1312,7 +1312,7 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetVerifyConnecti
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package managedkeys
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.managedKeys.ManagedKeys",
+		"@cdktn/provider-vault.managedKeys.ManagedKeys",
 		reflect.TypeOf((*ManagedKeys)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -76,16 +76,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKeys{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysAws",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysAws",
 		reflect.TypeOf((*ManagedKeysAws)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysAwsList",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysAwsList",
 		reflect.TypeOf((*ManagedKeysAwsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -102,12 +102,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKeysAwsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference",
 		reflect.TypeOf((*ManagedKeysAwsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
@@ -168,16 +168,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKeysAwsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysAzure",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysAzure",
 		reflect.TypeOf((*ManagedKeysAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysAzureList",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysAzureList",
 		reflect.TypeOf((*ManagedKeysAzureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -194,12 +194,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKeysAzureList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference",
 		reflect.TypeOf((*ManagedKeysAzureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowGenerateKey", GoGetter: "AllowGenerateKey"},
@@ -262,20 +262,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKeysAzureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysConfig",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysConfig",
 		reflect.TypeOf((*ManagedKeysConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysPkcs",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysPkcs",
 		reflect.TypeOf((*ManagedKeysPkcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysPkcsList",
 		reflect.TypeOf((*ManagedKeysPkcsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -292,12 +292,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKeysPkcsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference",
+		"@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference",
 		reflect.TypeOf((*ManagedKeysPkcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowGenerateKey", GoGetter: "AllowGenerateKey"},
@@ -350,6 +350,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCurve", GoMethod: "ResetCurve"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForceRwSession", GoMethod: "ResetForceRwSession"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyBits", GoMethod: "ResetKeyBits"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyId", GoMethod: "ResetKeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyLabel", GoMethod: "ResetKeyLabel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSlot", GoMethod: "ResetSlot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenLabel", GoMethod: "ResetTokenLabel"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -364,7 +366,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKeysPkcsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ociauthbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.ociAuthBackendRole.OciAuthBackendRole",
+		"@cdktn/provider-vault.ociAuthBackendRole.OciAuthBackendRole",
 		reflect.TypeOf((*OciAuthBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -102,12 +102,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OciAuthBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.ociAuthBackendRole.OciAuthBackendRoleConfig",
+		"@cdktn/provider-vault.ociAuthBackendRole.OciAuthBackendRoleConfig",
 		reflect.TypeOf((*OciAuthBackendRoleConfig)(nil)).Elem(),
 	)
 }

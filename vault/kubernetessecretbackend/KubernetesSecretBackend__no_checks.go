@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -155,7 +155,7 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetKubernetesHostParameters(
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -200,6 +200,14 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetSealWrapParameters(val in
 }
 
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetServiceAccountJwtParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetServiceAccountJwtWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetServiceAccountJwtWoVersionParameters(val *float64) error {
 	return nil
 }
 

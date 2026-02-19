@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -103,7 +103,7 @@ func (j *jsiiProxy_KmipSecretRole) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_KmipSecretRole) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmipSecretRole) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -127,11 +127,27 @@ func (j *jsiiProxy_KmipSecretRole) validateSetOperationCreateParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationCreateKeyPairParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationDecryptParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationDeleteAttributeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretRole) validateSetOperationDestroyParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_KmipSecretRole) validateSetOperationDiscoverVersionsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationEncryptParameters(val interface{}) error {
 	return nil
 }
 
@@ -147,11 +163,31 @@ func (j *jsiiProxy_KmipSecretRole) validateSetOperationGetAttributesParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationImportParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretRole) validateSetOperationLocateParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationMacParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationMacVerifyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationModifyAttributeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretRole) validateSetOperationNoneParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationQueryParameters(val interface{}) error {
 	return nil
 }
 
@@ -163,7 +199,27 @@ func (j *jsiiProxy_KmipSecretRole) validateSetOperationRekeyParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationRekeyKeyPairParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretRole) validateSetOperationRevokeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationRngRetrieveParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationRngSeedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationSignParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretRole) validateSetOperationSignatureVerifyParameters(val interface{}) error {
 	return nil
 }
 

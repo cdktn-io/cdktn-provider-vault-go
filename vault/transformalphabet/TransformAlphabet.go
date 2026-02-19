@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package transformalphabet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformalphabet/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformalphabet/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_alphabet vault_transform_alphabet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_alphabet vault_transform_alphabet}.
 type TransformAlphabet interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Alphabet() *string
 	SetAlphabet(val *string)
 	AlphabetInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type TransformAlphabet interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,9 +46,9 @@ type TransformAlphabet interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -61,9 +61,9 @@ type TransformAlphabet interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -71,7 +71,7 @@ type TransformAlphabet interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -84,7 +84,7 @@ type TransformAlphabet interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +102,9 @@ type TransformAlphabet interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -140,7 +140,7 @@ type TransformAlphabet interface {
 
 // The jsii proxy struct for TransformAlphabet
 type jsiiProxy_TransformAlphabet struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_TransformAlphabet) Alphabet() *string {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_TransformAlphabet) AlphabetInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformAlphabet) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_TransformAlphabet) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_TransformAlphabet) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformAlphabet) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_TransformAlphabet) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_TransformAlphabet) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformAlphabet) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_TransformAlphabet) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_TransformAlphabet) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransformAlphabet) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_TransformAlphabet) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_TransformAlphabet) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TransformAlphabet) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_TransformAlphabet) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_TransformAlphabet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_alphabet vault_transform_alphabet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_alphabet vault_transform_alphabet} Resource.
 func NewTransformAlphabet(scope constructs.Construct, id *string, config *TransformAlphabetConfig) TransformAlphabet {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewTransformAlphabet(scope constructs.Construct, id *string, config *Transf
 	j := jsiiProxy_TransformAlphabet{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.transformAlphabet.TransformAlphabet",
+		"@cdktn/provider-vault.transformAlphabet.TransformAlphabet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -422,12 +422,12 @@ func NewTransformAlphabet(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_alphabet vault_transform_alphabet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_alphabet vault_transform_alphabet} Resource.
 func NewTransformAlphabet_Override(t TransformAlphabet, scope constructs.Construct, id *string, config *TransformAlphabetConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.transformAlphabet.TransformAlphabet",
+		"@cdktn/provider-vault.transformAlphabet.TransformAlphabet",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -474,7 +474,7 @@ func (j *jsiiProxy_TransformAlphabet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TransformAlphabet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TransformAlphabet)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -493,7 +493,7 @@ func (j *jsiiProxy_TransformAlphabet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformAlphabet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TransformAlphabet)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +537,7 @@ func (j *jsiiProxy_TransformAlphabet)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformAlphabet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TransformAlphabet)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -556,17 +556,17 @@ func (j *jsiiProxy_TransformAlphabet)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a TransformAlphabet resource upon running "cdktf plan <stack-name>".
-func TransformAlphabet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a TransformAlphabet resource upon running "cdktn plan <stack-name>".
+func TransformAlphabet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateTransformAlphabet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transformAlphabet.TransformAlphabet",
+		"@cdktn/provider-vault.transformAlphabet.TransformAlphabet",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -601,7 +601,7 @@ func TransformAlphabet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transformAlphabet.TransformAlphabet",
+		"@cdktn/provider-vault.transformAlphabet.TransformAlphabet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func TransformAlphabet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transformAlphabet.TransformAlphabet",
+		"@cdktn/provider-vault.transformAlphabet.TransformAlphabet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func TransformAlphabet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.transformAlphabet.TransformAlphabet",
+		"@cdktn/provider-vault.transformAlphabet.TransformAlphabet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func TransformAlphabet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.transformAlphabet.TransformAlphabet",
+		"@cdktn/provider-vault.transformAlphabet.TransformAlphabet",
 		"tfResourceType",
 		&returns,
 	)
@@ -697,11 +697,11 @@ func (t *jsiiProxy_TransformAlphabet) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (t *jsiiProxy_TransformAlphabet) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TransformAlphabet) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -838,7 +838,7 @@ func (t *jsiiProxy_TransformAlphabet) HasResourceMove() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TransformAlphabet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (t *jsiiProxy_TransformAlphabet) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -849,11 +849,11 @@ func (t *jsiiProxy_TransformAlphabet) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (t *jsiiProxy_TransformAlphabet) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TransformAlphabet) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,

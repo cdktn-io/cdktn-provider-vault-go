@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncgcpdestination
@@ -11,11 +11,17 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination",
+		"@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination",
 		reflect.TypeOf((*SecretsSyncGcpDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv4Addresses", GoGetter: "AllowedIpv4Addresses"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv4AddressesInput", GoGetter: "AllowedIpv4AddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv6Addresses", GoGetter: "AllowedIpv6Addresses"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedIpv6AddressesInput", GoGetter: "AllowedIpv6AddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedPorts", GoGetter: "AllowedPorts"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedPortsInput", GoGetter: "AllowedPortsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -25,6 +31,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "customTags", GoGetter: "CustomTags"},
 			_jsii_.MemberProperty{JsiiProperty: "customTagsInput", GoGetter: "CustomTagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "disableStrictNetworking", GoGetter: "DisableStrictNetworking"},
+			_jsii_.MemberProperty{JsiiProperty: "disableStrictNetworkingInput", GoGetter: "DisableStrictNetworkingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -37,6 +45,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "globalKmsKey", GoGetter: "GlobalKmsKey"},
+			_jsii_.MemberProperty{JsiiProperty: "globalKmsKeyInput", GoGetter: "GlobalKmsKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "granularity", GoGetter: "Granularity"},
 			_jsii_.MemberProperty{JsiiProperty: "granularityInput", GoGetter: "GranularityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
@@ -45,6 +55,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "locationalKmsKeys", GoGetter: "LocationalKmsKeys"},
+			_jsii_.MemberProperty{JsiiProperty: "locationalKmsKeysInput", GoGetter: "LocationalKmsKeysInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,13 +71,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationLocations", GoGetter: "ReplicationLocations"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationLocationsInput", GoGetter: "ReplicationLocationsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIpv4Addresses", GoMethod: "ResetAllowedIpv4Addresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIpv6Addresses", GoMethod: "ResetAllowedIpv6Addresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedPorts", GoMethod: "ResetAllowedPorts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentials", GoMethod: "ResetCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomTags", GoMethod: "ResetCustomTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableStrictNetworking", GoMethod: "ResetDisableStrictNetworking"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGlobalKmsKey", GoMethod: "ResetGlobalKmsKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGranularity", GoMethod: "ResetGranularity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocationalKmsKeys", GoMethod: "ResetLocationalKmsKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectId", GoMethod: "ResetProjectId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicationLocations", GoMethod: "ResetReplicationLocations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretNameTemplate", GoMethod: "ResetSecretNameTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "secretNameTemplate", GoGetter: "SecretNameTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "secretNameTemplateInput", GoGetter: "SecretNameTemplateInput"},
@@ -82,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretsSyncGcpDestination{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig",
+		"@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig",
 		reflect.TypeOf((*SecretsSyncGcpDestinationConfig)(nil)).Elem(),
 	)
 }

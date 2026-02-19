@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rabbitmqsecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/rabbitmqsecretbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rabbitmqsecretbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role}.
 type RabbitmqSecretBackendRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type RabbitmqSecretBackendRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,9 +46,9 @@ type RabbitmqSecretBackendRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -58,9 +58,9 @@ type RabbitmqSecretBackendRole interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -71,7 +71,7 @@ type RabbitmqSecretBackendRole interface {
 	SetTags(val *string)
 	TagsInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -88,7 +88,7 @@ type RabbitmqSecretBackendRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,9 +106,9 @@ type RabbitmqSecretBackendRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -148,7 +148,7 @@ type RabbitmqSecretBackendRole interface {
 
 // The jsii proxy struct for RabbitmqSecretBackendRole
 type jsiiProxy_RabbitmqSecretBackendRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_RabbitmqSecretBackendRole) Backend() *string {
@@ -171,8 +171,8 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_RabbitmqSecretBackendRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_RabbitmqSecretBackendRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_RabbitmqSecretBackendRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_RabbitmqSecretBackendRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole) TagsInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_RabbitmqSecretBackendRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -452,7 +452,7 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole) VhostTopicInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource.
 func NewRabbitmqSecretBackendRole(scope constructs.Construct, id *string, config *RabbitmqSecretBackendRoleConfig) RabbitmqSecretBackendRole {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewRabbitmqSecretBackendRole(scope constructs.Construct, id *string, config
 	j := jsiiProxy_RabbitmqSecretBackendRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,12 +470,12 @@ func NewRabbitmqSecretBackendRole(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource.
 func NewRabbitmqSecretBackendRole_Override(r RabbitmqSecretBackendRole, scope constructs.Construct, id *string, config *RabbitmqSecretBackendRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -522,7 +522,7 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RabbitmqSecretBackendRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -541,7 +541,7 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RabbitmqSecretBackendRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +574,7 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RabbitmqSecretBackendRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -604,17 +604,17 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole)SetTags(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a RabbitmqSecretBackendRole resource upon running "cdktf plan <stack-name>".
-func RabbitmqSecretBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a RabbitmqSecretBackendRole resource upon running "cdktn plan <stack-name>".
+func RabbitmqSecretBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateRabbitmqSecretBackendRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -649,7 +649,7 @@ func RabbitmqSecretBackendRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func RabbitmqSecretBackendRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func RabbitmqSecretBackendRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func RabbitmqSecretBackendRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -745,11 +745,11 @@ func (r *jsiiProxy_RabbitmqSecretBackendRole) GetAnyMapAttribute(terraformAttrib
 	return returns
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RabbitmqSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -886,7 +886,7 @@ func (r *jsiiProxy_RabbitmqSecretBackendRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_RabbitmqSecretBackendRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -897,11 +897,11 @@ func (r *jsiiProxy_RabbitmqSecretBackendRole) ImportFrom(id *string, provider cd
 	)
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RabbitmqSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,

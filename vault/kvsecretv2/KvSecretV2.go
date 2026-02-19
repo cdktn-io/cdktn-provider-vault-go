@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package kvsecretv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/kvsecretv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kvsecretv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}.
 type KvSecretV2 interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Cas() *float64
 	SetCas(val *float64)
 	CasInput() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,7 +32,7 @@ type KvSecretV2 interface {
 	SetCount(val interface{})
 	CustomMetadata() KvSecretV2CustomMetadataOutputReference
 	CustomMetadataInput() *KvSecretV2CustomMetadata
-	Data() cdktf.StringMap
+	Data() cdktn.StringMap
 	DataJson() *string
 	SetDataJson(val *string)
 	DataJsonInput() *string
@@ -53,9 +53,9 @@ type KvSecretV2 interface {
 	SetDisableRead(val interface{})
 	DisableReadInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -64,10 +64,10 @@ type KvSecretV2 interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Metadata() cdktf.StringMap
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Metadata() cdktn.StringMap
 	Mount() *string
 	SetMount(val *string)
 	MountInput() *string
@@ -84,9 +84,9 @@ type KvSecretV2 interface {
 	OptionsInput() *map[string]*string
 	Path() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -94,7 +94,7 @@ type KvSecretV2 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type KvSecretV2 interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -125,9 +125,9 @@ type KvSecretV2 interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -171,7 +171,7 @@ type KvSecretV2 interface {
 
 // The jsii proxy struct for KvSecretV2
 type jsiiProxy_KvSecretV2 struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_KvSecretV2) Cas() *float64 {
@@ -194,8 +194,8 @@ func (j *jsiiProxy_KvSecretV2) CasInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_KvSecretV2) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_KvSecretV2) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_KvSecretV2) CustomMetadataInput() *KvSecretV2CustomMetadata {
 	return returns
 }
 
-func (j *jsiiProxy_KvSecretV2) Data() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_KvSecretV2) Data() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"data",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_KvSecretV2) DisableReadInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KvSecretV2) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_KvSecretV2) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_KvSecretV2) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KvSecretV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_KvSecretV2) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_KvSecretV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_KvSecretV2) Metadata() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_KvSecretV2) Metadata() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"metadata",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_KvSecretV2) Path() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KvSecretV2) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_KvSecretV2) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -574,8 +574,8 @@ func (j *jsiiProxy_KvSecretV2) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KvSecretV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_KvSecretV2) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -605,7 +605,7 @@ func (j *jsiiProxy_KvSecretV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource.
 func NewKvSecretV2(scope constructs.Construct, id *string, config *KvSecretV2Config) KvSecretV2 {
 	_init_.Initialize()
 
@@ -615,7 +615,7 @@ func NewKvSecretV2(scope constructs.Construct, id *string, config *KvSecretV2Con
 	j := jsiiProxy_KvSecretV2{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -623,12 +623,12 @@ func NewKvSecretV2(scope constructs.Construct, id *string, config *KvSecretV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource.
 func NewKvSecretV2_Override(k KvSecretV2, scope constructs.Construct, id *string, config *KvSecretV2Config) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -730,7 +730,7 @@ func (j *jsiiProxy_KvSecretV2)SetDisableRead(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KvSecretV2)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KvSecretV2)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -749,7 +749,7 @@ func (j *jsiiProxy_KvSecretV2)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KvSecretV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KvSecretV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +804,7 @@ func (j *jsiiProxy_KvSecretV2)SetOptions(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_KvSecretV2)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KvSecretV2)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -823,17 +823,17 @@ func (j *jsiiProxy_KvSecretV2)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a KvSecretV2 resource upon running "cdktf plan <stack-name>".
-func KvSecretV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a KvSecretV2 resource upon running "cdktn plan <stack-name>".
+func KvSecretV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateKvSecretV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -868,7 +868,7 @@ func KvSecretV2_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -887,7 +887,7 @@ func KvSecretV2_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -906,7 +906,7 @@ func KvSecretV2_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -919,7 +919,7 @@ func KvSecretV2_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2",
 		"tfResourceType",
 		&returns,
 	)
@@ -964,11 +964,11 @@ func (k *jsiiProxy_KvSecretV2) GetAnyMapAttribute(terraformAttribute *string) *m
 	return returns
 }
 
-func (k *jsiiProxy_KvSecretV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KvSecretV2) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -1105,7 +1105,7 @@ func (k *jsiiProxy_KvSecretV2) HasResourceMove() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KvSecretV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (k *jsiiProxy_KvSecretV2) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := k.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1116,11 +1116,11 @@ func (k *jsiiProxy_KvSecretV2) ImportFrom(id *string, provider cdktf.TerraformPr
 	)
 }
 
-func (k *jsiiProxy_KvSecretV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KvSecretV2) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,

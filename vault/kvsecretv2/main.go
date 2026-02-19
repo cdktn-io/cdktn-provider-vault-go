@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package kvsecretv2
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2",
 		reflect.TypeOf((*KvSecretV2)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -96,20 +96,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KvSecretV2{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2Config",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2Config",
 		reflect.TypeOf((*KvSecretV2Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2CustomMetadata",
 		reflect.TypeOf((*KvSecretV2CustomMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference",
+		"@cdktn/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference",
 		reflect.TypeOf((*KvSecretV2CustomMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "casRequired", GoGetter: "CasRequired"},
@@ -148,7 +148,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KvSecretV2CustomMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

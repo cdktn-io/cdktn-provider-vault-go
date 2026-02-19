@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package githubauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/githubauthbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/githubauthbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend vault_github_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend vault_github_auth_backend}.
 type GithubAuthBackend interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Accessor() *string
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
@@ -23,7 +23,7 @@ type GithubAuthBackend interface {
 	SetBaseUrl(val *string)
 	BaseUrlInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,9 +45,9 @@ type GithubAuthBackend interface {
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -56,9 +56,9 @@ type GithubAuthBackend interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -74,9 +74,9 @@ type GithubAuthBackend interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -84,7 +84,7 @@ type GithubAuthBackend interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -126,7 +126,7 @@ type GithubAuthBackend interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -144,9 +144,9 @@ type GithubAuthBackend interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -198,7 +198,7 @@ type GithubAuthBackend interface {
 
 // The jsii proxy struct for GithubAuthBackend
 type jsiiProxy_GithubAuthBackend struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_GithubAuthBackend) Accessor() *string {
@@ -251,8 +251,8 @@ func (j *jsiiProxy_GithubAuthBackend) BaseUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GithubAuthBackend) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_GithubAuthBackend) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_GithubAuthBackend) DisableRemountInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GithubAuthBackend) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_GithubAuthBackend) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_GithubAuthBackend) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GithubAuthBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_GithubAuthBackend) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_GithubAuthBackend) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GithubAuthBackend) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_GithubAuthBackend) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_GithubAuthBackend) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GithubAuthBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_GithubAuthBackend) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -752,7 +752,7 @@ func (j *jsiiProxy_GithubAuthBackend) TuneInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
 func NewGithubAuthBackend(scope constructs.Construct, id *string, config *GithubAuthBackendConfig) GithubAuthBackend {
 	_init_.Initialize()
 
@@ -762,7 +762,7 @@ func NewGithubAuthBackend(scope constructs.Construct, id *string, config *Github
 	j := jsiiProxy_GithubAuthBackend{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackend",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -770,12 +770,12 @@ func NewGithubAuthBackend(scope constructs.Construct, id *string, config *Github
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
 func NewGithubAuthBackend_Override(g GithubAuthBackend, scope constructs.Construct, id *string, config *GithubAuthBackendConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackend",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -855,7 +855,7 @@ func (j *jsiiProxy_GithubAuthBackend)SetDisableRemount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GithubAuthBackend)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -874,7 +874,7 @@ func (j *jsiiProxy_GithubAuthBackend)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GithubAuthBackend)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +929,7 @@ func (j *jsiiProxy_GithubAuthBackend)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GithubAuthBackend)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1047,17 +1047,17 @@ func (j *jsiiProxy_GithubAuthBackend)SetTokenType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a GithubAuthBackend resource upon running "cdktf plan <stack-name>".
-func GithubAuthBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a GithubAuthBackend resource upon running "cdktn plan <stack-name>".
+func GithubAuthBackend_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGithubAuthBackend_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackend",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1092,7 +1092,7 @@ func GithubAuthBackend_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackend",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1111,7 +1111,7 @@ func GithubAuthBackend_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackend",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1130,7 +1130,7 @@ func GithubAuthBackend_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackend",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1143,7 +1143,7 @@ func GithubAuthBackend_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
+		"@cdktn/provider-vault.githubAuthBackend.GithubAuthBackend",
 		"tfResourceType",
 		&returns,
 	)
@@ -1188,11 +1188,11 @@ func (g *jsiiProxy_GithubAuthBackend) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (g *jsiiProxy_GithubAuthBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GithubAuthBackend) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -1329,7 +1329,7 @@ func (g *jsiiProxy_GithubAuthBackend) HasResourceMove() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GithubAuthBackend) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (g *jsiiProxy_GithubAuthBackend) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1340,11 +1340,11 @@ func (g *jsiiProxy_GithubAuthBackend) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (g *jsiiProxy_GithubAuthBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GithubAuthBackend) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,

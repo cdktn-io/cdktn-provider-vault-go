@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultraftautopilotstate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultraftautopilotstate/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultraftautopilotstate/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state}.
 type DataVaultRaftAutopilotState interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,22 +29,22 @@ type DataVaultRaftAutopilotState interface {
 	SetDependsOn(val *[]*string)
 	FailureTolerance() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Healthy() cdktf.IResolvable
+	Healthy() cdktn.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
 	Leader() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -52,22 +52,22 @@ type DataVaultRaftAutopilotState interface {
 	Node() constructs.Node
 	OptimisticFailureTolerance() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	RedundancyZones() cdktf.StringMap
+	RedundancyZones() cdktn.StringMap
 	RedundancyZonesJson() *string
-	Servers() cdktf.StringMap
+	Servers() cdktn.StringMap
 	ServersJson() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UpgradeInfo() cdktf.StringMap
+	UpgradeInfo() cdktn.StringMap
 	UpgradeInfoJson() *string
 	Voters() *[]*string
 	// Experimental.
@@ -75,7 +75,7 @@ type DataVaultRaftAutopilotState interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,7 +91,7 @@ type DataVaultRaftAutopilotState interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -116,11 +116,11 @@ type DataVaultRaftAutopilotState interface {
 
 // The jsii proxy struct for DataVaultRaftAutopilotState
 type jsiiProxy_DataVaultRaftAutopilotState struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultRaftAutopilotState) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) FailureTolerance() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultRaftAutopilotState) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) Healthy() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Healthy() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"healthy",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) Leader() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) OptimisticFailureTolerance() *fl
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) RedundancyZones() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataVaultRaftAutopilotState) RedundancyZones() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"redundancyZones",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) RedundancyZonesJson() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) Servers() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Servers() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"servers",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) ServersJson() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultRaftAutopilotState) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) TerraformResourceType() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState) UpgradeInfo() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataVaultRaftAutopilotState) UpgradeInfo() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"upgradeInfo",
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) Voters() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source.
 func NewDataVaultRaftAutopilotState(scope constructs.Construct, id *string, config *DataVaultRaftAutopilotStateConfig) DataVaultRaftAutopilotState {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataVaultRaftAutopilotState(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataVaultRaftAutopilotState{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"@cdktn/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,12 +428,12 @@ func NewDataVaultRaftAutopilotState(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source.
 func NewDataVaultRaftAutopilotState_Override(d DataVaultRaftAutopilotState, scope constructs.Construct, id *string, config *DataVaultRaftAutopilotStateConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"@cdktn/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -458,7 +458,7 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +477,7 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultRaftAutopilotState)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,17 +507,17 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultRaftAutopilotState resource upon running "cdktf plan <stack-name>".
-func DataVaultRaftAutopilotState_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultRaftAutopilotState resource upon running "cdktn plan <stack-name>".
+func DataVaultRaftAutopilotState_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultRaftAutopilotState_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"@cdktn/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -552,7 +552,7 @@ func DataVaultRaftAutopilotState_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"@cdktn/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func DataVaultRaftAutopilotState_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"@cdktn/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func DataVaultRaftAutopilotState_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"@cdktn/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +603,7 @@ func DataVaultRaftAutopilotState_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"@cdktn/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		"tfResourceType",
 		&returns,
 	)
@@ -637,11 +637,11 @@ func (d *jsiiProxy_DataVaultRaftAutopilotState) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultRaftAutopilotState) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -765,11 +765,11 @@ func (d *jsiiProxy_DataVaultRaftAutopilotState) GetStringMapAttribute(terraformA
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultRaftAutopilotState) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

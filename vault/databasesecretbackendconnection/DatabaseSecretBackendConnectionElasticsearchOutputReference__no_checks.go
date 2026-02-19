@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -111,7 +111,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return nil
 }
 
-func validateNewDatabaseSecretBackendConnectionElasticsearchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatabaseSecretBackendConnectionElasticsearchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

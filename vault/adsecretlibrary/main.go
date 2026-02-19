@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package adsecretlibrary
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary",
+		"@cdktn/provider-vault.adSecretLibrary.AdSecretLibrary",
 		reflect.TypeOf((*AdSecretLibrary)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -79,12 +79,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AdSecretLibrary{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig",
+		"@cdktn/provider-vault.adSecretLibrary.AdSecretLibraryConfig",
 		reflect.TypeOf((*AdSecretLibraryConfig)(nil)).Elem(),
 	)
 }

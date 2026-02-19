@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mfaokta
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.mfaOkta.MfaOkta",
+		"@cdktn/provider-vault.mfaOkta.MfaOkta",
 		reflect.TypeOf((*MfaOkta)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -81,12 +81,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MfaOkta{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.mfaOkta.MfaOktaConfig",
+		"@cdktn/provider-vault.mfaOkta.MfaOktaConfig",
 		reflect.TypeOf((*MfaOktaConfig)(nil)).Elem(),
 	)
 }

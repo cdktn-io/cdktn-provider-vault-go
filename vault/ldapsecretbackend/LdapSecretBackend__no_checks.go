@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -115,6 +115,14 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetBindpassParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetBindpassWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetBindpassWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetCertificateParameters(val *string) error {
 	return nil
 }
@@ -183,7 +191,7 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetInsecureTlsParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_LdapSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LdapSecretBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

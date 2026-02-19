@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretbackendconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretBackendConnectionHanaOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -61,18 +61,21 @@ type DatabaseSecretBackendConnectionHanaOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
+	UsernameTemplate() *string
+	SetUsernameTemplate(val *string)
+	UsernameTemplateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +91,9 @@ type DatabaseSecretBackendConnectionHanaOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetConnectionUrl()
 	ResetDisableEscaping()
 	ResetMaxConnectionLifetime()
@@ -100,9 +103,10 @@ type DatabaseSecretBackendConnectionHanaOutputReference interface {
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
 	ResetUsername()
+	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,7 +116,7 @@ type DatabaseSecretBackendConnectionHanaOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretBackendConnectionHanaOutputReference
 type jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) ComplexObjectIndex() interface{} {
@@ -335,8 +339,8 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -365,8 +369,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) UsernameI
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) UsernameTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameTemplate",
+		&returns,
+	)
+	return returns
+}
 
-func NewDatabaseSecretBackendConnectionHanaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionHanaOutputReference {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) UsernameTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDatabaseSecretBackendConnectionHanaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionHanaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretBackendConnectionHanaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -375,7 +399,7 @@ func NewDatabaseSecretBackendConnectionHanaOutputReference(terraformResource cdk
 	j := jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -383,11 +407,11 @@ func NewDatabaseSecretBackendConnectionHanaOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewDatabaseSecretBackendConnectionHanaOutputReference_Override(d DatabaseSecretBackendConnectionHanaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatabaseSecretBackendConnectionHanaOutputReference_Override(d DatabaseSecretBackendConnectionHanaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference",
+		"@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -525,7 +549,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,6 +567,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetUsernam
 	_jsii_.Set(
 		j,
 		"username",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameTemplate",
 		val,
 	)
 }
@@ -576,11 +611,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetAnyMap
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -704,8 +739,8 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetString
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -717,11 +752,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -805,7 +840,15 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) ResetUser
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) ResetUsernameTemplate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsernameTemplate",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

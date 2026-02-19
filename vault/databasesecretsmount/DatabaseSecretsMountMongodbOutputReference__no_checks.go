@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateInterpola
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -131,7 +131,15 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetTlsCaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetTlsCertificateKeyParameters(val *string) error {
 	return nil
 }
 
@@ -147,7 +155,11 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetVerify
 	return nil
 }
 
-func validateNewDatabaseSecretsMountMongodbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetWriteConcernParameters(val *string) error {
+	return nil
+}
+
+func validateNewDatabaseSecretsMountMongodbOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

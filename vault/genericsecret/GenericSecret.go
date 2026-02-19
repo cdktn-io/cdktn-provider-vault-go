@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package genericsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/genericsecret/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/genericsecret/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret vault_generic_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret vault_generic_secret}.
 type GenericSecret interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -27,7 +27,7 @@ type GenericSecret interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Data() cdktf.StringMap
+	Data() cdktn.StringMap
 	DataJson() *string
 	SetDataJson(val *string)
 	DataJsonInput() *string
@@ -42,9 +42,9 @@ type GenericSecret interface {
 	SetDisableRead(val interface{})
 	DisableReadInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -53,9 +53,9 @@ type GenericSecret interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -65,9 +65,9 @@ type GenericSecret interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type GenericSecret interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -88,7 +88,7 @@ type GenericSecret interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,9 +106,9 @@ type GenericSecret interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -145,11 +145,11 @@ type GenericSecret interface {
 
 // The jsii proxy struct for GenericSecret
 type jsiiProxy_GenericSecret struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_GenericSecret) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_GenericSecret) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GenericSecret) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GenericSecret) Data() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_GenericSecret) Data() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"data",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_GenericSecret) DisableReadInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GenericSecret) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_GenericSecret) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_GenericSecret) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GenericSecret) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_GenericSecret) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_GenericSecret) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GenericSecret) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_GenericSecret) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_GenericSecret) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GenericSecret) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_GenericSecret) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_GenericSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret vault_generic_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret vault_generic_secret} Resource.
 func NewGenericSecret(scope constructs.Construct, id *string, config *GenericSecretConfig) GenericSecret {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewGenericSecret(scope constructs.Construct, id *string, config *GenericSec
 	j := jsiiProxy_GenericSecret{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.genericSecret.GenericSecret",
+		"@cdktn/provider-vault.genericSecret.GenericSecret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -457,12 +457,12 @@ func NewGenericSecret(scope constructs.Construct, id *string, config *GenericSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret vault_generic_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret vault_generic_secret} Resource.
 func NewGenericSecret_Override(g GenericSecret, scope constructs.Construct, id *string, config *GenericSecretConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.genericSecret.GenericSecret",
+		"@cdktn/provider-vault.genericSecret.GenericSecret",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -531,7 +531,7 @@ func (j *jsiiProxy_GenericSecret)SetDisableRead(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GenericSecret)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GenericSecret)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -550,7 +550,7 @@ func (j *jsiiProxy_GenericSecret)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GenericSecret)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GenericSecret)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +583,7 @@ func (j *jsiiProxy_GenericSecret)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GenericSecret)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GenericSecret)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -602,17 +602,17 @@ func (j *jsiiProxy_GenericSecret)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a GenericSecret resource upon running "cdktf plan <stack-name>".
-func GenericSecret_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a GenericSecret resource upon running "cdktn plan <stack-name>".
+func GenericSecret_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGenericSecret_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.genericSecret.GenericSecret",
+		"@cdktn/provider-vault.genericSecret.GenericSecret",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -647,7 +647,7 @@ func GenericSecret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.genericSecret.GenericSecret",
+		"@cdktn/provider-vault.genericSecret.GenericSecret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func GenericSecret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.genericSecret.GenericSecret",
+		"@cdktn/provider-vault.genericSecret.GenericSecret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func GenericSecret_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.genericSecret.GenericSecret",
+		"@cdktn/provider-vault.genericSecret.GenericSecret",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func GenericSecret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.genericSecret.GenericSecret",
+		"@cdktn/provider-vault.genericSecret.GenericSecret",
 		"tfResourceType",
 		&returns,
 	)
@@ -743,11 +743,11 @@ func (g *jsiiProxy_GenericSecret) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (g *jsiiProxy_GenericSecret) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GenericSecret) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -884,7 +884,7 @@ func (g *jsiiProxy_GenericSecret) HasResourceMove() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GenericSecret) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (g *jsiiProxy_GenericSecret) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -895,11 +895,11 @@ func (g *jsiiProxy_GenericSecret) ImportFrom(id *string, provider cdktf.Terrafor
 	)
 }
 
-func (g *jsiiProxy_GenericSecret) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GenericSecret) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,

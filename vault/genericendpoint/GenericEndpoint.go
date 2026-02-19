@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package genericendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/genericendpoint/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/genericendpoint/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint vault_generic_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint vault_generic_endpoint}.
 type GenericEndpoint interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type GenericEndpoint interface {
 	SetDisableRead(val interface{})
 	DisableReadInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -55,9 +55,9 @@ type GenericEndpoint interface {
 	SetIgnoreAbsentFields(val interface{})
 	IgnoreAbsentFieldsInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -67,9 +67,9 @@ type GenericEndpoint interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -77,12 +77,12 @@ type GenericEndpoint interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WriteData() cdktf.StringMap
+	WriteData() cdktn.StringMap
 	WriteDataJson() *string
 	WriteFields() *[]*string
 	SetWriteFields(val *[]*string)
@@ -95,7 +95,7 @@ type GenericEndpoint interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -113,9 +113,9 @@ type GenericEndpoint interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -154,11 +154,11 @@ type GenericEndpoint interface {
 
 // The jsii proxy struct for GenericEndpoint
 type jsiiProxy_GenericEndpoint struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_GenericEndpoint) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_GenericEndpoint) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_GenericEndpoint) DisableReadInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GenericEndpoint) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_GenericEndpoint) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_GenericEndpoint) IgnoreAbsentFieldsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GenericEndpoint) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_GenericEndpoint) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_GenericEndpoint) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GenericEndpoint) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_GenericEndpoint) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_GenericEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GenericEndpoint) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_GenericEndpoint) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_GenericEndpoint) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GenericEndpoint) WriteData() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_GenericEndpoint) WriteData() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"writeData",
@@ -498,7 +498,7 @@ func (j *jsiiProxy_GenericEndpoint) WriteFieldsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
 func NewGenericEndpoint(scope constructs.Construct, id *string, config *GenericEndpointConfig) GenericEndpoint {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func NewGenericEndpoint(scope constructs.Construct, id *string, config *GenericE
 	j := jsiiProxy_GenericEndpoint{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.genericEndpoint.GenericEndpoint",
+		"@cdktn/provider-vault.genericEndpoint.GenericEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -516,12 +516,12 @@ func NewGenericEndpoint(scope constructs.Construct, id *string, config *GenericE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
 func NewGenericEndpoint_Override(g GenericEndpoint, scope constructs.Construct, id *string, config *GenericEndpointConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.genericEndpoint.GenericEndpoint",
+		"@cdktn/provider-vault.genericEndpoint.GenericEndpoint",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -590,7 +590,7 @@ func (j *jsiiProxy_GenericEndpoint)SetDisableRead(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GenericEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GenericEndpoint)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -620,7 +620,7 @@ func (j *jsiiProxy_GenericEndpoint)SetIgnoreAbsentFields(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GenericEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GenericEndpoint)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +653,7 @@ func (j *jsiiProxy_GenericEndpoint)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GenericEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GenericEndpoint)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -683,17 +683,17 @@ func (j *jsiiProxy_GenericEndpoint)SetWriteFields(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a GenericEndpoint resource upon running "cdktf plan <stack-name>".
-func GenericEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a GenericEndpoint resource upon running "cdktn plan <stack-name>".
+func GenericEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGenericEndpoint_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.genericEndpoint.GenericEndpoint",
+		"@cdktn/provider-vault.genericEndpoint.GenericEndpoint",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -728,7 +728,7 @@ func GenericEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.genericEndpoint.GenericEndpoint",
+		"@cdktn/provider-vault.genericEndpoint.GenericEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func GenericEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.genericEndpoint.GenericEndpoint",
+		"@cdktn/provider-vault.genericEndpoint.GenericEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -766,7 +766,7 @@ func GenericEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.genericEndpoint.GenericEndpoint",
+		"@cdktn/provider-vault.genericEndpoint.GenericEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -779,7 +779,7 @@ func GenericEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.genericEndpoint.GenericEndpoint",
+		"@cdktn/provider-vault.genericEndpoint.GenericEndpoint",
 		"tfResourceType",
 		&returns,
 	)
@@ -824,11 +824,11 @@ func (g *jsiiProxy_GenericEndpoint) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (g *jsiiProxy_GenericEndpoint) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GenericEndpoint) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -965,7 +965,7 @@ func (g *jsiiProxy_GenericEndpoint) HasResourceMove() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GenericEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (g *jsiiProxy_GenericEndpoint) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -976,11 +976,11 @@ func (g *jsiiProxy_GenericEndpoint) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (g *jsiiProxy_GenericEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GenericEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,

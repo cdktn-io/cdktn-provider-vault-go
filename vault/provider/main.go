@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.provider.VaultProvider",
+		"@cdktn/provider-vault.provider.VaultProvider",
 		reflect.TypeOf((*VaultProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addAddressToEnv", GoGetter: "AddAddressToEnv"},
@@ -129,68 +129,68 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VaultProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLogin",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLogin",
 		reflect.TypeOf((*VaultProviderAuthLogin)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginAws",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginAws",
 		reflect.TypeOf((*VaultProviderAuthLoginAws)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginAzure",
 		reflect.TypeOf((*VaultProviderAuthLoginAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginCert",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginCert",
 		reflect.TypeOf((*VaultProviderAuthLoginCert)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginGcp",
 		reflect.TypeOf((*VaultProviderAuthLoginGcp)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginJwt",
 		reflect.TypeOf((*VaultProviderAuthLoginJwt)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginKerberos",
 		reflect.TypeOf((*VaultProviderAuthLoginKerberos)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginOci",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginOci",
 		reflect.TypeOf((*VaultProviderAuthLoginOci)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginOidc",
 		reflect.TypeOf((*VaultProviderAuthLoginOidc)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginRadius",
 		reflect.TypeOf((*VaultProviderAuthLoginRadius)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginTokenFile",
 		reflect.TypeOf((*VaultProviderAuthLoginTokenFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass",
+		"@cdktn/provider-vault.provider.VaultProviderAuthLoginUserpass",
 		reflect.TypeOf((*VaultProviderAuthLoginUserpass)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderClientAuth",
+		"@cdktn/provider-vault.provider.VaultProviderClientAuth",
 		reflect.TypeOf((*VaultProviderClientAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderConfig",
+		"@cdktn/provider-vault.provider.VaultProviderConfig",
 		reflect.TypeOf((*VaultProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.provider.VaultProviderHeaders",
+		"@cdktn/provider-vault.provider.VaultProviderHeaders",
 		reflect.TypeOf((*VaultProviderHeaders)(nil)).Elem(),
 	)
 }

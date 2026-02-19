@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ldapauthbackenduser
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser",
+		"@cdktn/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser",
 		reflect.TypeOf((*LdapAuthBackendUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -75,12 +75,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LdapAuthBackendUser{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig",
+		"@cdktn/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig",
 		reflect.TypeOf((*LdapAuthBackendUserConfig)(nil)).Elem(),
 	)
 }

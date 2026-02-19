@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretsmount/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretsmount/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseSecretsMountElasticsearchOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedRoles() *[]*string
 	SetAllowedRoles(val *[]*string)
 	AllowedRolesInput() *[]*string
@@ -82,9 +82,9 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TlsServerName() *string
 	SetTlsServerName(val *string)
 	TlsServerNameInput() *string
@@ -105,7 +105,7 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -121,9 +121,9 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedRoles()
 	ResetCaCert()
 	ResetCaPath()
@@ -142,7 +142,7 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	ResetVerifyConnection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -152,7 +152,7 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 
 // The jsii proxy struct for DatabaseSecretsMountElasticsearchOutputReference
 type jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) AllowedRoles() *[]*string {
@@ -515,8 +515,8 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -626,7 +626,7 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) VerifyConne
 }
 
 
-func NewDatabaseSecretsMountElasticsearchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountElasticsearchOutputReference {
+func NewDatabaseSecretsMountElasticsearchOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountElasticsearchOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseSecretsMountElasticsearchOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -635,7 +635,7 @@ func NewDatabaseSecretsMountElasticsearchOutputReference(terraformResource cdktf
 	j := jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -643,11 +643,11 @@ func NewDatabaseSecretsMountElasticsearchOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewDatabaseSecretsMountElasticsearchOutputReference_Override(d DatabaseSecretsMountElasticsearchOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDatabaseSecretsMountElasticsearchOutputReference_Override(d DatabaseSecretsMountElasticsearchOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference",
+		"@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -862,7 +862,7 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -957,11 +957,11 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1085,8 +1085,8 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetStringMa
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1098,11 +1098,11 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1242,7 +1242,7 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetVerify
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

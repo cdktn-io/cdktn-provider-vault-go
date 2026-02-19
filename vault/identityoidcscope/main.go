@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package identityoidcscope
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.identityOidcScope.IdentityOidcScope",
+		"@cdktn/provider-vault.identityOidcScope.IdentityOidcScope",
 		reflect.TypeOf((*IdentityOidcScope)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,12 +72,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityOidcScope{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig",
+		"@cdktn/provider-vault.identityOidcScope.IdentityOidcScopeConfig",
 		reflect.TypeOf((*IdentityOidcScopeConfig)(nil)).Elem(),
 	)
 }

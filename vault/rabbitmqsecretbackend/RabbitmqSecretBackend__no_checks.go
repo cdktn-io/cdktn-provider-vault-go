@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -151,7 +151,7 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetIdentityTokenKeyParameters(
 	return nil
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -184,6 +184,14 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPasswordParameters(val *str
 }
 
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPasswordWoVersionParameters(val *float64) error {
 	return nil
 }
 

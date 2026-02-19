@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package certauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/certauthbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/certauthbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
 type CertAuthBackendRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
 	AliasMetadataInput() *map[string]*string
@@ -40,7 +40,7 @@ type CertAuthBackendRole interface {
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Certificate() *string
 	SetCertificate(val *string)
 	CertificateInput() *string
@@ -62,9 +62,9 @@ type CertAuthBackendRole interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -73,9 +73,9 @@ type CertAuthBackendRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -93,16 +93,22 @@ type CertAuthBackendRole interface {
 	OcspFailOpen() interface{}
 	SetOcspFailOpen(val interface{})
 	OcspFailOpenInput() interface{}
+	OcspMaxRetries() *float64
+	SetOcspMaxRetries(val *float64)
+	OcspMaxRetriesInput() *float64
 	OcspQueryAllServers() interface{}
 	SetOcspQueryAllServers(val interface{})
 	OcspQueryAllServersInput() interface{}
 	OcspServersOverride() *[]*string
 	SetOcspServersOverride(val *[]*string)
 	OcspServersOverrideInput() *[]*string
+	OcspThisUpdateMaxAge() *float64
+	SetOcspThisUpdateMaxAge(val *float64)
+	OcspThisUpdateMaxAgeInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -113,7 +119,7 @@ type CertAuthBackendRole interface {
 	SetRequiredExtensions(val *[]*string)
 	RequiredExtensionsInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -153,7 +159,7 @@ type CertAuthBackendRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -171,9 +177,9 @@ type CertAuthBackendRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -202,8 +208,10 @@ type CertAuthBackendRole interface {
 	ResetOcspCaCertificates()
 	ResetOcspEnabled()
 	ResetOcspFailOpen()
+	ResetOcspMaxRetries()
 	ResetOcspQueryAllServers()
 	ResetOcspServersOverride()
+	ResetOcspThisUpdateMaxAge()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -232,7 +240,7 @@ type CertAuthBackendRole interface {
 
 // The jsii proxy struct for CertAuthBackendRole
 type jsiiProxy_CertAuthBackendRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_CertAuthBackendRole) AliasMetadata() *map[string]*string {
@@ -395,8 +403,8 @@ func (j *jsiiProxy_CertAuthBackendRole) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CertAuthBackendRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -485,8 +493,8 @@ func (j *jsiiProxy_CertAuthBackendRole) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CertAuthBackendRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -535,8 +543,8 @@ func (j *jsiiProxy_CertAuthBackendRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CertAuthBackendRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -655,6 +663,26 @@ func (j *jsiiProxy_CertAuthBackendRole) OcspFailOpenInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CertAuthBackendRole) OcspMaxRetries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ocspMaxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspMaxRetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ocspMaxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertAuthBackendRole) OcspQueryAllServers() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -695,8 +723,28 @@ func (j *jsiiProxy_CertAuthBackendRole) OcspServersOverrideInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CertAuthBackendRole) OcspThisUpdateMaxAge() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ocspThisUpdateMaxAge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspThisUpdateMaxAgeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ocspThisUpdateMaxAgeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -745,8 +793,8 @@ func (j *jsiiProxy_CertAuthBackendRole) RequiredExtensionsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CertAuthBackendRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -956,7 +1004,7 @@ func (j *jsiiProxy_CertAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) CertAuthBackendRole {
 	_init_.Initialize()
 
@@ -966,7 +1014,7 @@ func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *Cert
 	j := jsiiProxy_CertAuthBackendRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -974,12 +1022,12 @@ func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *Cert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole_Override(c CertAuthBackendRole, scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1125,7 +1173,7 @@ func (j *jsiiProxy_CertAuthBackendRole)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CertAuthBackendRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1144,7 +1192,7 @@ func (j *jsiiProxy_CertAuthBackendRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CertAuthBackendRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,6 +1258,17 @@ func (j *jsiiProxy_CertAuthBackendRole)SetOcspFailOpen(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_CertAuthBackendRole)SetOcspMaxRetries(val *float64) {
+	if err := j.validateSetOcspMaxRetriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspMaxRetries",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CertAuthBackendRole)SetOcspQueryAllServers(val interface{}) {
 	if err := j.validateSetOcspQueryAllServersParameters(val); err != nil {
 		panic(err)
@@ -1232,7 +1291,18 @@ func (j *jsiiProxy_CertAuthBackendRole)SetOcspServersOverride(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CertAuthBackendRole)SetOcspThisUpdateMaxAge(val *float64) {
+	if err := j.validateSetOcspThisUpdateMaxAgeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspThisUpdateMaxAge",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertAuthBackendRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1361,17 +1431,17 @@ func (j *jsiiProxy_CertAuthBackendRole)SetTokenType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a CertAuthBackendRole resource upon running "cdktf plan <stack-name>".
-func CertAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CertAuthBackendRole resource upon running "cdktn plan <stack-name>".
+func CertAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCertAuthBackendRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1406,7 +1476,7 @@ func CertAuthBackendRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1425,7 +1495,7 @@ func CertAuthBackendRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1444,7 +1514,7 @@ func CertAuthBackendRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1457,7 +1527,7 @@ func CertAuthBackendRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"@cdktn/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -1502,11 +1572,11 @@ func (c *jsiiProxy_CertAuthBackendRole) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (c *jsiiProxy_CertAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CertAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1643,7 +1713,7 @@ func (c *jsiiProxy_CertAuthBackendRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CertAuthBackendRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CertAuthBackendRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1654,11 +1724,11 @@ func (c *jsiiProxy_CertAuthBackendRole) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (c *jsiiProxy_CertAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CertAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1826,6 +1896,14 @@ func (c *jsiiProxy_CertAuthBackendRole) ResetOcspFailOpen() {
 	)
 }
 
+func (c *jsiiProxy_CertAuthBackendRole) ResetOcspMaxRetries() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOcspMaxRetries",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CertAuthBackendRole) ResetOcspQueryAllServers() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1838,6 +1916,14 @@ func (c *jsiiProxy_CertAuthBackendRole) ResetOcspServersOverride() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOcspServersOverride",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetOcspThisUpdateMaxAge() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOcspThisUpdateMaxAge",
 		nil, // no parameters
 	)
 }

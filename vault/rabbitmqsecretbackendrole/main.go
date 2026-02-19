@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rabbitmqsecretbackendrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole",
 		reflect.TypeOf((*RabbitmqSecretBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -79,20 +79,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackendRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhost",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhost",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhost)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhostList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -109,12 +109,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackendRoleVhostList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostOutputReference",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostOutputReference",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhostOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,16 +149,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackendRoleVhostOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopic",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopic",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhostTopic)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhostTopicList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -175,12 +175,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackendRoleVhostTopicList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicOutputReference",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicOutputReference",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhostTopicOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,16 +213,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhost",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhost",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhostTopicVhost)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhostTopicVhostList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -239,12 +239,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostOutputReference",
+		"@cdktn/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostOutputReference",
 		reflect.TypeOf((*RabbitmqSecretBackendRoleVhostTopicVhostOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -277,7 +277,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

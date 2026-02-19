@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultpkisecretbackendkey
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultPkiSecretBackendKey.DataVaultPkiSecretBackendKey",
+		"@cdktn/provider-vault.dataVaultPkiSecretBackendKey.DataVaultPkiSecretBackendKey",
 		reflect.TypeOf((*DataVaultPkiSecretBackendKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,12 +63,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultPkiSecretBackendKey{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultPkiSecretBackendKey.DataVaultPkiSecretBackendKeyConfig",
+		"@cdktn/provider-vault.dataVaultPkiSecretBackendKey.DataVaultPkiSecretBackendKeyConfig",
 		reflect.TypeOf((*DataVaultPkiSecretBackendKeyConfig)(nil)).Elem(),
 	)
 }

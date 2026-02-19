@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package gcpauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/gcpauthbackend/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/gcpauthbackend/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type GcpAuthBackendTuneOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedResponseHeaders() *[]*string
 	SetAllowedResponseHeaders(val *[]*string)
 	AllowedResponseHeadersInput() *[]*string
@@ -58,9 +58,9 @@ type GcpAuthBackendTuneOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenType() *string
 	SetTokenType(val *string)
 	TokenTypeInput() *string
@@ -69,7 +69,7 @@ type GcpAuthBackendTuneOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type GcpAuthBackendTuneOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedResponseHeaders()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
@@ -98,7 +98,7 @@ type GcpAuthBackendTuneOutputReference interface {
 	ResetTokenType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type GcpAuthBackendTuneOutputReference interface {
 
 // The jsii proxy struct for GcpAuthBackendTuneOutputReference
 type jsiiProxy_GcpAuthBackendTuneOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GcpAuthBackendTuneOutputReference) AllowedResponseHeaders() *[]*string {
@@ -311,8 +311,8 @@ func (j *jsiiProxy_GcpAuthBackendTuneOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_GcpAuthBackendTuneOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GcpAuthBackendTuneOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -342,7 +342,7 @@ func (j *jsiiProxy_GcpAuthBackendTuneOutputReference) TokenTypeInput() *string {
 }
 
 
-func NewGcpAuthBackendTuneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GcpAuthBackendTuneOutputReference {
+func NewGcpAuthBackendTuneOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GcpAuthBackendTuneOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGcpAuthBackendTuneOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -351,7 +351,7 @@ func NewGcpAuthBackendTuneOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_GcpAuthBackendTuneOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackendTuneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -359,11 +359,11 @@ func NewGcpAuthBackendTuneOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewGcpAuthBackendTuneOutputReference_Override(g GcpAuthBackendTuneOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGcpAuthBackendTuneOutputReference_Override(g GcpAuthBackendTuneOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTuneOutputReference",
+		"@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackendTuneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -490,7 +490,7 @@ func (j *jsiiProxy_GcpAuthBackendTuneOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendTuneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GcpAuthBackendTuneOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,11 +541,11 @@ func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -669,8 +669,8 @@ func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -682,11 +682,11 @@ func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -762,7 +762,7 @@ func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) ResetTokenType() {
 	)
 }
 
-func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GcpAuthBackendTuneOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

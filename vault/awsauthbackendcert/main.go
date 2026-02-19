@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package awsauthbackendcert
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCert",
+		"@cdktn/provider-vault.awsAuthBackendCert.AwsAuthBackendCert",
 		reflect.TypeOf((*AwsAuthBackendCert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,12 +74,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AwsAuthBackendCert{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig",
+		"@cdktn/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig",
 		reflect.TypeOf((*AwsAuthBackendCertConfig)(nil)).Elem(),
 	)
 }

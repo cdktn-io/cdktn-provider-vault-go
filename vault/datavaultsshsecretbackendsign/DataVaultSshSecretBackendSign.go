@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultsshsecretbackendsign
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultsshsecretbackendsign/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsshsecretbackendsign/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign}.
 type DataVaultSshSecretBackendSign interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CertType() *string
 	SetCertType(val *string)
 	CertTypeInput() *string
@@ -37,9 +37,9 @@ type DataVaultSshSecretBackendSign interface {
 	SetExtensions(val *map[string]*string)
 	ExtensionsInput() *map[string]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -51,9 +51,9 @@ type DataVaultSshSecretBackendSign interface {
 	SetKeyId(val *string)
 	KeyIdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -66,9 +66,9 @@ type DataVaultSshSecretBackendSign interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	PublicKey() *string
 	SetPublicKey(val *string)
 	PublicKeyInput() *string
@@ -77,7 +77,7 @@ type DataVaultSshSecretBackendSign interface {
 	SerialNumber() *string
 	SignedKey() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -93,7 +93,7 @@ type DataVaultSshSecretBackendSign interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -109,7 +109,7 @@ type DataVaultSshSecretBackendSign interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -140,11 +140,11 @@ type DataVaultSshSecretBackendSign interface {
 
 // The jsii proxy struct for DataVaultSshSecretBackendSign
 type jsiiProxy_DataVaultSshSecretBackendSign struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataVaultSshSecretBackendSign) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultSshSecretBackendSign) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign) ExtensionsInput() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultSshSecretBackendSign) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultSshSecretBackendSign) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign) KeyIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultSshSecretBackendSign) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultSshSecretBackendSign) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultSshSecretBackendSign) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultSshSecretBackendSign) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign) SignedKey() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultSshSecretBackendSign) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultSshSecretBackendSign) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -524,7 +524,7 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign) ValidPrincipalsInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
 func NewDataVaultSshSecretBackendSign(scope constructs.Construct, id *string, config *DataVaultSshSecretBackendSignConfig) DataVaultSshSecretBackendSign {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewDataVaultSshSecretBackendSign(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataVaultSshSecretBackendSign{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
+		"@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,12 +542,12 @@ func NewDataVaultSshSecretBackendSign(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
 func NewDataVaultSshSecretBackendSign_Override(d DataVaultSshSecretBackendSign, scope constructs.Construct, id *string, config *DataVaultSshSecretBackendSignConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
+		"@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -605,7 +605,7 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetExtensions(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -635,7 +635,7 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +679,7 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -720,17 +720,17 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign)SetValidPrincipals(val *string)
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultSshSecretBackendSign resource upon running "cdktf plan <stack-name>".
-func DataVaultSshSecretBackendSign_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultSshSecretBackendSign resource upon running "cdktn plan <stack-name>".
+func DataVaultSshSecretBackendSign_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultSshSecretBackendSign_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
+		"@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -765,7 +765,7 @@ func DataVaultSshSecretBackendSign_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
+		"@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func DataVaultSshSecretBackendSign_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
+		"@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -803,7 +803,7 @@ func DataVaultSshSecretBackendSign_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
+		"@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func DataVaultSshSecretBackendSign_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
+		"@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign",
 		"tfResourceType",
 		&returns,
 	)
@@ -850,11 +850,11 @@ func (d *jsiiProxy_DataVaultSshSecretBackendSign) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultSshSecretBackendSign) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultSshSecretBackendSign) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -978,11 +978,11 @@ func (d *jsiiProxy_DataVaultSshSecretBackendSign) GetStringMapAttribute(terrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultSshSecretBackendSign) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultSshSecretBackendSign) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

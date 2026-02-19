@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaulttransitencrypt
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitencrypt/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaulttransitencrypt/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_encrypt vault_transit_encrypt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt vault_transit_encrypt}.
 type DataVaultTransitEncrypt interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Ciphertext() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -35,9 +35,9 @@ type DataVaultTransitEncrypt interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,9 +52,9 @@ type DataVaultTransitEncrypt interface {
 	SetKeyVersion(val *float64)
 	KeyVersionInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -64,13 +64,13 @@ type DataVaultTransitEncrypt interface {
 	SetPlaintext(val *string)
 	PlaintextInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -80,7 +80,7 @@ type DataVaultTransitEncrypt interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -96,7 +96,7 @@ type DataVaultTransitEncrypt interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -123,7 +123,7 @@ type DataVaultTransitEncrypt interface {
 
 // The jsii proxy struct for DataVaultTransitEncrypt
 type jsiiProxy_DataVaultTransitEncrypt struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataVaultTransitEncrypt) Backend() *string {
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataVaultTransitEncrypt) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataVaultTransitEncrypt) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) KeyVersionInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataVaultTransitEncrypt) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) PlaintextInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataVaultTransitEncrypt) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataVaultTransitEncrypt) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
 func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *DataVaultTransitEncryptConfig) DataVaultTransitEncrypt {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataVaultTransitEncrypt{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
+		"@cdktn/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -435,12 +435,12 @@ func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
 func NewDataVaultTransitEncrypt_Override(d DataVaultTransitEncrypt, scope constructs.Construct, id *string, config *DataVaultTransitEncryptConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
+		"@cdktn/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -487,7 +487,7 @@ func (j *jsiiProxy_DataVaultTransitEncrypt)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultTransitEncrypt)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -528,7 +528,7 @@ func (j *jsiiProxy_DataVaultTransitEncrypt)SetKeyVersion(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultTransitEncrypt)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +561,7 @@ func (j *jsiiProxy_DataVaultTransitEncrypt)SetPlaintext(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultTransitEncrypt)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -569,17 +569,17 @@ func (j *jsiiProxy_DataVaultTransitEncrypt)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-// Generates CDKTF code for importing a DataVaultTransitEncrypt resource upon running "cdktf plan <stack-name>".
-func DataVaultTransitEncrypt_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataVaultTransitEncrypt resource upon running "cdktn plan <stack-name>".
+func DataVaultTransitEncrypt_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataVaultTransitEncrypt_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
+		"@cdktn/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -614,7 +614,7 @@ func DataVaultTransitEncrypt_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
+		"@cdktn/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func DataVaultTransitEncrypt_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
+		"@cdktn/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func DataVaultTransitEncrypt_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
+		"@cdktn/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataVaultTransitEncrypt_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
+		"@cdktn/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt",
 		"tfResourceType",
 		&returns,
 	)
@@ -699,11 +699,11 @@ func (d *jsiiProxy_DataVaultTransitEncrypt) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultTransitEncrypt) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultTransitEncrypt) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -827,11 +827,11 @@ func (d *jsiiProxy_DataVaultTransitEncrypt) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataVaultTransitEncrypt) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataVaultTransitEncrypt) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

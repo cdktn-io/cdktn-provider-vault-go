@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package gcpsecretroleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/gcpsecretroleset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/gcpsecretroleset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type GcpSecretRolesetBindingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type GcpSecretRolesetBindingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type GcpSecretRolesetBindingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type GcpSecretRolesetBindingOutputReference interface {
 
 // The jsii proxy struct for GcpSecretRolesetBindingOutputReference
 type jsiiProxy_GcpSecretRolesetBindingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) TerraformResource() c
 }
 
 
-func NewGcpSecretRolesetBindingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GcpSecretRolesetBindingOutputReference {
+func NewGcpSecretRolesetBindingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GcpSecretRolesetBindingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGcpSecretRolesetBindingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -205,7 +205,7 @@ func NewGcpSecretRolesetBindingOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GcpSecretRolesetBindingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetBindingOutputReference",
+		"@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewGcpSecretRolesetBindingOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewGcpSecretRolesetBindingOutputReference_Override(g GcpSecretRolesetBindingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGcpSecretRolesetBindingOutputReference_Override(g GcpSecretRolesetBindingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetBindingOutputReference",
+		"@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -289,7 +289,7 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -457,8 +457,8 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -470,11 +470,11 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -486,7 +486,7 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationForAttri
 	return returns
 }
 
-func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

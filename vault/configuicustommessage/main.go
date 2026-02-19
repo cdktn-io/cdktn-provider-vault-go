@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package configuicustommessage
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessage",
+		"@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessage",
 		reflect.TypeOf((*ConfigUiCustomMessage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -84,20 +84,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigUiCustomMessage{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessageConfig",
+		"@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessageConfig",
 		reflect.TypeOf((*ConfigUiCustomMessageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessageLink",
+		"@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessageLink",
 		reflect.TypeOf((*ConfigUiCustomMessageLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessageLinkOutputReference",
+		"@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessageLinkOutputReference",
 		reflect.TypeOf((*ConfigUiCustomMessageLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,7 +128,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigUiCustomMessageLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

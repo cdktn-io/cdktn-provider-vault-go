@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -95,6 +95,18 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetAccessKeyIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetAllowedIpv4AddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetAllowedIpv6AddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetAllowedPortsParameters(val *[]*float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +116,10 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetCountParameters(val int
 }
 
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetCustomTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetDisableStrictNetworkingParameters(val interface{}) error {
 	return nil
 }
 
@@ -119,7 +135,7 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

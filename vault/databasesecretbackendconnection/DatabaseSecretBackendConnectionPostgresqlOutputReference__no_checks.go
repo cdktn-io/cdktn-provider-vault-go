@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -119,7 +119,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -139,7 +139,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) val
 	return nil
 }
 
-func validateNewDatabaseSecretBackendConnectionPostgresqlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatabaseSecretBackendConnectionPostgresqlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

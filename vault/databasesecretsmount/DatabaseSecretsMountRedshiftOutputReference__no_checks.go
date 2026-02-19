@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateInterpol
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -135,7 +135,7 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -151,7 +151,7 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetVerif
 	return nil
 }
 
-func validateNewDatabaseSecretsMountRedshiftOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDatabaseSecretsMountRedshiftOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package identitymfapingid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitymfapingid/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfapingid/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid}.
 type IdentityMfaPingid interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AdminUrl() *string
 	AuthenticatorUrl() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -34,9 +34,9 @@ type IdentityMfaPingid interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,9 +46,9 @@ type IdentityMfaPingid interface {
 	IdInput() *string
 	IdpUrl() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MethodId() *string
 	MountAccessor() *string
 	Name() *string
@@ -61,9 +61,9 @@ type IdentityMfaPingid interface {
 	Node() constructs.Node
 	OrgAlias() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -74,7 +74,7 @@ type IdentityMfaPingid interface {
 	SetSettingsFileBase64(val *string)
 	SettingsFileBase64Input() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type IdentityMfaPingid interface {
 	UsernameFormat() *string
 	SetUsernameFormat(val *string)
 	UsernameFormatInput() *string
-	UseSignature() cdktf.IResolvable
+	UseSignature() cdktn.IResolvable
 	Uuid() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -93,7 +93,7 @@ type IdentityMfaPingid interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -111,9 +111,9 @@ type IdentityMfaPingid interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -149,7 +149,7 @@ type IdentityMfaPingid interface {
 
 // The jsii proxy struct for IdentityMfaPingid
 type jsiiProxy_IdentityMfaPingid struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_IdentityMfaPingid) AdminUrl() *string {
@@ -172,8 +172,8 @@ func (j *jsiiProxy_IdentityMfaPingid) AuthenticatorUrl() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityMfaPingid) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IdentityMfaPingid) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_IdentityMfaPingid) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityMfaPingid) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IdentityMfaPingid) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_IdentityMfaPingid) IdpUrl() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityMfaPingid) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IdentityMfaPingid) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_IdentityMfaPingid) OrgAlias() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityMfaPingid) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IdentityMfaPingid) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_IdentityMfaPingid) SettingsFileBase64Input() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityMfaPingid) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IdentityMfaPingid) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_IdentityMfaPingid) UsernameFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityMfaPingid) UseSignature() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_IdentityMfaPingid) UseSignature() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"useSignature",
@@ -513,7 +513,7 @@ func (j *jsiiProxy_IdentityMfaPingid) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource.
 func NewIdentityMfaPingid(scope constructs.Construct, id *string, config *IdentityMfaPingidConfig) IdentityMfaPingid {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewIdentityMfaPingid(scope constructs.Construct, id *string, config *Identi
 	j := jsiiProxy_IdentityMfaPingid{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.identityMfaPingid.IdentityMfaPingid",
+		"@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -531,12 +531,12 @@ func NewIdentityMfaPingid(scope constructs.Construct, id *string, config *Identi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource.
 func NewIdentityMfaPingid_Override(i IdentityMfaPingid, scope constructs.Construct, id *string, config *IdentityMfaPingidConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.identityMfaPingid.IdentityMfaPingid",
+		"@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -572,7 +572,7 @@ func (j *jsiiProxy_IdentityMfaPingid)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityMfaPingid)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IdentityMfaPingid)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -591,7 +591,7 @@ func (j *jsiiProxy_IdentityMfaPingid)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityMfaPingid)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IdentityMfaPingid)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +613,7 @@ func (j *jsiiProxy_IdentityMfaPingid)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityMfaPingid)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IdentityMfaPingid)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -654,17 +654,17 @@ func (j *jsiiProxy_IdentityMfaPingid)SetUsernameFormat(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a IdentityMfaPingid resource upon running "cdktf plan <stack-name>".
-func IdentityMfaPingid_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IdentityMfaPingid resource upon running "cdktn plan <stack-name>".
+func IdentityMfaPingid_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIdentityMfaPingid_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityMfaPingid.IdentityMfaPingid",
+		"@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -699,7 +699,7 @@ func IdentityMfaPingid_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityMfaPingid.IdentityMfaPingid",
+		"@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -718,7 +718,7 @@ func IdentityMfaPingid_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityMfaPingid.IdentityMfaPingid",
+		"@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func IdentityMfaPingid_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityMfaPingid.IdentityMfaPingid",
+		"@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func IdentityMfaPingid_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.identityMfaPingid.IdentityMfaPingid",
+		"@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid",
 		"tfResourceType",
 		&returns,
 	)
@@ -795,11 +795,11 @@ func (i *jsiiProxy_IdentityMfaPingid) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (i *jsiiProxy_IdentityMfaPingid) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IdentityMfaPingid) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -936,7 +936,7 @@ func (i *jsiiProxy_IdentityMfaPingid) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IdentityMfaPingid) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IdentityMfaPingid) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -947,11 +947,11 @@ func (i *jsiiProxy_IdentityMfaPingid) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (i *jsiiProxy_IdentityMfaPingid) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IdentityMfaPingid) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

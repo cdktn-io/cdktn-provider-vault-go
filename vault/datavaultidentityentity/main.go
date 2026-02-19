@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datavaultidentityentity
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity",
+		"@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity",
 		reflect.TypeOf((*DataVaultIdentityEntity)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,16 +83,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultIdentityEntity{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliases",
+		"@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliases",
 		reflect.TypeOf((*DataVaultIdentityEntityAliases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesList",
+		"@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesList",
 		reflect.TypeOf((*DataVaultIdentityEntityAliasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -108,12 +108,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultIdentityEntityAliasesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesOutputReference",
+		"@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesOutputReference",
 		reflect.TypeOf((*DataVaultIdentityEntityAliasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonicalId", GoGetter: "CanonicalId"},
@@ -150,12 +150,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultIdentityEntityAliasesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig",
+		"@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig",
 		reflect.TypeOf((*DataVaultIdentityEntityConfig)(nil)).Elem(),
 	)
 }

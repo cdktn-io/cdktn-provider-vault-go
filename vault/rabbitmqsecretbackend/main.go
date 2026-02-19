@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rabbitmqsecretbackend
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend",
+		"@cdktn/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend",
 		reflect.TypeOf((*RabbitmqSecretBackend)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
@@ -85,6 +85,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
 			_jsii_.MemberProperty{JsiiProperty: "passwordPolicy", GoGetter: "PasswordPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "passwordPolicyInput", GoGetter: "PasswordPolicyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordWo", GoGetter: "PasswordWo"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordWoInput", GoGetter: "PasswordWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordWoVersion", GoGetter: "PasswordWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordWoVersionInput", GoGetter: "PasswordWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
 			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pluginVersion", GoGetter: "PluginVersion"},
@@ -111,7 +115,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOptions", GoMethod: "ResetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPassthroughRequestHeaders", GoMethod: "ResetPassthroughRequestHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPasswordPolicy", GoMethod: "ResetPasswordPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPasswordWo", GoMethod: "ResetPasswordWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPasswordWoVersion", GoMethod: "ResetPasswordWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPluginVersion", GoMethod: "ResetPluginVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSealWrap", GoMethod: "ResetSealWrap"},
@@ -137,12 +144,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackend{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig",
+		"@cdktn/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig",
 		reflect.TypeOf((*RabbitmqSecretBackendConfig)(nil)).Elem(),
 	)
 }

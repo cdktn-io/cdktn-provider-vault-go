@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretssyncassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncassociation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SecretsSyncAssociationMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,16 +39,16 @@ type SecretsSyncAssociationMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdatedAt() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type SecretsSyncAssociationMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type SecretsSyncAssociationMetadataOutputReference interface {
 
 // The jsii proxy struct for SecretsSyncAssociationMetadataOutputReference
 type jsiiProxy_SecretsSyncAssociationMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) UpdatedAt() *s
 }
 
 
-func NewSecretsSyncAssociationMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecretsSyncAssociationMetadataOutputReference {
+func NewSecretsSyncAssociationMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecretsSyncAssociationMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSecretsSyncAssociationMetadataOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -192,7 +192,7 @@ func NewSecretsSyncAssociationMetadataOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SecretsSyncAssociationMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataOutputReference",
+		"@cdktn/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewSecretsSyncAssociationMetadataOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewSecretsSyncAssociationMetadataOutputReference_Override(s SecretsSyncAssociationMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSecretsSyncAssociationMetadataOutputReference_Override(s SecretsSyncAssociationMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataOutputReference",
+		"@cdktn/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_SecretsSyncAssociationMetadataOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_SecretsSyncAssociationMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecretsSyncAssociationMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -422,8 +422,8 @@ func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) GetStringMapAt
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -435,11 +435,11 @@ func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) InterpolationA
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -451,7 +451,7 @@ func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) InterpolationF
 	return returns
 }
 
-func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

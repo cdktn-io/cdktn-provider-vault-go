@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -127,6 +127,14 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetClientKeyParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretBackend) validateSetClientKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetClientKeyWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -167,7 +175,7 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetIdentityTokenKeyParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_NomadSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NomadSecretBackend) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -216,6 +224,14 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetSealWrapParameters(val interfa
 }
 
 func (j *jsiiProxy_NomadSecretBackend) validateSetTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetTokenWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetTokenWoVersionParameters(val *float64) error {
 	return nil
 }
 

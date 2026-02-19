@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package identitygrouppolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygrouppolicies/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygrouppolicies/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies vault_identity_group_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies vault_identity_group_policies}.
 type IdentityGroupPolicies interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type IdentityGroupPolicies interface {
 	SetExclusive(val interface{})
 	ExclusiveInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -50,9 +50,9 @@ type IdentityGroupPolicies interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -62,9 +62,9 @@ type IdentityGroupPolicies interface {
 	SetPolicies(val *[]*string)
 	PoliciesInput() *[]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -72,7 +72,7 @@ type IdentityGroupPolicies interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -85,7 +85,7 @@ type IdentityGroupPolicies interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -103,9 +103,9 @@ type IdentityGroupPolicies interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -141,11 +141,11 @@ type IdentityGroupPolicies interface {
 
 // The jsii proxy struct for IdentityGroupPolicies
 type jsiiProxy_IdentityGroupPolicies struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_IdentityGroupPolicies) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IdentityGroupPolicies) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_IdentityGroupPolicies) ExclusiveInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityGroupPolicies) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IdentityGroupPolicies) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_IdentityGroupPolicies) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityGroupPolicies) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IdentityGroupPolicies) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_IdentityGroupPolicies) PoliciesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityGroupPolicies) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IdentityGroupPolicies) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_IdentityGroupPolicies) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityGroupPolicies) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IdentityGroupPolicies) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_IdentityGroupPolicies) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
 func NewIdentityGroupPolicies(scope constructs.Construct, id *string, config *IdentityGroupPoliciesConfig) IdentityGroupPolicies {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewIdentityGroupPolicies(scope constructs.Construct, id *string, config *Id
 	j := jsiiProxy_IdentityGroupPolicies{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
+		"@cdktn/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -433,12 +433,12 @@ func NewIdentityGroupPolicies(scope constructs.Construct, id *string, config *Id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
 func NewIdentityGroupPolicies_Override(i IdentityGroupPolicies, scope constructs.Construct, id *string, config *IdentityGroupPoliciesConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
+		"@cdktn/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -485,7 +485,7 @@ func (j *jsiiProxy_IdentityGroupPolicies)SetExclusive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityGroupPolicies)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IdentityGroupPolicies)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +515,7 @@ func (j *jsiiProxy_IdentityGroupPolicies)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityGroupPolicies)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IdentityGroupPolicies)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +548,7 @@ func (j *jsiiProxy_IdentityGroupPolicies)SetPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityGroupPolicies)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IdentityGroupPolicies)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -567,17 +567,17 @@ func (j *jsiiProxy_IdentityGroupPolicies)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a IdentityGroupPolicies resource upon running "cdktf plan <stack-name>".
-func IdentityGroupPolicies_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IdentityGroupPolicies resource upon running "cdktn plan <stack-name>".
+func IdentityGroupPolicies_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIdentityGroupPolicies_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
+		"@cdktn/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -612,7 +612,7 @@ func IdentityGroupPolicies_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
+		"@cdktn/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func IdentityGroupPolicies_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
+		"@cdktn/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -650,7 +650,7 @@ func IdentityGroupPolicies_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
+		"@cdktn/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func IdentityGroupPolicies_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
+		"@cdktn/provider-vault.identityGroupPolicies.IdentityGroupPolicies",
 		"tfResourceType",
 		&returns,
 	)
@@ -708,11 +708,11 @@ func (i *jsiiProxy_IdentityGroupPolicies) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (i *jsiiProxy_IdentityGroupPolicies) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IdentityGroupPolicies) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -849,7 +849,7 @@ func (i *jsiiProxy_IdentityGroupPolicies) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IdentityGroupPolicies) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IdentityGroupPolicies) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -860,11 +860,11 @@ func (i *jsiiProxy_IdentityGroupPolicies) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (i *jsiiProxy_IdentityGroupPolicies) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IdentityGroupPolicies) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

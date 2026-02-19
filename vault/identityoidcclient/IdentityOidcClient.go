@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package identityoidcclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/identityoidcclient/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcclient/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client vault_identity_oidc_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client vault_identity_oidc_client}.
 type IdentityOidcClient interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccessTokenTtl() *float64
 	SetAccessTokenTtl(val *float64)
 	AccessTokenTtlInput() *float64
@@ -22,7 +22,7 @@ type IdentityOidcClient interface {
 	SetAssignments(val *[]*string)
 	AssignmentsInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientId() *string
 	ClientSecret() *string
 	ClientType() *string
@@ -43,9 +43,9 @@ type IdentityOidcClient interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -60,9 +60,9 @@ type IdentityOidcClient interface {
 	SetKey(val *string)
 	KeyInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -72,9 +72,9 @@ type IdentityOidcClient interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -85,7 +85,7 @@ type IdentityOidcClient interface {
 	SetRedirectUris(val *[]*string)
 	RedirectUrisInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -98,7 +98,7 @@ type IdentityOidcClient interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -116,9 +116,9 @@ type IdentityOidcClient interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -159,7 +159,7 @@ type IdentityOidcClient interface {
 
 // The jsii proxy struct for IdentityOidcClient
 type jsiiProxy_IdentityOidcClient struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_IdentityOidcClient) AccessTokenTtl() *float64 {
@@ -202,8 +202,8 @@ func (j *jsiiProxy_IdentityOidcClient) AssignmentsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityOidcClient) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IdentityOidcClient) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_IdentityOidcClient) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityOidcClient) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IdentityOidcClient) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_IdentityOidcClient) KeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityOidcClient) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IdentityOidcClient) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_IdentityOidcClient) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityOidcClient) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IdentityOidcClient) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_IdentityOidcClient) RedirectUrisInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityOidcClient) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IdentityOidcClient) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -523,7 +523,7 @@ func (j *jsiiProxy_IdentityOidcClient) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource.
 func NewIdentityOidcClient(scope constructs.Construct, id *string, config *IdentityOidcClientConfig) IdentityOidcClient {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewIdentityOidcClient(scope constructs.Construct, id *string, config *Ident
 	j := jsiiProxy_IdentityOidcClient{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.identityOidcClient.IdentityOidcClient",
+		"@cdktn/provider-vault.identityOidcClient.IdentityOidcClient",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -541,12 +541,12 @@ func NewIdentityOidcClient(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource.
 func NewIdentityOidcClient_Override(i IdentityOidcClient, scope constructs.Construct, id *string, config *IdentityOidcClientConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.identityOidcClient.IdentityOidcClient",
+		"@cdktn/provider-vault.identityOidcClient.IdentityOidcClient",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -615,7 +615,7 @@ func (j *jsiiProxy_IdentityOidcClient)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityOidcClient)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IdentityOidcClient)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -656,7 +656,7 @@ func (j *jsiiProxy_IdentityOidcClient)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityOidcClient)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IdentityOidcClient)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +689,7 @@ func (j *jsiiProxy_IdentityOidcClient)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityOidcClient)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IdentityOidcClient)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -719,17 +719,17 @@ func (j *jsiiProxy_IdentityOidcClient)SetRedirectUris(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a IdentityOidcClient resource upon running "cdktf plan <stack-name>".
-func IdentityOidcClient_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IdentityOidcClient resource upon running "cdktn plan <stack-name>".
+func IdentityOidcClient_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIdentityOidcClient_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityOidcClient.IdentityOidcClient",
+		"@cdktn/provider-vault.identityOidcClient.IdentityOidcClient",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -764,7 +764,7 @@ func IdentityOidcClient_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityOidcClient.IdentityOidcClient",
+		"@cdktn/provider-vault.identityOidcClient.IdentityOidcClient",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func IdentityOidcClient_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityOidcClient.IdentityOidcClient",
+		"@cdktn/provider-vault.identityOidcClient.IdentityOidcClient",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -802,7 +802,7 @@ func IdentityOidcClient_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.identityOidcClient.IdentityOidcClient",
+		"@cdktn/provider-vault.identityOidcClient.IdentityOidcClient",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -815,7 +815,7 @@ func IdentityOidcClient_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.identityOidcClient.IdentityOidcClient",
+		"@cdktn/provider-vault.identityOidcClient.IdentityOidcClient",
 		"tfResourceType",
 		&returns,
 	)
@@ -860,11 +860,11 @@ func (i *jsiiProxy_IdentityOidcClient) GetAnyMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (i *jsiiProxy_IdentityOidcClient) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IdentityOidcClient) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -1001,7 +1001,7 @@ func (i *jsiiProxy_IdentityOidcClient) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IdentityOidcClient) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IdentityOidcClient) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1012,11 +1012,11 @@ func (i *jsiiProxy_IdentityOidcClient) ImportFrom(id *string, provider cdktf.Ter
 	)
 }
 
-func (i *jsiiProxy_IdentityOidcClient) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IdentityOidcClient) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

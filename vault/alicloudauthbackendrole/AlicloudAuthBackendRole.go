@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package alicloudauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/alicloudauthbackendrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/alicloudauthbackendrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
 type AlicloudAuthBackendRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
 	AliasMetadataInput() *map[string]*string
@@ -25,7 +25,7 @@ type AlicloudAuthBackendRole interface {
 	SetBackend(val *string)
 	BackendInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type AlicloudAuthBackendRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,18 +52,18 @@ type AlicloudAuthBackendRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -74,7 +74,7 @@ type AlicloudAuthBackendRole interface {
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -114,7 +114,7 @@ type AlicloudAuthBackendRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -132,9 +132,9 @@ type AlicloudAuthBackendRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -180,7 +180,7 @@ type AlicloudAuthBackendRole interface {
 
 // The jsii proxy struct for AlicloudAuthBackendRole
 type jsiiProxy_AlicloudAuthBackendRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AlicloudAuthBackendRole) AliasMetadata() *map[string]*string {
@@ -243,8 +243,8 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) BackendInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlicloudAuthBackendRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AlicloudAuthBackendRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AlicloudAuthBackendRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AlicloudAuthBackendRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlicloudAuthBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AlicloudAuthBackendRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AlicloudAuthBackendRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AlicloudAuthBackendRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) RoleInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlicloudAuthBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AlicloudAuthBackendRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -644,7 +644,7 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
 func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *AlicloudAuthBackendRoleConfig) AlicloudAuthBackendRole {
 	_init_.Initialize()
 
@@ -654,7 +654,7 @@ func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_AlicloudAuthBackendRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
+		"@cdktn/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -662,12 +662,12 @@ func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
 func NewAlicloudAuthBackendRole_Override(a AlicloudAuthBackendRole, scope constructs.Construct, id *string, config *AlicloudAuthBackendRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
+		"@cdktn/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -736,7 +736,7 @@ func (j *jsiiProxy_AlicloudAuthBackendRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlicloudAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlicloudAuthBackendRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -755,7 +755,7 @@ func (j *jsiiProxy_AlicloudAuthBackendRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlicloudAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlicloudAuthBackendRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +777,7 @@ func (j *jsiiProxy_AlicloudAuthBackendRole)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlicloudAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlicloudAuthBackendRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -906,17 +906,17 @@ func (j *jsiiProxy_AlicloudAuthBackendRole)SetTokenType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a AlicloudAuthBackendRole resource upon running "cdktf plan <stack-name>".
-func AlicloudAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AlicloudAuthBackendRole resource upon running "cdktn plan <stack-name>".
+func AlicloudAuthBackendRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAlicloudAuthBackendRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
+		"@cdktn/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -951,7 +951,7 @@ func AlicloudAuthBackendRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
+		"@cdktn/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -970,7 +970,7 @@ func AlicloudAuthBackendRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
+		"@cdktn/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -989,7 +989,7 @@ func AlicloudAuthBackendRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
+		"@cdktn/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1002,7 +1002,7 @@ func AlicloudAuthBackendRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
+		"@cdktn/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -1047,11 +1047,11 @@ func (a *jsiiProxy_AlicloudAuthBackendRole) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (a *jsiiProxy_AlicloudAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlicloudAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1188,7 +1188,7 @@ func (a *jsiiProxy_AlicloudAuthBackendRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlicloudAuthBackendRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AlicloudAuthBackendRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1199,11 +1199,11 @@ func (a *jsiiProxy_AlicloudAuthBackendRole) ImportFrom(id *string, provider cdkt
 	)
 }
 
-func (a *jsiiProxy_AlicloudAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlicloudAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

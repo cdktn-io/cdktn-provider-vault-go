@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pkisecretbackendconfigscep
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScep",
+		"@cdktn/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScep",
 		reflect.TypeOf((*PkiSecretBackendConfigScep)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -93,16 +93,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigScep{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepAuthenticators",
+		"@cdktn/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepAuthenticators",
 		reflect.TypeOf((*PkiSecretBackendConfigScepAuthenticators)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepAuthenticatorsOutputReference",
+		"@cdktn/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepAuthenticatorsOutputReference",
 		reflect.TypeOf((*PkiSecretBackendConfigScepAuthenticatorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
@@ -135,20 +135,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigScepAuthenticatorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepConfig",
+		"@cdktn/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepConfig",
 		reflect.TypeOf((*PkiSecretBackendConfigScepConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidation",
+		"@cdktn/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidation",
 		reflect.TypeOf((*PkiSecretBackendConfigScepExternalValidation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidationList",
+		"@cdktn/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidationList",
 		reflect.TypeOf((*PkiSecretBackendConfigScepExternalValidationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -165,12 +165,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigScepExternalValidationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidationOutputReference",
+		"@cdktn/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidationOutputReference",
 		reflect.TypeOf((*PkiSecretBackendConfigScepExternalValidationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -200,7 +200,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendConfigScepExternalValidationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azureauthbackendconfig
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig",
+		"@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig",
 		reflect.TypeOf((*AzureAuthBackendConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -23,6 +23,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecret", GoGetter: "ClientSecret"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecretInput", GoGetter: "ClientSecretInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSecretWo", GoGetter: "ClientSecretWo"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSecretWoInput", GoGetter: "ClientSecretWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSecretWoVersion", GoGetter: "ClientSecretWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSecretWoVersionInput", GoGetter: "ClientSecretWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -70,6 +74,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBackend", GoMethod: "ResetBackend"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientSecret", GoMethod: "ResetClientSecret"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientSecretWo", GoMethod: "ResetClientSecretWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientSecretWoVersion", GoMethod: "ResetClientSecretWoVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableAutomatedRotation", GoMethod: "ResetDisableAutomatedRotation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironment", GoMethod: "ResetEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -107,12 +113,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureAuthBackendConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig",
+		"@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig",
 		reflect.TypeOf((*AzureAuthBackendConfigConfig)(nil)).Elem(),
 	)
 }

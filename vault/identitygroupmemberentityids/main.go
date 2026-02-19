@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package identitygroupmemberentityids
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIds",
+		"@cdktn/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIds",
 		reflect.TypeOf((*IdentityGroupMemberEntityIds)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,12 +72,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityGroupMemberEntityIds{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig",
+		"@cdktn/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig",
 		reflect.TypeOf((*IdentityGroupMemberEntityIdsConfig)(nil)).Elem(),
 	)
 }

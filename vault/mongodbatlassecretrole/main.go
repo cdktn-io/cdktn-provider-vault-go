@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mongodbatlassecretrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole",
+		"@cdktn/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole",
 		reflect.TypeOf((*MongodbatlasSecretRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -91,12 +91,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MongodbatlasSecretRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig",
+		"@cdktn/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig",
 		reflect.TypeOf((*MongodbatlasSecretRoleConfig)(nil)).Elem(),
 	)
 }
