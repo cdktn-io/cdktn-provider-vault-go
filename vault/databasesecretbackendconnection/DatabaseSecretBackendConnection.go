@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
 type DatabaseSecretBackendConnection interface {
 	cdktn.TerraformResource
 	AllowedRoles() *[]*string
@@ -92,9 +92,15 @@ type DatabaseSecretBackendConnection interface {
 	Node() constructs.Node
 	Oracle() DatabaseSecretBackendConnectionOracleOutputReference
 	OracleInput() *DatabaseSecretBackendConnectionOracle
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	Postgresql() DatabaseSecretBackendConnectionPostgresqlOutputReference
 	PostgresqlInput() *DatabaseSecretBackendConnectionPostgresql
 	// Experimental.
@@ -125,6 +131,9 @@ type DatabaseSecretBackendConnection interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	Snowflake() DatabaseSecretBackendConnectionSnowflakeOutputReference
 	SnowflakeInput() *DatabaseSecretBackendConnectionSnowflake
 	// Experimental.
@@ -218,7 +227,9 @@ type DatabaseSecretBackendConnection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPasswordPolicy()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetPostgresql()
 	ResetRedis()
 	ResetRedisElasticache()
@@ -227,6 +238,7 @@ type DatabaseSecretBackendConnection interface {
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSkipStaticRoleImportRotation()
 	ResetSnowflake()
 	ResetVerifyConnection()
 	SynthesizeAttributes() *map[string]interface{}
@@ -240,6 +252,15 @@ type DatabaseSecretBackendConnection interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DatabaseSecretBackendConnection
@@ -747,6 +768,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) OracleInput() *DatabaseSecre
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnection) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnection) PluginName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -762,6 +803,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) PluginNameInput() *string {
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -957,6 +1018,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) RotationWindowInput() *float
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnection) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnection) Snowflake() DatabaseSecretBackendConnectionSnowflakeOutputReference {
 	var returns DatabaseSecretBackendConnectionSnowflakeOutputReference
 	_jsii_.Get(
@@ -1028,7 +1109,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) VerifyConnectionInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
 func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) DatabaseSecretBackendConnection {
 	_init_.Initialize()
 
@@ -1046,7 +1127,7 @@ func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
 func NewDatabaseSecretBackendConnection_Override(d DatabaseSecretBackendConnection, scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) {
 	_init_.Initialize()
 
@@ -1183,6 +1264,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnection)SetPluginName(val *string) {
 	if err := j.validateSetPluginNameParameters(val); err != nil {
 		panic(err)
@@ -1190,6 +1282,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection)SetPluginName(val *string) {
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -1253,6 +1356,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection)SetRotationWindow(val *float6
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1971,10 +2085,26 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetOverrideLogicalId() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetPluginName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -2039,6 +2169,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetRotationWindow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }
@@ -2131,6 +2269,24 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

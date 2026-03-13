@@ -99,6 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unifiedCrlInput", GoGetter: "UnifiedCrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "unifiedCrlOnExistingPaths", GoGetter: "UnifiedCrlOnExistingPaths"},
 			_jsii_.MemberProperty{JsiiProperty: "unifiedCrlOnExistingPathsInput", GoGetter: "UnifiedCrlOnExistingPathsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendCrlConfig{}

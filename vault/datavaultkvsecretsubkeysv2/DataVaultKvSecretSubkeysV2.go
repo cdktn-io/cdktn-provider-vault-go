@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secret_subkeys_v2 vault_kv_secret_subkeys_v2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kv_secret_subkeys_v2 vault_kv_secret_subkeys_v2}.
 type DataVaultKvSecretSubkeysV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -118,6 +118,15 @@ type DataVaultKvSecretSubkeysV2 interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataVaultKvSecretSubkeysV2
@@ -416,7 +425,7 @@ func (j *jsiiProxy_DataVaultKvSecretSubkeysV2) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secret_subkeys_v2 vault_kv_secret_subkeys_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kv_secret_subkeys_v2 vault_kv_secret_subkeys_v2} Data Source.
 func NewDataVaultKvSecretSubkeysV2(scope constructs.Construct, id *string, config *DataVaultKvSecretSubkeysV2Config) DataVaultKvSecretSubkeysV2 {
 	_init_.Initialize()
 
@@ -434,7 +443,7 @@ func NewDataVaultKvSecretSubkeysV2(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secret_subkeys_v2 vault_kv_secret_subkeys_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kv_secret_subkeys_v2 vault_kv_secret_subkeys_v2} Data Source.
 func NewDataVaultKvSecretSubkeysV2_Override(d DataVaultKvSecretSubkeysV2, scope constructs.Construct, id *string, config *DataVaultKvSecretSubkeysV2Config) {
 	_init_.Initialize()
 
@@ -954,6 +963,24 @@ func (d *jsiiProxy_DataVaultKvSecretSubkeysV2) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKvSecretSubkeysV2) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

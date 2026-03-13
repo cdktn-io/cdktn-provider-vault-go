@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secret_v2 vault_kv_secret_v2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kv_secret_v2 vault_kv_secret_v2}.
 type DataVaultKvSecretV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -118,6 +118,15 @@ type DataVaultKvSecretV2 interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataVaultKvSecretV2
@@ -436,7 +445,7 @@ func (j *jsiiProxy_DataVaultKvSecretV2) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secret_v2 vault_kv_secret_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kv_secret_v2 vault_kv_secret_v2} Data Source.
 func NewDataVaultKvSecretV2(scope constructs.Construct, id *string, config *DataVaultKvSecretV2Config) DataVaultKvSecretV2 {
 	_init_.Initialize()
 
@@ -454,7 +463,7 @@ func NewDataVaultKvSecretV2(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secret_v2 vault_kv_secret_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kv_secret_v2 vault_kv_secret_v2} Data Source.
 func NewDataVaultKvSecretV2_Override(d DataVaultKvSecretV2, scope constructs.Construct, id *string, config *DataVaultKvSecretV2Config) {
 	_init_.Initialize()
 
@@ -955,6 +964,24 @@ func (d *jsiiProxy_DataVaultKvSecretV2) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKvSecretV2) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

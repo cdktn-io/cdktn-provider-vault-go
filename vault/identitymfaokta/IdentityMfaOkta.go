@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta}.
 type IdentityMfaOkta interface {
 	cdktn.TerraformResource
 	ApiToken() *string
@@ -151,6 +151,15 @@ type IdentityMfaOkta interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IdentityMfaOkta
@@ -529,7 +538,7 @@ func (j *jsiiProxy_IdentityMfaOkta) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource.
 func NewIdentityMfaOkta(scope constructs.Construct, id *string, config *IdentityMfaOktaConfig) IdentityMfaOkta {
 	_init_.Initialize()
 
@@ -547,7 +556,7 @@ func NewIdentityMfaOkta(scope constructs.Construct, id *string, config *Identity
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource.
 func NewIdentityMfaOkta_Override(i IdentityMfaOkta, scope constructs.Construct, id *string, config *IdentityMfaOktaConfig) {
 	_init_.Initialize()
 
@@ -1176,6 +1185,24 @@ func (i *jsiiProxy_IdentityMfaOkta) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityMfaOkta) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

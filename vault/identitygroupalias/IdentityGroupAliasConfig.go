@@ -24,24 +24,24 @@ type IdentityGroupAliasConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the group to which this is an alias.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
 	CanonicalId *string `field:"required" json:"canonicalId" yaml:"canonicalId"`
 	// Mount accessor to which this alias belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
 	MountAccessor *string `field:"required" json:"mountAccessor" yaml:"mountAccessor"`
 	// Name of the group alias.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

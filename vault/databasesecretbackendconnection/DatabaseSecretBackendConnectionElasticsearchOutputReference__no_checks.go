@@ -75,7 +75,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateSetInsecureParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateSetInsecureTlsParameters(val interface{}) error {
 	return nil
 }
 

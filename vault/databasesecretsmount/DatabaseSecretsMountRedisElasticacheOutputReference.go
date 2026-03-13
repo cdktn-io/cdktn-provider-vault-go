@@ -47,9 +47,15 @@ type DatabaseSecretsMountRedisElasticacheOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -65,6 +71,9 @@ type DatabaseSecretsMountRedisElasticacheOutputReference interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -110,12 +119,15 @@ type DatabaseSecretsMountRedisElasticacheOutputReference interface {
 	ResetData()
 	ResetDisableAutomatedRotation()
 	ResetPassword()
+	ResetPasswordPolicy()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetRegion()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSkipStaticRoleImportRotation()
 	ResetUsername()
 	ResetVerifyConnection()
 	// Produce the Token's value at resolution time.
@@ -283,6 +295,26 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) Password
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) PluginName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -298,6 +330,26 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) PluginNa
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -398,6 +450,26 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) Rotation
 	_jsii_.Get(
 		j,
 		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -599,6 +671,17 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference)SetPasswo
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference)SetPluginName(val *string) {
 	if err := j.validateSetPluginNameParameters(val); err != nil {
 		panic(err)
@@ -606,6 +689,17 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference)SetPlugin
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -661,6 +755,17 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference)SetRotati
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -938,10 +1043,26 @@ func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) ResetPas
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) ResetPluginName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -982,6 +1103,14 @@ func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) ResetRot
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

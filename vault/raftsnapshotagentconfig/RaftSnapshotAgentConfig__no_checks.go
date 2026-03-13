@@ -91,6 +91,10 @@ func validateRaftSnapshotAgentConfig_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAutoloadEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAwsAccessKeyIdParameters(val *string) error {
 	return nil
 }
@@ -143,7 +147,15 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAzureAccountNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAzureAuthModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAzureBlobEnvironmentParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAzureClientIdParameters(val *string) error {
 	return nil
 }
 

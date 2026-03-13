@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
 type PkiSecretBackendRootCert interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -94,6 +94,9 @@ type PkiSecretBackendRootCert interface {
 	KeyType() *string
 	SetKeyType(val *string)
 	KeyTypeInput() *string
+	KeyUsage() *[]*string
+	SetKeyUsage(val *[]*string)
+	KeyUsageInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -183,6 +186,9 @@ type PkiSecretBackendRootCert interface {
 	UriSans() *[]*string
 	SetUriSans(val *[]*string)
 	UriSansInput() *[]*string
+	UsePss() interface{}
+	SetUsePss(val interface{})
+	UsePssInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -241,6 +247,7 @@ type PkiSecretBackendRootCert interface {
 	ResetKeyName()
 	ResetKeyRef()
 	ResetKeyType()
+	ResetKeyUsage()
 	ResetLocality()
 	ResetManagedKeyId()
 	ResetManagedKeyName()
@@ -265,6 +272,7 @@ type PkiSecretBackendRootCert interface {
 	ResetStreetAddress()
 	ResetTtl()
 	ResetUriSans()
+	ResetUsePss()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -276,6 +284,15 @@ type PkiSecretBackendRootCert interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for PkiSecretBackendRootCert
@@ -738,6 +755,26 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) KeyTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"keyTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) KeyUsage() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) KeyUsageInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyUsageInput",
 		&returns,
 	)
 	return returns
@@ -1273,8 +1310,28 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) UriSansInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) UsePss() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usePss",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+func (j *jsiiProxy_PkiSecretBackendRootCert) UsePssInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usePssInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) PkiSecretBackendRootCert {
 	_init_.Initialize()
 
@@ -1292,7 +1349,7 @@ func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert_Override(p PkiSecretBackendRootCert, scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) {
 	_init_.Initialize()
 
@@ -1524,6 +1581,17 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetKeyType(val *string) {
 	_jsii_.Set(
 		j,
 		"keyType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetKeyUsage(val *[]*string) {
+	if err := j.validateSetKeyUsageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyUsage",
 		val,
 	)
 }
@@ -1796,6 +1864,17 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetUriSans(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"uriSans",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetUsePss(val interface{}) {
+	if err := j.validateSetUsePssParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usePss",
 		val,
 	)
 }
@@ -2273,6 +2352,14 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetKeyType() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetKeyUsage() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyUsage",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRootCert) ResetLocality() {
 	_jsii_.InvokeVoid(
 		p,
@@ -2449,6 +2536,14 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetUriSans() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetUsePss() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUsePss",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRootCert) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
@@ -2521,6 +2616,24 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ToTerraform() interface{} {
 		p,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		p,
+		"with",
+		args,
 		&returns,
 	)
 

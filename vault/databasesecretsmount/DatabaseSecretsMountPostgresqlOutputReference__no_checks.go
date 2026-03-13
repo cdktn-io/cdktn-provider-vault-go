@@ -111,6 +111,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPas
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPas
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -148,6 +156,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetSel
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

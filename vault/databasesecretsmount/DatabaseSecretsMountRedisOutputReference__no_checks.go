@@ -95,7 +95,15 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetPassword
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -116,6 +124,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetRotation
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

@@ -126,6 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vaultVersionOverride", GoGetter: "VaultVersionOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "vaultVersionOverrideInput", GoGetter: "VaultVersionOverrideInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_VaultProvider{}

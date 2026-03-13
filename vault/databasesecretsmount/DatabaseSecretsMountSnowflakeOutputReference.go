@@ -59,6 +59,9 @@ type DatabaseSecretsMountSnowflakeOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PasswordWo() *string
 	SetPasswordWo(val *string)
 	PasswordWoInput() *string
@@ -68,6 +71,9 @@ type DatabaseSecretsMountSnowflakeOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	PrivateKeyWo() *string
 	SetPrivateKeyWo(val *string)
 	PrivateKeyWoInput() *string
@@ -86,6 +92,9 @@ type DatabaseSecretsMountSnowflakeOutputReference interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,15 +144,18 @@ type DatabaseSecretsMountSnowflakeOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordPolicy()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetPrivateKeyWo()
 	ResetPrivateKeyWoVersion()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSkipStaticRoleImportRotation()
 	ResetUsername()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -392,6 +404,26 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PasswordInput()
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PasswordWo() *string {
 	var returns *string
 	_jsii_.Get(
@@ -447,6 +479,26 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PluginNameInput
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -567,6 +619,26 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) RotationWindowI
 	_jsii_.Get(
 		j,
 		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -812,6 +884,17 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetPassword(val 
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetPasswordWo(val *string) {
 	if err := j.validateSetPasswordWoParameters(val); err != nil {
 		panic(err)
@@ -841,6 +924,17 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetPluginName(va
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -907,6 +1001,17 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetRotationWindo
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1216,6 +1321,14 @@ func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetPassword()
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetPasswordWo() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1236,6 +1349,14 @@ func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetPluginName
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1284,6 +1405,14 @@ func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetRotationWi
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

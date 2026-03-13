@@ -167,6 +167,10 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyTypeParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyUsageParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -260,6 +264,10 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetTypeParameters(val *stri
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetUriSansParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetUsePssParameters(val interface{}) error {
 	return nil
 }
 

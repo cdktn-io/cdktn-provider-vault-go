@@ -77,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "useAnnotationsAsAliasMetadata", GoGetter: "UseAnnotationsAsAliasMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "useAnnotationsAsAliasMetadataInput", GoGetter: "UseAnnotationsAsAliasMetadataInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultKubernetesAuthBackendConfig{}

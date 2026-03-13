@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend}.
 type KmipSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -238,6 +238,15 @@ type KmipSecretBackend interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for KmipSecretBackend
@@ -1016,7 +1025,7 @@ func (j *jsiiProxy_KmipSecretBackend) TlsMinVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
 func NewKmipSecretBackend(scope constructs.Construct, id *string, config *KmipSecretBackendConfig) KmipSecretBackend {
 	_init_.Initialize()
 
@@ -1034,7 +1043,7 @@ func NewKmipSecretBackend(scope constructs.Construct, id *string, config *KmipSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
 func NewKmipSecretBackend_Override(k KmipSecretBackend, scope constructs.Construct, id *string, config *KmipSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -2108,6 +2117,24 @@ func (k *jsiiProxy_KmipSecretBackend) ToTerraform() interface{} {
 		k,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KmipSecretBackend) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		k,
+		"with",
+		args,
 		&returns,
 	)
 

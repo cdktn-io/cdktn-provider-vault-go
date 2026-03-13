@@ -146,6 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userClaimJsonPointerInput", GoGetter: "UserClaimJsonPointerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verboseOidcLogging", GoGetter: "VerboseOidcLogging"},
 			_jsii_.MemberProperty{JsiiProperty: "verboseOidcLoggingInput", GoGetter: "VerboseOidcLoggingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_JwtAuthBackendRole{}

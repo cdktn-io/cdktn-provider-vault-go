@@ -282,6 +282,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetPassword
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetPasswordWoParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -299,6 +307,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetPassword
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetPluginNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetPluginVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -341,6 +357,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetRotation
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

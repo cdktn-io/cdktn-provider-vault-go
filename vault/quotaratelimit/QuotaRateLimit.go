@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
 type QuotaRateLimit interface {
 	cdktn.TerraformResource
 	BlockInterval() *float64
@@ -160,6 +160,15 @@ type QuotaRateLimit interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for QuotaRateLimit
@@ -548,7 +557,7 @@ func (j *jsiiProxy_QuotaRateLimit) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRateLimitConfig) QuotaRateLimit {
 	_init_.Initialize()
 
@@ -566,7 +575,7 @@ func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit_Override(q QuotaRateLimit, scope constructs.Construct, id *string, config *QuotaRateLimitConfig) {
 	_init_.Initialize()
 
@@ -1271,6 +1280,24 @@ func (q *jsiiProxy_QuotaRateLimit) ToTerraform() interface{} {
 		q,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (q *jsiiProxy_QuotaRateLimit) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		q,
+		"with",
+		args,
 		&returns,
 	)
 

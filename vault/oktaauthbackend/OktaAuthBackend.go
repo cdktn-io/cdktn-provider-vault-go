@@ -12,13 +12,22 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
 type OktaAuthBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
 	AliasMetadata() *map[string]*string
 	SetAliasMetadata(val *map[string]*string)
 	AliasMetadataInput() *map[string]*string
+	ApiToken() *string
+	SetApiToken(val *string)
+	ApiTokenInput() *string
+	ApiTokenWo() *string
+	SetApiTokenWo(val *string)
+	ApiTokenWoInput() *string
+	ApiTokenWoVersion() *float64
+	SetApiTokenWoVersion(val *float64)
+	ApiTokenWoVersionInput() *float64
 	BaseUrl() *string
 	SetBaseUrl(val *string)
 	BaseUrlInput() *string
@@ -72,6 +81,9 @@ type OktaAuthBackend interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	OrgName() *string
+	SetOrgName(val *string)
+	OrgNameInput() *string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -172,6 +184,9 @@ type OktaAuthBackend interface {
 	PutTune(value interface{})
 	PutUser(value interface{})
 	ResetAliasMetadata()
+	ResetApiToken()
+	ResetApiTokenWo()
+	ResetApiTokenWoVersion()
 	ResetBaseUrl()
 	ResetBypassOktaMfa()
 	ResetDescription()
@@ -179,6 +194,8 @@ type OktaAuthBackend interface {
 	ResetGroup()
 	ResetId()
 	ResetNamespace()
+	ResetOrganization()
+	ResetOrgName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -206,6 +223,15 @@ type OktaAuthBackend interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for OktaAuthBackend
@@ -238,6 +264,66 @@ func (j *jsiiProxy_OktaAuthBackend) AliasMetadataInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) ApiToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) ApiTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) ApiTokenWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiTokenWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) ApiTokenWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiTokenWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) ApiTokenWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiTokenWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) ApiTokenWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiTokenWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -498,6 +584,26 @@ func (j *jsiiProxy_OktaAuthBackend) OrganizationInput() *string {
 	_jsii_.Get(
 		j,
 		"organizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) OrgName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orgName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) OrgNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orgNameInput",
 		&returns,
 	)
 	return returns
@@ -824,7 +930,7 @@ func (j *jsiiProxy_OktaAuthBackend) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuthBackendConfig) OktaAuthBackend {
 	_init_.Initialize()
 
@@ -842,7 +948,7 @@ func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend_Override(o OktaAuthBackend, scope constructs.Construct, id *string, config *OktaAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -860,6 +966,39 @@ func (j *jsiiProxy_OktaAuthBackend)SetAliasMetadata(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"aliasMetadata",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetApiToken(val *string) {
+	if err := j.validateSetApiTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetApiTokenWo(val *string) {
+	if err := j.validateSetApiTokenWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiTokenWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetApiTokenWoVersion(val *float64) {
+	if err := j.validateSetApiTokenWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiTokenWoVersion",
 		val,
 	)
 }
@@ -986,6 +1125,17 @@ func (j *jsiiProxy_OktaAuthBackend)SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetOrgName(val *string) {
+	if err := j.validateSetOrgNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orgName",
 		val,
 	)
 }
@@ -1524,6 +1674,30 @@ func (o *jsiiProxy_OktaAuthBackend) ResetAliasMetadata() {
 	)
 }
 
+func (o *jsiiProxy_OktaAuthBackend) ResetApiToken() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetApiToken",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetApiTokenWo() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetApiTokenWo",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetApiTokenWoVersion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetApiTokenWoVersion",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OktaAuthBackend) ResetBaseUrl() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1576,6 +1750,22 @@ func (o *jsiiProxy_OktaAuthBackend) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOrganization",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetOrgName() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOrgName",
 		nil, // no parameters
 	)
 }
@@ -1764,6 +1954,24 @@ func (o *jsiiProxy_OktaAuthBackend) ToTerraform() interface{} {
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OktaAuthBackend) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

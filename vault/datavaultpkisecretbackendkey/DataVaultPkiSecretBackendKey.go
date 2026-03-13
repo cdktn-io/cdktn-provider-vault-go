@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_key vault_pki_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_key vault_pki_secret_backend_key}.
 type DataVaultPkiSecretBackendKey interface {
 	cdktn.TerraformDataSource
 	Backend() *string
@@ -110,6 +110,15 @@ type DataVaultPkiSecretBackendKey interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataVaultPkiSecretBackendKey
@@ -368,7 +377,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendKey) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_key vault_pki_secret_backend_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_key vault_pki_secret_backend_key} Data Source.
 func NewDataVaultPkiSecretBackendKey(scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendKeyConfig) DataVaultPkiSecretBackendKey {
 	_init_.Initialize()
 
@@ -386,7 +395,7 @@ func NewDataVaultPkiSecretBackendKey(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_key vault_pki_secret_backend_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_key vault_pki_secret_backend_key} Data Source.
 func NewDataVaultPkiSecretBackendKey_Override(d DataVaultPkiSecretBackendKey, scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendKeyConfig) {
 	_init_.Initialize()
 
@@ -868,6 +877,24 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendKey) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultPkiSecretBackendKey) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -143,6 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "uriSans", GoGetter: "UriSans"},
 			_jsii_.MemberProperty{JsiiProperty: "uriSansInput", GoGetter: "UriSansInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendIntermediateCertRequest{}

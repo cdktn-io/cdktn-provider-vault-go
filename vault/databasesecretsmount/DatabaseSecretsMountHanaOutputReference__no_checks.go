@@ -103,6 +103,10 @@ func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPasswordP
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPasswordW
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -128,6 +136,10 @@ func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetRotationS
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

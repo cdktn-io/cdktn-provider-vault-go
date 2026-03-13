@@ -62,6 +62,9 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PasswordWo() *string
 	SetPasswordWo(val *string)
 	PasswordWoInput() *string
@@ -71,6 +74,9 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
@@ -86,6 +92,9 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	SelfManaged() interface{}
 	SetSelfManaged(val interface{})
 	SelfManagedInput() interface{}
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	SplitStatements() interface{}
 	SetSplitStatements(val interface{})
 	SplitStatementsInput() interface{}
@@ -139,14 +148,17 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordPolicy()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
 	ResetSelfManaged()
+	ResetSkipStaticRoleImportRotation()
 	ResetSplitStatements()
 	ResetUsername()
 	ResetUsernameTemplate()
@@ -416,6 +428,26 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) PasswordInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) PasswordWo() *string {
 	var returns *string
 	_jsii_.Get(
@@ -471,6 +503,26 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) PluginNameInput() 
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -571,6 +623,26 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SelfManagedInput()
 	_jsii_.Get(
 		j,
 		"selfManagedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -847,6 +919,17 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetPassword(val *st
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetPasswordWo(val *string) {
 	if err := j.validateSetPasswordWoParameters(val); err != nil {
 		panic(err)
@@ -876,6 +959,17 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetPluginName(val *
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -931,6 +1025,17 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetSelfManaged(val 
 	_jsii_.Set(
 		j,
 		"selfManaged",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1259,6 +1364,14 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetPassword() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetPasswordWo() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1279,6 +1392,14 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetPluginName() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1319,6 +1440,14 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetSelfManaged()
 	_jsii_.InvokeVoid(
 		d,
 		"resetSelfManaged",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

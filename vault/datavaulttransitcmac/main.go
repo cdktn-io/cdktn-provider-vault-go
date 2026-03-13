@@ -78,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "urlMacLength", GoGetter: "UrlMacLength"},
 			_jsii_.MemberProperty{JsiiProperty: "urlMacLengthInput", GoGetter: "UrlMacLengthInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultTransitCmac{}

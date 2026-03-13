@@ -209,6 +209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameAsAliasInput", GoGetter: "UsernameAsAliasInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useTokenGroups", GoGetter: "UseTokenGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "useTokenGroupsInput", GoGetter: "UseTokenGroupsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LdapAuthBackend{}

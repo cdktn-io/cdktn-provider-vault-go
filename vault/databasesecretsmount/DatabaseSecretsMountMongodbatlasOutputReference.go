@@ -44,9 +44,15 @@ type DatabaseSecretsMountMongodbatlasOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
@@ -68,6 +74,9 @@ type DatabaseSecretsMountMongodbatlasOutputReference interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -109,11 +118,14 @@ type DatabaseSecretsMountMongodbatlasOutputReference interface {
 	ResetAllowedRoles()
 	ResetData()
 	ResetDisableAutomatedRotation()
+	ResetPasswordPolicy()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSkipStaticRoleImportRotation()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
 	// Produce the Token's value at resolution time.
@@ -261,6 +273,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) NameInput() 
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) PluginName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +308,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) PluginNameIn
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -416,6 +468,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) RotationWind
 	_jsii_.Get(
 		j,
 		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -586,6 +658,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetName(val *
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetPluginName(val *string) {
 	if err := j.validateSetPluginNameParameters(val); err != nil {
 		panic(err)
@@ -593,6 +676,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetPluginName
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -670,6 +764,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetRotationWi
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -928,10 +1033,26 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) ResetDisable
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) ResetPluginName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -964,6 +1085,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) ResetRotatio
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
 type TerraformCloudSecretRole interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -161,6 +161,15 @@ type TerraformCloudSecretRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for TerraformCloudSecretRole
@@ -549,7 +558,7 @@ func (j *jsiiProxy_TerraformCloudSecretRole) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
 func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) TerraformCloudSecretRole {
 	_init_.Initialize()
 
@@ -567,7 +576,7 @@ func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
 func NewTerraformCloudSecretRole_Override(t TerraformCloudSecretRole, scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) {
 	_init_.Initialize()
 
@@ -1280,6 +1289,24 @@ func (t *jsiiProxy_TerraformCloudSecretRole) ToTerraform() interface{} {
 		t,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TerraformCloudSecretRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		t,
+		"with",
+		args,
 		&returns,
 	)
 

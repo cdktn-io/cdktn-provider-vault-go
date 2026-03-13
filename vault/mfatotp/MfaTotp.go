@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp vault_mfa_totp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_totp vault_mfa_totp}.
 type MfaTotp interface {
 	cdktn.TerraformResource
 	Algorithm() *string
@@ -160,6 +160,15 @@ type MfaTotp interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MfaTotp
@@ -548,7 +557,7 @@ func (j *jsiiProxy_MfaTotp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp vault_mfa_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_totp vault_mfa_totp} Resource.
 func NewMfaTotp(scope constructs.Construct, id *string, config *MfaTotpConfig) MfaTotp {
 	_init_.Initialize()
 
@@ -566,7 +575,7 @@ func NewMfaTotp(scope constructs.Construct, id *string, config *MfaTotpConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp vault_mfa_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_totp vault_mfa_totp} Resource.
 func NewMfaTotp_Override(m MfaTotp, scope constructs.Construct, id *string, config *MfaTotpConfig) {
 	_init_.Initialize()
 
@@ -1271,6 +1280,24 @@ func (m *jsiiProxy_MfaTotp) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MfaTotp) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

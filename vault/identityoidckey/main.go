@@ -75,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationTtl", GoGetter: "VerificationTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationTtlInput", GoGetter: "VerificationTtlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityOidcKey{}

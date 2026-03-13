@@ -24,17 +24,17 @@ type PluginPinnedVersionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the plugin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Type of plugin; one of "auth", "secret", or "database".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Semantic pinned plugin version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
 	Version *string `field:"required" json:"version" yaml:"version"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

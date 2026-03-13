@@ -95,6 +95,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetPassw
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetPemBundleParameters(val *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetPemJs
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -124,6 +132,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetRotat
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

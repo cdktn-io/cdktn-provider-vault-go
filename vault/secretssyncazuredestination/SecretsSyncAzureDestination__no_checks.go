@@ -139,6 +139,26 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenAudienceWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenAudienceWoVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenKeyWoVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetKeyVaultUriParameters(val *string) error {
 	return nil
 }

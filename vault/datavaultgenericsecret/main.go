@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "withLeaseStartTime", GoGetter: "WithLeaseStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "withLeaseStartTimeInput", GoGetter: "WithLeaseStartTimeInput"},
 		},

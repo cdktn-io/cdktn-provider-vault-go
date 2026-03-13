@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity vault_identity_entity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/identity_entity vault_identity_entity}.
 type DataVaultIdentityEntity interface {
 	cdktn.TerraformDataSource
 	Aliases() DataVaultIdentityEntityAliasesList
@@ -133,6 +133,15 @@ type DataVaultIdentityEntity interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataVaultIdentityEntity
@@ -541,7 +550,7 @@ func (j *jsiiProxy_DataVaultIdentityEntity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
 func NewDataVaultIdentityEntity(scope constructs.Construct, id *string, config *DataVaultIdentityEntityConfig) DataVaultIdentityEntity {
 	_init_.Initialize()
 
@@ -559,7 +568,7 @@ func NewDataVaultIdentityEntity(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
 func NewDataVaultIdentityEntity_Override(d DataVaultIdentityEntity, scope constructs.Construct, id *string, config *DataVaultIdentityEntityConfig) {
 	_init_.Initialize()
 
@@ -1114,6 +1123,24 @@ func (d *jsiiProxy_DataVaultIdentityEntity) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultIdentityEntity) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

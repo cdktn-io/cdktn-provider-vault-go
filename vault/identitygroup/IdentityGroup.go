@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group vault_identity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group vault_identity_group}.
 type IdentityGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -162,6 +162,15 @@ type IdentityGroup interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IdentityGroup
@@ -550,7 +559,7 @@ func (j *jsiiProxy_IdentityGroup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group vault_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group vault_identity_group} Resource.
 func NewIdentityGroup(scope constructs.Construct, id *string, config *IdentityGroupConfig) IdentityGroup {
 	_init_.Initialize()
 
@@ -568,7 +577,7 @@ func NewIdentityGroup(scope constructs.Construct, id *string, config *IdentityGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group vault_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group vault_identity_group} Resource.
 func NewIdentityGroup_Override(i IdentityGroup, scope constructs.Construct, id *string, config *IdentityGroupConfig) {
 	_init_.Initialize()
 
@@ -1289,6 +1298,24 @@ func (i *jsiiProxy_IdentityGroup) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityGroup) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

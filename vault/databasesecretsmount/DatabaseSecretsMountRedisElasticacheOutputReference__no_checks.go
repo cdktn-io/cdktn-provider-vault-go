@@ -83,7 +83,15 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -104,6 +112,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validate
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify vault_transit_verify}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_verify vault_transit_verify}.
 type DataVaultTransitVerify interface {
 	cdktn.TerraformDataSource
 	BatchInput() interface{}
@@ -171,6 +171,15 @@ type DataVaultTransitVerify interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataVaultTransitVerify
@@ -719,7 +728,7 @@ func (j *jsiiProxy_DataVaultTransitVerify) ValidInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
 func NewDataVaultTransitVerify(scope constructs.Construct, id *string, config *DataVaultTransitVerifyConfig) DataVaultTransitVerify {
 	_init_.Initialize()
 
@@ -737,7 +746,7 @@ func NewDataVaultTransitVerify(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
 func NewDataVaultTransitVerify_Override(d DataVaultTransitVerify, scope constructs.Construct, id *string, config *DataVaultTransitVerifyConfig) {
 	_init_.Initialize()
 
@@ -1523,6 +1532,24 @@ func (d *jsiiProxy_DataVaultTransitVerify) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultTransitVerify) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

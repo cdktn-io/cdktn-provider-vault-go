@@ -65,6 +65,9 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PasswordWo() *string
 	SetPasswordWo(val *string)
 	PasswordWoInput() *string
@@ -74,6 +77,9 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
@@ -86,6 +92,9 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -137,13 +146,16 @@ type DatabaseSecretsMountMssqlOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordPolicy()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSkipStaticRoleImportRotation()
 	ResetUsername()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -432,6 +444,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) PasswordInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) PasswordWo() *string {
 	var returns *string
 	_jsii_.Get(
@@ -487,6 +519,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) PluginNameInput() *
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -567,6 +619,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) RotationWindowInput
 	_jsii_.Get(
 		j,
 		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -834,6 +906,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetPassword(val *str
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetPasswordWo(val *string) {
 	if err := j.validateSetPasswordWoParameters(val); err != nil {
 		panic(err)
@@ -863,6 +946,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetPluginName(val *s
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -907,6 +1001,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetRotationWindow(va
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1232,6 +1337,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetPassword() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetPasswordWo() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1252,6 +1365,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetPluginName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1284,6 +1405,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetRotationWindow
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

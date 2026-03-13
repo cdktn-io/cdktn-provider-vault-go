@@ -83,6 +83,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "removeRootsFromChain", GoGetter: "RemoveRootsFromChain"},
+			_jsii_.MemberProperty{JsiiProperty: "removeRootsFromChainInput", GoGetter: "RemoveRootsFromChainInput"},
 			_jsii_.MemberProperty{JsiiProperty: "renewPending", GoGetter: "RenewPending"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAltNames", GoMethod: "ResetAltNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoRenew", GoMethod: "ResetAutoRenew"},
@@ -98,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOtherSans", GoMethod: "ResetOtherSans"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateKeyFormat", GoMethod: "ResetPrivateKeyFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRemoveRootsFromChain", GoMethod: "ResetRemoveRootsFromChain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRevoke", GoMethod: "ResetRevoke"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRevokeWithKey", GoMethod: "ResetRevokeWithKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
@@ -123,6 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uriSansInput", GoGetter: "UriSansInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userIds", GoGetter: "UserIds"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdsInput", GoGetter: "UserIdsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendCert{}

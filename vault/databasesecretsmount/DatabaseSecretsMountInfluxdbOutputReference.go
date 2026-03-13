@@ -56,6 +56,9 @@ type DatabaseSecretsMountInfluxdbOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PemBundle() *string
 	SetPemBundle(val *string)
 	PemBundleInput() *string
@@ -65,6 +68,9 @@ type DatabaseSecretsMountInfluxdbOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -80,6 +86,9 @@ type DatabaseSecretsMountInfluxdbOutputReference interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -129,14 +138,17 @@ type DatabaseSecretsMountInfluxdbOutputReference interface {
 	ResetData()
 	ResetDisableAutomatedRotation()
 	ResetInsecureTls()
+	ResetPasswordPolicy()
 	ResetPemBundle()
 	ResetPemJson()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetPort()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSkipStaticRoleImportRotation()
 	ResetTls()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -365,6 +377,26 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) PasswordInput() 
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) PemBundle() *string {
 	var returns *string
 	_jsii_.Get(
@@ -420,6 +452,26 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) PluginNameInput(
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +572,26 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) RotationWindowIn
 	_jsii_.Get(
 		j,
 		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -774,6 +846,17 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPassword(val *
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPemBundle(val *string) {
 	if err := j.validateSetPemBundleParameters(val); err != nil {
 		panic(err)
@@ -803,6 +886,17 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPluginName(val
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -858,6 +952,17 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetRotationWindow
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1154,6 +1259,14 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ResetInsecureTls
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ResetPemBundle() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1174,6 +1287,14 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ResetPluginName(
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1214,6 +1335,14 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ResetRotationWin
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

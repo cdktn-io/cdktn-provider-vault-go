@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope}.
 type IdentityOidcScope interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -137,6 +137,15 @@ type IdentityOidcScope interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IdentityOidcScope
@@ -405,7 +414,7 @@ func (j *jsiiProxy_IdentityOidcScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope} Resource.
 func NewIdentityOidcScope(scope constructs.Construct, id *string, config *IdentityOidcScopeConfig) IdentityOidcScope {
 	_init_.Initialize()
 
@@ -423,7 +432,7 @@ func NewIdentityOidcScope(scope constructs.Construct, id *string, config *Identi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope} Resource.
 func NewIdentityOidcScope_Override(i IdentityOidcScope, scope constructs.Construct, id *string, config *IdentityOidcScopeConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1031,24 @@ func (i *jsiiProxy_IdentityOidcScope) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityOidcScope) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -121,6 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "useStsRegionFromClient", GoGetter: "UseStsRegionFromClient"},
 			_jsii_.MemberProperty{JsiiProperty: "useStsRegionFromClientInput", GoGetter: "UseStsRegionFromClientInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AwsAuthBackendClient{}

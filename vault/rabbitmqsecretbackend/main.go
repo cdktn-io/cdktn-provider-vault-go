@@ -141,6 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnection", GoGetter: "VerifyConnection"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyConnectionInput", GoGetter: "VerifyConnectionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackend{}

@@ -103,6 +103,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPassw
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPassw
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -132,6 +140,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetRotat
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

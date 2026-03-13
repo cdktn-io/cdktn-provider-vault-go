@@ -68,6 +68,9 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	SetPasswordAuthentication(val *string)
 	PasswordAuthenticationInput() *string
 	PasswordInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PasswordWo() *string
 	SetPasswordWo(val *string)
 	PasswordWoInput() *string
@@ -77,6 +80,9 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
@@ -98,6 +104,9 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	ServiceAccountJson() *string
 	SetServiceAccountJson(val *string)
 	ServiceAccountJsonInput() *string
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -156,9 +165,11 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	ResetMaxOpenConnections()
 	ResetPassword()
 	ResetPasswordAuthentication()
+	ResetPasswordPolicy()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetPrivateKey()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
@@ -166,6 +177,7 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	ResetRotationWindow()
 	ResetSelfManaged()
 	ResetServiceAccountJson()
+	ResetSkipStaticRoleImportRotation()
 	ResetTlsCa()
 	ResetTlsCertificate()
 	ResetUsername()
@@ -476,6 +488,26 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PasswordInput(
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PasswordWo() *string {
 	var returns *string
 	_jsii_.Get(
@@ -531,6 +563,26 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PluginNameInpu
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -671,6 +723,26 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ServiceAccount
 	_jsii_.Get(
 		j,
 		"serviceAccountJsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -989,6 +1061,17 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPasswordAuth
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPasswordWo(val *string) {
 	if err := j.validateSetPasswordWoParameters(val); err != nil {
 		panic(err)
@@ -1018,6 +1101,17 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPluginName(v
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -1095,6 +1189,17 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetServiceAccou
 	_jsii_.Set(
 		j,
 		"serviceAccountJson",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1450,6 +1555,14 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPasswordA
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPasswordWo() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1470,6 +1583,14 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPluginNam
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1526,6 +1647,14 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetServiceAc
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceAccountJson",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

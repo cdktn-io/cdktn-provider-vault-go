@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
 type SecretsSyncAzureDestination interface {
 	cdktn.TerraformResource
 	AllowedIpv4Addresses() *[]*string
@@ -68,6 +68,21 @@ type SecretsSyncAzureDestination interface {
 	GranularityInput() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenAudienceWo() *string
+	SetIdentityTokenAudienceWo(val *string)
+	IdentityTokenAudienceWoInput() *string
+	IdentityTokenAudienceWoVersion() *float64
+	SetIdentityTokenAudienceWoVersion(val *float64)
+	IdentityTokenAudienceWoVersionInput() *float64
+	IdentityTokenKeyWo() *string
+	SetIdentityTokenKeyWo(val *string)
+	IdentityTokenKeyWoInput() *string
+	IdentityTokenKeyWoVersion() *float64
+	SetIdentityTokenKeyWoVersion(val *float64)
+	IdentityTokenKeyWoVersionInput() *float64
+	IdentityTokenTtl() *float64
+	SetIdentityTokenTtl(val *float64)
+	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	KeyVaultUri() *string
 	SetKeyVaultUri(val *string)
@@ -160,6 +175,11 @@ type SecretsSyncAzureDestination interface {
 	ResetDisableStrictNetworking()
 	ResetGranularity()
 	ResetId()
+	ResetIdentityTokenAudienceWo()
+	ResetIdentityTokenAudienceWoVersion()
+	ResetIdentityTokenKeyWo()
+	ResetIdentityTokenKeyWoVersion()
+	ResetIdentityTokenTtl()
 	ResetKeyVaultUri()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -178,6 +198,15 @@ type SecretsSyncAzureDestination interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SecretsSyncAzureDestination
@@ -455,6 +484,106 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenAudienceWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenAudienceWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenAudienceWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenAudienceWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenKeyWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenKeyWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenKeyWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) IdentityTokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncAzureDestination) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -656,7 +785,7 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
 func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, config *SecretsSyncAzureDestinationConfig) SecretsSyncAzureDestination {
 	_init_.Initialize()
 
@@ -674,7 +803,7 @@ func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
 func NewSecretsSyncAzureDestination_Override(s SecretsSyncAzureDestination, scope constructs.Construct, id *string, config *SecretsSyncAzureDestinationConfig) {
 	_init_.Initialize()
 
@@ -829,6 +958,61 @@ func (j *jsiiProxy_SecretsSyncAzureDestination)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetIdentityTokenAudienceWo(val *string) {
+	if err := j.validateSetIdentityTokenAudienceWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudienceWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetIdentityTokenAudienceWoVersion(val *float64) {
+	if err := j.validateSetIdentityTokenAudienceWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudienceWoVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetIdentityTokenKeyWo(val *string) {
+	if err := j.validateSetIdentityTokenKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetIdentityTokenKeyWoVersion(val *float64) {
+	if err := j.validateSetIdentityTokenKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKeyWoVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetIdentityTokenTtl(val *float64) {
+	if err := j.validateSetIdentityTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenTtl",
 		val,
 	)
 }
@@ -1351,6 +1535,46 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetIdentityTokenAudienceWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenAudienceWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetIdentityTokenAudienceWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenAudienceWoVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetIdentityTokenKeyWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetIdentityTokenKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenKeyWoVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetIdentityTokenTtl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenTtl",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretsSyncAzureDestination) ResetKeyVaultUri() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1463,6 +1687,24 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -187,6 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userattrInput", GoGetter: "UserattrInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userdn", GoGetter: "Userdn"},
 			_jsii_.MemberProperty{JsiiProperty: "userdnInput", GoGetter: "UserdnInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LdapSecretBackend{}

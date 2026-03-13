@@ -24,32 +24,32 @@ type DataVaultTransitEncryptConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Transit secret backend the key belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
 	Backend *string `field:"required" json:"backend" yaml:"backend"`
 	// Name of the encryption key to use.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// Map of strings read from Vault.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
 	Plaintext *string `field:"required" json:"plaintext" yaml:"plaintext"`
 	// Specifies the context for key derivation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
 	Context *string `field:"optional" json:"context" yaml:"context"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The version of the key to use for encryption.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
 	KeyVersion *float64 `field:"optional" json:"keyVersion" yaml:"keyVersion"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

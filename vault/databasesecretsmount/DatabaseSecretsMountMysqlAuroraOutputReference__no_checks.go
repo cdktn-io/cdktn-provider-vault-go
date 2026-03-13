@@ -103,6 +103,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPa
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPa
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -132,6 +140,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetRo
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

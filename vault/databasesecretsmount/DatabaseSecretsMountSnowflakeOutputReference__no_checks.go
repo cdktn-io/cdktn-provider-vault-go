@@ -99,6 +99,10 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPass
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPass
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -132,6 +140,10 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetRota
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

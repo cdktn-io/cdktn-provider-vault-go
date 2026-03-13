@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_role vault_kmip_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_role vault_kmip_secret_role}.
 type KmipSecretRole interface {
 	cdktn.TerraformResource
+	Ca() *string
+	SetCa(val *string)
+	CaInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -212,6 +215,7 @@ type KmipSecretRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCa()
 	ResetId()
 	ResetNamespace()
 	ResetOperationActivate()
@@ -259,11 +263,40 @@ type KmipSecretRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for KmipSecretRole
 type jsiiProxy_KmipSecretRole struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_KmipSecretRole) Ca() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ca",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretRole) CaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KmipSecretRole) CdktfStack() cdktn.TerraformStack {
@@ -1147,7 +1180,7 @@ func (j *jsiiProxy_KmipSecretRole) TlsClientTtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
 func NewKmipSecretRole(scope constructs.Construct, id *string, config *KmipSecretRoleConfig) KmipSecretRole {
 	_init_.Initialize()
 
@@ -1165,7 +1198,7 @@ func NewKmipSecretRole(scope constructs.Construct, id *string, config *KmipSecre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
 func NewKmipSecretRole_Override(k KmipSecretRole, scope constructs.Construct, id *string, config *KmipSecretRoleConfig) {
 	_init_.Initialize()
 
@@ -1173,6 +1206,17 @@ func NewKmipSecretRole_Override(k KmipSecretRole, scope constructs.Construct, id
 		"@cdktn/provider-vault.kmipSecretRole.KmipSecretRole",
 		[]interface{}{scope, id, config},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretRole)SetCa(val *string) {
+	if err := j.validateSetCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ca",
+		val,
 	)
 }
 
@@ -1993,6 +2037,14 @@ func (k *jsiiProxy_KmipSecretRole) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretRole) ResetCa() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCa",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretRole) ResetId() {
 	_jsii_.InvokeVoid(
 		k,
@@ -2337,6 +2389,24 @@ func (k *jsiiProxy_KmipSecretRole) ToTerraform() interface{} {
 		k,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KmipSecretRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		k,
+		"with",
+		args,
 		&returns,
 	)
 

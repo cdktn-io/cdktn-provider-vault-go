@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/audit_request_header vault_audit_request_header}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/audit_request_header vault_audit_request_header}.
 type AuditRequestHeader interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -133,6 +133,15 @@ type AuditRequestHeader interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AuditRequestHeader
@@ -381,7 +390,7 @@ func (j *jsiiProxy_AuditRequestHeader) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
 func NewAuditRequestHeader(scope constructs.Construct, id *string, config *AuditRequestHeaderConfig) AuditRequestHeader {
 	_init_.Initialize()
 
@@ -399,7 +408,7 @@ func NewAuditRequestHeader(scope constructs.Construct, id *string, config *Audit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
 func NewAuditRequestHeader_Override(a AuditRequestHeader, scope constructs.Construct, id *string, config *AuditRequestHeaderConfig) {
 	_init_.Initialize()
 
@@ -979,6 +988,24 @@ func (a *jsiiProxy_AuditRequestHeader) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AuditRequestHeader) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

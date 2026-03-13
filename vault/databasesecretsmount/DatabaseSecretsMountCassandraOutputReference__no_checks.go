@@ -103,6 +103,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetPass
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetPemBundleParameters(val *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetPemJ
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -136,6 +144,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetRota
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

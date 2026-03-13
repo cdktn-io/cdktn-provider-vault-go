@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies vault_identity_group_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_policies vault_identity_group_policies}.
 type IdentityGroupPolicies interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -137,6 +137,15 @@ type IdentityGroupPolicies interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IdentityGroupPolicies
@@ -415,7 +424,7 @@ func (j *jsiiProxy_IdentityGroupPolicies) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
 func NewIdentityGroupPolicies(scope constructs.Construct, id *string, config *IdentityGroupPoliciesConfig) IdentityGroupPolicies {
 	_init_.Initialize()
 
@@ -433,7 +442,7 @@ func NewIdentityGroupPolicies(scope constructs.Construct, id *string, config *Id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
 func NewIdentityGroupPolicies_Override(i IdentityGroupPolicies, scope constructs.Construct, id *string, config *IdentityGroupPoliciesConfig) {
 	_init_.Initialize()
 
@@ -1024,6 +1033,24 @@ func (i *jsiiProxy_IdentityGroupPolicies) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityGroupPolicies) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

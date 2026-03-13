@@ -103,6 +103,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPassw
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPassw
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -128,6 +136,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetRotat
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

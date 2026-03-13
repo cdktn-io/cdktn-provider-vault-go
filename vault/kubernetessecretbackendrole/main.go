@@ -81,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNameTemplate", GoMethod: "ResetNameTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccountName", GoMethod: "ResetServiceAccountName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenDefaultAudiences", GoMethod: "ResetTokenDefaultAudiences"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenDefaultTtl", GoMethod: "ResetTokenDefaultTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenMaxTtl", GoMethod: "ResetTokenMaxTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountName", GoGetter: "ServiceAccountName"},
@@ -91,6 +92,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenDefaultAudiences", GoGetter: "TokenDefaultAudiences"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenDefaultAudiencesInput", GoGetter: "TokenDefaultAudiencesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenDefaultTtl", GoGetter: "TokenDefaultTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenDefaultTtlInput", GoGetter: "TokenDefaultTtlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenMaxTtl", GoGetter: "TokenMaxTtl"},
@@ -98,6 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesSecretBackendRole{}

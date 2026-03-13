@@ -135,6 +135,26 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdentityTokenAudienceWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdentityTokenAudienceWoVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdentityTokenKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdentityTokenKeyWoVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdentityTokenTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

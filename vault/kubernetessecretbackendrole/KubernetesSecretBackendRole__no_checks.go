@@ -159,6 +159,10 @@ func (j *jsiiProxy_KubernetesSecretBackendRole) validateSetServiceAccountNamePar
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackendRole) validateSetTokenDefaultAudiencesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackendRole) validateSetTokenDefaultTtlParameters(val *float64) error {
 	return nil
 }

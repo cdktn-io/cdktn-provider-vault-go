@@ -171,11 +171,19 @@ func (j *jsiiProxy_SshSecretBackendRole) validateSetDefaultExtensionsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) validateSetDefaultExtensionsTemplateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) validateSetDefaultUserParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_SshSecretBackendRole) validateSetDefaultUserTemplateParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) validateSetExcludeCidrListParameters(val *[]*string) error {
 	return nil
 }
 
@@ -208,6 +216,10 @@ func (j *jsiiProxy_SshSecretBackendRole) validateSetNamespaceParameters(val *str
 }
 
 func (j *jsiiProxy_SshSecretBackendRole) validateSetNotBeforeDurationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) validateSetPortParameters(val *float64) error {
 	return nil
 }
 

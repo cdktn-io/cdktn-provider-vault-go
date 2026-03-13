@@ -42,9 +42,9 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Insecure() interface{}
-	SetInsecure(val interface{})
-	InsecureInput() interface{}
+	InsecureTls() interface{}
+	SetInsecureTls(val interface{})
+	InsecureTlsInput() interface{}
 	InternalValue() *DatabaseSecretBackendConnectionElasticsearch
 	SetInternalValue(val *DatabaseSecretBackendConnectionElasticsearch)
 	Password() *string
@@ -98,7 +98,7 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 	ResetCaPath()
 	ResetClientCert()
 	ResetClientKey()
-	ResetInsecure()
+	ResetInsecureTls()
 	ResetTlsServerName()
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
@@ -236,21 +236,21 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) Insecure() interface{} {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InsecureTls() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"insecure",
+		"insecureTls",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InsecureInput() interface{} {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InsecureTlsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"insecureInput",
+		"insecureTlsInput",
 		&returns,
 	)
 	return returns
@@ -480,13 +480,13 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetInsecure(val interface{}) {
-	if err := j.validateSetInsecureParameters(val); err != nil {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetInsecureTls(val interface{}) {
+	if err := j.validateSetInsecureTlsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"insecure",
+		"insecureTls",
 		val,
 	)
 }
@@ -797,10 +797,10 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) ResetInsecure() {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) ResetInsecureTls() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetInsecure",
+		"resetInsecureTls",
 		nil, // no parameters
 	)
 }

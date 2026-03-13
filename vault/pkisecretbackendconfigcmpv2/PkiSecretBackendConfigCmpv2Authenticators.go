@@ -5,7 +5,7 @@ package pkisecretbackendconfigcmpv2
 
 
 type PkiSecretBackendConfigCmpv2Authenticators struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#cert PkiSecretBackendConfigCmpv2#cert}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_cmpv2#cert PkiSecretBackendConfigCmpv2#cert}.
 	Cert *map[string]*string `field:"optional" json:"cert" yaml:"cert"`
 }
 

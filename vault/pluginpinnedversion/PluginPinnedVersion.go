@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
 type PluginPinnedVersion interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -131,6 +131,15 @@ type PluginPinnedVersion interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for PluginPinnedVersion
@@ -379,7 +388,7 @@ func (j *jsiiProxy_PluginPinnedVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
 func NewPluginPinnedVersion(scope constructs.Construct, id *string, config *PluginPinnedVersionConfig) PluginPinnedVersion {
 	_init_.Initialize()
 
@@ -397,7 +406,7 @@ func NewPluginPinnedVersion(scope constructs.Construct, id *string, config *Plug
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
 func NewPluginPinnedVersion_Override(p PluginPinnedVersion, scope constructs.Construct, id *string, config *PluginPinnedVersionConfig) {
 	_init_.Initialize()
 
@@ -961,6 +970,24 @@ func (p *jsiiProxy_PluginPinnedVersion) ToTerraform() interface{} {
 		p,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PluginPinnedVersion) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		p,
+		"with",
+		args,
 		&returns,
 	)
 

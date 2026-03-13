@@ -135,6 +135,26 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdentityTokenAudienceWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdentityTokenAudienceWoVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdentityTokenKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdentityTokenKeyWoVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdentityTokenTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -164,6 +184,10 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetReplicationLocationsPar
 }
 
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetSecretNameTemplateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetServiceAccountEmailParameters(val *string) error {
 	return nil
 }
 

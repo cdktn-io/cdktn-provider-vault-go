@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys vault_managed_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys vault_managed_keys}.
 type ManagedKeys interface {
 	cdktn.TerraformResource
 	Aws() ManagedKeysAwsList
@@ -43,6 +43,8 @@ type ManagedKeys interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Gcp() ManagedKeysGcpList
+	GcpInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -118,9 +120,11 @@ type ManagedKeys interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAws(value interface{})
 	PutAzure(value interface{})
+	PutGcp(value interface{})
 	PutPkcs(value interface{})
 	ResetAws()
 	ResetAzure()
+	ResetGcp()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -138,6 +142,15 @@ type ManagedKeys interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ManagedKeys
@@ -260,6 +273,26 @@ func (j *jsiiProxy_ManagedKeys) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeys) Gcp() ManagedKeysGcpList {
+	var returns ManagedKeysGcpList
+	_jsii_.Get(
+		j,
+		"gcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeys) GcpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gcpInput",
 		&returns,
 	)
 	return returns
@@ -406,7 +439,7 @@ func (j *jsiiProxy_ManagedKeys) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys vault_managed_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys vault_managed_keys} Resource.
 func NewManagedKeys(scope constructs.Construct, id *string, config *ManagedKeysConfig) ManagedKeys {
 	_init_.Initialize()
 
@@ -424,7 +457,7 @@ func NewManagedKeys(scope constructs.Construct, id *string, config *ManagedKeysC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys vault_managed_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys vault_managed_keys} Resource.
 func NewManagedKeys_Override(m ManagedKeys, scope constructs.Construct, id *string, config *ManagedKeysConfig) {
 	_init_.Initialize()
 
@@ -900,6 +933,17 @@ func (m *jsiiProxy_ManagedKeys) PutAzure(value interface{}) {
 	)
 }
 
+func (m *jsiiProxy_ManagedKeys) PutGcp(value interface{}) {
+	if err := m.validatePutGcpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGcp",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ManagedKeys) PutPkcs(value interface{}) {
 	if err := m.validatePutPkcsParameters(value); err != nil {
 		panic(err)
@@ -923,6 +967,14 @@ func (m *jsiiProxy_ManagedKeys) ResetAzure() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAzure",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedKeys) ResetGcp() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGcp",
 		nil, // no parameters
 	)
 }
@@ -1031,6 +1083,24 @@ func (m *jsiiProxy_ManagedKeys) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_ManagedKeys) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

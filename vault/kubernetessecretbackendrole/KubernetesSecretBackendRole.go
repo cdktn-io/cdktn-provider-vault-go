@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}.
 type KubernetesSecretBackendRole interface {
 	cdktn.TerraformResource
 	AllowedKubernetesNamespaces() *[]*string
@@ -100,6 +100,9 @@ type KubernetesSecretBackendRole interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TokenDefaultAudiences() *[]*string
+	SetTokenDefaultAudiences(val *[]*string)
+	TokenDefaultAudiencesInput() *[]*string
 	TokenDefaultTtl() *float64
 	SetTokenDefaultTtl(val *float64)
 	TokenDefaultTtlInput() *float64
@@ -163,6 +166,7 @@ type KubernetesSecretBackendRole interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetServiceAccountName()
+	ResetTokenDefaultAudiences()
 	ResetTokenDefaultTtl()
 	ResetTokenMaxTtl()
 	SynthesizeAttributes() *map[string]interface{}
@@ -176,6 +180,15 @@ type KubernetesSecretBackendRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for KubernetesSecretBackendRole
@@ -603,6 +616,26 @@ func (j *jsiiProxy_KubernetesSecretBackendRole) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesSecretBackendRole) TokenDefaultAudiences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenDefaultAudiences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackendRole) TokenDefaultAudiencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenDefaultAudiencesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesSecretBackendRole) TokenDefaultTtl() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -644,7 +677,7 @@ func (j *jsiiProxy_KubernetesSecretBackendRole) TokenMaxTtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
 func NewKubernetesSecretBackendRole(scope constructs.Construct, id *string, config *KubernetesSecretBackendRoleConfig) KubernetesSecretBackendRole {
 	_init_.Initialize()
 
@@ -662,7 +695,7 @@ func NewKubernetesSecretBackendRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
 func NewKubernetesSecretBackendRole_Override(k KubernetesSecretBackendRole, scope constructs.Construct, id *string, config *KubernetesSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -880,6 +913,17 @@ func (j *jsiiProxy_KubernetesSecretBackendRole)SetServiceAccountName(val *string
 	_jsii_.Set(
 		j,
 		"serviceAccountName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesSecretBackendRole)SetTokenDefaultAudiences(val *[]*string) {
+	if err := j.validateSetTokenDefaultAudiencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenDefaultAudiences",
 		val,
 	)
 }
@@ -1355,6 +1399,14 @@ func (k *jsiiProxy_KubernetesSecretBackendRole) ResetServiceAccountName() {
 	)
 }
 
+func (k *jsiiProxy_KubernetesSecretBackendRole) ResetTokenDefaultAudiences() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTokenDefaultAudiences",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesSecretBackendRole) ResetTokenDefaultTtl() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1443,6 +1495,24 @@ func (k *jsiiProxy_KubernetesSecretBackendRole) ToTerraform() interface{} {
 		k,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KubernetesSecretBackendRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		k,
+		"with",
+		args,
 		&returns,
 	)
 

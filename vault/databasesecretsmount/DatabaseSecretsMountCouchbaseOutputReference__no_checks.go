@@ -99,7 +99,15 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetPass
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -116,6 +124,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetRota
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

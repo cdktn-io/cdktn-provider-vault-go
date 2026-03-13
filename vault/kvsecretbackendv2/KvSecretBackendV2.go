@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}.
 type KvSecretBackendV2 interface {
 	cdktn.TerraformResource
 	CasRequired() interface{}
@@ -141,6 +141,15 @@ type KvSecretBackendV2 interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for KvSecretBackendV2
@@ -429,7 +438,7 @@ func (j *jsiiProxy_KvSecretBackendV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource.
 func NewKvSecretBackendV2(scope constructs.Construct, id *string, config *KvSecretBackendV2Config) KvSecretBackendV2 {
 	_init_.Initialize()
 
@@ -447,7 +456,7 @@ func NewKvSecretBackendV2(scope constructs.Construct, id *string, config *KvSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource.
 func NewKvSecretBackendV2_Override(k KvSecretBackendV2, scope constructs.Construct, id *string, config *KvSecretBackendV2Config) {
 	_init_.Initialize()
 
@@ -1065,6 +1074,24 @@ func (k *jsiiProxy_KvSecretBackendV2) ToTerraform() interface{} {
 		k,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		k,
+		"with",
+		args,
 		&returns,
 	)
 

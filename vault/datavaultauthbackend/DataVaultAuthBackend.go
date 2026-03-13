@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/auth_backend vault_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backend vault_auth_backend}.
 type DataVaultAuthBackend interface {
 	cdktn.TerraformDataSource
 	Accessor() *string
@@ -111,6 +111,15 @@ type DataVaultAuthBackend interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataVaultAuthBackend
@@ -389,7 +398,7 @@ func (j *jsiiProxy_DataVaultAuthBackend) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
 func NewDataVaultAuthBackend(scope constructs.Construct, id *string, config *DataVaultAuthBackendConfig) DataVaultAuthBackend {
 	_init_.Initialize()
 
@@ -407,7 +416,7 @@ func NewDataVaultAuthBackend(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
 func NewDataVaultAuthBackend_Override(d DataVaultAuthBackend, scope constructs.Construct, id *string, config *DataVaultAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -878,6 +887,24 @@ func (d *jsiiProxy_DataVaultAuthBackend) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultAuthBackend) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

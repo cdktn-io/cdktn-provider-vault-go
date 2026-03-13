@@ -5,7 +5,7 @@ package azuresecretbackendrole
 
 
 type AzureSecretBackendRoleAzureGroups struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}.
 	GroupName *string `field:"required" json:"groupName" yaml:"groupName"`
 }
 

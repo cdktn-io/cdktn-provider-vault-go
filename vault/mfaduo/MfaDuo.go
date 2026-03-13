@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_duo vault_mfa_duo}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_duo vault_mfa_duo}.
 type MfaDuo interface {
 	cdktn.TerraformResource
 	ApiHostname() *string
@@ -149,6 +149,15 @@ type MfaDuo interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MfaDuo
@@ -497,7 +506,7 @@ func (j *jsiiProxy_MfaDuo) UsernameFormatInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_duo vault_mfa_duo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_duo vault_mfa_duo} Resource.
 func NewMfaDuo(scope constructs.Construct, id *string, config *MfaDuoConfig) MfaDuo {
 	_init_.Initialize()
 
@@ -515,7 +524,7 @@ func NewMfaDuo(scope constructs.Construct, id *string, config *MfaDuoConfig) Mfa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_duo vault_mfa_duo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_duo vault_mfa_duo} Resource.
 func NewMfaDuo_Override(m MfaDuo, scope constructs.Construct, id *string, config *MfaDuoConfig) {
 	_init_.Initialize()
 
@@ -1158,6 +1167,24 @@ func (m *jsiiProxy_MfaDuo) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MfaDuo) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

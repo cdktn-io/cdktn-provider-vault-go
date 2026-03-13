@@ -24,21 +24,21 @@ type PasswordPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the password policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#name PasswordPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#name PasswordPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The password policy document.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#policy PasswordPolicy#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#policy PasswordPolicy#policy}
 	Policy *string `field:"required" json:"policy" yaml:"policy"`
 	// Specifies an override to the default source of entropy (randomness) used to generate the passwords.
 	//
 	// Must be one of: '', 'platform', or 'seal'. Requires Vault 1.21+.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#entropy_source PasswordPolicy#entropy_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#entropy_source PasswordPolicy#entropy_source}
 	EntropySource *string `field:"optional" json:"entropySource" yaml:"entropySource"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

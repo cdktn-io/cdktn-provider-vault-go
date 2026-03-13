@@ -79,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validPrincipals", GoGetter: "ValidPrincipals"},
 			_jsii_.MemberProperty{JsiiProperty: "validPrincipalsInput", GoGetter: "ValidPrincipalsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultSshSecretBackendSign{}

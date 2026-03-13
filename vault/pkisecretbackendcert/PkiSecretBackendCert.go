@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
 type PkiSecretBackendCert interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -109,6 +109,9 @@ type PkiSecretBackendCert interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoveRootsFromChain() interface{}
+	SetRemoveRootsFromChain(val interface{})
+	RemoveRootsFromChainInput() interface{}
 	RenewPending() cdktn.IResolvable
 	Revoke() interface{}
 	SetRevoke(val interface{})
@@ -191,6 +194,7 @@ type PkiSecretBackendCert interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateKeyFormat()
+	ResetRemoveRootsFromChain()
 	ResetRevoke()
 	ResetRevokeWithKey()
 	ResetTtl()
@@ -207,6 +211,15 @@ type PkiSecretBackendCert interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for PkiSecretBackendCert
@@ -724,6 +737,26 @@ func (j *jsiiProxy_PkiSecretBackendCert) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendCert) RemoveRootsFromChain() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeRootsFromChain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCert) RemoveRootsFromChainInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeRootsFromChainInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendCert) RenewPending() cdktn.IResolvable {
 	var returns cdktn.IResolvable
 	_jsii_.Get(
@@ -875,7 +908,7 @@ func (j *jsiiProxy_PkiSecretBackendCert) UserIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
 func NewPkiSecretBackendCert(scope constructs.Construct, id *string, config *PkiSecretBackendCertConfig) PkiSecretBackendCert {
 	_init_.Initialize()
 
@@ -893,7 +926,7 @@ func NewPkiSecretBackendCert(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
 func NewPkiSecretBackendCert_Override(p PkiSecretBackendCert, scope constructs.Construct, id *string, config *PkiSecretBackendCertConfig) {
 	_init_.Initialize()
 
@@ -1144,6 +1177,17 @@ func (j *jsiiProxy_PkiSecretBackendCert)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCert)SetRemoveRootsFromChain(val interface{}) {
+	if err := j.validateSetRemoveRootsFromChainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"removeRootsFromChain",
 		val,
 	)
 }
@@ -1668,6 +1712,14 @@ func (p *jsiiProxy_PkiSecretBackendCert) ResetPrivateKeyFormat() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendCert) ResetRemoveRootsFromChain() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRemoveRootsFromChain",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendCert) ResetRevoke() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1780,6 +1832,24 @@ func (p *jsiiProxy_PkiSecretBackendCert) ToTerraform() interface{} {
 		p,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendCert) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		p,
+		"with",
+		args,
 		&returns,
 	)
 

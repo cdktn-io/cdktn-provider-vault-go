@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
 type PkiSecretBackendKey interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -153,6 +153,15 @@ type PkiSecretBackendKey interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for PkiSecretBackendKey
@@ -511,7 +520,7 @@ func (j *jsiiProxy_PkiSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
 func NewPkiSecretBackendKey(scope constructs.Construct, id *string, config *PkiSecretBackendKeyConfig) PkiSecretBackendKey {
 	_init_.Initialize()
 
@@ -529,7 +538,7 @@ func NewPkiSecretBackendKey(scope constructs.Construct, id *string, config *PkiS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
 func NewPkiSecretBackendKey_Override(p PkiSecretBackendKey, scope constructs.Construct, id *string, config *PkiSecretBackendKeyConfig) {
 	_init_.Initialize()
 
@@ -1196,6 +1205,24 @@ func (p *jsiiProxy_PkiSecretBackendKey) ToTerraform() interface{} {
 		p,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendKey) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		p,
+		"with",
+		args,
 		&returns,
 	)
 

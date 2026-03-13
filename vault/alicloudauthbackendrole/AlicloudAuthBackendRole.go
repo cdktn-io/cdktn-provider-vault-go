@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
 type AlicloudAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -176,6 +176,15 @@ type AlicloudAuthBackendRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AlicloudAuthBackendRole
@@ -644,7 +653,7 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
 func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *AlicloudAuthBackendRoleConfig) AlicloudAuthBackendRole {
 	_init_.Initialize()
 
@@ -662,7 +671,7 @@ func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
 func NewAlicloudAuthBackendRole_Override(a AlicloudAuthBackendRole, scope constructs.Construct, id *string, config *AlicloudAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1443,6 +1452,24 @@ func (a *jsiiProxy_AlicloudAuthBackendRole) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlicloudAuthBackendRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

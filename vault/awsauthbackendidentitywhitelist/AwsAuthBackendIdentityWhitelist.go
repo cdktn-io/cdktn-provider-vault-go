@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist}.
 type AwsAuthBackendIdentityWhitelist interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -138,6 +138,15 @@ type AwsAuthBackendIdentityWhitelist interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AwsAuthBackendIdentityWhitelist
@@ -406,7 +415,7 @@ func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
 func NewAwsAuthBackendIdentityWhitelist(scope constructs.Construct, id *string, config *AwsAuthBackendIdentityWhitelistConfig) AwsAuthBackendIdentityWhitelist {
 	_init_.Initialize()
 
@@ -424,7 +433,7 @@ func NewAwsAuthBackendIdentityWhitelist(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
 func NewAwsAuthBackendIdentityWhitelist_Override(a AwsAuthBackendIdentityWhitelist, scope constructs.Construct, id *string, config *AwsAuthBackendIdentityWhitelistConfig) {
 	_init_.Initialize()
 
@@ -1031,6 +1040,24 @@ func (a *jsiiProxy_AwsAuthBackendIdentityWhitelist) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AwsAuthBackendIdentityWhitelist) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

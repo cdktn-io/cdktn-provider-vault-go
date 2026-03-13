@@ -107,6 +107,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetPassword
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetPassword
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -132,6 +140,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetRotation
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

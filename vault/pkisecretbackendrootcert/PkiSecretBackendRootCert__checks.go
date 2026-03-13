@@ -485,6 +485,14 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyTypeParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyUsageParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -710,6 +718,26 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetTypeParameters(val *stri
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetUriSansParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetUsePssParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

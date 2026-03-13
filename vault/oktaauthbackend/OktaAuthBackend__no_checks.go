@@ -107,6 +107,18 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetAliasMetadataParameters(val *map[
 	return nil
 }
 
+func (j *jsiiProxy_OktaAuthBackend) validateSetApiTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetApiTokenWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetApiTokenWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OktaAuthBackend) validateSetBaseUrlParameters(val *string) error {
 	return nil
 }
@@ -144,6 +156,10 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetNamespaceParameters(val *string) 
 }
 
 func (j *jsiiProxy_OktaAuthBackend) validateSetOrganizationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetOrgNameParameters(val *string) error {
 	return nil
 }
 

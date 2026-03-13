@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
 type IdentityEntityPolicies interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -137,6 +137,15 @@ type IdentityEntityPolicies interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IdentityEntityPolicies
@@ -415,7 +424,7 @@ func (j *jsiiProxy_IdentityEntityPolicies) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
 func NewIdentityEntityPolicies(scope constructs.Construct, id *string, config *IdentityEntityPoliciesConfig) IdentityEntityPolicies {
 	_init_.Initialize()
 
@@ -433,7 +442,7 @@ func NewIdentityEntityPolicies(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
 func NewIdentityEntityPolicies_Override(i IdentityEntityPolicies, scope constructs.Construct, id *string, config *IdentityEntityPoliciesConfig) {
 	_init_.Initialize()
 
@@ -1024,6 +1033,24 @@ func (i *jsiiProxy_IdentityEntityPolicies) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntityPolicies) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

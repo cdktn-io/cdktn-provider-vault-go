@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
 type SecretsSyncGithubApps interface {
 	cdktn.TerraformResource
 	AppId() *float64
@@ -136,6 +136,15 @@ type SecretsSyncGithubApps interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SecretsSyncGithubApps
@@ -414,7 +423,7 @@ func (j *jsiiProxy_SecretsSyncGithubApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
 func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *SecretsSyncGithubAppsConfig) SecretsSyncGithubApps {
 	_init_.Initialize()
 
@@ -432,7 +441,7 @@ func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
 func NewSecretsSyncGithubApps_Override(s SecretsSyncGithubApps, scope constructs.Construct, id *string, config *SecretsSyncGithubAppsConfig) {
 	_init_.Initialize()
 
@@ -1015,6 +1024,24 @@ func (s *jsiiProxy_SecretsSyncGithubApps) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecretsSyncGithubApps) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

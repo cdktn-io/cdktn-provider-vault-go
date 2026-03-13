@@ -99,6 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateResponseSignatureInput", GoGetter: "ValidateResponseSignatureInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verboseLogging", GoGetter: "VerboseLogging"},
 			_jsii_.MemberProperty{JsiiProperty: "verboseLoggingInput", GoGetter: "VerboseLoggingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SamlAuthBackend{}

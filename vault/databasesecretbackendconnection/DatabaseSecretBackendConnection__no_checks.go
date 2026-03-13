@@ -203,7 +203,15 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetNamespaceParamete
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -224,6 +232,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetRotationScheduleP
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

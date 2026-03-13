@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_user vault_github_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/github_user vault_github_user}.
 type GithubUser interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -137,6 +137,15 @@ type GithubUser interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for GithubUser
@@ -405,7 +414,7 @@ func (j *jsiiProxy_GithubUser) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_user vault_github_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/github_user vault_github_user} Resource.
 func NewGithubUser(scope constructs.Construct, id *string, config *GithubUserConfig) GithubUser {
 	_init_.Initialize()
 
@@ -423,7 +432,7 @@ func NewGithubUser(scope constructs.Construct, id *string, config *GithubUserCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_user vault_github_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/github_user vault_github_user} Resource.
 func NewGithubUser_Override(g GithubUser, scope constructs.Construct, id *string, config *GithubUserConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1031,24 @@ func (g *jsiiProxy_GithubUser) ToTerraform() interface{} {
 		g,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GithubUser) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		g,
+		"with",
+		args,
 		&returns,
 	)
 

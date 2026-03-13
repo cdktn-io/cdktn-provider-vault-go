@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
 type DataVaultKubernetesAuthBackendConfig interface {
 	cdktn.TerraformDataSource
 	Backend() *string
@@ -133,6 +133,15 @@ type DataVaultKubernetesAuthBackendConfig interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataVaultKubernetesAuthBackendConfig
@@ -481,7 +490,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) UseAnnotationsAsAliasMe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
 func NewDataVaultKubernetesAuthBackendConfig(scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendConfigConfig) DataVaultKubernetesAuthBackendConfig {
 	_init_.Initialize()
 
@@ -499,7 +508,7 @@ func NewDataVaultKubernetesAuthBackendConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
 func NewDataVaultKubernetesAuthBackendConfig_Override(d DataVaultKubernetesAuthBackendConfig, scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -1111,6 +1120,24 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendConfig) ToTerraform() interface
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesAuthBackendConfig) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

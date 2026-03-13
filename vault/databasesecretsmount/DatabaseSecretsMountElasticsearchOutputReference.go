@@ -51,9 +51,9 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	DisableAutomatedRotationInput() interface{}
 	// Experimental.
 	Fqn() *string
-	Insecure() interface{}
-	SetInsecure(val interface{})
-	InsecureInput() interface{}
+	InsecureTls() interface{}
+	SetInsecureTls(val interface{})
+	InsecureTlsInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -62,9 +62,15 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
@@ -77,6 +83,9 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -131,12 +140,15 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	ResetClientKey()
 	ResetData()
 	ResetDisableAutomatedRotation()
-	ResetInsecure()
+	ResetInsecureTls()
+	ResetPasswordPolicy()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSkipStaticRoleImportRotation()
 	ResetTlsServerName()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -335,21 +347,21 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Insecure() interface{} {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InsecureTls() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"insecure",
+		"insecureTls",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InsecureInput() interface{} {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InsecureTlsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"insecureInput",
+		"insecureTlsInput",
 		&returns,
 	)
 	return returns
@@ -405,6 +417,26 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) PasswordInp
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) PluginName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -420,6 +452,26 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) PluginNameI
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -500,6 +552,26 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) RotationWin
 	_jsii_.Get(
 		j,
 		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -752,13 +824,13 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetDisableAu
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetInsecure(val interface{}) {
-	if err := j.validateSetInsecureParameters(val); err != nil {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetInsecureTls(val interface{}) {
+	if err := j.validateSetInsecureTlsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"insecure",
+		"insecureTls",
 		val,
 	)
 }
@@ -796,6 +868,17 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetPassword(
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetPluginName(val *string) {
 	if err := j.validateSetPluginNameParameters(val); err != nil {
 		panic(err)
@@ -803,6 +886,17 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetPluginNam
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -847,6 +941,17 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetRotationW
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1170,10 +1275,18 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetDisabl
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetInsecure() {
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetInsecureTls() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetInsecure",
+		"resetInsecureTls",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
 		nil, // no parameters
 	)
 }
@@ -1182,6 +1295,14 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetPlugin
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1214,6 +1335,14 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetRotati
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

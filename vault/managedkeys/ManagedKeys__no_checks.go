@@ -83,6 +83,10 @@ func (m *jsiiProxy_ManagedKeys) validatePutAzureParameters(value interface{}) er
 	return nil
 }
 
+func (m *jsiiProxy_ManagedKeys) validatePutGcpParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedKeys) validatePutPkcsParameters(value interface{}) error {
 	return nil
 }

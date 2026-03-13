@@ -348,6 +348,30 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetAliasMetadataParameters(val *map[
 	return nil
 }
 
+func (j *jsiiProxy_OktaAuthBackend) validateSetApiTokenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetApiTokenWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetApiTokenWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OktaAuthBackend) validateSetBaseUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -526,6 +550,14 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetOrganizationParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_OktaAuthBackend) validateSetOrgNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OktaAuthBackend) validateSetPathParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -681,9 +713,6 @@ func validateNewOktaAuthBackendParameters(scope constructs.Construct, id *string
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

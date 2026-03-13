@@ -171,6 +171,10 @@ func (j *jsiiProxy_PkiSecretBackendSign) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendSign) validateSetRemoveRootsFromChainParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendSign) validateSetTtlParameters(val *string) error {
 	return nil
 }

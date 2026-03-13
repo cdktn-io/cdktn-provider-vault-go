@@ -103,6 +103,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPasswor
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPasswor
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -132,6 +140,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetRotatio
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetSelfManagedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

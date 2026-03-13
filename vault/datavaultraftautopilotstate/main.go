@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upgradeInfo", GoGetter: "UpgradeInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "upgradeInfoJson", GoGetter: "UpgradeInfoJson"},
 			_jsii_.MemberProperty{JsiiProperty: "voters", GoGetter: "Voters"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultRaftAutopilotState{}

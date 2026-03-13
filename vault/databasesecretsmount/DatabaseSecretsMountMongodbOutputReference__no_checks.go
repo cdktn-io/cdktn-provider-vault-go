@@ -99,6 +99,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPasswo
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPasswo
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -124,6 +132,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetRotati
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

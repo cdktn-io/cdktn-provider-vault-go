@@ -87,7 +87,7 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetInsecureParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetInsecureTlsParameters(val interface{}) error {
 	return nil
 }
 
@@ -103,7 +103,15 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -120,6 +128,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSet
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

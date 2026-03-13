@@ -24,32 +24,32 @@ type IdentityEntityConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 	// Manage policies externally through `vault_identity_entity_policies`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
 	ExternalPolicies interface{} `field:"optional" json:"externalPolicies" yaml:"externalPolicies"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#id IdentityEntity#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity#id IdentityEntity#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Metadata to be associated with the entity.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
 	Metadata *map[string]*string `field:"optional" json:"metadata" yaml:"metadata"`
 	// Name of the entity.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#name IdentityEntity#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity#name IdentityEntity#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Policies to be tied to the entity.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#policies IdentityEntity#policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity#policies IdentityEntity#policies}
 	Policies *[]*string `field:"optional" json:"policies" yaml:"policies"`
 }
 

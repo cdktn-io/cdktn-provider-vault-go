@@ -84,6 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validateCreds", GoGetter: "ValidateCreds"},
 			_jsii_.MemberProperty{JsiiProperty: "validateCredsInput", GoGetter: "ValidateCredsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultAzureAccessCredentials{}

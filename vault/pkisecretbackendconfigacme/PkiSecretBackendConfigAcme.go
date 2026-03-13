@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
 type PkiSecretBackendConfigAcme interface {
 	cdktn.TerraformResource
 	AllowedIssuers() *[]*string
@@ -160,6 +160,15 @@ type PkiSecretBackendConfigAcme interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for PkiSecretBackendConfigAcme
@@ -548,7 +557,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
 func NewPkiSecretBackendConfigAcme(scope constructs.Construct, id *string, config *PkiSecretBackendConfigAcmeConfig) PkiSecretBackendConfigAcme {
 	_init_.Initialize()
 
@@ -566,7 +575,7 @@ func NewPkiSecretBackendConfigAcme(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
 func NewPkiSecretBackendConfigAcme_Override(p PkiSecretBackendConfigAcme, scope constructs.Construct, id *string, config *PkiSecretBackendConfigAcmeConfig) {
 	_init_.Initialize()
 
@@ -1271,6 +1280,24 @@ func (p *jsiiProxy_PkiSecretBackendConfigAcme) ToTerraform() interface{} {
 		p,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendConfigAcme) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		p,
+		"with",
+		args,
 		&returns,
 	)
 

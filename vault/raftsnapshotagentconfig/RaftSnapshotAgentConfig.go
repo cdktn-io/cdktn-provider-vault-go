@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
 type RaftSnapshotAgentConfig interface {
 	cdktn.TerraformResource
+	AutoloadEnabled() interface{}
+	SetAutoloadEnabled(val interface{})
+	AutoloadEnabledInput() interface{}
 	AwsAccessKeyId() *string
 	SetAwsAccessKeyId(val *string)
 	AwsAccessKeyIdInput() *string
@@ -54,9 +57,15 @@ type RaftSnapshotAgentConfig interface {
 	AzureAccountName() *string
 	SetAzureAccountName(val *string)
 	AzureAccountNameInput() *string
+	AzureAuthMode() *string
+	SetAzureAuthMode(val *string)
+	AzureAuthModeInput() *string
 	AzureBlobEnvironment() *string
 	SetAzureBlobEnvironment(val *string)
 	AzureBlobEnvironmentInput() *string
+	AzureClientId() *string
+	SetAzureClientId(val *string)
+	AzureClientIdInput() *string
 	AzureContainerName() *string
 	SetAzureContainerName(val *string)
 	AzureContainerNameInput() *string
@@ -191,6 +200,7 @@ type RaftSnapshotAgentConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAutoloadEnabled()
 	ResetAwsAccessKeyId()
 	ResetAwsS3Bucket()
 	ResetAwsS3DisableTls()
@@ -204,7 +214,9 @@ type RaftSnapshotAgentConfig interface {
 	ResetAwsSessionToken()
 	ResetAzureAccountKey()
 	ResetAzureAccountName()
+	ResetAzureAuthMode()
 	ResetAzureBlobEnvironment()
+	ResetAzureClientId()
 	ResetAzureContainerName()
 	ResetAzureEndpoint()
 	ResetFilePrefix()
@@ -230,11 +242,40 @@ type RaftSnapshotAgentConfig interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for RaftSnapshotAgentConfig
 type jsiiProxy_RaftSnapshotAgentConfig struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AutoloadEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoloadEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AutoloadEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoloadEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsAccessKeyId() *string {
@@ -497,6 +538,26 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureAccountNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureAuthMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureAuthMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureAuthModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureAuthModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureBlobEnvironment() *string {
 	var returns *string
 	_jsii_.Get(
@@ -512,6 +573,26 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureBlobEnvironmentInput() *string 
 	_jsii_.Get(
 		j,
 		"azureBlobEnvironmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureClientIdInput",
 		&returns,
 	)
 	return returns
@@ -978,7 +1059,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
 func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) RaftSnapshotAgentConfig {
 	_init_.Initialize()
 
@@ -996,7 +1077,7 @@ func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
 func NewRaftSnapshotAgentConfig_Override(r RaftSnapshotAgentConfig, scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) {
 	_init_.Initialize()
 
@@ -1004,6 +1085,17 @@ func NewRaftSnapshotAgentConfig_Override(r RaftSnapshotAgentConfig, scope constr
 		"@cdktn/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAutoloadEnabled(val interface{}) {
+	if err := j.validateSetAutoloadEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoloadEnabled",
+		val,
 	)
 }
 
@@ -1150,6 +1242,17 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureAccountName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureAuthMode(val *string) {
+	if err := j.validateSetAzureAuthModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"azureAuthMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureBlobEnvironment(val *string) {
 	if err := j.validateSetAzureBlobEnvironmentParameters(val); err != nil {
 		panic(err)
@@ -1157,6 +1260,17 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureBlobEnvironment(val *string) 
 	_jsii_.Set(
 		j,
 		"azureBlobEnvironment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureClientId(val *string) {
+	if err := j.validateSetAzureClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"azureClientId",
 		val,
 	)
 }
@@ -1747,6 +1861,14 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAutoloadEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutoloadEnabled",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsAccessKeyId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1851,10 +1973,26 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureAccountName() {
 	)
 }
 
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureAuthMode() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAzureAuthMode",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureBlobEnvironment() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAzureBlobEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureClientId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAzureClientId",
 		nil, // no parameters
 	)
 }
@@ -2027,6 +2165,24 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

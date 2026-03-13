@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
 type SshSecretBackendRole interface {
 	cdktn.TerraformResource
 	AlgorithmSigner() *string
@@ -80,6 +80,9 @@ type SshSecretBackendRole interface {
 	DefaultExtensions() *map[string]*string
 	SetDefaultExtensions(val *map[string]*string)
 	DefaultExtensionsInput() *map[string]*string
+	DefaultExtensionsTemplate() interface{}
+	SetDefaultExtensionsTemplate(val interface{})
+	DefaultExtensionsTemplateInput() interface{}
 	DefaultUser() *string
 	SetDefaultUser(val *string)
 	DefaultUserInput() *string
@@ -90,6 +93,9 @@ type SshSecretBackendRole interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExcludeCidrList() *[]*string
+	SetExcludeCidrList(val *[]*string)
+	ExcludeCidrListInput() *[]*string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -125,6 +131,9 @@ type SshSecretBackendRole interface {
 	NotBeforeDuration() *string
 	SetNotBeforeDuration(val *string)
 	NotBeforeDurationInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -205,8 +214,10 @@ type SshSecretBackendRole interface {
 	ResetCidrList()
 	ResetDefaultCriticalOptions()
 	ResetDefaultExtensions()
+	ResetDefaultExtensionsTemplate()
 	ResetDefaultUser()
 	ResetDefaultUserTemplate()
+	ResetExcludeCidrList()
 	ResetId()
 	ResetKeyIdFormat()
 	ResetMaxTtl()
@@ -215,6 +226,7 @@ type SshSecretBackendRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPort()
 	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -227,6 +239,15 @@ type SshSecretBackendRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SshSecretBackendRole
@@ -634,6 +655,26 @@ func (j *jsiiProxy_SshSecretBackendRole) DefaultExtensionsInput() *map[string]*s
 	return returns
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) DefaultExtensionsTemplate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultExtensionsTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) DefaultExtensionsTemplateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultExtensionsTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) DefaultUser() *string {
 	var returns *string
 	_jsii_.Get(
@@ -679,6 +720,26 @@ func (j *jsiiProxy_SshSecretBackendRole) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) ExcludeCidrList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeCidrList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) ExcludeCidrListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeCidrListInput",
 		&returns,
 	)
 	return returns
@@ -874,6 +935,26 @@ func (j *jsiiProxy_SshSecretBackendRole) NotBeforeDurationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -955,7 +1036,7 @@ func (j *jsiiProxy_SshSecretBackendRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) SshSecretBackendRole {
 	_init_.Initialize()
 
@@ -973,7 +1054,7 @@ func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *Ssh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole_Override(s SshSecretBackendRole, scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1193,6 +1274,17 @@ func (j *jsiiProxy_SshSecretBackendRole)SetDefaultExtensions(val *map[string]*st
 	)
 }
 
+func (j *jsiiProxy_SshSecretBackendRole)SetDefaultExtensionsTemplate(val interface{}) {
+	if err := j.validateSetDefaultExtensionsTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultExtensionsTemplate",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SshSecretBackendRole)SetDefaultUser(val *string) {
 	if err := j.validateSetDefaultUserParameters(val); err != nil {
 		panic(err)
@@ -1219,6 +1311,17 @@ func (j *jsiiProxy_SshSecretBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendRole)SetExcludeCidrList(val *[]*string) {
+	if err := j.validateSetExcludeCidrListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeCidrList",
 		val,
 	)
 }
@@ -1315,6 +1418,17 @@ func (j *jsiiProxy_SshSecretBackendRole)SetNotBeforeDuration(val *string) {
 	_jsii_.Set(
 		j,
 		"notBeforeDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendRole)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -1849,6 +1963,14 @@ func (s *jsiiProxy_SshSecretBackendRole) ResetDefaultExtensions() {
 	)
 }
 
+func (s *jsiiProxy_SshSecretBackendRole) ResetDefaultExtensionsTemplate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultExtensionsTemplate",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SshSecretBackendRole) ResetDefaultUser() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1861,6 +1983,14 @@ func (s *jsiiProxy_SshSecretBackendRole) ResetDefaultUserTemplate() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultUserTemplate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendRole) ResetExcludeCidrList() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExcludeCidrList",
 		nil, // no parameters
 	)
 }
@@ -1909,6 +2039,14 @@ func (s *jsiiProxy_SshSecretBackendRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendRole) ResetPort() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPort",
 		nil, // no parameters
 	)
 }
@@ -1993,6 +2131,24 @@ func (s *jsiiProxy_SshSecretBackendRole) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SshSecretBackendRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

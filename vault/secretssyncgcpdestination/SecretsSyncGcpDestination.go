@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
 type SecretsSyncGcpDestination interface {
 	cdktn.TerraformResource
 	AllowedIpv4Addresses() *[]*string
@@ -65,6 +65,21 @@ type SecretsSyncGcpDestination interface {
 	GranularityInput() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenAudienceWo() *string
+	SetIdentityTokenAudienceWo(val *string)
+	IdentityTokenAudienceWoInput() *string
+	IdentityTokenAudienceWoVersion() *float64
+	SetIdentityTokenAudienceWoVersion(val *float64)
+	IdentityTokenAudienceWoVersionInput() *float64
+	IdentityTokenKeyWo() *string
+	SetIdentityTokenKeyWo(val *string)
+	IdentityTokenKeyWoInput() *string
+	IdentityTokenKeyWoVersion() *float64
+	SetIdentityTokenKeyWoVersion(val *float64)
+	IdentityTokenKeyWoVersionInput() *float64
+	IdentityTokenTtl() *float64
+	SetIdentityTokenTtl(val *float64)
+	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -100,6 +115,9 @@ type SecretsSyncGcpDestination interface {
 	SecretNameTemplate() *string
 	SetSecretNameTemplate(val *string)
 	SecretNameTemplateInput() *string
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -159,6 +177,11 @@ type SecretsSyncGcpDestination interface {
 	ResetGlobalKmsKey()
 	ResetGranularity()
 	ResetId()
+	ResetIdentityTokenAudienceWo()
+	ResetIdentityTokenAudienceWoVersion()
+	ResetIdentityTokenKeyWo()
+	ResetIdentityTokenKeyWoVersion()
+	ResetIdentityTokenTtl()
 	ResetLocationalKmsKeys()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -167,6 +190,7 @@ type SecretsSyncGcpDestination interface {
 	ResetProjectId()
 	ResetReplicationLocations()
 	ResetSecretNameTemplate()
+	ResetServiceAccountEmail()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -178,6 +202,15 @@ type SecretsSyncGcpDestination interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SecretsSyncGcpDestination
@@ -435,6 +468,106 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenAudienceWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenAudienceWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenAudienceWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenAudienceWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenKeyWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenKeyWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenKeyWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) IdentityTokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -615,6 +748,26 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) SecretNameTemplateInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -656,7 +809,7 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
 func NewSecretsSyncGcpDestination(scope constructs.Construct, id *string, config *SecretsSyncGcpDestinationConfig) SecretsSyncGcpDestination {
 	_init_.Initialize()
 
@@ -674,7 +827,7 @@ func NewSecretsSyncGcpDestination(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
 func NewSecretsSyncGcpDestination_Override(s SecretsSyncGcpDestination, scope constructs.Construct, id *string, config *SecretsSyncGcpDestinationConfig) {
 	_init_.Initialize()
 
@@ -822,6 +975,61 @@ func (j *jsiiProxy_SecretsSyncGcpDestination)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetIdentityTokenAudienceWo(val *string) {
+	if err := j.validateSetIdentityTokenAudienceWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudienceWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetIdentityTokenAudienceWoVersion(val *float64) {
+	if err := j.validateSetIdentityTokenAudienceWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudienceWoVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetIdentityTokenKeyWo(val *string) {
+	if err := j.validateSetIdentityTokenKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetIdentityTokenKeyWoVersion(val *float64) {
+	if err := j.validateSetIdentityTokenKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKeyWoVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetIdentityTokenTtl(val *float64) {
+	if err := j.validateSetIdentityTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenTtl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -914,6 +1122,17 @@ func (j *jsiiProxy_SecretsSyncGcpDestination)SetSecretNameTemplate(val *string) 
 	_jsii_.Set(
 		j,
 		"secretNameTemplate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -1343,6 +1562,46 @@ func (s *jsiiProxy_SecretsSyncGcpDestination) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetIdentityTokenAudienceWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenAudienceWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetIdentityTokenAudienceWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenAudienceWoVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetIdentityTokenKeyWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetIdentityTokenKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenKeyWoVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetIdentityTokenTtl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityTokenTtl",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretsSyncGcpDestination) ResetLocationalKmsKeys() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1387,6 +1646,14 @@ func (s *jsiiProxy_SecretsSyncGcpDestination) ResetSecretNameTemplate() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSecretNameTemplate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }
@@ -1463,6 +1730,24 @@ func (s *jsiiProxy_SecretsSyncGcpDestination) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecretsSyncGcpDestination) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

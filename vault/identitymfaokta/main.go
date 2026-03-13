@@ -81,6 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameFormat", GoGetter: "UsernameFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameFormatInput", GoGetter: "UsernameFormatInput"},
 			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityMfaOkta{}

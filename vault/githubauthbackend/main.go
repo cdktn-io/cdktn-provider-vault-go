@@ -113,6 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tune", GoGetter: "Tune"},
 			_jsii_.MemberProperty{JsiiProperty: "tuneInput", GoGetter: "TuneInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GithubAuthBackend{}

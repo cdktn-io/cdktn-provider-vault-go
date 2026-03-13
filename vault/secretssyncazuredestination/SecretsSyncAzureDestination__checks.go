@@ -429,6 +429,46 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenAudienceWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenAudienceWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenKeyWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenKeyWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdentityTokenTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetKeyVaultUriParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

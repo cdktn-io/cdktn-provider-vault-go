@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role vault_ad_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role vault_ad_secret_role}.
 type AdSecretRole interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -141,6 +141,15 @@ type AdSecretRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AdSecretRole
@@ -449,7 +458,7 @@ func (j *jsiiProxy_AdSecretRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role vault_ad_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role vault_ad_secret_role} Resource.
 func NewAdSecretRole(scope constructs.Construct, id *string, config *AdSecretRoleConfig) AdSecretRole {
 	_init_.Initialize()
 
@@ -467,7 +476,7 @@ func NewAdSecretRole(scope constructs.Construct, id *string, config *AdSecretRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role vault_ad_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role vault_ad_secret_role} Resource.
 func NewAdSecretRole_Override(a AdSecretRole, scope constructs.Construct, id *string, config *AdSecretRoleConfig) {
 	_init_.Initialize()
 
@@ -1069,6 +1078,24 @@ func (a *jsiiProxy_AdSecretRole) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AdSecretRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -79,7 +79,15 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetN
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -108,6 +116,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetR
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

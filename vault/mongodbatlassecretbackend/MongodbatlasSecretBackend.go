@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend}.
 type MongodbatlasSecretBackend interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -145,6 +145,15 @@ type MongodbatlasSecretBackend interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MongodbatlasSecretBackend
@@ -463,7 +472,7 @@ func (j *jsiiProxy_MongodbatlasSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
 func NewMongodbatlasSecretBackend(scope constructs.Construct, id *string, config *MongodbatlasSecretBackendConfig) MongodbatlasSecretBackend {
 	_init_.Initialize()
 
@@ -481,7 +490,7 @@ func NewMongodbatlasSecretBackend(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
 func NewMongodbatlasSecretBackend_Override(m MongodbatlasSecretBackend, scope constructs.Construct, id *string, config *MongodbatlasSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1110,6 +1119,24 @@ func (m *jsiiProxy_MongodbatlasSecretBackend) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MongodbatlasSecretBackend) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

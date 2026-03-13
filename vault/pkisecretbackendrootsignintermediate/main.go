@@ -168,6 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useCsrValuesInput", GoGetter: "UseCsrValuesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usePss", GoGetter: "UsePss"},
 			_jsii_.MemberProperty{JsiiProperty: "usePssInput", GoGetter: "UsePssInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendRootSignIntermediate{}

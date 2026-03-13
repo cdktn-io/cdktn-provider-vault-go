@@ -62,6 +62,9 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	PasswordWo() *string
 	SetPasswordWo(val *string)
 	PasswordWoInput() *string
@@ -71,6 +74,9 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
@@ -86,6 +92,9 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	ServiceAccountJson() *string
 	SetServiceAccountJson(val *string)
 	ServiceAccountJsonInput() *string
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -142,14 +151,17 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordPolicy()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
 	ResetPluginName()
+	ResetPluginVersion()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
 	ResetServiceAccountJson()
+	ResetSkipStaticRoleImportRotation()
 	ResetTlsCa()
 	ResetTlsCertificateKey()
 	ResetUsername()
@@ -420,6 +432,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) PasswordInput() 
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) PasswordWo() *string {
 	var returns *string
 	_jsii_.Get(
@@ -475,6 +507,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) PluginNameInput(
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -575,6 +627,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ServiceAccountJs
 	_jsii_.Get(
 		j,
 		"serviceAccountJsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
 		&returns,
 	)
 	return returns
@@ -871,6 +943,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetPassword(val *
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetPasswordWo(val *string) {
 	if err := j.validateSetPasswordWoParameters(val); err != nil {
 		panic(err)
@@ -900,6 +983,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetPluginName(val
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -955,6 +1049,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetServiceAccount
 	_jsii_.Set(
 		j,
 		"serviceAccountJson",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1294,6 +1399,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetPassword() 
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetPasswordWo() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1314,6 +1427,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetPluginName(
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1354,6 +1475,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetServiceAcco
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceAccountJson",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

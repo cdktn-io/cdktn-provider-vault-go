@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vhostInput", GoGetter: "VhostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vhostTopic", GoGetter: "VhostTopic"},
 			_jsii_.MemberProperty{JsiiProperty: "vhostTopicInput", GoGetter: "VhostTopicInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RabbitmqSecretBackendRole{}
