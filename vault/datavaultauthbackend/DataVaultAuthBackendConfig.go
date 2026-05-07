@@ -24,16 +24,16 @@ type DataVaultAuthBackendConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The auth backend mount point.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

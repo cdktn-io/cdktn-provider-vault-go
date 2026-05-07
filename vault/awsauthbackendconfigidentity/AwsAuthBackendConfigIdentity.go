@@ -5,14 +5,14 @@ package awsauthbackendconfigidentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awsauthbackendconfigidentity/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awsauthbackendconfigidentity/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity}.
 type AwsAuthBackendConfigIdentity interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_AwsAuthBackendConfigIdentity) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource.
 func NewAwsAuthBackendConfigIdentity(scope constructs.Construct, id *string, config *AwsAuthBackendConfigIdentityConfig) AwsAuthBackendConfigIdentity {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewAwsAuthBackendConfigIdentity(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource.
 func NewAwsAuthBackendConfigIdentity_Override(a AwsAuthBackendConfigIdentity, scope constructs.Construct, id *string, config *AwsAuthBackendConfigIdentityConfig) {
 	_init_.Initialize()
 

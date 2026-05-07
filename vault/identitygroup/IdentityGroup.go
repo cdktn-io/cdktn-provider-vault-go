@@ -5,14 +5,14 @@ package identitygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroup/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroup/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group vault_identity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group vault_identity_group}.
 type IdentityGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -559,7 +559,7 @@ func (j *jsiiProxy_IdentityGroup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group vault_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group vault_identity_group} Resource.
 func NewIdentityGroup(scope constructs.Construct, id *string, config *IdentityGroupConfig) IdentityGroup {
 	_init_.Initialize()
 
@@ -577,7 +577,7 @@ func NewIdentityGroup(scope constructs.Construct, id *string, config *IdentityGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group vault_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group vault_identity_group} Resource.
 func NewIdentityGroup_Override(i IdentityGroup, scope constructs.Construct, id *string, config *IdentityGroupConfig) {
 	_init_.Initialize()
 

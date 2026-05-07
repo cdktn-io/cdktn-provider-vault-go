@@ -5,14 +5,14 @@ package nomadsecretrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/nomadsecretrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/nomadsecretrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role vault_nomad_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role vault_nomad_secret_role}.
 type NomadSecretRole interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_NomadSecretRole) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role vault_nomad_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role vault_nomad_secret_role} Resource.
 func NewNomadSecretRole(scope constructs.Construct, id *string, config *NomadSecretRoleConfig) NomadSecretRole {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewNomadSecretRole(scope constructs.Construct, id *string, config *NomadSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role vault_nomad_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role vault_nomad_secret_role} Resource.
 func NewNomadSecretRole_Override(n NomadSecretRole, scope constructs.Construct, id *string, config *NomadSecretRoleConfig) {
 	_init_.Initialize()
 

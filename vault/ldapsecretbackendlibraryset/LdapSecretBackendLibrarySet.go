@@ -5,14 +5,14 @@ package ldapsecretbackendlibraryset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapsecretbackendlibraryset/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapsecretbackendlibraryset/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set}.
 type LdapSecretBackendLibrarySet interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_LdapSecretBackendLibrarySet) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set} Resource.
 func NewLdapSecretBackendLibrarySet(scope constructs.Construct, id *string, config *LdapSecretBackendLibrarySetConfig) LdapSecretBackendLibrarySet {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewLdapSecretBackendLibrarySet(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set} Resource.
 func NewLdapSecretBackendLibrarySet_Override(l LdapSecretBackendLibrarySet, scope constructs.Construct, id *string, config *LdapSecretBackendLibrarySetConfig) {
 	_init_.Initialize()
 

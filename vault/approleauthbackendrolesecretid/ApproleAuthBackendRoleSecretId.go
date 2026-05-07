@@ -5,14 +5,14 @@ package approleauthbackendrolesecretid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/approleauthbackendrolesecretid/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/approleauthbackendrolesecretid/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
 type ApproleAuthBackendRoleSecretId interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -615,7 +615,7 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) WrappingTtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
 func NewApproleAuthBackendRoleSecretId(scope constructs.Construct, id *string, config *ApproleAuthBackendRoleSecretIdConfig) ApproleAuthBackendRoleSecretId {
 	_init_.Initialize()
 
@@ -633,7 +633,7 @@ func NewApproleAuthBackendRoleSecretId(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
 func NewApproleAuthBackendRoleSecretId_Override(a ApproleAuthBackendRoleSecretId, scope constructs.Construct, id *string, config *ApproleAuthBackendRoleSecretIdConfig) {
 	_init_.Initialize()
 

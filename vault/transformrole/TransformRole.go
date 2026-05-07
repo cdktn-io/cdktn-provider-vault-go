@@ -5,14 +5,14 @@ package transformrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transform_role vault_transform_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_role vault_transform_role}.
 type TransformRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_TransformRole) TransformationsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transform_role vault_transform_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_role vault_transform_role} Resource.
 func NewTransformRole(scope constructs.Construct, id *string, config *TransformRoleConfig) TransformRole {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewTransformRole(scope constructs.Construct, id *string, config *TransformR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transform_role vault_transform_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_role vault_transform_role} Resource.
 func NewTransformRole_Override(t TransformRole, scope constructs.Construct, id *string, config *TransformRoleConfig) {
 	_init_.Initialize()
 

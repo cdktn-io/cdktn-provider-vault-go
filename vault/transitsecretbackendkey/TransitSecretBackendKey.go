@@ -5,14 +5,14 @@ package transitsecretbackendkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretbackendkey/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transitsecretbackendkey/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 type TransitSecretBackendKey interface {
 	cdktn.TerraformResource
 	AllowPlaintextBackup() interface{}
@@ -850,7 +850,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) TransitSecretBackendKey {
 	_init_.Initialize()
 
@@ -868,7 +868,7 @@ func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey_Override(t TransitSecretBackendKey, scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) {
 	_init_.Initialize()
 

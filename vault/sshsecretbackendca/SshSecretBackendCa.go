@@ -5,14 +5,14 @@ package sshsecretbackendca
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendca/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendca/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
 type SshSecretBackendCa interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_SshSecretBackendCa) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
 func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) SshSecretBackendCa {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
 func NewSshSecretBackendCa_Override(s SshSecretBackendCa, scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) {
 	_init_.Initialize()
 

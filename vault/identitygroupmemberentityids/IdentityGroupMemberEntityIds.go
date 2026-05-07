@@ -5,14 +5,14 @@ package identitygroupmemberentityids
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupmemberentityids/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroupmemberentityids/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}.
 type IdentityGroupMemberEntityIds interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_IdentityGroupMemberEntityIds) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
 func NewIdentityGroupMemberEntityIds(scope constructs.Construct, id *string, config *IdentityGroupMemberEntityIdsConfig) IdentityGroupMemberEntityIds {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewIdentityGroupMemberEntityIds(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
 func NewIdentityGroupMemberEntityIds_Override(i IdentityGroupMemberEntityIds, scope constructs.Construct, id *string, config *IdentityGroupMemberEntityIdsConfig) {
 	_init_.Initialize()
 

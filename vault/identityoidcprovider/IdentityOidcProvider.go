@@ -5,14 +5,14 @@ package identityoidcprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcprovider/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcprovider/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider}.
 type IdentityOidcProvider interface {
 	cdktn.TerraformResource
 	AllowedClientIds() *[]*string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_IdentityOidcProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider} Resource.
 func NewIdentityOidcProvider(scope constructs.Construct, id *string, config *IdentityOidcProviderConfig) IdentityOidcProvider {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewIdentityOidcProvider(scope constructs.Construct, id *string, config *Ide
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider} Resource.
 func NewIdentityOidcProvider_Override(i IdentityOidcProvider, scope constructs.Construct, id *string, config *IdentityOidcProviderConfig) {
 	_init_.Initialize()
 

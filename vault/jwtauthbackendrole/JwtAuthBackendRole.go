@@ -5,14 +5,14 @@ package jwtauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
 type JwtAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -1037,7 +1037,7 @@ func (j *jsiiProxy_JwtAuthBackendRole) VerboseOidcLoggingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
 func NewJwtAuthBackendRole(scope constructs.Construct, id *string, config *JwtAuthBackendRoleConfig) JwtAuthBackendRole {
 	_init_.Initialize()
 
@@ -1055,7 +1055,7 @@ func NewJwtAuthBackendRole(scope constructs.Construct, id *string, config *JwtAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
 func NewJwtAuthBackendRole_Override(j JwtAuthBackendRole, scope constructs.Construct, id *string, config *JwtAuthBackendRoleConfig) {
 	_init_.Initialize()
 

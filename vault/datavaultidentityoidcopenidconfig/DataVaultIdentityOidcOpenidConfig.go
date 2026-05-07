@@ -5,14 +5,14 @@ package datavaultidentityoidcopenidconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityoidcopenidconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityoidcopenidconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config}.
 type DataVaultIdentityOidcOpenidConfig interface {
 	cdktn.TerraformDataSource
 	AuthorizationEndpoint() *string
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) UserinfoEndpoint() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config} Data Source.
 func NewDataVaultIdentityOidcOpenidConfig(scope constructs.Construct, id *string, config *DataVaultIdentityOidcOpenidConfigConfig) DataVaultIdentityOidcOpenidConfig {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDataVaultIdentityOidcOpenidConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config} Data Source.
 func NewDataVaultIdentityOidcOpenidConfig_Override(d DataVaultIdentityOidcOpenidConfig, scope constructs.Construct, id *string, config *DataVaultIdentityOidcOpenidConfigConfig) {
 	_init_.Initialize()
 

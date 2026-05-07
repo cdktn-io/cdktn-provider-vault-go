@@ -5,14 +5,14 @@ package datavaultpkisecretbackendcertmetadata
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendcertmetadata/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendcertmetadata/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_cert_metadata vault_pki_secret_backend_cert_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_cert_metadata vault_pki_secret_backend_cert_metadata}.
 type DataVaultPkiSecretBackendCertMetadata interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendCertMetadata) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_cert_metadata vault_pki_secret_backend_cert_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_cert_metadata vault_pki_secret_backend_cert_metadata} Data Source.
 func NewDataVaultPkiSecretBackendCertMetadata(scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendCertMetadataConfig) DataVaultPkiSecretBackendCertMetadata {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataVaultPkiSecretBackendCertMetadata(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_cert_metadata vault_pki_secret_backend_cert_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_cert_metadata vault_pki_secret_backend_cert_metadata} Data Source.
 func NewDataVaultPkiSecretBackendCertMetadata_Override(d DataVaultPkiSecretBackendCertMetadata, scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendCertMetadataConfig) {
 	_init_.Initialize()
 

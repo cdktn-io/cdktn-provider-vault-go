@@ -5,14 +5,14 @@ package pkisecretbackendsign
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendsign/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendsign/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
 type PkiSecretBackendSign interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -813,7 +813,7 @@ func (j *jsiiProxy_PkiSecretBackendSign) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) PkiSecretBackendSign {
 	_init_.Initialize()
 
@@ -831,7 +831,7 @@ func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign_Override(p PkiSecretBackendSign, scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) {
 	_init_.Initialize()
 

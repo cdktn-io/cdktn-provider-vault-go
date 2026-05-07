@@ -5,14 +5,14 @@ package datavaultauthbackends
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultauthbackends/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultauthbackends/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backends vault_auth_backends}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backends vault_auth_backends}.
 type DataVaultAuthBackends interface {
 	cdktn.TerraformDataSource
 	Accessors() *[]*string
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataVaultAuthBackends) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backends vault_auth_backends} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backends vault_auth_backends} Data Source.
 func NewDataVaultAuthBackends(scope constructs.Construct, id *string, config *DataVaultAuthBackendsConfig) DataVaultAuthBackends {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataVaultAuthBackends(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/auth_backends vault_auth_backends} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backends vault_auth_backends} Data Source.
 func NewDataVaultAuthBackends_Override(d DataVaultAuthBackends, scope constructs.Construct, id *string, config *DataVaultAuthBackendsConfig) {
 	_init_.Initialize()
 

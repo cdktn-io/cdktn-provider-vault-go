@@ -5,14 +5,14 @@ package gcpsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/gcpsecretbackend/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/gcpsecretbackend/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
 type GcpSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -1098,7 +1098,7 @@ func (j *jsiiProxy_GcpSecretBackend) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecretBackendConfig) GcpSecretBackend {
 	_init_.Initialize()
 
@@ -1116,7 +1116,7 @@ func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend_Override(g GcpSecretBackend, scope constructs.Construct, id *string, config *GcpSecretBackendConfig) {
 	_init_.Initialize()
 

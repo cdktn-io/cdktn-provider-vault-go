@@ -5,14 +5,14 @@ package secretssyncconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config vault_secrets_sync_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_config vault_secrets_sync_config}.
 type SecretsSyncConfig interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_SecretsSyncConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config vault_secrets_sync_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_config vault_secrets_sync_config} Resource.
 func NewSecretsSyncConfig(scope constructs.Construct, id *string, config *SecretsSyncConfigConfig) SecretsSyncConfig {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewSecretsSyncConfig(scope constructs.Construct, id *string, config *Secret
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config vault_secrets_sync_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_config vault_secrets_sync_config} Resource.
 func NewSecretsSyncConfig_Override(s SecretsSyncConfig, scope constructs.Construct, id *string, config *SecretsSyncConfigConfig) {
 	_init_.Initialize()
 

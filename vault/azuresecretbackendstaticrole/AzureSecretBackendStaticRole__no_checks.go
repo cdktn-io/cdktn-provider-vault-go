@@ -111,6 +111,10 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) validateSetCountParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendStaticRole) validateSetDeferInitialCredsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendStaticRole) validateSetExpirationParameters(val *string) error {
 	return nil
 }

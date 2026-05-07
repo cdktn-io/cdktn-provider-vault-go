@@ -5,14 +5,14 @@ package githubteam
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/githubteam/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/githubteam/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/github_team vault_github_team}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/github_team vault_github_team}.
 type GithubTeam interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GithubTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/github_team vault_github_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/github_team vault_github_team} Resource.
 func NewGithubTeam(scope constructs.Construct, id *string, config *GithubTeamConfig) GithubTeam {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGithubTeam(scope constructs.Construct, id *string, config *GithubTeamCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/github_team vault_github_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/github_team vault_github_team} Resource.
 func NewGithubTeam_Override(g GithubTeam, scope constructs.Construct, id *string, config *GithubTeamConfig) {
 	_init_.Initialize()
 

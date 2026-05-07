@@ -5,14 +5,14 @@ package kvsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kvsecret/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kvsecret/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret vault_kv_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kv_secret vault_kv_secret}.
 type KvSecret interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_KvSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret vault_kv_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kv_secret vault_kv_secret} Resource.
 func NewKvSecret(scope constructs.Construct, id *string, config *KvSecretConfig) KvSecret {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewKvSecret(scope constructs.Construct, id *string, config *KvSecretConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret vault_kv_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kv_secret vault_kv_secret} Resource.
 func NewKvSecret_Override(k KvSecret, scope constructs.Construct, id *string, config *KvSecretConfig) {
 	_init_.Initialize()
 

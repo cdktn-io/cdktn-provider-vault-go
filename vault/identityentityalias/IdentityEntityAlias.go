@@ -5,14 +5,14 @@ package identityentityalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityentityalias/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityentityalias/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
 type IdentityEntityAlias interface {
 	cdktn.TerraformResource
 	CanonicalId() *string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_IdentityEntityAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
 func NewIdentityEntityAlias(scope constructs.Construct, id *string, config *IdentityEntityAliasConfig) IdentityEntityAlias {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewIdentityEntityAlias(scope constructs.Construct, id *string, config *Iden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
 func NewIdentityEntityAlias_Override(i IdentityEntityAlias, scope constructs.Construct, id *string, config *IdentityEntityAliasConfig) {
 	_init_.Initialize()
 

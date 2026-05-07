@@ -5,14 +5,14 @@ package secretssyncassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncassociation/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncassociation/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_association vault_secrets_sync_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_association vault_secrets_sync_association}.
 type SecretsSyncAssociation interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_SecretsSyncAssociation) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource.
 func NewSecretsSyncAssociation(scope constructs.Construct, id *string, config *SecretsSyncAssociationConfig) SecretsSyncAssociation {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewSecretsSyncAssociation(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource.
 func NewSecretsSyncAssociation_Override(s SecretsSyncAssociation, scope constructs.Construct, id *string, config *SecretsSyncAssociationConfig) {
 	_init_.Initialize()
 

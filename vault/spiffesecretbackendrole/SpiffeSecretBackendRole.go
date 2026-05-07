@@ -5,14 +5,14 @@ package spiffesecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffesecretbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffesecretbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_role vault_spiffe_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_role vault_spiffe_secret_backend_role}.
 type SpiffeSecretBackendRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_SpiffeSecretBackendRole) UseJtiClaimInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_role vault_spiffe_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_role vault_spiffe_secret_backend_role} Resource.
 func NewSpiffeSecretBackendRole(scope constructs.Construct, id *string, config *SpiffeSecretBackendRoleConfig) SpiffeSecretBackendRole {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewSpiffeSecretBackendRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_role vault_spiffe_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_role vault_spiffe_secret_backend_role} Resource.
 func NewSpiffeSecretBackendRole_Override(s SpiffeSecretBackendRole, scope constructs.Construct, id *string, config *SpiffeSecretBackendRoleConfig) {
 	_init_.Initialize()
 

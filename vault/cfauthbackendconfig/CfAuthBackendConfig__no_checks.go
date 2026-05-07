@@ -103,6 +103,10 @@ func (j *jsiiProxy_CfAuthBackendConfig) validateSetCfPasswordWoParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_CfAuthBackendConfig) validateSetCfPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CfAuthBackendConfig) validateSetCfTimeoutParameters(val *float64) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package plugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/plugin/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/plugin/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin vault_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin vault_plugin}.
 type Plugin interface {
 	cdktn.TerraformResource
 	Args() *[]*string
@@ -135,6 +135,7 @@ type Plugin interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetArgs()
+	ResetCommand()
 	ResetEnv()
 	ResetId()
 	ResetOciImage()
@@ -142,6 +143,7 @@ type Plugin interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRuntime()
+	ResetSha256()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -531,7 +533,7 @@ func (j *jsiiProxy_Plugin) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin vault_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin vault_plugin} Resource.
 func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plugin {
 	_init_.Initialize()
 
@@ -549,7 +551,7 @@ func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/plugin vault_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin vault_plugin} Resource.
 func NewPlugin_Override(p Plugin, scope constructs.Construct, id *string, config *PluginConfig) {
 	_init_.Initialize()
 
@@ -1099,6 +1101,14 @@ func (p *jsiiProxy_Plugin) ResetArgs() {
 	)
 }
 
+func (p *jsiiProxy_Plugin) ResetCommand() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCommand",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Plugin) ResetEnv() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1135,6 +1145,14 @@ func (p *jsiiProxy_Plugin) ResetRuntime() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRuntime",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Plugin) ResetSha256() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSha256",
 		nil, // no parameters
 	)
 }

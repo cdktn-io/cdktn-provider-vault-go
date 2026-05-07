@@ -24,35 +24,35 @@ type SpiffeSecretBackendConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Mount path for the SPIFFE secrets engine in Vault.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config#mount SpiffeSecretBackendConfig#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config#mount SpiffeSecretBackendConfig#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// The SPIFFE trust domain for this backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config#trust_domain SpiffeSecretBackendConfig#trust_domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config#trust_domain SpiffeSecretBackendConfig#trust_domain}
 	TrustDomain *string `field:"required" json:"trustDomain" yaml:"trustDomain"`
 	// Refresh hint to use in trust bundles.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config#bundle_refresh_hint SpiffeSecretBackendConfig#bundle_refresh_hint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config#bundle_refresh_hint SpiffeSecretBackendConfig#bundle_refresh_hint}
 	BundleRefreshHint *string `field:"optional" json:"bundleRefreshHint" yaml:"bundleRefreshHint"`
 	// Base URL to use for JWT iss claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config#jwt_issuer_url SpiffeSecretBackendConfig#jwt_issuer_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config#jwt_issuer_url SpiffeSecretBackendConfig#jwt_issuer_url}
 	JwtIssuerUrl *string `field:"optional" json:"jwtIssuerUrl" yaml:"jwtIssuerUrl"`
 	// If true, SPIFFE IDs in JWT SVIDs must not exceed 255 bytes, the limit for the sub claim in OIDC.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config#jwt_oidc_compatibility_mode SpiffeSecretBackendConfig#jwt_oidc_compatibility_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config#jwt_oidc_compatibility_mode SpiffeSecretBackendConfig#jwt_oidc_compatibility_mode}
 	JwtOidcCompatibilityMode interface{} `field:"optional" json:"jwtOidcCompatibilityMode" yaml:"jwtOidcCompatibilityMode"`
 	// Signing algorithm to use for JWTs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config#jwt_signing_algorithm SpiffeSecretBackendConfig#jwt_signing_algorithm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config#jwt_signing_algorithm SpiffeSecretBackendConfig#jwt_signing_algorithm}
 	JwtSigningAlgorithm *string `field:"optional" json:"jwtSigningAlgorithm" yaml:"jwtSigningAlgorithm"`
 	// How long a signing key will live for once it starts being used to sign.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config#key_lifetime SpiffeSecretBackendConfig#key_lifetime}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config#key_lifetime SpiffeSecretBackendConfig#key_lifetime}
 	KeyLifetime *string `field:"optional" json:"keyLifetime" yaml:"keyLifetime"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config#namespace SpiffeSecretBackendConfig#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config#namespace SpiffeSecretBackendConfig#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

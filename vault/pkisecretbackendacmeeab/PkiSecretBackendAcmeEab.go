@@ -5,14 +5,14 @@ package pkisecretbackendacmeeab
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendacmeeab/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendacmeeab/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab}.
 type PkiSecretBackendAcmeEab interface {
 	cdktn.TerraformResource
 	AcmeDirectory() *string
@@ -469,7 +469,7 @@ func (j *jsiiProxy_PkiSecretBackendAcmeEab) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab} Resource.
 func NewPkiSecretBackendAcmeEab(scope constructs.Construct, id *string, config *PkiSecretBackendAcmeEabConfig) PkiSecretBackendAcmeEab {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewPkiSecretBackendAcmeEab(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab} Resource.
 func NewPkiSecretBackendAcmeEab_Override(p PkiSecretBackendAcmeEab, scope constructs.Construct, id *string, config *PkiSecretBackendAcmeEabConfig) {
 	_init_.Initialize()
 

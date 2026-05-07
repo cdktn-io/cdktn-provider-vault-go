@@ -5,14 +5,14 @@ package pkisecretbackendissuer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendissuer/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendissuer/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
 type PkiSecretBackendIssuer interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -712,7 +712,7 @@ func (j *jsiiProxy_PkiSecretBackendIssuer) UsageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
 func NewPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *PkiSecretBackendIssuerConfig) PkiSecretBackendIssuer {
 	_init_.Initialize()
 
@@ -730,7 +730,7 @@ func NewPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
 func NewPkiSecretBackendIssuer_Override(p PkiSecretBackendIssuer, scope constructs.Construct, id *string, config *PkiSecretBackendIssuerConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package secretssyncgithubapps
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncgithubapps/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncgithubapps/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
 type SecretsSyncGithubApps interface {
 	cdktn.TerraformResource
 	AppId() *float64
@@ -423,7 +423,7 @@ func (j *jsiiProxy_SecretsSyncGithubApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
 func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *SecretsSyncGithubAppsConfig) SecretsSyncGithubApps {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
 func NewSecretsSyncGithubApps_Override(s SecretsSyncGithubApps, scope constructs.Construct, id *string, config *SecretsSyncGithubAppsConfig) {
 	_init_.Initialize()
 

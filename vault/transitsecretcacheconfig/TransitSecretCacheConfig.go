@@ -5,14 +5,14 @@ package transitsecretcacheconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretcacheconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transitsecretcacheconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}.
 type TransitSecretCacheConfig interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -389,7 +389,7 @@ func (j *jsiiProxy_TransitSecretCacheConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
 func NewTransitSecretCacheConfig(scope constructs.Construct, id *string, config *TransitSecretCacheConfigConfig) TransitSecretCacheConfig {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewTransitSecretCacheConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
 func NewTransitSecretCacheConfig_Override(t TransitSecretCacheConfig, scope constructs.Construct, id *string, config *TransitSecretCacheConfigConfig) {
 	_init_.Initialize()
 

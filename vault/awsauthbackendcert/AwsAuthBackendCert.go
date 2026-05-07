@@ -5,14 +5,14 @@ package awsauthbackendcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awsauthbackendcert/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awsauthbackendcert/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert}.
 type AwsAuthBackendCert interface {
 	cdktn.TerraformResource
 	AwsPublicCert() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_AwsAuthBackendCert) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert} Resource.
 func NewAwsAuthBackendCert(scope constructs.Construct, id *string, config *AwsAuthBackendCertConfig) AwsAuthBackendCert {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewAwsAuthBackendCert(scope constructs.Construct, id *string, config *AwsAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert} Resource.
 func NewAwsAuthBackendCert_Override(a AwsAuthBackendCert, scope constructs.Construct, id *string, config *AwsAuthBackendCertConfig) {
 	_init_.Initialize()
 

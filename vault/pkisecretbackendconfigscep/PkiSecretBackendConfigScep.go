@@ -5,14 +5,14 @@ package pkisecretbackendconfigscep
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendconfigscep/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendconfigscep/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}.
 type PkiSecretBackendConfigScep interface {
 	cdktn.TerraformResource
 	AllowedDigestAlgorithms() *[]*string
@@ -569,7 +569,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigScep) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Resource.
 func NewPkiSecretBackendConfigScep(scope constructs.Construct, id *string, config *PkiSecretBackendConfigScepConfig) PkiSecretBackendConfigScep {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewPkiSecretBackendConfigScep(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Resource.
 func NewPkiSecretBackendConfigScep_Override(p PkiSecretBackendConfigScep, scope constructs.Construct, id *string, config *PkiSecretBackendConfigScepConfig) {
 	_init_.Initialize()
 

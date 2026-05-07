@@ -24,38 +24,38 @@ type AuthBackendConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the auth backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#type AuthBackend#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#type AuthBackend#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// The description of the auth backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#description AuthBackend#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#description AuthBackend#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// If set, opts out of mount migration on path updates.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
 	DisableRemount interface{} `field:"optional" json:"disableRemount" yaml:"disableRemount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#id AuthBackend#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#id AuthBackend#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The key to use for signing identity tokens.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#identity_token_key AuthBackend#identity_token_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#identity_token_key AuthBackend#identity_token_key}
 	IdentityTokenKey *string `field:"optional" json:"identityTokenKey" yaml:"identityTokenKey"`
 	// Specifies if the auth method is local only.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#local AuthBackend#local}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#local AuthBackend#local}
 	Local interface{} `field:"optional" json:"local" yaml:"local"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// path to mount the backend. This defaults to the type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#path AuthBackend#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#path AuthBackend#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/auth_backend#tune AuthBackend#tune}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend#tune AuthBackend#tune}.
 	Tune interface{} `field:"optional" json:"tune" yaml:"tune"`
 }
 

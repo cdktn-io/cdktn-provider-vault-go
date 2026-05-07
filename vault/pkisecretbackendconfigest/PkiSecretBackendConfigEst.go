@@ -5,14 +5,14 @@ package pkisecretbackendconfigest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendconfigest/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendconfigest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est}.
 type PkiSecretBackendConfigEst interface {
 	cdktn.TerraformResource
 	AuditFields() *[]*string
@@ -545,7 +545,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigEst) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est} Resource.
 func NewPkiSecretBackendConfigEst(scope constructs.Construct, id *string, config *PkiSecretBackendConfigEstConfig) PkiSecretBackendConfigEst {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewPkiSecretBackendConfigEst(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est} Resource.
 func NewPkiSecretBackendConfigEst_Override(p PkiSecretBackendConfigEst, scope constructs.Construct, id *string, config *PkiSecretBackendConfigEstConfig) {
 	_init_.Initialize()
 

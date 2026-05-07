@@ -5,14 +5,14 @@ package mfaokta
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mfaokta/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mfaokta/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta vault_mfa_okta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mfa_okta vault_mfa_okta}.
 type MfaOkta interface {
 	cdktn.TerraformResource
 	ApiToken() *string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_MfaOkta) UsernameFormatInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta vault_mfa_okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mfa_okta vault_mfa_okta} Resource.
 func NewMfaOkta(scope constructs.Construct, id *string, config *MfaOktaConfig) MfaOkta {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewMfaOkta(scope constructs.Construct, id *string, config *MfaOktaConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta vault_mfa_okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mfa_okta vault_mfa_okta} Resource.
 func NewMfaOkta_Override(m MfaOkta, scope constructs.Construct, id *string, config *MfaOktaConfig) {
 	_init_.Initialize()
 

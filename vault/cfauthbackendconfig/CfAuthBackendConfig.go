@@ -5,14 +5,14 @@ package cfauthbackendconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/cfauthbackendconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/cfauthbackendconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config}.
 type CfAuthBackendConfig interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -26,6 +26,9 @@ type CfAuthBackendConfig interface {
 	CfPasswordWo() *string
 	SetCfPasswordWo(val *string)
 	CfPasswordWoInput() *string
+	CfPasswordWoVersion() *float64
+	SetCfPasswordWoVersion(val *float64)
+	CfPasswordWoVersionInput() *float64
 	CfTimeout() *float64
 	SetCfTimeout(val *float64)
 	CfTimeoutInput() *float64
@@ -234,6 +237,26 @@ func (j *jsiiProxy_CfAuthBackendConfig) CfPasswordWoInput() *string {
 	_jsii_.Get(
 		j,
 		"cfPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfAuthBackendConfig) CfPasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cfPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfAuthBackendConfig) CfPasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cfPasswordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -530,7 +553,7 @@ func (j *jsiiProxy_CfAuthBackendConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource.
 func NewCfAuthBackendConfig(scope constructs.Construct, id *string, config *CfAuthBackendConfigConfig) CfAuthBackendConfig {
 	_init_.Initialize()
 
@@ -548,7 +571,7 @@ func NewCfAuthBackendConfig(scope constructs.Construct, id *string, config *CfAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource.
 func NewCfAuthBackendConfig_Override(c CfAuthBackendConfig, scope constructs.Construct, id *string, config *CfAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -588,6 +611,17 @@ func (j *jsiiProxy_CfAuthBackendConfig)SetCfPasswordWo(val *string) {
 	_jsii_.Set(
 		j,
 		"cfPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CfAuthBackendConfig)SetCfPasswordWoVersion(val *float64) {
+	if err := j.validateSetCfPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cfPasswordWoVersion",
 		val,
 	)
 }

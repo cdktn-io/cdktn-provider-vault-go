@@ -5,14 +5,14 @@ package configuicustommessage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}.
 type ConfigUiCustomMessage interface {
 	cdktn.TerraformResource
 	Authenticated() interface{}
@@ -519,7 +519,7 @@ func (j *jsiiProxy_ConfigUiCustomMessage) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource.
 func NewConfigUiCustomMessage(scope constructs.Construct, id *string, config *ConfigUiCustomMessageConfig) ConfigUiCustomMessage {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewConfigUiCustomMessage(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource.
 func NewConfigUiCustomMessage_Override(c ConfigUiCustomMessage, scope constructs.Construct, id *string, config *ConfigUiCustomMessageConfig) {
 	_init_.Initialize()
 

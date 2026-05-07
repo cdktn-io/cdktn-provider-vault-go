@@ -5,14 +5,14 @@ package pkisecretbackendintermediatecertrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendintermediatecertrequest/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendintermediatecertrequest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
 type PkiSecretBackendIntermediateCertRequest interface {
 	cdktn.TerraformResource
 	AddBasicConstraints() interface{}
@@ -1032,7 +1032,7 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) UriSansInput() *[]*s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
 func NewPkiSecretBackendIntermediateCertRequest(scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateCertRequestConfig) PkiSecretBackendIntermediateCertRequest {
 	_init_.Initialize()
 
@@ -1050,7 +1050,7 @@ func NewPkiSecretBackendIntermediateCertRequest(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
 func NewPkiSecretBackendIntermediateCertRequest_Override(p PkiSecretBackendIntermediateCertRequest, scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateCertRequestConfig) {
 	_init_.Initialize()
 

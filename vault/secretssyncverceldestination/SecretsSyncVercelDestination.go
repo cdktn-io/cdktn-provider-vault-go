@@ -5,14 +5,14 @@ package secretssyncverceldestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncverceldestination/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncverceldestination/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
 type SecretsSyncVercelDestination interface {
 	cdktn.TerraformResource
 	AccessToken() *string
@@ -614,7 +614,7 @@ func (j *jsiiProxy_SecretsSyncVercelDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
 func NewSecretsSyncVercelDestination(scope constructs.Construct, id *string, config *SecretsSyncVercelDestinationConfig) SecretsSyncVercelDestination {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewSecretsSyncVercelDestination(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
 func NewSecretsSyncVercelDestination_Override(s SecretsSyncVercelDestination, scope constructs.Construct, id *string, config *SecretsSyncVercelDestinationConfig) {
 	_init_.Initialize()
 

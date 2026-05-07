@@ -99,6 +99,10 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetDnParameters(val *string) error {
 	return nil
 }
@@ -119,6 +123,14 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetNamespaceParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -128,6 +140,18 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRoleNameParameters(va
 }
 
 func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRotationPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

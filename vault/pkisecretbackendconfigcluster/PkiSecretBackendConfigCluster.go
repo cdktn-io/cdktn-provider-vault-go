@@ -5,14 +5,14 @@ package pkisecretbackendconfigcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendconfigcluster/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendconfigcluster/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_cluster vault_pki_secret_backend_config_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_cluster vault_pki_secret_backend_config_cluster}.
 type PkiSecretBackendConfigCluster interface {
 	cdktn.TerraformResource
 	AiaPath() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigCluster) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_cluster vault_pki_secret_backend_config_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_cluster vault_pki_secret_backend_config_cluster} Resource.
 func NewPkiSecretBackendConfigCluster(scope constructs.Construct, id *string, config *PkiSecretBackendConfigClusterConfig) PkiSecretBackendConfigCluster {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewPkiSecretBackendConfigCluster(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_cluster vault_pki_secret_backend_config_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_cluster vault_pki_secret_backend_config_cluster} Resource.
 func NewPkiSecretBackendConfigCluster_Override(p PkiSecretBackendConfigCluster, scope constructs.Construct, id *string, config *PkiSecretBackendConfigClusterConfig) {
 	_init_.Initialize()
 

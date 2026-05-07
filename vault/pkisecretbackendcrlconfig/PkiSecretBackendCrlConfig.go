@@ -5,14 +5,14 @@ package pkisecretbackendcrlconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendcrlconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendcrlconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config}.
 type PkiSecretBackendCrlConfig interface {
 	cdktn.TerraformResource
 	AutoRebuild() interface{}
@@ -654,7 +654,7 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) UnifiedCrlOnExistingPathsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
 func NewPkiSecretBackendCrlConfig(scope constructs.Construct, id *string, config *PkiSecretBackendCrlConfigConfig) PkiSecretBackendCrlConfig {
 	_init_.Initialize()
 
@@ -672,7 +672,7 @@ func NewPkiSecretBackendCrlConfig(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
 func NewPkiSecretBackendCrlConfig_Override(p PkiSecretBackendCrlConfig, scope constructs.Construct, id *string, config *PkiSecretBackendCrlConfigConfig) {
 	_init_.Initialize()
 

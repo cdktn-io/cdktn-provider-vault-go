@@ -5,14 +5,14 @@ package identitymfaduo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfaduo/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitymfaduo/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}.
 type IdentityMfaDuo interface {
 	cdktn.TerraformResource
 	ApiHostname() *string
@@ -561,7 +561,7 @@ func (j *jsiiProxy_IdentityMfaDuo) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource.
 func NewIdentityMfaDuo(scope constructs.Construct, id *string, config *IdentityMfaDuoConfig) IdentityMfaDuo {
 	_init_.Initialize()
 
@@ -579,7 +579,7 @@ func NewIdentityMfaDuo(scope constructs.Construct, id *string, config *IdentityM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource.
 func NewIdentityMfaDuo_Override(i IdentityMfaDuo, scope constructs.Construct, id *string, config *IdentityMfaDuoConfig) {
 	_init_.Initialize()
 

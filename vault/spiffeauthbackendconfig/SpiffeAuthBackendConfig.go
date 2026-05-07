@@ -5,14 +5,14 @@ package spiffeauthbackendconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffeauthbackendconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffeauthbackendconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config}.
 type SpiffeAuthBackendConfig interface {
 	cdktn.TerraformResource
 	Audience() *[]*string
@@ -532,7 +532,7 @@ func (j *jsiiProxy_SpiffeAuthBackendConfig) TrustDomainInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config} Resource.
 func NewSpiffeAuthBackendConfig(scope constructs.Construct, id *string, config *SpiffeAuthBackendConfigConfig) SpiffeAuthBackendConfig {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewSpiffeAuthBackendConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config} Resource.
 func NewSpiffeAuthBackendConfig_Override(s SpiffeAuthBackendConfig, scope constructs.Construct, id *string, config *SpiffeAuthBackendConfigConfig) {
 	_init_.Initialize()
 

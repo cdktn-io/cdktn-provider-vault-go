@@ -5,14 +5,14 @@ package pkisecretbackendrootsignintermediate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendrootsignintermediate/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendrootsignintermediate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
 type PkiSecretBackendRootSignIntermediate interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -1235,7 +1235,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) UsePssInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) PkiSecretBackendRootSignIntermediate {
 	_init_.Initialize()
 
@@ -1253,7 +1253,7 @@ func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate_Override(p PkiSecretBackendRootSignIntermediate, scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) {
 	_init_.Initialize()
 

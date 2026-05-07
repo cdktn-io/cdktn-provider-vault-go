@@ -5,14 +5,14 @@ package spiffeauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffeauthbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffeauthbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role}.
 type SpiffeAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -653,7 +653,7 @@ func (j *jsiiProxy_SpiffeAuthBackendRole) WorkloadIdPatternsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
 func NewSpiffeAuthBackendRole(scope constructs.Construct, id *string, config *SpiffeAuthBackendRoleConfig) SpiffeAuthBackendRole {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewSpiffeAuthBackendRole(scope constructs.Construct, id *string, config *Sp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
 func NewSpiffeAuthBackendRole_Override(s SpiffeAuthBackendRole, scope constructs.Construct, id *string, config *SpiffeAuthBackendRoleConfig) {
 	_init_.Initialize()
 

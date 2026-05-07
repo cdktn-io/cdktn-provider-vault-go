@@ -5,14 +5,14 @@ package identitygroupalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupalias/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroupalias/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias vault_identity_group_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group_alias vault_identity_group_alias}.
 type IdentityGroupAlias interface {
 	cdktn.TerraformResource
 	CanonicalId() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_IdentityGroupAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
 func NewIdentityGroupAlias(scope constructs.Construct, id *string, config *IdentityGroupAliasConfig) IdentityGroupAlias {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewIdentityGroupAlias(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
 func NewIdentityGroupAlias_Override(i IdentityGroupAlias, scope constructs.Construct, id *string, config *IdentityGroupAliasConfig) {
 	_init_.Initialize()
 

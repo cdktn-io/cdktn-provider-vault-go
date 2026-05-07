@@ -5,14 +5,14 @@ package certauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/certauthbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/certauthbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
 type CertAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -1013,7 +1013,7 @@ func (j *jsiiProxy_CertAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) CertAuthBackendRole {
 	_init_.Initialize()
 
@@ -1031,7 +1031,7 @@ func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *Cert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole_Override(c CertAuthBackendRole, scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) {
 	_init_.Initialize()
 

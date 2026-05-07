@@ -5,14 +5,14 @@ package samlauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
 type SamlAuthBackend interface {
 	cdktn.TerraformResource
 	AcsUrls() *[]*string
@@ -653,7 +653,7 @@ func (j *jsiiProxy_SamlAuthBackend) VerboseLoggingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
 func NewSamlAuthBackend(scope constructs.Construct, id *string, config *SamlAuthBackendConfig) SamlAuthBackend {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewSamlAuthBackend(scope constructs.Construct, id *string, config *SamlAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
 func NewSamlAuthBackend_Override(s SamlAuthBackend, scope constructs.Construct, id *string, config *SamlAuthBackendConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package azureauthbackendconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/azureauthbackendconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/azureauthbackendconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
 type AzureAuthBackendConfig interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -749,7 +749,7 @@ func (j *jsiiProxy_AzureAuthBackendConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) AzureAuthBackendConfig {
 	_init_.Initialize()
 
@@ -767,7 +767,7 @@ func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig_Override(a AzureAuthBackendConfig, scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) {
 	_init_.Initialize()
 

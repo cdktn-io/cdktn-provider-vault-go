@@ -5,14 +5,14 @@ package kmipsecretscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretscope/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretscope/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope}.
 type KmipSecretScope interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_KmipSecretScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope} Resource.
 func NewKmipSecretScope(scope constructs.Construct, id *string, config *KmipSecretScopeConfig) KmipSecretScope {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewKmipSecretScope(scope constructs.Construct, id *string, config *KmipSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope} Resource.
 func NewKmipSecretScope_Override(k KmipSecretScope, scope constructs.Construct, id *string, config *KmipSecretScopeConfig) {
 	_init_.Initialize()
 

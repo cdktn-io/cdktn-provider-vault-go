@@ -5,14 +5,14 @@ package databasesecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role}.
 type DatabaseSecretBackendRole interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -603,7 +603,7 @@ func (j *jsiiProxy_DatabaseSecretBackendRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource.
 func NewDatabaseSecretBackendRole(scope constructs.Construct, id *string, config *DatabaseSecretBackendRoleConfig) DatabaseSecretBackendRole {
 	_init_.Initialize()
 
@@ -621,7 +621,7 @@ func NewDatabaseSecretBackendRole(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource.
 func NewDatabaseSecretBackendRole_Override(d DatabaseSecretBackendRole, scope constructs.Construct, id *string, config *DatabaseSecretBackendRoleConfig) {
 	_init_.Initialize()
 

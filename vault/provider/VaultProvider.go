@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/provider/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/provider/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs vault}.
 type VaultProvider interface {
 	cdktn.TerraformProvider
 	AddAddressToEnv() *string
@@ -915,7 +915,7 @@ func (j *jsiiProxy_VaultProvider) VaultVersionOverrideInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs vault} Resource.
 func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProviderConfig) VaultProvider {
 	_init_.Initialize()
 
@@ -933,7 +933,7 @@ func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs vault} Resource.
 func NewVaultProvider_Override(v VaultProvider, scope constructs.Construct, id *string, config *VaultProviderConfig) {
 	_init_.Initialize()
 

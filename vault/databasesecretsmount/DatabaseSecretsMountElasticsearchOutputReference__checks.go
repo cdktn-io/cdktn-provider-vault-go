@@ -234,7 +234,7 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetInsecureTlsParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetInsecureParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -5,14 +5,14 @@ package azuresecretbackendstaticrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/azuresecretbackendstaticrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/azuresecretbackendstaticrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
 type AzureSecretBackendStaticRole interface {
 	cdktn.TerraformResource
 	ApplicationObjectId() *string
@@ -36,6 +36,9 @@ type AzureSecretBackendStaticRole interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeferInitialCreds() interface{}
+	SetDeferInitialCreds(val interface{})
+	DeferInitialCredsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -136,6 +139,7 @@ type AzureSecretBackendStaticRole interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetClientSecret()
+	ResetDeferInitialCreds()
 	ResetExpiration()
 	ResetMetadata()
 	ResetNamespace()
@@ -267,6 +271,26 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) DeferInitialCreds() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deferInitialCreds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) DeferInitialCredsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deferInitialCredsInput",
 		&returns,
 	)
 	return returns
@@ -543,7 +567,7 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
 func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, config *AzureSecretBackendStaticRoleConfig) AzureSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -561,7 +585,7 @@ func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
 func NewAzureSecretBackendStaticRole_Override(a AzureSecretBackendStaticRole, scope constructs.Construct, id *string, config *AzureSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole)SetDeferInitialCreds(val interface{}) {
+	if err := j.validateSetDeferInitialCredsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deferInitialCreds",
 		val,
 	)
 }
@@ -1107,6 +1142,14 @@ func (a *jsiiProxy_AzureSecretBackendStaticRole) ResetClientSecret() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackendStaticRole) ResetDeferInitialCreds() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeferInitialCreds",
 		nil, // no parameters
 	)
 }

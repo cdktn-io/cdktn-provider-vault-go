@@ -5,14 +5,14 @@ package awsauthbackendidentitywhitelist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awsauthbackendidentitywhitelist/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awsauthbackendidentitywhitelist/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist}.
 type AwsAuthBackendIdentityWhitelist interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
 func NewAwsAuthBackendIdentityWhitelist(scope constructs.Construct, id *string, config *AwsAuthBackendIdentityWhitelistConfig) AwsAuthBackendIdentityWhitelist {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewAwsAuthBackendIdentityWhitelist(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
 func NewAwsAuthBackendIdentityWhitelist_Override(a AwsAuthBackendIdentityWhitelist, scope constructs.Construct, id *string, config *AwsAuthBackendIdentityWhitelistConfig) {
 	_init_.Initialize()
 

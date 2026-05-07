@@ -5,14 +5,14 @@ package transformtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtemplate/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformtemplate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transform_template vault_transform_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_template vault_transform_template}.
 type TransformTemplate interface {
 	cdktn.TerraformResource
 	Alphabet() *string
@@ -509,7 +509,7 @@ func (j *jsiiProxy_TransformTemplate) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transform_template vault_transform_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_template vault_transform_template} Resource.
 func NewTransformTemplate(scope constructs.Construct, id *string, config *TransformTemplateConfig) TransformTemplate {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewTransformTemplate(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/transform_template vault_transform_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_template vault_transform_template} Resource.
 func NewTransformTemplate_Override(t TransformTemplate, scope constructs.Construct, id *string, config *TransformTemplateConfig) {
 	_init_.Initialize()
 

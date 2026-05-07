@@ -23,6 +23,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cfApiTrustedCertificatesInput", GoGetter: "CfApiTrustedCertificatesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cfPasswordWo", GoGetter: "CfPasswordWo"},
 			_jsii_.MemberProperty{JsiiProperty: "cfPasswordWoInput", GoGetter: "CfPasswordWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cfPasswordWoVersion", GoGetter: "CfPasswordWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "cfPasswordWoVersionInput", GoGetter: "CfPasswordWoVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cfTimeout", GoGetter: "CfTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "cfTimeoutInput", GoGetter: "CfTimeoutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cfUsername", GoGetter: "CfUsername"},

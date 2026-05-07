@@ -5,14 +5,14 @@ package ldapsecretbackendstaticrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapsecretbackendstaticrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapsecretbackendstaticrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
 type LdapSecretBackendStaticRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type LdapSecretBackendStaticRole interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	Dn() *string
 	SetDn(val *string)
 	DnInput() *string
@@ -57,6 +60,12 @@ type LdapSecretBackendStaticRole interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -73,6 +82,15 @@ type LdapSecretBackendStaticRole interface {
 	RotationPeriod() *float64
 	SetRotationPeriod(val *float64)
 	RotationPeriodInput() *float64
+	RotationPolicy() *string
+	SetRotationPolicy(val *string)
+	RotationPolicyInput() *string
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	SkipImportRotation() interface{}
 	SetSkipImportRotation(val interface{})
 	SkipImportRotationInput() interface{}
@@ -128,6 +146,7 @@ type LdapSecretBackendStaticRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDisableAutomatedRotation()
 	ResetDn()
 	ResetId()
 	ResetMount()
@@ -135,6 +154,12 @@ type LdapSecretBackendStaticRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
+	ResetRotationPeriod()
+	ResetRotationPolicy()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetSkipImportRotation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -208,6 +233,26 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -343,6 +388,46 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -408,6 +493,66 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) RotationPeriodInput() *float64 {
 	_jsii_.Get(
 		j,
 		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
 		&returns,
 	)
 	return returns
@@ -484,7 +629,7 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) LdapSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -502,7 +647,7 @@ func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole_Override(l LdapSecretBackendStaticRole, scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -539,6 +684,17 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
 		val,
 	)
 }
@@ -606,6 +762,28 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -643,6 +821,39 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole)SetRotationPeriod(val *float64) {
 	_jsii_.Set(
 		j,
 		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetRotationPolicy(val *string) {
+	if err := j.validateSetRotationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1022,6 +1233,14 @@ func (l *jsiiProxy_LdapSecretBackendStaticRole) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetDn() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1058,6 +1277,54 @@ func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPasswordWoVersion",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetRotationPolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotationPolicy",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

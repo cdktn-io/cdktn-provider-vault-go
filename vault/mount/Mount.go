@@ -5,14 +5,14 @@ package mount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mount/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mount/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mount vault_mount}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mount vault_mount}.
 type Mount interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -808,7 +808,7 @@ func (j *jsiiProxy_Mount) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mount vault_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mount vault_mount} Resource.
 func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount {
 	_init_.Initialize()
 
@@ -826,7 +826,7 @@ func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mount vault_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mount vault_mount} Resource.
 func NewMount_Override(m Mount, scope constructs.Construct, id *string, config *MountConfig) {
 	_init_.Initialize()
 

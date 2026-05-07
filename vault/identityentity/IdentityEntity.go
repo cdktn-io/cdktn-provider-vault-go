@@ -5,14 +5,14 @@ package identityentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityentity/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityentity/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity vault_identity_entity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_entity vault_identity_entity}.
 type IdentityEntity interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_IdentityEntity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity vault_identity_entity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_entity vault_identity_entity} Resource.
 func NewIdentityEntity(scope constructs.Construct, id *string, config *IdentityEntityConfig) IdentityEntity {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewIdentityEntity(scope constructs.Construct, id *string, config *IdentityE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_entity vault_identity_entity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_entity vault_identity_entity} Resource.
 func NewIdentityEntity_Override(i IdentityEntity, scope constructs.Construct, id *string, config *IdentityEntityConfig) {
 	_init_.Initialize()
 

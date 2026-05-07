@@ -107,6 +107,14 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetBackendParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetChallengeExcludedIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetChallengePermittedIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package mongodbatlassecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mongodbatlassecretbackend/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mongodbatlassecretbackend/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend}.
 type MongodbatlasSecretBackend interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_MongodbatlasSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
 func NewMongodbatlasSecretBackend(scope constructs.Construct, id *string, config *MongodbatlasSecretBackendConfig) MongodbatlasSecretBackend {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewMongodbatlasSecretBackend(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
 func NewMongodbatlasSecretBackend_Override(m MongodbatlasSecretBackend, scope constructs.Construct, id *string, config *MongodbatlasSecretBackendConfig) {
 	_init_.Initialize()
 

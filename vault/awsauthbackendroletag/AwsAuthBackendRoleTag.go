@@ -5,14 +5,14 @@ package awsauthbackendroletag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awsauthbackendroletag/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awsauthbackendroletag/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}.
 type AwsAuthBackendRoleTag interface {
 	cdktn.TerraformResource
 	AllowInstanceMigration() interface{}
@@ -532,7 +532,7 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
 func NewAwsAuthBackendRoleTag(scope constructs.Construct, id *string, config *AwsAuthBackendRoleTagConfig) AwsAuthBackendRoleTag {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewAwsAuthBackendRoleTag(scope constructs.Construct, id *string, config *Aw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
 func NewAwsAuthBackendRoleTag_Override(a AwsAuthBackendRoleTag, scope constructs.Construct, id *string, config *AwsAuthBackendRoleTagConfig) {
 	_init_.Initialize()
 

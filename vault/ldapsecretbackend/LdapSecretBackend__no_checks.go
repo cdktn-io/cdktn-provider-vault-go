@@ -259,6 +259,10 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetSealWrapParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetSelfManagedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }

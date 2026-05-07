@@ -5,9 +5,9 @@ package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -42,9 +42,9 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InsecureTls() interface{}
-	SetInsecureTls(val interface{})
-	InsecureTlsInput() interface{}
+	Insecure() interface{}
+	SetInsecure(val interface{})
+	InsecureInput() interface{}
 	InternalValue() *DatabaseSecretBackendConnectionElasticsearch
 	SetInternalValue(val *DatabaseSecretBackendConnectionElasticsearch)
 	Password() *string
@@ -98,7 +98,7 @@ type DatabaseSecretBackendConnectionElasticsearchOutputReference interface {
 	ResetCaPath()
 	ResetClientCert()
 	ResetClientKey()
-	ResetInsecureTls()
+	ResetInsecure()
 	ResetTlsServerName()
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
@@ -236,21 +236,21 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InsecureTls() interface{} {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) Insecure() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"insecureTls",
+		"insecure",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InsecureTlsInput() interface{} {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InsecureInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"insecureTlsInput",
+		"insecureInput",
 		&returns,
 	)
 	return returns
@@ -480,13 +480,13 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetInsecureTls(val interface{}) {
-	if err := j.validateSetInsecureTlsParameters(val); err != nil {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetInsecure(val interface{}) {
+	if err := j.validateSetInsecureParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"insecureTls",
+		"insecure",
 		val,
 	)
 }
@@ -797,10 +797,10 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) ResetInsecureTls() {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) ResetInsecure() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetInsecureTls",
+		"resetInsecure",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package identitymfaokta
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfaokta/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitymfaokta/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta}.
 type IdentityMfaOkta interface {
 	cdktn.TerraformResource
 	ApiToken() *string
@@ -538,7 +538,7 @@ func (j *jsiiProxy_IdentityMfaOkta) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource.
 func NewIdentityMfaOkta(scope constructs.Construct, id *string, config *IdentityMfaOktaConfig) IdentityMfaOkta {
 	_init_.Initialize()
 
@@ -556,7 +556,7 @@ func NewIdentityMfaOkta(scope constructs.Construct, id *string, config *Identity
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource.
 func NewIdentityMfaOkta_Override(i IdentityMfaOkta, scope constructs.Construct, id *string, config *IdentityMfaOktaConfig) {
 	_init_.Initialize()
 

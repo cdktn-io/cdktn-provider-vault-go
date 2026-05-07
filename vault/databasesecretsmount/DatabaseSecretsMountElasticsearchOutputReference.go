@@ -5,9 +5,9 @@ package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretsmount/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretsmount/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -51,9 +51,9 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	DisableAutomatedRotationInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InsecureTls() interface{}
-	SetInsecureTls(val interface{})
-	InsecureTlsInput() interface{}
+	Insecure() interface{}
+	SetInsecure(val interface{})
+	InsecureInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -140,7 +140,7 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	ResetClientKey()
 	ResetData()
 	ResetDisableAutomatedRotation()
-	ResetInsecureTls()
+	ResetInsecure()
 	ResetPasswordPolicy()
 	ResetPluginName()
 	ResetPluginVersion()
@@ -347,21 +347,21 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InsecureTls() interface{} {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Insecure() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"insecureTls",
+		"insecure",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InsecureTlsInput() interface{} {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InsecureInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"insecureTlsInput",
+		"insecureInput",
 		&returns,
 	)
 	return returns
@@ -824,13 +824,13 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetDisableAu
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetInsecureTls(val interface{}) {
-	if err := j.validateSetInsecureTlsParameters(val); err != nil {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetInsecure(val interface{}) {
+	if err := j.validateSetInsecureParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"insecureTls",
+		"insecure",
 		val,
 	)
 }
@@ -1275,10 +1275,10 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetDisabl
 	)
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetInsecureTls() {
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetInsecure() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetInsecureTls",
+		"resetInsecure",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package kubernetesauthbackendconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetesauthbackendconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetesauthbackendconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
 type KubernetesAuthBackendConfig interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -606,7 +606,7 @@ func (j *jsiiProxy_KubernetesAuthBackendConfig) UseAnnotationsAsAliasMetadataInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Resource.
 func NewKubernetesAuthBackendConfig(scope constructs.Construct, id *string, config *KubernetesAuthBackendConfigConfig) KubernetesAuthBackendConfig {
 	_init_.Initialize()
 
@@ -624,7 +624,7 @@ func NewKubernetesAuthBackendConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Resource.
 func NewKubernetesAuthBackendConfig_Override(k KubernetesAuthBackendConfig, scope constructs.Construct, id *string, config *KubernetesAuthBackendConfigConfig) {
 	_init_.Initialize()
 

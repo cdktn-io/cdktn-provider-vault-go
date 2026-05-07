@@ -5,14 +5,14 @@ package pkisecretbackendconfigacme
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendconfigacme/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendconfigacme/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
 type PkiSecretBackendConfigAcme interface {
 	cdktn.TerraformResource
 	AllowedIssuers() *[]*string
@@ -29,6 +29,12 @@ type PkiSecretBackendConfigAcme interface {
 	BackendInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	ChallengeExcludedIpRanges() *[]*string
+	SetChallengeExcludedIpRanges(val *[]*string)
+	ChallengeExcludedIpRangesInput() *[]*string
+	ChallengePermittedIpRanges() *[]*string
+	SetChallengePermittedIpRanges(val *[]*string)
+	ChallengePermittedIpRangesInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -140,6 +146,8 @@ type PkiSecretBackendConfigAcme interface {
 	ResetAllowedIssuers()
 	ResetAllowedRoles()
 	ResetAllowRoleExtKeyUsage()
+	ResetChallengeExcludedIpRanges()
+	ResetChallengePermittedIpRanges()
 	ResetDefaultDirectoryPolicy()
 	ResetDnsResolver()
 	ResetEabPolicy()
@@ -261,6 +269,46 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) CdktfStack() cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) ChallengeExcludedIpRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"challengeExcludedIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) ChallengeExcludedIpRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"challengeExcludedIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) ChallengePermittedIpRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"challengePermittedIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) ChallengePermittedIpRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"challengePermittedIpRangesInput",
 		&returns,
 	)
 	return returns
@@ -557,7 +605,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
 func NewPkiSecretBackendConfigAcme(scope constructs.Construct, id *string, config *PkiSecretBackendConfigAcmeConfig) PkiSecretBackendConfigAcme {
 	_init_.Initialize()
 
@@ -575,7 +623,7 @@ func NewPkiSecretBackendConfigAcme(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
 func NewPkiSecretBackendConfigAcme_Override(p PkiSecretBackendConfigAcme, scope constructs.Construct, id *string, config *PkiSecretBackendConfigAcmeConfig) {
 	_init_.Initialize()
 
@@ -626,6 +674,28 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme)SetBackend(val *string) {
 	_jsii_.Set(
 		j,
 		"backend",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme)SetChallengeExcludedIpRanges(val *[]*string) {
+	if err := j.validateSetChallengeExcludedIpRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"challengeExcludedIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme)SetChallengePermittedIpRanges(val *[]*string) {
+	if err := j.validateSetChallengePermittedIpRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"challengePermittedIpRanges",
 		val,
 	)
 }
@@ -1148,6 +1218,22 @@ func (p *jsiiProxy_PkiSecretBackendConfigAcme) ResetAllowRoleExtKeyUsage() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAllowRoleExtKeyUsage",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendConfigAcme) ResetChallengeExcludedIpRanges() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetChallengeExcludedIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendConfigAcme) ResetChallengePermittedIpRanges() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetChallengePermittedIpRanges",
 		nil, // no parameters
 	)
 }

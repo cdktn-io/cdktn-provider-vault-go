@@ -135,6 +135,10 @@ func (j *jsiiProxy_AzureSecretBackendRole) validateSetMaxTtlParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendRole) validateSetMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendRole) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

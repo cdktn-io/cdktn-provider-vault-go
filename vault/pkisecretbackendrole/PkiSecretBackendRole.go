@@ -5,14 +5,14 @@ package pkisecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 type PkiSecretBackendRole interface {
 	cdktn.TerraformResource
 	AllowAnyName() interface{}
@@ -1565,7 +1565,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) UsePssInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
 	_init_.Initialize()
 
@@ -1583,7 +1583,7 @@ func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) {
 	_init_.Initialize()
 

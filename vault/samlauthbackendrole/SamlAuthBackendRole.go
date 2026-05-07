@@ -5,14 +5,14 @@ package samlauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role}.
 type SamlAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -749,7 +749,7 @@ func (j *jsiiProxy_SamlAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
 func NewSamlAuthBackendRole(scope constructs.Construct, id *string, config *SamlAuthBackendRoleConfig) SamlAuthBackendRole {
 	_init_.Initialize()
 
@@ -767,7 +767,7 @@ func NewSamlAuthBackendRole(scope constructs.Construct, id *string, config *Saml
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
 func NewSamlAuthBackendRole_Override(s SamlAuthBackendRole, scope constructs.Construct, id *string, config *SamlAuthBackendRoleConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package pkisecretbackendconfigurls
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendconfigurls/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendconfigurls/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}.
 type PkiSecretBackendConfigUrls interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource.
 func NewPkiSecretBackendConfigUrls(scope constructs.Construct, id *string, config *PkiSecretBackendConfigUrlsConfig) PkiSecretBackendConfigUrls {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewPkiSecretBackendConfigUrls(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource.
 func NewPkiSecretBackendConfigUrls_Override(p PkiSecretBackendConfigUrls, scope constructs.Construct, id *string, config *PkiSecretBackendConfigUrlsConfig) {
 	_init_.Initialize()
 

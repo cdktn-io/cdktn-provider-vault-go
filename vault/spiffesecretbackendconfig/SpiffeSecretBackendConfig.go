@@ -5,14 +5,14 @@ package spiffesecretbackendconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffesecretbackendconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffesecretbackendconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config vault_spiffe_secret_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config vault_spiffe_secret_backend_config}.
 type SpiffeSecretBackendConfig interface {
 	cdktn.TerraformResource
 	BundleRefreshHint() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_SpiffeSecretBackendConfig) TrustDomainInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config vault_spiffe_secret_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config vault_spiffe_secret_backend_config} Resource.
 func NewSpiffeSecretBackendConfig(scope constructs.Construct, id *string, config *SpiffeSecretBackendConfigConfig) SpiffeSecretBackendConfig {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewSpiffeSecretBackendConfig(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/spiffe_secret_backend_config vault_spiffe_secret_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/spiffe_secret_backend_config vault_spiffe_secret_backend_config} Resource.
 func NewSpiffeSecretBackendConfig_Override(s SpiffeSecretBackendConfig, scope constructs.Construct, id *string, config *SpiffeSecretBackendConfigConfig) {
 	_init_.Initialize()
 

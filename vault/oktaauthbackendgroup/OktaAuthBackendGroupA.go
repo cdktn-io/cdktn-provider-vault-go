@@ -5,14 +5,14 @@ package oktaauthbackendgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackendgroup/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/oktaauthbackendgroup/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
 type OktaAuthBackendGroupA interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_OktaAuthBackendGroupA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
 func NewOktaAuthBackendGroupA(scope constructs.Construct, id *string, config *OktaAuthBackendGroupAConfig) OktaAuthBackendGroupA {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewOktaAuthBackendGroupA(scope constructs.Construct, id *string, config *Ok
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
 func NewOktaAuthBackendGroupA_Override(o OktaAuthBackendGroupA, scope constructs.Construct, id *string, config *OktaAuthBackendGroupAConfig) {
 	_init_.Initialize()
 

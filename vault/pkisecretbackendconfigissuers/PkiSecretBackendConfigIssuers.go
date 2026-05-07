@@ -5,14 +5,14 @@ package pkisecretbackendconfigissuers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendconfigissuers/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendconfigissuers/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers}.
 type PkiSecretBackendConfigIssuers interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigIssuers) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers} Resource.
 func NewPkiSecretBackendConfigIssuers(scope constructs.Construct, id *string, config *PkiSecretBackendConfigIssuersConfig) PkiSecretBackendConfigIssuers {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewPkiSecretBackendConfigIssuers(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers} Resource.
 func NewPkiSecretBackendConfigIssuers_Override(p PkiSecretBackendConfigIssuers, scope constructs.Construct, id *string, config *PkiSecretBackendConfigIssuersConfig) {
 	_init_.Initialize()
 

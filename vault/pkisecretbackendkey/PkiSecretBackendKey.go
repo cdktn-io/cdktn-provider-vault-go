@@ -5,14 +5,14 @@ package pkisecretbackendkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendkey/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendkey/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
 type PkiSecretBackendKey interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_PkiSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
 func NewPkiSecretBackendKey(scope constructs.Construct, id *string, config *PkiSecretBackendKeyConfig) PkiSecretBackendKey {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewPkiSecretBackendKey(scope constructs.Construct, id *string, config *PkiS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
 func NewPkiSecretBackendKey_Override(p PkiSecretBackendKey, scope constructs.Construct, id *string, config *PkiSecretBackendKeyConfig) {
 	_init_.Initialize()
 

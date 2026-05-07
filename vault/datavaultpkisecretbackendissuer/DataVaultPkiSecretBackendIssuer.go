@@ -5,14 +5,14 @@ package datavaultpkisecretbackendissuer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendissuer/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendissuer/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
 type DataVaultPkiSecretBackendIssuer interface {
 	cdktn.TerraformDataSource
 	Backend() *string
@@ -528,7 +528,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendIssuer) Usage() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Data Source.
 func NewDataVaultPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendIssuerConfig) DataVaultPkiSecretBackendIssuer {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewDataVaultPkiSecretBackendIssuer(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Data Source.
 func NewDataVaultPkiSecretBackendIssuer_Override(d DataVaultPkiSecretBackendIssuer, scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendIssuerConfig) {
 	_init_.Initialize()
 

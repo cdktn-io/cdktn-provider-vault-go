@@ -5,14 +5,14 @@ package auditrequestheader
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/auditrequestheader/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/auditrequestheader/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/audit_request_header vault_audit_request_header}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/audit_request_header vault_audit_request_header}.
 type AuditRequestHeader interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_AuditRequestHeader) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
 func NewAuditRequestHeader(scope constructs.Construct, id *string, config *AuditRequestHeaderConfig) AuditRequestHeader {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewAuditRequestHeader(scope constructs.Construct, id *string, config *Audit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
 func NewAuditRequestHeader_Override(a AuditRequestHeader, scope constructs.Construct, id *string, config *AuditRequestHeaderConfig) {
 	_init_.Initialize()
 

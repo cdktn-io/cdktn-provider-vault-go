@@ -5,14 +5,14 @@ package oktaauthbackenduser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackenduser/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/oktaauthbackenduser/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user}.
 type OktaAuthBackendUserA interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_OktaAuthBackendUserA) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user} Resource.
 func NewOktaAuthBackendUserA(scope constructs.Construct, id *string, config *OktaAuthBackendUserAConfig) OktaAuthBackendUserA {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewOktaAuthBackendUserA(scope constructs.Construct, id *string, config *Okt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user} Resource.
 func NewOktaAuthBackendUserA_Override(o OktaAuthBackendUserA, scope constructs.Construct, id *string, config *OktaAuthBackendUserAConfig) {
 	_init_.Initialize()
 

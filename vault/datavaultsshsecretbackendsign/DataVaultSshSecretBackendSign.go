@@ -5,14 +5,14 @@ package datavaultsshsecretbackendsign
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsshsecretbackendsign/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsshsecretbackendsign/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign}.
 type DataVaultSshSecretBackendSign interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -533,7 +533,7 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign) ValidPrincipalsInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
 func NewDataVaultSshSecretBackendSign(scope constructs.Construct, id *string, config *DataVaultSshSecretBackendSignConfig) DataVaultSshSecretBackendSign {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewDataVaultSshSecretBackendSign(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
 func NewDataVaultSshSecretBackendSign_Override(d DataVaultSshSecretBackendSign, scope constructs.Construct, id *string, config *DataVaultSshSecretBackendSignConfig) {
 	_init_.Initialize()
 

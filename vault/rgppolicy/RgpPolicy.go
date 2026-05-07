@@ -5,14 +5,14 @@ package rgppolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rgppolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/rgppolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/rgp_policy vault_rgp_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rgp_policy vault_rgp_policy}.
 type RgpPolicy interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_RgpPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/rgp_policy vault_rgp_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rgp_policy vault_rgp_policy} Resource.
 func NewRgpPolicy(scope constructs.Construct, id *string, config *RgpPolicyConfig) RgpPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewRgpPolicy(scope constructs.Construct, id *string, config *RgpPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/rgp_policy vault_rgp_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rgp_policy vault_rgp_policy} Resource.
 func NewRgpPolicy_Override(r RgpPolicy, scope constructs.Construct, id *string, config *RgpPolicyConfig) {
 	_init_.Initialize()
 

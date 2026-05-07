@@ -5,14 +5,14 @@ package pkisecretbackendconfigautotidy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendconfigautotidy/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendconfigautotidy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy}.
 type PkiSecretBackendConfigAutoTidy interface {
 	cdktn.TerraformResource
 	AcmeAccountSafetyBuffer() *string
@@ -869,7 +869,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigAutoTidy) TidyRevokedCertsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource.
 func NewPkiSecretBackendConfigAutoTidy(scope constructs.Construct, id *string, config *PkiSecretBackendConfigAutoTidyConfig) PkiSecretBackendConfigAutoTidy {
 	_init_.Initialize()
 
@@ -887,7 +887,7 @@ func NewPkiSecretBackendConfigAutoTidy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource.
 func NewPkiSecretBackendConfigAutoTidy_Override(p PkiSecretBackendConfigAutoTidy, scope constructs.Construct, id *string, config *PkiSecretBackendConfigAutoTidyConfig) {
 	_init_.Initialize()
 

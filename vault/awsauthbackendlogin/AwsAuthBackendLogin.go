@@ -5,14 +5,14 @@ package awsauthbackendlogin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awsauthbackendlogin/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awsauthbackendlogin/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}.
 type AwsAuthBackendLogin interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -671,7 +671,7 @@ func (j *jsiiProxy_AwsAuthBackendLogin) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource.
 func NewAwsAuthBackendLogin(scope constructs.Construct, id *string, config *AwsAuthBackendLoginConfig) AwsAuthBackendLogin {
 	_init_.Initialize()
 
@@ -689,7 +689,7 @@ func NewAwsAuthBackendLogin(scope constructs.Construct, id *string, config *AwsA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource.
 func NewAwsAuthBackendLogin_Override(a AwsAuthBackendLogin, scope constructs.Construct, id *string, config *AwsAuthBackendLoginConfig) {
 	_init_.Initialize()
 

@@ -24,34 +24,34 @@ type NomadSecretRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The mount path for the Nomad backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
 	Backend *string `field:"required" json:"backend" yaml:"backend"`
 	// Name of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// Specifies if the token should be global.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
 	Global interface{} `field:"optional" json:"global" yaml:"global"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Comma separated list of Nomad policies the token is going to be created against.
 	//
 	// These need to be created beforehand in Nomad.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
 	Policies *[]*string `field:"optional" json:"policies" yaml:"policies"`
 	// Specifies the type of token to create when using this role. Valid values are "client" or "management".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

@@ -5,14 +5,14 @@ package datavaultpkisecretbackendconfigscep
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigscep/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigscep/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}.
 type DataVaultPkiSecretBackendConfigScep interface {
 	cdktn.TerraformDataSource
 	AllowedDigestAlgorithms() *[]*string
@@ -433,7 +433,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source.
 func NewDataVaultPkiSecretBackendConfigScep(scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendConfigScepConfig) DataVaultPkiSecretBackendConfigScep {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewDataVaultPkiSecretBackendConfigScep(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source.
 func NewDataVaultPkiSecretBackendConfigScep_Override(d DataVaultPkiSecretBackendConfigScep, scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendConfigScepConfig) {
 	_init_.Initialize()
 

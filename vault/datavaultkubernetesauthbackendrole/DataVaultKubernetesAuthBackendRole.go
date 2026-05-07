@@ -5,14 +5,14 @@ package datavaultkubernetesauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkubernetesauthbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkubernetesauthbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
 type DataVaultKubernetesAuthBackendRole interface {
 	cdktn.TerraformDataSource
 	AliasMetadata() *map[string]*string
@@ -653,7 +653,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) TokenTypeInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Data Source.
 func NewDataVaultKubernetesAuthBackendRole(scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendRoleConfig) DataVaultKubernetesAuthBackendRole {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewDataVaultKubernetesAuthBackendRole(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Data Source.
 func NewDataVaultKubernetesAuthBackendRole_Override(d DataVaultKubernetesAuthBackendRole, scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendRoleConfig) {
 	_init_.Initialize()
 

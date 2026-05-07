@@ -87,7 +87,7 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetInsecureTlsParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetInsecureParameters(val interface{}) error {
 	return nil
 }
 

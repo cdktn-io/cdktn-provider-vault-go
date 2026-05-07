@@ -5,14 +5,14 @@ package identitymfaloginenforcement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfaloginenforcement/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitymfaloginenforcement/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement}.
 type IdentityMfaLoginEnforcement interface {
 	cdktn.TerraformResource
 	AuthMethodAccessors() *[]*string
@@ -518,7 +518,7 @@ func (j *jsiiProxy_IdentityMfaLoginEnforcement) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource.
 func NewIdentityMfaLoginEnforcement(scope constructs.Construct, id *string, config *IdentityMfaLoginEnforcementConfig) IdentityMfaLoginEnforcement {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewIdentityMfaLoginEnforcement(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource.
 func NewIdentityMfaLoginEnforcement_Override(i IdentityMfaLoginEnforcement, scope constructs.Construct, id *string, config *IdentityMfaLoginEnforcementConfig) {
 	_init_.Initialize()
 

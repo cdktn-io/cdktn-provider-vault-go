@@ -5,14 +5,14 @@ package datavaulttransitcmac
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaulttransitcmac/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaulttransitcmac/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac vault_transit_cmac}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/transit_cmac vault_transit_cmac}.
 type DataVaultTransitCmac interface {
 	cdktn.TerraformDataSource
 	BatchInput() interface{}
@@ -512,7 +512,7 @@ func (j *jsiiProxy_DataVaultTransitCmac) UrlMacLengthInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac vault_transit_cmac} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/transit_cmac vault_transit_cmac} Data Source.
 func NewDataVaultTransitCmac(scope constructs.Construct, id *string, config *DataVaultTransitCmacConfig) DataVaultTransitCmac {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewDataVaultTransitCmac(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac vault_transit_cmac} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/transit_cmac vault_transit_cmac} Data Source.
 func NewDataVaultTransitCmac_Override(d DataVaultTransitCmac, scope constructs.Construct, id *string, config *DataVaultTransitCmacConfig) {
 	_init_.Initialize()
 

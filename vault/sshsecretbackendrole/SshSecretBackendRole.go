@@ -5,14 +5,14 @@ package sshsecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
 type SshSecretBackendRole interface {
 	cdktn.TerraformResource
 	AlgorithmSigner() *string
@@ -1036,7 +1036,7 @@ func (j *jsiiProxy_SshSecretBackendRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) SshSecretBackendRole {
 	_init_.Initialize()
 
@@ -1054,7 +1054,7 @@ func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *Ssh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole_Override(s SshSecretBackendRole, scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) {
 	_init_.Initialize()
 
