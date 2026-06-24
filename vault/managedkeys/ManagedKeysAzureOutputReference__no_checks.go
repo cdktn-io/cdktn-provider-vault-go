@@ -123,6 +123,10 @@ func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetTerraformResource
 	return nil
 }
 
+func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetUsagesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetVaultNameParameters(val *string) error {
 	return nil
 }

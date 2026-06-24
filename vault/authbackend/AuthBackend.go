@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend vault_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/auth_backend vault_auth_backend}.
 type AuthBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -521,7 +521,7 @@ func (j *jsiiProxy_AuthBackend) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend vault_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/auth_backend vault_auth_backend} Resource.
 func NewAuthBackend(scope constructs.Construct, id *string, config *AuthBackendConfig) AuthBackend {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewAuthBackend(scope constructs.Construct, id *string, config *AuthBackendC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/auth_backend vault_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/auth_backend vault_auth_backend} Resource.
 func NewAuthBackend_Override(a AuthBackend, scope constructs.Construct, id *string, config *AuthBackendConfig) {
 	_init_.Initialize()
 

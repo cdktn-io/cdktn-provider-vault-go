@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend_role vault_alicloud_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend_role vault_alicloud_secret_backend_role}.
 type AlicloudSecretBackendRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_AlicloudSecretBackendRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend_role vault_alicloud_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend_role vault_alicloud_secret_backend_role} Resource.
 func NewAlicloudSecretBackendRole(scope constructs.Construct, id *string, config *AlicloudSecretBackendRoleConfig) AlicloudSecretBackendRole {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewAlicloudSecretBackendRole(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend_role vault_alicloud_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend_role vault_alicloud_secret_backend_role} Resource.
 func NewAlicloudSecretBackendRole_Override(a AlicloudSecretBackendRole, scope constructs.Construct, id *string, config *AlicloudSecretBackendRoleConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate}.
 type PkiExternalCaSecretBackendOrderCertificate interface {
 	cdktn.TerraformResource
 	CaChain() *[]*string
@@ -432,7 +432,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate} Resource.
 func NewPkiExternalCaSecretBackendOrderCertificate(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendOrderCertificateConfig) PkiExternalCaSecretBackendOrderCertificate {
 	_init_.Initialize()
 
@@ -450,7 +450,7 @@ func NewPkiExternalCaSecretBackendOrderCertificate(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate} Resource.
 func NewPkiExternalCaSecretBackendOrderCertificate_Override(p PkiExternalCaSecretBackendOrderCertificate, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendOrderCertificateConfig) {
 	_init_.Initialize()
 

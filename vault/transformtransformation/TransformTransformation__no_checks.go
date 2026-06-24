@@ -99,6 +99,10 @@ func (j *jsiiProxy_TransformTransformation) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_TransformTransformation) validateSetConvergentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransformTransformation) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_TransformTransformation) validateSetIdParameters(val *string)
 }
 
 func (j *jsiiProxy_TransformTransformation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_TransformTransformation) validateSetMappingModeParameters(val *string) error {
 	return nil
 }
 
@@ -132,6 +140,10 @@ func (j *jsiiProxy_TransformTransformation) validateSetPathParameters(val *strin
 }
 
 func (j *jsiiProxy_TransformTransformation) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TransformTransformation) validateSetStoresParameters(val *[]*string) error {
 	return nil
 }
 

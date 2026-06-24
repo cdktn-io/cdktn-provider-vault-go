@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_key_allowed_client_id vault_identity_oidc_key_allowed_client_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_oidc_key_allowed_client_id vault_identity_oidc_key_allowed_client_id}.
 type IdentityOidcKeyAllowedClientId interface {
 	cdktn.TerraformResource
 	AllowedClientId() *string
@@ -389,7 +389,7 @@ func (j *jsiiProxy_IdentityOidcKeyAllowedClientId) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_key_allowed_client_id vault_identity_oidc_key_allowed_client_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_oidc_key_allowed_client_id vault_identity_oidc_key_allowed_client_id} Resource.
 func NewIdentityOidcKeyAllowedClientId(scope constructs.Construct, id *string, config *IdentityOidcKeyAllowedClientIdConfig) IdentityOidcKeyAllowedClientId {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewIdentityOidcKeyAllowedClientId(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_key_allowed_client_id vault_identity_oidc_key_allowed_client_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_oidc_key_allowed_client_id vault_identity_oidc_key_allowed_client_id} Resource.
 func NewIdentityOidcKeyAllowedClientId_Override(i IdentityOidcKeyAllowedClientId, scope constructs.Construct, id *string, config *IdentityOidcKeyAllowedClientIdConfig) {
 	_init_.Initialize()
 

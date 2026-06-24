@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}.
 type KubernetesSecretBackendRole interface {
 	cdktn.TerraformResource
 	AllowedKubernetesNamespaces() *[]*string
@@ -677,7 +677,7 @@ func (j *jsiiProxy_KubernetesSecretBackendRole) TokenMaxTtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
 func NewKubernetesSecretBackendRole(scope constructs.Construct, id *string, config *KubernetesSecretBackendRoleConfig) KubernetesSecretBackendRole {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func NewKubernetesSecretBackendRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
 func NewKubernetesSecretBackendRole_Override(k KubernetesSecretBackendRole, scope constructs.Construct, id *string, config *KubernetesSecretBackendRoleConfig) {
 	_init_.Initialize()
 

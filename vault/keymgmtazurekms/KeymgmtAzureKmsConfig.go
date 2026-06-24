@@ -24,33 +24,33 @@ type KeymgmtAzureKmsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Refers to the name of an existing Azure Key Vault instance. Cannot be changed after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_azure_kms#key_collection KeymgmtAzureKms#key_collection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_azure_kms#key_collection KeymgmtAzureKms#key_collection}
 	KeyCollection *string `field:"required" json:"keyCollection" yaml:"keyCollection"`
 	// Path of the Key Management secrets engine mount.
 	//
 	// Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_azure_kms#mount KeymgmtAzureKms#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_azure_kms#mount KeymgmtAzureKms#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// Specifies the name of the Azure Key Vault provider. Cannot be changed after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_azure_kms#name KeymgmtAzureKms#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_azure_kms#name KeymgmtAzureKms#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The credentials to use for authentication with Azure Key Vault.
 	//
 	// Supplying values for this parameter is optional, as credentials may also be specified as environment variables. Environment variables will take precedence over credentials provided via this parameter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_azure_kms#credentials_wo KeymgmtAzureKms#credentials_wo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_azure_kms#credentials_wo KeymgmtAzureKms#credentials_wo}
 	CredentialsWo *map[string]*string `field:"optional" json:"credentialsWo" yaml:"credentialsWo"`
 	// Version counter for the write-only `credentials_wo` field.
 	//
 	// Since write-only values are not stored in state, Terraform cannot detect when credentials change. Increment this value whenever you update `credentials_wo` to ensure the new credentials are sent to Vault.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_azure_kms#credentials_wo_version KeymgmtAzureKms#credentials_wo_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_azure_kms#credentials_wo_version KeymgmtAzureKms#credentials_wo_version}
 	CredentialsWoVersion *float64 `field:"optional" json:"credentialsWoVersion" yaml:"credentialsWoVersion"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_azure_kms#namespace KeymgmtAzureKms#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_azure_kms#namespace KeymgmtAzureKms#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

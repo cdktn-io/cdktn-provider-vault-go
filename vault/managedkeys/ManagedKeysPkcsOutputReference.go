@@ -62,6 +62,9 @@ type ManagedKeysPkcsOutputReference interface {
 	Library() *string
 	SetLibrary(val *string)
 	LibraryInput() *string
+	MaxParallel() *float64
+	SetMaxParallel(val *float64)
+	MaxParallelInput() *float64
 	Mechanism() *string
 	SetMechanism(val *string)
 	MechanismInput() *string
@@ -85,6 +88,9 @@ type ManagedKeysPkcsOutputReference interface {
 	TokenLabel() *string
 	SetTokenLabel(val *string)
 	TokenLabelInput() *string
+	Usages() *[]*string
+	SetUsages(val *[]*string)
+	UsagesInput() *[]*string
 	Uuid() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -119,8 +125,10 @@ type ManagedKeysPkcsOutputReference interface {
 	ResetKeyBits()
 	ResetKeyId()
 	ResetKeyLabel()
+	ResetMaxParallel()
 	ResetSlot()
 	ResetTokenLabel()
+	ResetUsages()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -386,6 +394,26 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) LibraryInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) MaxParallel() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) MaxParallelInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference) Mechanism() *string {
 	var returns *string
 	_jsii_.Get(
@@ -501,6 +529,26 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) TokenLabelInput() *string {
 	_jsii_.Get(
 		j,
 		"tokenLabelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) Usages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) UsagesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usagesInput",
 		&returns,
 	)
 	return returns
@@ -687,6 +735,17 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetLibrary(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetMaxParallel(val *float64) {
+	if err := j.validateSetMaxParallelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxParallel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetMechanism(val *string) {
 	if err := j.validateSetMechanismParameters(val); err != nil {
 		panic(err)
@@ -760,6 +819,17 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetTokenLabel(val *string) {
 	_jsii_.Set(
 		j,
 		"tokenLabel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetUsages(val *[]*string) {
+	if err := j.validateSetUsagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usages",
 		val,
 	)
 }
@@ -1022,6 +1092,14 @@ func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetKeyLabel() {
 	)
 }
 
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetMaxParallel() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaxParallel",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetSlot() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1034,6 +1112,14 @@ func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetTokenLabel() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTokenLabel",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetUsages() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetUsages",
 		nil, // no parameters
 	)
 }

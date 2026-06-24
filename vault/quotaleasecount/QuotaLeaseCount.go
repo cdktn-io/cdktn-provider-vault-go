@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/quota_lease_count vault_quota_lease_count}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/quota_lease_count vault_quota_lease_count}.
 type QuotaLeaseCount interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_QuotaLeaseCount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
 func NewQuotaLeaseCount(scope constructs.Construct, id *string, config *QuotaLeaseCountConfig) QuotaLeaseCount {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewQuotaLeaseCount(scope constructs.Construct, id *string, config *QuotaLea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
 func NewQuotaLeaseCount_Override(q QuotaLeaseCount, scope constructs.Construct, id *string, config *QuotaLeaseCountConfig) {
 	_init_.Initialize()
 

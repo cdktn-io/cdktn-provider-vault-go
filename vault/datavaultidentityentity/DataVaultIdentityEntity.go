@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_entity vault_identity_entity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_entity vault_identity_entity}.
 type DataVaultIdentityEntity interface {
 	cdktn.TerraformDataSource
 	Aliases() DataVaultIdentityEntityAliasesList
@@ -550,7 +550,7 @@ func (j *jsiiProxy_DataVaultIdentityEntity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
 func NewDataVaultIdentityEntity(scope constructs.Construct, id *string, config *DataVaultIdentityEntityConfig) DataVaultIdentityEntity {
 	_init_.Initialize()
 
@@ -568,7 +568,7 @@ func NewDataVaultIdentityEntity(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
 func NewDataVaultIdentityEntity_Override(d DataVaultIdentityEntity, scope constructs.Construct, id *string, config *DataVaultIdentityEntityConfig) {
 	_init_.Initialize()
 

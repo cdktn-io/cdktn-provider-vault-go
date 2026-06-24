@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/quota_config vault_quota_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/quota_config vault_quota_config}.
 type QuotaConfig interface {
 	cdktn.TerraformResource
 	AbsoluteRateLimitExemptPaths() *[]*string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_QuotaConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/quota_config vault_quota_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/quota_config vault_quota_config} Resource.
 func NewQuotaConfig(scope constructs.Construct, id *string, config *QuotaConfigConfig) QuotaConfig {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewQuotaConfig(scope constructs.Construct, id *string, config *QuotaConfigC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/quota_config vault_quota_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/quota_config vault_quota_config} Resource.
 func NewQuotaConfig_Override(q QuotaConfig, scope constructs.Construct, id *string, config *QuotaConfigConfig) {
 	_init_.Initialize()
 

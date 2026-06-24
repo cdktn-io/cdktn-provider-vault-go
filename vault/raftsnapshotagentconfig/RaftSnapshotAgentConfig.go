@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
 type RaftSnapshotAgentConfig interface {
 	cdktn.TerraformResource
 	AutoloadEnabled() interface{}
@@ -48,6 +48,9 @@ type RaftSnapshotAgentConfig interface {
 	AwsSecretAccessKey() *string
 	SetAwsSecretAccessKey(val *string)
 	AwsSecretAccessKeyInput() *string
+	AwsSecretAccessKeyWo() *string
+	SetAwsSecretAccessKeyWo(val *string)
+	AwsSecretAccessKeyWoInput() *string
 	AwsSessionToken() *string
 	SetAwsSessionToken(val *string)
 	AwsSessionTokenInput() *string
@@ -112,8 +115,6 @@ type RaftSnapshotAgentConfig interface {
 	SetGoogleServiceAccountKey(val *string)
 	GoogleServiceAccountKeyInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IntervalSeconds() *float64
 	SetIntervalSeconds(val *float64)
 	IntervalSecondsInput() *float64
@@ -148,6 +149,9 @@ type RaftSnapshotAgentConfig interface {
 	Retain() *float64
 	SetRetain(val *float64)
 	RetainInput() *float64
+	SecretsWoVersion() *float64
+	SetSecretsWoVersion(val *float64)
+	SecretsWoVersionInput() *float64
 	StorageType() *string
 	SetStorageType(val *string)
 	StorageTypeInput() *string
@@ -211,6 +215,7 @@ type RaftSnapshotAgentConfig interface {
 	ResetAwsS3Region()
 	ResetAwsS3ServerSideEncryption()
 	ResetAwsSecretAccessKey()
+	ResetAwsSecretAccessKeyWo()
 	ResetAwsSessionToken()
 	ResetAzureAccountKey()
 	ResetAzureAccountName()
@@ -224,13 +229,13 @@ type RaftSnapshotAgentConfig interface {
 	ResetGoogleEndpoint()
 	ResetGoogleGcsBucket()
 	ResetGoogleServiceAccountKey()
-	ResetId()
 	ResetLocalMaxSpace()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetain()
+	ResetSecretsWoVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -473,6 +478,26 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsSecretAccessKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"awsSecretAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsSecretAccessKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSecretAccessKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsSecretAccessKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSecretAccessKeyWoInput",
 		&returns,
 	)
 	return returns
@@ -828,16 +853,6 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RaftSnapshotAgentConfig) IntervalSeconds() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1008,6 +1023,26 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) RetainInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SecretsWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secretsWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SecretsWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secretsWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RaftSnapshotAgentConfig) StorageType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1059,7 +1094,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
 func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) RaftSnapshotAgentConfig {
 	_init_.Initialize()
 
@@ -1077,7 +1112,7 @@ func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
 func NewRaftSnapshotAgentConfig_Override(r RaftSnapshotAgentConfig, scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) {
 	_init_.Initialize()
 
@@ -1205,6 +1240,17 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsSecretAccessKey(val *string) {
 	_jsii_.Set(
 		j,
 		"awsSecretAccessKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsSecretAccessKeyWo(val *string) {
+	if err := j.validateSetAwsSecretAccessKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsSecretAccessKeyWo",
 		val,
 	)
 }
@@ -1390,17 +1436,6 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetGoogleServiceAccountKey(val *strin
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_RaftSnapshotAgentConfig)SetIntervalSeconds(val *float64) {
 	if err := j.validateSetIntervalSecondsParameters(val); err != nil {
 		panic(err)
@@ -1493,6 +1528,17 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig)SetRetain(val *float64) {
 	_jsii_.Set(
 		j,
 		"retain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetSecretsWoVersion(val *float64) {
+	if err := j.validateSetSecretsWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretsWoVersion",
 		val,
 	)
 }
@@ -1949,6 +1995,14 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsSecretAccessKey() {
 	)
 }
 
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsSecretAccessKeyWo() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsSecretAccessKeyWo",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsSessionToken() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2053,14 +2107,6 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetGoogleServiceAccountKey() {
 	)
 }
 
-func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetLocalMaxSpace() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2089,6 +2135,14 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetRetain() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRetain",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetSecretsWoVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSecretsWoVersion",
 		nil, // no parameters
 	)
 }

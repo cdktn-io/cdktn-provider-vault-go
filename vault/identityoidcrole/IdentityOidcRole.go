@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_role vault_identity_oidc_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_oidc_role vault_identity_oidc_role}.
 type IdentityOidcRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_IdentityOidcRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_role vault_identity_oidc_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_oidc_role vault_identity_oidc_role} Resource.
 func NewIdentityOidcRole(scope constructs.Construct, id *string, config *IdentityOidcRoleConfig) IdentityOidcRole {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewIdentityOidcRole(scope constructs.Construct, id *string, config *Identit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_oidc_role vault_identity_oidc_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_oidc_role vault_identity_oidc_role} Resource.
 func NewIdentityOidcRole_Override(i IdentityOidcRole, scope constructs.Construct, id *string, config *IdentityOidcRoleConfig) {
 	_init_.Initialize()
 

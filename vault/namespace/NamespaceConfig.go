@@ -24,24 +24,24 @@ type NamespaceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Namespace path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/namespace#path Namespace#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/namespace#path Namespace#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
 	// Custom metadata describing this namespace. Value type is map[string]string.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/namespace#custom_metadata Namespace#custom_metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/namespace#custom_metadata Namespace#custom_metadata}
 	CustomMetadata *map[string]*string `field:"optional" json:"customMetadata" yaml:"customMetadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/namespace#id Namespace#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/namespace#id Namespace#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/namespace#namespace Namespace#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/namespace#namespace Namespace#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// The fully qualified namespace path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/namespace#path_fq Namespace#path_fq}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/namespace#path_fq Namespace#path_fq}
 	PathFq *string `field:"optional" json:"pathFq" yaml:"pathFq"`
 }
 

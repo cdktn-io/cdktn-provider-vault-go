@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key vault_keymgmt_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key vault_keymgmt_key}.
 type KeymgmtKey interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_KeymgmtKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key vault_keymgmt_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key vault_keymgmt_key} Resource.
 func NewKeymgmtKey(scope constructs.Construct, id *string, config *KeymgmtKeyConfig) KeymgmtKey {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewKeymgmtKey(scope constructs.Construct, id *string, config *KeymgmtKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key vault_keymgmt_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key vault_keymgmt_key} Resource.
 func NewKeymgmtKey_Override(k KeymgmtKey, scope constructs.Construct, id *string, config *KeymgmtKeyConfig) {
 	_init_.Initialize()
 

@@ -119,6 +119,10 @@ func (j *jsiiProxy_ManagedKeysGcpOutputReference) validateSetTerraformResourcePa
 	return nil
 }
 
+func (j *jsiiProxy_ManagedKeysGcpOutputReference) validateSetUsagesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewManagedKeysGcpOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

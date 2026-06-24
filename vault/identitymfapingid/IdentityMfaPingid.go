@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid}.
 type IdentityMfaPingid interface {
 	cdktn.TerraformResource
 	AdminUrl() *string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_IdentityMfaPingid) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource.
 func NewIdentityMfaPingid(scope constructs.Construct, id *string, config *IdentityMfaPingidConfig) IdentityMfaPingid {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewIdentityMfaPingid(scope constructs.Construct, id *string, config *Identi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource.
 func NewIdentityMfaPingid_Override(i IdentityMfaPingid, scope constructs.Construct, id *string, config *IdentityMfaPingidConfig) {
 	_init_.Initialize()
 

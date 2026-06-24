@@ -24,39 +24,39 @@ type ConfigUiCustomMessageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The base64-encoded content of the custom message.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
 	MessageBase64 *string `field:"required" json:"messageBase64" yaml:"messageBase64"`
 	// The starting time of the active period of the custom message.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
 	StartTime *string `field:"required" json:"startTime" yaml:"startTime"`
 	// The title of the custom message.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// A flag indicating whether the custom message is displayed pre-login (false) or post-login (true).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
 	Authenticated interface{} `field:"optional" json:"authenticated" yaml:"authenticated"`
 	// The ending time of the active period of the custom message. Can be omitted for non-expiring message.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
 	EndTime *string `field:"optional" json:"endTime" yaml:"endTime"`
 	// link block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
 	Link *ConfigUiCustomMessageLink `field:"optional" json:"link" yaml:"link"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// A map containing additional options for the custom message.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
 	Options *map[string]*string `field:"optional" json:"options" yaml:"options"`
 	// The display type of custom message. Allowed values are banner and modal.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

@@ -103,6 +103,10 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetLibraryParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetMaxParallelParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetMechanismParameters(val *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetTerraformResourceP
 }
 
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetTokenLabelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetUsagesParameters(val *[]*string) error {
 	return nil
 }
 

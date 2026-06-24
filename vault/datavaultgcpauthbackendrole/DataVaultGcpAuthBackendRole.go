@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
 type DataVaultGcpAuthBackendRole interface {
 	cdktn.TerraformDataSource
 	AliasMetadata() *map[string]*string
@@ -673,7 +673,7 @@ func (j *jsiiProxy_DataVaultGcpAuthBackendRole) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role} Data Source.
 func NewDataVaultGcpAuthBackendRole(scope constructs.Construct, id *string, config *DataVaultGcpAuthBackendRoleConfig) DataVaultGcpAuthBackendRole {
 	_init_.Initialize()
 
@@ -691,7 +691,7 @@ func NewDataVaultGcpAuthBackendRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role} Data Source.
 func NewDataVaultGcpAuthBackendRole_Override(d DataVaultGcpAuthBackendRole, scope constructs.Construct, id *string, config *DataVaultGcpAuthBackendRoleConfig) {
 	_init_.Initialize()
 

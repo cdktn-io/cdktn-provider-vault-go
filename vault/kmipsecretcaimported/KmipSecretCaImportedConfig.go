@@ -24,39 +24,39 @@ type KmipSecretCaImportedConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// CA certificate in PEM format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#ca_pem KmipSecretCaImported#ca_pem}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#ca_pem KmipSecretCaImported#ca_pem}
 	CaPem *string `field:"required" json:"caPem" yaml:"caPem"`
 	// Name to identify the CA.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#name KmipSecretCaImported#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#name KmipSecretCaImported#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Path where KMIP backend is mounted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#path KmipSecretCaImported#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#path KmipSecretCaImported#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#namespace KmipSecretCaImported#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#namespace KmipSecretCaImported#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// The field in the certificate to use for the role (CN, O, OU, or UID).
 	//
 	// Must specify exactly one of role_name or role_field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#role_field KmipSecretCaImported#role_field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#role_field KmipSecretCaImported#role_field}
 	RoleField *string `field:"optional" json:"roleField" yaml:"roleField"`
 	// The role name to associate with this CA. Must specify exactly one of role_name or role_field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#role_name KmipSecretCaImported#role_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#role_name KmipSecretCaImported#role_name}
 	RoleName *string `field:"optional" json:"roleName" yaml:"roleName"`
 	// The field in the certificate to use for the scope (CN, O, OU, or UID).
 	//
 	// Must specify exactly one of scope_name or scope_field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#scope_field KmipSecretCaImported#scope_field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#scope_field KmipSecretCaImported#scope_field}
 	ScopeField *string `field:"optional" json:"scopeField" yaml:"scopeField"`
 	// The scope name to associate with this CA. Must specify exactly one of scope_name or scope_field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#scope_name KmipSecretCaImported#scope_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#scope_name KmipSecretCaImported#scope_name}
 	ScopeName *string `field:"optional" json:"scopeName" yaml:"scopeName"`
 }
 

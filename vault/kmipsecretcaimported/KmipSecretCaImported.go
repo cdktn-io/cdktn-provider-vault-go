@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported}.
 type KmipSecretCaImported interface {
 	cdktn.TerraformResource
 	CaPem() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_KmipSecretCaImported) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported} Resource.
 func NewKmipSecretCaImported(scope constructs.Construct, id *string, config *KmipSecretCaImportedConfig) KmipSecretCaImported {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewKmipSecretCaImported(scope constructs.Construct, id *string, config *Kmi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported} Resource.
 func NewKmipSecretCaImported_Override(k KmipSecretCaImported, scope constructs.Construct, id *string, config *KmipSecretCaImportedConfig) {
 	_init_.Initialize()
 

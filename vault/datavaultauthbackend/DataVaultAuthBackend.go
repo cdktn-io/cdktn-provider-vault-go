@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backend vault_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/auth_backend vault_auth_backend}.
 type DataVaultAuthBackend interface {
 	cdktn.TerraformDataSource
 	Accessor() *string
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataVaultAuthBackend) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
 func NewDataVaultAuthBackend(scope constructs.Construct, id *string, config *DataVaultAuthBackendConfig) DataVaultAuthBackend {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataVaultAuthBackend(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
 func NewDataVaultAuthBackend_Override(d DataVaultAuthBackend, scope constructs.Construct, id *string, config *DataVaultAuthBackendConfig) {
 	_init_.Initialize()
 

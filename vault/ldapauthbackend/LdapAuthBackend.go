@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
 type LdapAuthBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -1529,7 +1529,7 @@ func (j *jsiiProxy_LdapAuthBackend) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuthBackendConfig) LdapAuthBackend {
 	_init_.Initialize()
 
@@ -1547,7 +1547,7 @@ func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend_Override(l LdapAuthBackend, scope constructs.Construct, id *string, config *LdapAuthBackendConfig) {
 	_init_.Initialize()
 

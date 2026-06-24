@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ad_secret_library vault_ad_secret_library}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ad_secret_library vault_ad_secret_library}.
 type AdSecretLibrary interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_AdSecretLibrary) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
 func NewAdSecretLibrary(scope constructs.Construct, id *string, config *AdSecretLibraryConfig) AdSecretLibrary {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewAdSecretLibrary(scope constructs.Construct, id *string, config *AdSecret
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
 func NewAdSecretLibrary_Override(a AdSecretLibrary, scope constructs.Construct, id *string, config *AdSecretLibraryConfig) {
 	_init_.Initialize()
 

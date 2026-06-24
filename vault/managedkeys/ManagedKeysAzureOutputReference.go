@@ -79,6 +79,9 @@ type ManagedKeysAzureOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Usages() *[]*string
+	SetUsages(val *[]*string)
+	UsagesInput() *[]*string
 	Uuid() *string
 	VaultName() *string
 	SetVaultName(val *string)
@@ -114,6 +117,7 @@ type ManagedKeysAzureOutputReference interface {
 	ResetEnvironment()
 	ResetKeyBits()
 	ResetResource()
+	ResetUsages()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -459,6 +463,26 @@ func (j *jsiiProxy_ManagedKeysAzureOutputReference) TerraformResource() cdktn.II
 	return returns
 }
 
+func (j *jsiiProxy_ManagedKeysAzureOutputReference) Usages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeysAzureOutputReference) UsagesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usagesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedKeysAzureOutputReference) Uuid() *string {
 	var returns *string
 	_jsii_.Get(
@@ -715,6 +739,17 @@ func (j *jsiiProxy_ManagedKeysAzureOutputReference)SetTerraformResource(val cdkt
 	)
 }
 
+func (j *jsiiProxy_ManagedKeysAzureOutputReference)SetUsages(val *[]*string) {
+	if err := j.validateSetUsagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usages",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ManagedKeysAzureOutputReference)SetVaultName(val *string) {
 	if err := j.validateSetVaultNameParameters(val); err != nil {
 		panic(err)
@@ -964,6 +999,14 @@ func (m *jsiiProxy_ManagedKeysAzureOutputReference) ResetResource() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetResource",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedKeysAzureOutputReference) ResetUsages() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetUsages",
 		nil, // no parameters
 	)
 }

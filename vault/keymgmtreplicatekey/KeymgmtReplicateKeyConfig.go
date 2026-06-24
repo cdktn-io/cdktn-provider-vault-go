@@ -24,21 +24,21 @@ type KeymgmtReplicateKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specifies the name of the key to replicate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_replicate_key#key_name KeymgmtReplicateKey#key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#key_name KeymgmtReplicateKey#key_name}
 	KeyName *string `field:"required" json:"keyName" yaml:"keyName"`
 	// Specifies the name of the AWS KMS provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_replicate_key#kms_name KeymgmtReplicateKey#kms_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#kms_name KeymgmtReplicateKey#kms_name}
 	KmsName *string `field:"required" json:"kmsName" yaml:"kmsName"`
 	// Path of the Key Management secrets engine mount.
 	//
 	// Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_replicate_key#mount KeymgmtReplicateKey#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#mount KeymgmtReplicateKey#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_replicate_key#namespace KeymgmtReplicateKey#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#namespace KeymgmtReplicateKey#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

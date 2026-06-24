@@ -318,6 +318,14 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetLibraryParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetMaxParallelParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetMechanismParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -367,6 +375,14 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetTerraformResourceP
 }
 
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetTokenLabelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetUsagesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

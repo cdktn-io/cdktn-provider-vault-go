@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_group vault_identity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_group vault_identity_group}.
 type DataVaultIdentityGroup interface {
 	cdktn.TerraformDataSource
 	AliasCanonicalId() *string
@@ -616,7 +616,7 @@ func (j *jsiiProxy_DataVaultIdentityGroup) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_group vault_identity_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_group vault_identity_group} Data Source.
 func NewDataVaultIdentityGroup(scope constructs.Construct, id *string, config *DataVaultIdentityGroupConfig) DataVaultIdentityGroup {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewDataVaultIdentityGroup(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/identity_group vault_identity_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_group vault_identity_group} Data Source.
 func NewDataVaultIdentityGroup_Override(d DataVaultIdentityGroup, scope constructs.Construct, id *string, config *DataVaultIdentityGroupConfig) {
 	_init_.Initialize()
 

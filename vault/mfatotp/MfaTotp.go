@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mfa_totp vault_mfa_totp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/mfa_totp vault_mfa_totp}.
 type MfaTotp interface {
 	cdktn.TerraformResource
 	Algorithm() *string
@@ -557,7 +557,7 @@ func (j *jsiiProxy_MfaTotp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mfa_totp vault_mfa_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/mfa_totp vault_mfa_totp} Resource.
 func NewMfaTotp(scope constructs.Construct, id *string, config *MfaTotpConfig) MfaTotp {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewMfaTotp(scope constructs.Construct, id *string, config *MfaTotpConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/mfa_totp vault_mfa_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/mfa_totp vault_mfa_totp} Resource.
 func NewMfaTotp_Override(m MfaTotp, scope constructs.Construct, id *string, config *MfaTotpConfig) {
 	_init_.Initialize()
 

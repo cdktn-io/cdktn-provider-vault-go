@@ -288,6 +288,26 @@ func (j *jsiiProxy_TransformTransformation) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_TransformTransformation) validateSetConvergentParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TransformTransformation) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -381,6 +401,14 @@ func (j *jsiiProxy_TransformTransformation) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_TransformTransformation) validateSetMappingModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TransformTransformation) validateSetMaskingCharacterParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -454,6 +482,14 @@ func (j *jsiiProxy_TransformTransformation) validateSetProvisionersParameters(va
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktn.FileProvisioner, *cdktn.LocalExecProvisioner, *cdktn.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TransformTransformation) validateSetStoresParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

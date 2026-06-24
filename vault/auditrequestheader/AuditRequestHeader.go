@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/audit_request_header vault_audit_request_header}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/audit_request_header vault_audit_request_header}.
 type AuditRequestHeader interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_AuditRequestHeader) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
 func NewAuditRequestHeader(scope constructs.Construct, id *string, config *AuditRequestHeaderConfig) AuditRequestHeader {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewAuditRequestHeader(scope constructs.Construct, id *string, config *Audit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
 func NewAuditRequestHeader_Override(a AuditRequestHeader, scope constructs.Construct, id *string, config *AuditRequestHeaderConfig) {
 	_init_.Initialize()
 

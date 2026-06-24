@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ad_secret_backend vault_ad_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ad_secret_backend vault_ad_secret_backend}.
 type AdSecretBackend interface {
 	cdktn.TerraformResource
 	AnonymousGroupSearch() interface{}
@@ -1133,7 +1133,7 @@ func (j *jsiiProxy_AdSecretBackend) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource.
 func NewAdSecretBackend(scope constructs.Construct, id *string, config *AdSecretBackendConfig) AdSecretBackend {
 	_init_.Initialize()
 
@@ -1151,7 +1151,7 @@ func NewAdSecretBackend(scope constructs.Construct, id *string, config *AdSecret
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource.
 func NewAdSecretBackend_Override(a AdSecretBackend, scope constructs.Construct, id *string, config *AdSecretBackendConfig) {
 	_init_.Initialize()
 

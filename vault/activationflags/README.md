@@ -1,0 +1,3 @@
+# `vault_activation_flags`
+
+Refer to the Terraform Registry for docs: [`vault_activation_flags`](https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/activation_flags).

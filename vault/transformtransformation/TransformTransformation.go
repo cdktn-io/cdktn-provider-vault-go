@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_transformation vault_transform_transformation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/transform_transformation vault_transform_transformation}.
 type TransformTransformation interface {
 	cdktn.TerraformResource
 	AllowedRoles() *[]*string
@@ -26,6 +26,9 @@ type TransformTransformation interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Convergent() interface{}
+	SetConvergent(val interface{})
+	ConvergentInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -52,6 +55,9 @@ type TransformTransformation interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	MappingMode() *string
+	SetMappingMode(val *string)
+	MappingModeInput() *string
 	MaskingCharacter() *string
 	SetMaskingCharacter(val *string)
 	MaskingCharacterInput() *string
@@ -76,6 +82,9 @@ type TransformTransformation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Stores() *[]*string
+	SetStores(val *[]*string)
+	StoresInput() *[]*string
 	Template() *string
 	SetTemplate(val *string)
 	TemplateInput() *string
@@ -138,13 +147,16 @@ type TransformTransformation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAllowedRoles()
+	ResetConvergent()
 	ResetDeletionAllowed()
 	ResetId()
+	ResetMappingMode()
 	ResetMaskingCharacter()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStores()
 	ResetTemplate()
 	ResetTemplates()
 	ResetTweakSource()
@@ -221,6 +233,26 @@ func (j *jsiiProxy_TransformTransformation) ConstructNodeMetadata() *map[string]
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) Convergent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"convergent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) ConvergentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"convergentInput",
 		&returns,
 	)
 	return returns
@@ -321,6 +353,26 @@ func (j *jsiiProxy_TransformTransformation) Lifecycle() *cdktn.TerraformResource
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) MappingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mappingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) MappingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mappingModeInput",
 		&returns,
 	)
 	return returns
@@ -446,6 +498,26 @@ func (j *jsiiProxy_TransformTransformation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TransformTransformation) Stores() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stores",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) StoresInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransformTransformation) Template() *string {
 	var returns *string
 	_jsii_.Get(
@@ -557,7 +629,7 @@ func (j *jsiiProxy_TransformTransformation) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
 func NewTransformTransformation(scope constructs.Construct, id *string, config *TransformTransformationConfig) TransformTransformation {
 	_init_.Initialize()
 
@@ -575,7 +647,7 @@ func NewTransformTransformation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
 func NewTransformTransformation_Override(t TransformTransformation, scope constructs.Construct, id *string, config *TransformTransformationConfig) {
 	_init_.Initialize()
 
@@ -604,6 +676,17 @@ func (j *jsiiProxy_TransformTransformation)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransformTransformation)SetConvergent(val interface{}) {
+	if err := j.validateSetConvergentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"convergent",
 		val,
 	)
 }
@@ -668,6 +751,17 @@ func (j *jsiiProxy_TransformTransformation)SetLifecycle(val *cdktn.TerraformReso
 	)
 }
 
+func (j *jsiiProxy_TransformTransformation)SetMappingMode(val *string) {
+	if err := j.validateSetMappingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mappingMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TransformTransformation)SetMaskingCharacter(val *string) {
 	if err := j.validateSetMaskingCharacterParameters(val); err != nil {
 		panic(err)
@@ -727,6 +821,17 @@ func (j *jsiiProxy_TransformTransformation)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransformTransformation)SetStores(val *[]*string) {
+	if err := j.validateSetStoresParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stores",
 		val,
 	)
 }
@@ -1136,6 +1241,14 @@ func (t *jsiiProxy_TransformTransformation) ResetAllowedRoles() {
 	)
 }
 
+func (t *jsiiProxy_TransformTransformation) ResetConvergent() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetConvergent",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TransformTransformation) ResetDeletionAllowed() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1148,6 +1261,14 @@ func (t *jsiiProxy_TransformTransformation) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransformTransformation) ResetMappingMode() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetMappingMode",
 		nil, // no parameters
 	)
 }
@@ -1172,6 +1293,14 @@ func (t *jsiiProxy_TransformTransformation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransformTransformation) ResetStores() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetStores",
 		nil, // no parameters
 	)
 }

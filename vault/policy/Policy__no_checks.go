@@ -91,6 +91,10 @@ func validatePolicy_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Policy) validateSetAllowOverwriteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Policy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAwsSecretAccessKeyParamet
 	return nil
 }
 
+func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAwsSecretAccessKeyWoParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAwsSessionTokenParameters(val *string) error {
 	return nil
 }
@@ -195,10 +199,6 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetGoogleServiceAccountKeyPa
 	return nil
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetIntervalSecondsParameters(val *float64) error {
 	return nil
 }
@@ -228,6 +228,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetProvisionersParameters(va
 }
 
 func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetRetainParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetSecretsWoVersionParameters(val *float64) error {
 	return nil
 }
 

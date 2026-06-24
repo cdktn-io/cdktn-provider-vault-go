@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy vault_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy vault_policy}.
 type Policy interface {
 	cdktn.TerraformResource
+	AllowOverwrite() interface{}
+	SetAllowOverwrite(val interface{})
+	AllowOverwriteInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -116,6 +119,7 @@ type Policy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowOverwrite()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -146,6 +150,26 @@ type Policy interface {
 // The jsii proxy struct for Policy
 type jsiiProxy_Policy struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_Policy) AllowOverwrite() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowOverwrite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Policy) AllowOverwriteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowOverwriteInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Policy) CdktfStack() cdktn.TerraformStack {
@@ -389,7 +413,7 @@ func (j *jsiiProxy_Policy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy vault_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy vault_policy} Resource.
 func NewPolicy(scope constructs.Construct, id *string, config *PolicyConfig) Policy {
 	_init_.Initialize()
 
@@ -407,7 +431,7 @@ func NewPolicy(scope constructs.Construct, id *string, config *PolicyConfig) Pol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy vault_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy vault_policy} Resource.
 func NewPolicy_Override(p Policy, scope constructs.Construct, id *string, config *PolicyConfig) {
 	_init_.Initialize()
 
@@ -415,6 +439,17 @@ func NewPolicy_Override(p Policy, scope constructs.Construct, id *string, config
 		"@cdktn/provider-vault.policy.Policy",
 		[]interface{}{scope, id, config},
 		p,
+	)
+}
+
+func (j *jsiiProxy_Policy)SetAllowOverwrite(val interface{}) {
+	if err := j.validateSetAllowOverwriteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowOverwrite",
+		val,
 	)
 }
 
@@ -880,6 +915,14 @@ func (p *jsiiProxy_Policy) OverrideLogicalId(newLogicalId *string) {
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_Policy) ResetAllowOverwrite() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowOverwrite",
+		nil, // no parameters
 	)
 }
 

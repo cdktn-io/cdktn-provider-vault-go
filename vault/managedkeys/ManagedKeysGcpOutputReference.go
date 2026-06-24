@@ -76,6 +76,9 @@ type ManagedKeysGcpOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Usages() *[]*string
+	SetUsages(val *[]*string)
+	UsagesInput() *[]*string
 	Uuid() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -106,6 +109,7 @@ type ManagedKeysGcpOutputReference interface {
 	ResetAllowStoreKey()
 	ResetAnyMount()
 	ResetCryptoKeyVersion()
+	ResetUsages()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -431,6 +435,26 @@ func (j *jsiiProxy_ManagedKeysGcpOutputReference) TerraformResource() cdktn.IInt
 	return returns
 }
 
+func (j *jsiiProxy_ManagedKeysGcpOutputReference) Usages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeysGcpOutputReference) UsagesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usagesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedKeysGcpOutputReference) Uuid() *string {
 	var returns *string
 	_jsii_.Get(
@@ -652,6 +676,17 @@ func (j *jsiiProxy_ManagedKeysGcpOutputReference)SetTerraformResource(val cdktn.
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedKeysGcpOutputReference)SetUsages(val *[]*string) {
+	if err := j.validateSetUsagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usages",
 		val,
 	)
 }
@@ -878,6 +913,14 @@ func (m *jsiiProxy_ManagedKeysGcpOutputReference) ResetCryptoKeyVersion() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetCryptoKeyVersion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedKeysGcpOutputReference) ResetUsages() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetUsages",
 		nil, // no parameters
 	)
 }

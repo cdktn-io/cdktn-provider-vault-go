@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config}.
 type CfAuthBackendConfig interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -553,7 +553,7 @@ func (j *jsiiProxy_CfAuthBackendConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource.
 func NewCfAuthBackendConfig(scope constructs.Construct, id *string, config *CfAuthBackendConfigConfig) CfAuthBackendConfig {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewCfAuthBackendConfig(scope constructs.Construct, id *string, config *CfAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource.
 func NewCfAuthBackendConfig_Override(c CfAuthBackendConfig, scope constructs.Construct, id *string, config *CfAuthBackendConfigConfig) {
 	_init_.Initialize()
 

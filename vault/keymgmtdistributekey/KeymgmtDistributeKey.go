@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key}.
 type KeymgmtDistributeKey interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_KeymgmtDistributeKey) Versions() cdktn.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key} Resource.
 func NewKeymgmtDistributeKey(scope constructs.Construct, id *string, config *KeymgmtDistributeKeyConfig) KeymgmtDistributeKey {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewKeymgmtDistributeKey(scope constructs.Construct, id *string, config *Key
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key} Resource.
 func NewKeymgmtDistributeKey_Override(k KeymgmtDistributeKey, scope constructs.Construct, id *string, config *KeymgmtDistributeKeyConfig) {
 	_init_.Initialize()
 

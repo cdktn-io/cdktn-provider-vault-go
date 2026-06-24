@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/namespaces vault_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/namespaces vault_namespaces}.
 type DataVaultNamespaces interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataVaultNamespaces) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/namespaces vault_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/namespaces vault_namespaces} Data Source.
 func NewDataVaultNamespaces(scope constructs.Construct, id *string, config *DataVaultNamespacesConfig) DataVaultNamespaces {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataVaultNamespaces(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/namespaces vault_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/namespaces vault_namespaces} Data Source.
 func NewDataVaultNamespaces_Override(d DataVaultNamespaces, scope constructs.Construct, id *string, config *DataVaultNamespacesConfig) {
 	_init_.Initialize()
 

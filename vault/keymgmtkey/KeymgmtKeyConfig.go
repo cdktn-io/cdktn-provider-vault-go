@@ -26,35 +26,35 @@ type KeymgmtKeyConfig struct {
 	//
 	// Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key#mount KeymgmtKey#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#mount KeymgmtKey#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// Specifies the name of the key to create.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key#name KeymgmtKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#name KeymgmtKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specifies if the key is allowed to be deleted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key#deletion_allowed KeymgmtKey#deletion_allowed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#deletion_allowed KeymgmtKey#deletion_allowed}
 	DeletionAllowed interface{} `field:"optional" json:"deletionAllowed" yaml:"deletionAllowed"`
 	// Specifies the minimum enabled version of the key.
 	//
 	// All versions of the key less than the specified version will be disabled for cryptographic operations in the KMS provider that the key has been distributed to. Setting this value to 0 means that all versions will be enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key#min_enabled_version KeymgmtKey#min_enabled_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#min_enabled_version KeymgmtKey#min_enabled_version}
 	MinEnabledVersion *float64 `field:"optional" json:"minEnabledVersion" yaml:"minEnabledVersion"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key#namespace KeymgmtKey#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#namespace KeymgmtKey#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Specifies the regions in which the key should be replicated. Supported only for AWS KMS.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key#replica_regions KeymgmtKey#replica_regions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#replica_regions KeymgmtKey#replica_regions}
 	ReplicaRegions *[]*string `field:"optional" json:"replicaRegions" yaml:"replicaRegions"`
 	// Specifies the type of cryptographic key to create.
 	//
 	// aes256-gcm96, rsa-2048, rsa-3072, rsa-4096, ecdsa-p256, ecdsa-p384, ecdsa-p521 key types are supported. Defaults to `rsa-2048`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key#type KeymgmtKey#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#type KeymgmtKey#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_aws_kms vault_keymgmt_aws_kms}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_aws_kms vault_keymgmt_aws_kms}.
 type KeymgmtAwsKms interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_KeymgmtAwsKms) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_aws_kms vault_keymgmt_aws_kms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_aws_kms vault_keymgmt_aws_kms} Resource.
 func NewKeymgmtAwsKms(scope constructs.Construct, id *string, config *KeymgmtAwsKmsConfig) KeymgmtAwsKms {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewKeymgmtAwsKms(scope constructs.Construct, id *string, config *KeymgmtAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_aws_kms vault_keymgmt_aws_kms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_aws_kms vault_keymgmt_aws_kms} Resource.
 func NewKeymgmtAwsKms_Override(k KeymgmtAwsKms, scope constructs.Construct, id *string, config *KeymgmtAwsKmsConfig) {
 	_init_.Initialize()
 

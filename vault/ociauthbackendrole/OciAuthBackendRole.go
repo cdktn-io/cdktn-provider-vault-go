@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role}.
 type OciAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -654,7 +654,7 @@ func (j *jsiiProxy_OciAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource.
 func NewOciAuthBackendRole(scope constructs.Construct, id *string, config *OciAuthBackendRoleConfig) OciAuthBackendRole {
 	_init_.Initialize()
 
@@ -672,7 +672,7 @@ func NewOciAuthBackendRole(scope constructs.Construct, id *string, config *OciAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource.
 func NewOciAuthBackendRole_Override(o OciAuthBackendRole, scope constructs.Construct, id *string, config *OciAuthBackendRoleConfig) {
 	_init_.Initialize()
 

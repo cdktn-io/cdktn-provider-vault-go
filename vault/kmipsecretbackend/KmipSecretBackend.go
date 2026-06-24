@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend}.
 type KmipSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -1025,7 +1025,7 @@ func (j *jsiiProxy_KmipSecretBackend) TlsMinVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
 func NewKmipSecretBackend(scope constructs.Construct, id *string, config *KmipSecretBackendConfig) KmipSecretBackend {
 	_init_.Initialize()
 
@@ -1043,7 +1043,7 @@ func NewKmipSecretBackend(scope constructs.Construct, id *string, config *KmipSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
 func NewKmipSecretBackend_Override(k KmipSecretBackend, scope constructs.Construct, id *string, config *KmipSecretBackendConfig) {
 	_init_.Initialize()
 

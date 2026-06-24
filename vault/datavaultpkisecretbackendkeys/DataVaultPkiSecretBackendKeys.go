@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys}.
 type DataVaultPkiSecretBackendKeys interface {
 	cdktn.TerraformDataSource
 	Backend() *string
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendKeys) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys} Data Source.
 func NewDataVaultPkiSecretBackendKeys(scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendKeysConfig) DataVaultPkiSecretBackendKeys {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataVaultPkiSecretBackendKeys(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys} Data Source.
 func NewDataVaultPkiSecretBackendKeys_Override(d DataVaultPkiSecretBackendKeys, scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendKeysConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/approle_auth_backend_role_id vault_approle_auth_backend_role_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/approle_auth_backend_role_id vault_approle_auth_backend_role_id}.
 type DataVaultApproleAuthBackendRoleId interface {
 	cdktn.TerraformDataSource
 	Backend() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataVaultApproleAuthBackendRoleId) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/approle_auth_backend_role_id vault_approle_auth_backend_role_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/approle_auth_backend_role_id vault_approle_auth_backend_role_id} Data Source.
 func NewDataVaultApproleAuthBackendRoleId(scope constructs.Construct, id *string, config *DataVaultApproleAuthBackendRoleIdConfig) DataVaultApproleAuthBackendRoleId {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataVaultApproleAuthBackendRoleId(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/approle_auth_backend_role_id vault_approle_auth_backend_role_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/approle_auth_backend_role_id vault_approle_auth_backend_role_id} Data Source.
 func NewDataVaultApproleAuthBackendRoleId_Override(d DataVaultApproleAuthBackendRoleId, scope constructs.Construct, id *string, config *DataVaultApproleAuthBackendRoleIdConfig) {
 	_init_.Initialize()
 

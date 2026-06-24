@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}.
 type KvSecretBackendV2 interface {
 	cdktn.TerraformResource
 	CasRequired() interface{}
@@ -438,7 +438,7 @@ func (j *jsiiProxy_KvSecretBackendV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource.
 func NewKvSecretBackendV2(scope constructs.Construct, id *string, config *KvSecretBackendV2Config) KvSecretBackendV2 {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewKvSecretBackendV2(scope constructs.Construct, id *string, config *KvSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource.
 func NewKvSecretBackendV2_Override(k KvSecretBackendV2, scope constructs.Construct, id *string, config *KvSecretBackendV2Config) {
 	_init_.Initialize()
 
