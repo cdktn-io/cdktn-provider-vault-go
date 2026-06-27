@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth vault_config_ui_default_auth}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth vault_config_ui_default_auth}.
 type ConfigUiDefaultAuth interface {
 	cdktn.TerraformResource
 	BackupAuthTypes() *[]*string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ConfigUiDefaultAuth) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth vault_config_ui_default_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth vault_config_ui_default_auth} Resource.
 func NewConfigUiDefaultAuth(scope constructs.Construct, id *string, config *ConfigUiDefaultAuthConfig) ConfigUiDefaultAuth {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewConfigUiDefaultAuth(scope constructs.Construct, id *string, config *Conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth vault_config_ui_default_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth vault_config_ui_default_auth} Resource.
 func NewConfigUiDefaultAuth_Override(c ConfigUiDefaultAuth, scope constructs.Construct, id *string, config *ConfigUiDefaultAuthConfig) {
 	_init_.Initialize()
 

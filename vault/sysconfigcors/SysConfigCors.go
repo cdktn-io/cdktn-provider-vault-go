@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors vault_sys_config_cors}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors vault_sys_config_cors}.
 type SysConfigCors interface {
 	cdktn.TerraformResource
 	AllowedHeaders() *[]*string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_SysConfigCors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors vault_sys_config_cors} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors vault_sys_config_cors} Resource.
 func NewSysConfigCors(scope constructs.Construct, id *string, config *SysConfigCorsConfig) SysConfigCors {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewSysConfigCors(scope constructs.Construct, id *string, config *SysConfigC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors vault_sys_config_cors} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors vault_sys_config_cors} Resource.
 func NewSysConfigCors_Override(s SysConfigCors, scope constructs.Construct, id *string, config *SysConfigCorsConfig) {
 	_init_.Initialize()
 

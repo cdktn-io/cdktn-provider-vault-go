@@ -24,19 +24,19 @@ type OsSecretBackendConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Path where the OS secrets backend is mounted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#mount OsSecretBackend#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#mount OsSecretBackend#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// Maximum number of versions to keep for secrets.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#max_versions OsSecretBackend#max_versions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#max_versions OsSecretBackend#max_versions}
 	MaxVersions *float64 `field:"optional" json:"maxVersions" yaml:"maxVersions"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#namespace OsSecretBackend#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#namespace OsSecretBackend#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Trust SSH host keys on first use.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#ssh_host_key_trust_on_first_use OsSecretBackend#ssh_host_key_trust_on_first_use}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#ssh_host_key_trust_on_first_use OsSecretBackend#ssh_host_key_trust_on_first_use}
 	SshHostKeyTrustOnFirstUse interface{} `field:"optional" json:"sshHostKeyTrustOnFirstUse" yaml:"sshHostKeyTrustOnFirstUse"`
 }
 

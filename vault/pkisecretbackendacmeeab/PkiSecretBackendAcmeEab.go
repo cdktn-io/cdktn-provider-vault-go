@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab}.
 type PkiSecretBackendAcmeEab interface {
 	cdktn.TerraformResource
 	AcmeDirectory() *string
@@ -469,7 +469,7 @@ func (j *jsiiProxy_PkiSecretBackendAcmeEab) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab} Resource.
 func NewPkiSecretBackendAcmeEab(scope constructs.Construct, id *string, config *PkiSecretBackendAcmeEabConfig) PkiSecretBackendAcmeEab {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewPkiSecretBackendAcmeEab(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab} Resource.
 func NewPkiSecretBackendAcmeEab_Override(p PkiSecretBackendAcmeEab, scope constructs.Construct, id *string, config *PkiSecretBackendAcmeEabConfig) {
 	_init_.Initialize()
 

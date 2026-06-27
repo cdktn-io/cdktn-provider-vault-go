@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/cf_auth_backend_role vault_cf_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/cf_auth_backend_role vault_cf_auth_backend_role}.
 type CfAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -725,7 +725,7 @@ func (j *jsiiProxy_CfAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/cf_auth_backend_role vault_cf_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/cf_auth_backend_role vault_cf_auth_backend_role} Resource.
 func NewCfAuthBackendRole(scope constructs.Construct, id *string, config *CfAuthBackendRoleConfig) CfAuthBackendRole {
 	_init_.Initialize()
 
@@ -743,7 +743,7 @@ func NewCfAuthBackendRole(scope constructs.Construct, id *string, config *CfAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/cf_auth_backend_role vault_cf_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/cf_auth_backend_role vault_cf_auth_backend_role} Resource.
 func NewCfAuthBackendRole_Override(c CfAuthBackendRole, scope constructs.Construct, id *string, config *CfAuthBackendRoleConfig) {
 	_init_.Initialize()
 

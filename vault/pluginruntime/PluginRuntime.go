@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime vault_plugin_runtime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime vault_plugin_runtime}.
 type PluginRuntime interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_PluginRuntime) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime vault_plugin_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime vault_plugin_runtime} Resource.
 func NewPluginRuntime(scope constructs.Construct, id *string, config *PluginRuntimeConfig) PluginRuntime {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewPluginRuntime(scope constructs.Construct, id *string, config *PluginRunt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime vault_plugin_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime vault_plugin_runtime} Resource.
 func NewPluginRuntime_Override(p PluginRuntime, scope constructs.Construct, id *string, config *PluginRuntimeConfig) {
 	_init_.Initialize()
 

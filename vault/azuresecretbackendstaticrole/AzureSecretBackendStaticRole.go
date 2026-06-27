@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
 type AzureSecretBackendStaticRole interface {
 	cdktn.TerraformResource
 	ApplicationObjectId() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
 func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, config *AzureSecretBackendStaticRoleConfig) AzureSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
 func NewAzureSecretBackendStaticRole_Override(a AzureSecretBackendStaticRole, scope constructs.Construct, id *string, config *AzureSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 

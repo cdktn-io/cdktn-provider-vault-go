@@ -24,11 +24,11 @@ type DataVaultPluginRuntimesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes#namespace DataVaultPluginRuntimes#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/plugin_runtimes#namespace DataVaultPluginRuntimes#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Specifies the plugin runtime type to list. Currently only `container` is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes#type DataVaultPluginRuntimes#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/plugin_runtimes#type DataVaultPluginRuntimes#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

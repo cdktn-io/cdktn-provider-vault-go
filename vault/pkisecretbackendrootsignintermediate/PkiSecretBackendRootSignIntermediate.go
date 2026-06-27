@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
 type PkiSecretBackendRootSignIntermediate interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -85,9 +85,6 @@ type PkiSecretBackendRootSignIntermediate interface {
 	SetIssuerRef(val *string)
 	IssuerRefInput() *string
 	IssuingCa() *string
-	JksPassword() *string
-	SetJksPassword(val *string)
-	JksPasswordInput() *string
 	KeyUsage() *[]*string
 	SetKeyUsage(val *[]*string)
 	KeyUsageInput() *[]*string
@@ -133,12 +130,6 @@ type PkiSecretBackendRootSignIntermediate interface {
 	PermittedUriDomains() *[]*string
 	SetPermittedUriDomains(val *[]*string)
 	PermittedUriDomainsInput() *[]*string
-	Pkcs12Encoder() *string
-	SetPkcs12Encoder(val *string)
-	Pkcs12EncoderInput() *string
-	Pkcs12Password() *string
-	SetPkcs12Password(val *string)
-	Pkcs12PasswordInput() *string
 	PostalCode() *string
 	SetPostalCode(val *string)
 	PostalCodeInput() *string
@@ -240,7 +231,6 @@ type PkiSecretBackendRootSignIntermediate interface {
 	ResetId()
 	ResetIpSans()
 	ResetIssuerRef()
-	ResetJksPassword()
 	ResetKeyUsage()
 	ResetLocality()
 	ResetMaxPathLength()
@@ -257,8 +247,6 @@ type PkiSecretBackendRootSignIntermediate interface {
 	ResetPermittedEmailAddresses()
 	ResetPermittedIpRanges()
 	ResetPermittedUriDomains()
-	ResetPkcs12Encoder()
-	ResetPkcs12Password()
 	ResetPostalCode()
 	ResetProvince()
 	ResetRevoke()
@@ -696,26 +684,6 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) IssuingCa() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) JksPassword() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jksPassword",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) JksPasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jksPasswordInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) KeyUsage() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -996,46 +964,6 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) PermittedUriDomainsInpu
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) Pkcs12Encoder() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12Encoder",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) Pkcs12EncoderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12EncoderInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) Pkcs12Password() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12Password",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) Pkcs12PasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12PasswordInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) PostalCode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1307,7 +1235,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) UsePssInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) PkiSecretBackendRootSignIntermediate {
 	_init_.Initialize()
 
@@ -1325,7 +1253,7 @@ func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate_Override(p PkiSecretBackendRootSignIntermediate, scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) {
 	_init_.Initialize()
 
@@ -1528,17 +1456,6 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetIssuerRef(val *string
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetJksPassword(val *string) {
-	if err := j.validateSetJksPasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jksPassword",
-		val,
-	)
-}
-
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetKeyUsage(val *[]*string) {
 	if err := j.validateSetKeyUsageParameters(val); err != nil {
 		panic(err)
@@ -1689,28 +1606,6 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetPermittedUriDomains(v
 	_jsii_.Set(
 		j,
 		"permittedUriDomains",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetPkcs12Encoder(val *string) {
-	if err := j.validateSetPkcs12EncoderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pkcs12Encoder",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetPkcs12Password(val *string) {
-	if err := j.validateSetPkcs12PasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pkcs12Password",
 		val,
 	)
 }
@@ -2285,14 +2180,6 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ResetIssuerRef() {
 	)
 }
 
-func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ResetJksPassword() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetJksPassword",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ResetKeyUsage() {
 	_jsii_.InvokeVoid(
 		p,
@@ -2401,22 +2288,6 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ResetPermittedUriDomain
 	_jsii_.InvokeVoid(
 		p,
 		"resetPermittedUriDomains",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ResetPkcs12Encoder() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPkcs12Encoder",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ResetPkcs12Password() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPkcs12Password",
 		nil, // no parameters
 	)
 }

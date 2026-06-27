@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/nomad_secret_backend vault_nomad_secret_backend}.
 type NomadSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -1098,7 +1098,7 @@ func (j *jsiiProxy_NomadSecretBackend) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource.
 func NewNomadSecretBackend(scope constructs.Construct, id *string, config *NomadSecretBackendConfig) NomadSecretBackend {
 	_init_.Initialize()
 
@@ -1116,7 +1116,7 @@ func NewNomadSecretBackend(scope constructs.Construct, id *string, config *Nomad
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource.
 func NewNomadSecretBackend_Override(n NomadSecretBackend, scope constructs.Construct, id *string, config *NomadSecretBackendConfig) {
 	_init_.Initialize()
 

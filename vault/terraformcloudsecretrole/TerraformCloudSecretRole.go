@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
 type TerraformCloudSecretRole interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -558,7 +558,7 @@ func (j *jsiiProxy_TerraformCloudSecretRole) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
 func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) TerraformCloudSecretRole {
 	_init_.Initialize()
 
@@ -576,7 +576,7 @@ func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
 func NewTerraformCloudSecretRole_Override(t TerraformCloudSecretRole, scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) {
 	_init_.Initialize()
 

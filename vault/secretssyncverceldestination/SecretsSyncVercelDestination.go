@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
 type SecretsSyncVercelDestination interface {
 	cdktn.TerraformResource
 	AccessToken() *string
@@ -614,7 +614,7 @@ func (j *jsiiProxy_SecretsSyncVercelDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
 func NewSecretsSyncVercelDestination(scope constructs.Construct, id *string, config *SecretsSyncVercelDestinationConfig) SecretsSyncVercelDestination {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewSecretsSyncVercelDestination(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
 func NewSecretsSyncVercelDestination_Override(s SecretsSyncVercelDestination, scope constructs.Construct, id *string, config *SecretsSyncVercelDestinationConfig) {
 	_init_.Initialize()
 

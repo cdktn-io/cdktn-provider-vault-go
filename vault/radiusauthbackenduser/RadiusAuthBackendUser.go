@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend_user vault_radius_auth_backend_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend_user vault_radius_auth_backend_user}.
 type RadiusAuthBackendUser interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_RadiusAuthBackendUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend_user vault_radius_auth_backend_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend_user vault_radius_auth_backend_user} Resource.
 func NewRadiusAuthBackendUser(scope constructs.Construct, id *string, config *RadiusAuthBackendUserConfig) RadiusAuthBackendUser {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewRadiusAuthBackendUser(scope constructs.Construct, id *string, config *Ra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend_user vault_radius_auth_backend_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend_user vault_radius_auth_backend_user} Resource.
 func NewRadiusAuthBackendUser_Override(r RadiusAuthBackendUser, scope constructs.Construct, id *string, config *RadiusAuthBackendUserConfig) {
 	_init_.Initialize()
 

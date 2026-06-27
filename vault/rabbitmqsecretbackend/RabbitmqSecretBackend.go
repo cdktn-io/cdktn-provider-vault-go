@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend}.
 type RabbitmqSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -1000,7 +1000,7 @@ func (j *jsiiProxy_RabbitmqSecretBackend) VerifyConnectionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend} Resource.
 func NewRabbitmqSecretBackend(scope constructs.Construct, id *string, config *RabbitmqSecretBackendConfig) RabbitmqSecretBackend {
 	_init_.Initialize()
 
@@ -1018,7 +1018,7 @@ func NewRabbitmqSecretBackend(scope constructs.Construct, id *string, config *Ra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend} Resource.
 func NewRabbitmqSecretBackend_Override(r RabbitmqSecretBackend, scope constructs.Construct, id *string, config *RabbitmqSecretBackendConfig) {
 	_init_.Initialize()
 

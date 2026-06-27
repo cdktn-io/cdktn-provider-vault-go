@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/agent_registration vault_agent_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/agent_registration vault_agent_registration}.
 type AgentRegistration interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -518,7 +518,7 @@ func (j *jsiiProxy_AgentRegistration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/agent_registration vault_agent_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/agent_registration vault_agent_registration} Resource.
 func NewAgentRegistration(scope constructs.Construct, id *string, config *AgentRegistrationConfig) AgentRegistration {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewAgentRegistration(scope constructs.Construct, id *string, config *AgentR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/agent_registration vault_agent_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/agent_registration vault_agent_registration} Resource.
 func NewAgentRegistration_Override(a AgentRegistration, scope constructs.Construct, id *string, config *AgentRegistrationConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host vault_os_secret_backend_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host vault_os_secret_backend_host}.
 type OsSecretBackendHost interface {
 	cdktn.TerraformResource
 	Address() *string
@@ -580,7 +580,7 @@ func (j *jsiiProxy_OsSecretBackendHost) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host vault_os_secret_backend_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host vault_os_secret_backend_host} Resource.
 func NewOsSecretBackendHost(scope constructs.Construct, id *string, config *OsSecretBackendHostConfig) OsSecretBackendHost {
 	_init_.Initialize()
 
@@ -598,7 +598,7 @@ func NewOsSecretBackendHost(scope constructs.Construct, id *string, config *OsSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host vault_os_secret_backend_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host vault_os_secret_backend_host} Resource.
 func NewOsSecretBackendHost_Override(o OsSecretBackendHost, scope constructs.Construct, id *string, config *OsSecretBackendHostConfig) {
 	_init_.Initialize()
 

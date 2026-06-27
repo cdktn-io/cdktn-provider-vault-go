@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
 type PkiSecretBackendCert interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -73,12 +73,6 @@ type PkiSecretBackendCert interface {
 	SetIssuerRef(val *string)
 	IssuerRefInput() *string
 	IssuingCa() *string
-	JksPassword() *string
-	SetJksPassword(val *string)
-	JksPasswordInput() *string
-	JksPrivateKeyAlias() *string
-	SetJksPrivateKeyAlias(val *string)
-	JksPrivateKeyAliasInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -100,12 +94,6 @@ type PkiSecretBackendCert interface {
 	OtherSans() *[]*string
 	SetOtherSans(val *[]*string)
 	OtherSansInput() *[]*string
-	Pkcs12Encoder() *string
-	SetPkcs12Encoder(val *string)
-	Pkcs12EncoderInput() *string
-	Pkcs12Password() *string
-	SetPkcs12Password(val *string)
-	Pkcs12PasswordInput() *string
 	PrivateKey() *string
 	PrivateKeyFormat() *string
 	SetPrivateKeyFormat(val *string)
@@ -198,8 +186,6 @@ type PkiSecretBackendCert interface {
 	ResetId()
 	ResetIpSans()
 	ResetIssuerRef()
-	ResetJksPassword()
-	ResetJksPrivateKeyAlias()
 	ResetMinSecondsRemaining()
 	ResetNamespace()
 	ResetNotAfter()
@@ -207,8 +193,6 @@ type PkiSecretBackendCert interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPkcs12Encoder()
-	ResetPkcs12Password()
 	ResetPrivateKeyFormat()
 	ResetRemoveRootsFromChain()
 	ResetRevoke()
@@ -563,46 +547,6 @@ func (j *jsiiProxy_PkiSecretBackendCert) IssuingCa() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendCert) JksPassword() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jksPassword",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert) JksPasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jksPasswordInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert) JksPrivateKeyAlias() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jksPrivateKeyAlias",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert) JksPrivateKeyAliasInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jksPrivateKeyAliasInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PkiSecretBackendCert) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -718,46 +662,6 @@ func (j *jsiiProxy_PkiSecretBackendCert) OtherSansInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"otherSansInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert) Pkcs12Encoder() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12Encoder",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert) Pkcs12EncoderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12EncoderInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert) Pkcs12Password() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12Password",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert) Pkcs12PasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12PasswordInput",
 		&returns,
 	)
 	return returns
@@ -1004,7 +908,7 @@ func (j *jsiiProxy_PkiSecretBackendCert) UserIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
 func NewPkiSecretBackendCert(scope constructs.Construct, id *string, config *PkiSecretBackendCertConfig) PkiSecretBackendCert {
 	_init_.Initialize()
 
@@ -1022,7 +926,7 @@ func NewPkiSecretBackendCert(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
 func NewPkiSecretBackendCert_Override(p PkiSecretBackendCert, scope constructs.Construct, id *string, config *PkiSecretBackendCertConfig) {
 	_init_.Initialize()
 
@@ -1181,28 +1085,6 @@ func (j *jsiiProxy_PkiSecretBackendCert)SetIssuerRef(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendCert)SetJksPassword(val *string) {
-	if err := j.validateSetJksPasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jksPassword",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert)SetJksPrivateKeyAlias(val *string) {
-	if err := j.validateSetJksPrivateKeyAliasParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jksPrivateKeyAlias",
-		val,
-	)
-}
-
 func (j *jsiiProxy_PkiSecretBackendCert)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1265,28 +1147,6 @@ func (j *jsiiProxy_PkiSecretBackendCert)SetOtherSans(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"otherSans",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert)SetPkcs12Encoder(val *string) {
-	if err := j.validateSetPkcs12EncoderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pkcs12Encoder",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PkiSecretBackendCert)SetPkcs12Password(val *string) {
-	if err := j.validateSetPkcs12PasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pkcs12Password",
 		val,
 	)
 }
@@ -1804,22 +1664,6 @@ func (p *jsiiProxy_PkiSecretBackendCert) ResetIssuerRef() {
 	)
 }
 
-func (p *jsiiProxy_PkiSecretBackendCert) ResetJksPassword() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetJksPassword",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PkiSecretBackendCert) ResetJksPrivateKeyAlias() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetJksPrivateKeyAlias",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PkiSecretBackendCert) ResetMinSecondsRemaining() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1856,22 +1700,6 @@ func (p *jsiiProxy_PkiSecretBackendCert) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PkiSecretBackendCert) ResetPkcs12Encoder() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPkcs12Encoder",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PkiSecretBackendCert) ResetPkcs12Password() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPkcs12Password",
 		nil, // no parameters
 	)
 }

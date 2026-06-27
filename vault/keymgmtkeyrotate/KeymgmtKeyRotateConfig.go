@@ -26,15 +26,15 @@ type KeymgmtKeyRotateConfig struct {
 	//
 	// Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#mount KeymgmtKeyRotate#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate#mount KeymgmtKeyRotate#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// Specifies the name of the key to rotate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#name KeymgmtKeyRotate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate#name KeymgmtKeyRotate#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#namespace KeymgmtKeyRotate#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate#namespace KeymgmtKeyRotate#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

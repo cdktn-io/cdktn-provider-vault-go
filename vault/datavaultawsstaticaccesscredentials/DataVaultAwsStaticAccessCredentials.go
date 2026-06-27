@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/aws_static_access_credentials vault_aws_static_access_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/aws_static_access_credentials vault_aws_static_access_credentials}.
 type DataVaultAwsStaticAccessCredentials interface {
 	cdktn.TerraformDataSource
 	AccessKey() *string
@@ -366,7 +366,7 @@ func (j *jsiiProxy_DataVaultAwsStaticAccessCredentials) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/aws_static_access_credentials vault_aws_static_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/aws_static_access_credentials vault_aws_static_access_credentials} Data Source.
 func NewDataVaultAwsStaticAccessCredentials(scope constructs.Construct, id *string, config *DataVaultAwsStaticAccessCredentialsConfig) DataVaultAwsStaticAccessCredentials {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewDataVaultAwsStaticAccessCredentials(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/aws_static_access_credentials vault_aws_static_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/aws_static_access_credentials vault_aws_static_access_credentials} Data Source.
 func NewDataVaultAwsStaticAccessCredentials_Override(d DataVaultAwsStaticAccessCredentials, scope constructs.Construct, id *string, config *DataVaultAwsStaticAccessCredentialsConfig) {
 	_init_.Initialize()
 

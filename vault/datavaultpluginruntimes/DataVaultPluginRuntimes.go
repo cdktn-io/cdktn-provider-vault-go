@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/plugin_runtimes vault_plugin_runtimes}.
 type DataVaultPluginRuntimes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataVaultPluginRuntimes) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/plugin_runtimes vault_plugin_runtimes} Data Source.
 func NewDataVaultPluginRuntimes(scope constructs.Construct, id *string, config *DataVaultPluginRuntimesConfig) DataVaultPluginRuntimes {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataVaultPluginRuntimes(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/plugin_runtimes vault_plugin_runtimes} Data Source.
 func NewDataVaultPluginRuntimes_Override(d DataVaultPluginRuntimes, scope constructs.Construct, id *string, config *DataVaultPluginRuntimesConfig) {
 	_init_.Initialize()
 

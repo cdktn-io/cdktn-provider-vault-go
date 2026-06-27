@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/namespace vault_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/namespace vault_namespace}.
 type Namespace interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_Namespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/namespace vault_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/namespace vault_namespace} Resource.
 func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfig) Namespace {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/namespace vault_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/namespace vault_namespace} Resource.
 func NewNamespace_Override(n Namespace, scope constructs.Construct, id *string, config *NamespaceConfig) {
 	_init_.Initialize()
 

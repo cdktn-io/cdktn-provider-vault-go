@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy}.
 type PkiSecretBackendConfigAutoTidy interface {
 	cdktn.TerraformResource
 	AcmeAccountSafetyBuffer() *string
@@ -869,7 +869,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigAutoTidy) TidyRevokedCertsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource.
 func NewPkiSecretBackendConfigAutoTidy(scope constructs.Construct, id *string, config *PkiSecretBackendConfigAutoTidyConfig) PkiSecretBackendConfigAutoTidy {
 	_init_.Initialize()
 
@@ -887,7 +887,7 @@ func NewPkiSecretBackendConfigAutoTidy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource.
 func NewPkiSecretBackendConfigAutoTidy_Override(p PkiSecretBackendConfigAutoTidy, scope constructs.Construct, id *string, config *PkiSecretBackendConfigAutoTidyConfig) {
 	_init_.Initialize()
 

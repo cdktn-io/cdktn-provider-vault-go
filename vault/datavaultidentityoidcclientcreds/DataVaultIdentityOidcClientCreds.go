@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds}.
 type DataVaultIdentityOidcClientCreds interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
 func NewDataVaultIdentityOidcClientCreds(scope constructs.Construct, id *string, config *DataVaultIdentityOidcClientCredsConfig) DataVaultIdentityOidcClientCreds {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataVaultIdentityOidcClientCreds(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
 func NewDataVaultIdentityOidcClientCreds_Override(d DataVaultIdentityOidcClientCreds, scope constructs.Construct, id *string, config *DataVaultIdentityOidcClientCredsConfig) {
 	_init_.Initialize()
 

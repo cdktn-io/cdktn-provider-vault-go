@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group vault_config_control_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group vault_config_control_group}.
 type ConfigControlGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_ConfigControlGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group vault_config_control_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group vault_config_control_group} Resource.
 func NewConfigControlGroup(scope constructs.Construct, id *string, config *ConfigControlGroupConfig) ConfigControlGroup {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewConfigControlGroup(scope constructs.Construct, id *string, config *Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group vault_config_control_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group vault_config_control_group} Resource.
 func NewConfigControlGroup_Override(c ConfigControlGroup, scope constructs.Construct, id *string, config *ConfigControlGroupConfig) {
 	_init_.Initialize()
 

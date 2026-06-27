@@ -24,21 +24,21 @@ type RadiusAuthBackendUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Path to the RADIUS auth mount where the user will be registered.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend_user#mount RadiusAuthBackendUser#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend_user#mount RadiusAuthBackendUser#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// The username to register with the RADIUS auth backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend_user#username RadiusAuthBackendUser#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend_user#username RadiusAuthBackendUser#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend_user#namespace RadiusAuthBackendUser#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend_user#namespace RadiusAuthBackendUser#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// A set of Vault policies to associate with this user.
 	//
 	// If not set, only the `default` policy will be applicable to the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend_user#policies RadiusAuthBackendUser#policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend_user#policies RadiusAuthBackendUser#policies}
 	Policies *[]*string `field:"optional" json:"policies" yaml:"policies"`
 }
 

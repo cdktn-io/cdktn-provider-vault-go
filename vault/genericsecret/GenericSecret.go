@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/generic_secret vault_generic_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/generic_secret vault_generic_secret}.
 type GenericSecret interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GenericSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/generic_secret vault_generic_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/generic_secret vault_generic_secret} Resource.
 func NewGenericSecret(scope constructs.Construct, id *string, config *GenericSecretConfig) GenericSecret {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewGenericSecret(scope constructs.Construct, id *string, config *GenericSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/generic_secret vault_generic_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/generic_secret vault_generic_secret} Resource.
 func NewGenericSecret_Override(g GenericSecret, scope constructs.Construct, id *string, config *GenericSecretConfig) {
 	_init_.Initialize()
 

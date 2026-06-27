@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert}.
 type AwsAuthBackendCert interface {
 	cdktn.TerraformResource
 	AwsPublicCert() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_AwsAuthBackendCert) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert} Resource.
 func NewAwsAuthBackendCert(scope constructs.Construct, id *string, config *AwsAuthBackendCertConfig) AwsAuthBackendCert {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewAwsAuthBackendCert(scope constructs.Construct, id *string, config *AwsAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert} Resource.
 func NewAwsAuthBackendCert_Override(a AwsAuthBackendCert, scope constructs.Construct, id *string, config *AwsAuthBackendCertConfig) {
 	_init_.Initialize()
 

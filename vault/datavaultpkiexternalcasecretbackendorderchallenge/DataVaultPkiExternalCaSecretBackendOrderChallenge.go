@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge}.
 type DataVaultPkiExternalCaSecretBackendOrderChallenge interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -444,7 +444,7 @@ func (j *jsiiProxy_DataVaultPkiExternalCaSecretBackendOrderChallenge) Token() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge} Data Source.
 func NewDataVaultPkiExternalCaSecretBackendOrderChallenge(scope constructs.Construct, id *string, config *DataVaultPkiExternalCaSecretBackendOrderChallengeConfig) DataVaultPkiExternalCaSecretBackendOrderChallenge {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewDataVaultPkiExternalCaSecretBackendOrderChallenge(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge} Data Source.
 func NewDataVaultPkiExternalCaSecretBackendOrderChallenge_Override(d DataVaultPkiExternalCaSecretBackendOrderChallenge, scope constructs.Construct, id *string, config *DataVaultPkiExternalCaSecretBackendOrderChallengeConfig) {
 	_init_.Initialize()
 

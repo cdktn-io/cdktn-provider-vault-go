@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/jwt_auth_backend vault_jwt_auth_backend}.
 type JwtAuthBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -906,7 +906,7 @@ func (j *jsiiProxy_JwtAuthBackend) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
 func NewJwtAuthBackend(scope constructs.Construct, id *string, config *JwtAuthBackendConfig) JwtAuthBackend {
 	_init_.Initialize()
 
@@ -924,7 +924,7 @@ func NewJwtAuthBackend(scope constructs.Construct, id *string, config *JwtAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
 func NewJwtAuthBackend_Override(j JwtAuthBackend, scope constructs.Construct, id *string, config *JwtAuthBackendConfig) {
 	_init_.Initialize()
 

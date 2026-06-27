@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate}.
 type KeymgmtKeyRotate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_KeymgmtKeyRotate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate} Resource.
 func NewKeymgmtKeyRotate(scope constructs.Construct, id *string, config *KeymgmtKeyRotateConfig) KeymgmtKeyRotate {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewKeymgmtKeyRotate(scope constructs.Construct, id *string, config *Keymgmt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate} Resource.
 func NewKeymgmtKeyRotate_Override(k KeymgmtKeyRotate, scope constructs.Construct, id *string, config *KeymgmtKeyRotateConfig) {
 	_init_.Initialize()
 

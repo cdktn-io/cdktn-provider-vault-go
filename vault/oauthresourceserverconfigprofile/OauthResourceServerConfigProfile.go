@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile}.
 type OauthResourceServerConfigProfile interface {
 	cdktn.TerraformResource
 	Audiences() *[]*string
@@ -664,7 +664,7 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile) UserClaimInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource.
 func NewOauthResourceServerConfigProfile(scope constructs.Construct, id *string, config *OauthResourceServerConfigProfileConfig) OauthResourceServerConfigProfile {
 	_init_.Initialize()
 
@@ -682,7 +682,7 @@ func NewOauthResourceServerConfigProfile(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource.
 func NewOauthResourceServerConfigProfile_Override(o OauthResourceServerConfigProfile, scope constructs.Construct, id *string, config *OauthResourceServerConfigProfileConfig) {
 	_init_.Initialize()
 

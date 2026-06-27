@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/activation_flags vault_activation_flags}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/activation_flags vault_activation_flags}.
 type ActivationFlags interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -329,7 +329,7 @@ func (j *jsiiProxy_ActivationFlags) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/activation_flags vault_activation_flags} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/activation_flags vault_activation_flags} Resource.
 func NewActivationFlags(scope constructs.Construct, id *string, config *ActivationFlagsConfig) ActivationFlags {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewActivationFlags(scope constructs.Construct, id *string, config *Activati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/activation_flags vault_activation_flags} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/activation_flags vault_activation_flags} Resource.
 func NewActivationFlags_Override(a ActivationFlags, scope constructs.Construct, id *string, config *ActivationFlagsConfig) {
 	_init_.Initialize()
 

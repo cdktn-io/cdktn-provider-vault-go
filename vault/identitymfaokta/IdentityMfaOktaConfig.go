@@ -24,32 +24,32 @@ type IdentityMfaOktaConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Okta API token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
 	ApiToken *string `field:"required" json:"apiToken" yaml:"apiToken"`
 	// Name of the organization to be used in the Okta API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
 	OrgName *string `field:"required" json:"orgName" yaml:"orgName"`
 	// The base domain to use for API requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
 	BaseUrl *string `field:"optional" json:"baseUrl" yaml:"baseUrl"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Only match the primary email for the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
 	PrimaryEmail interface{} `field:"optional" json:"primaryEmail" yaml:"primaryEmail"`
 	// A template string for mapping Identity names to MFA methods.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
 	UsernameFormat *string `field:"optional" json:"usernameFormat" yaml:"usernameFormat"`
 }
 

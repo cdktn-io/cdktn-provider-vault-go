@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags vault_activation_flags}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags vault_activation_flags}.
 type DataVaultActivationFlags interface {
 	cdktn.TerraformDataSource
 	ActivatedFlags() *[]*string
@@ -283,7 +283,7 @@ func (j *jsiiProxy_DataVaultActivationFlags) UnactivatedFlags() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags vault_activation_flags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags vault_activation_flags} Data Source.
 func NewDataVaultActivationFlags(scope constructs.Construct, id *string, config *DataVaultActivationFlagsConfig) DataVaultActivationFlags {
 	_init_.Initialize()
 
@@ -301,7 +301,7 @@ func NewDataVaultActivationFlags(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags vault_activation_flags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags vault_activation_flags} Data Source.
 func NewDataVaultActivationFlags_Override(d DataVaultActivationFlags, scope constructs.Construct, id *string, config *DataVaultActivationFlagsConfig) {
 	_init_.Initialize()
 

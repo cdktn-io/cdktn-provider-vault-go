@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order vault_pki_external_ca_secret_backend_order}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order vault_pki_external_ca_secret_backend_order}.
 type PkiExternalCaSecretBackendOrder interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -512,7 +512,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendOrder) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order vault_pki_external_ca_secret_backend_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order vault_pki_external_ca_secret_backend_order} Resource.
 func NewPkiExternalCaSecretBackendOrder(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendOrderConfig) PkiExternalCaSecretBackendOrder {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewPkiExternalCaSecretBackendOrder(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order vault_pki_external_ca_secret_backend_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order vault_pki_external_ca_secret_backend_order} Resource.
 func NewPkiExternalCaSecretBackendOrder_Override(p PkiExternalCaSecretBackendOrder, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendOrderConfig) {
 	_init_.Initialize()
 

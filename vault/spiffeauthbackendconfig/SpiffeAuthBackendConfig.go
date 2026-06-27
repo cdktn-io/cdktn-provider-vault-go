@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config}.
 type SpiffeAuthBackendConfig interface {
 	cdktn.TerraformResource
 	Audience() *[]*string
@@ -532,7 +532,7 @@ func (j *jsiiProxy_SpiffeAuthBackendConfig) TrustDomainInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config} Resource.
 func NewSpiffeAuthBackendConfig(scope constructs.Construct, id *string, config *SpiffeAuthBackendConfigConfig) SpiffeAuthBackendConfig {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewSpiffeAuthBackendConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/spiffe_auth_backend_config vault_spiffe_auth_backend_config} Resource.
 func NewSpiffeAuthBackendConfig_Override(s SpiffeAuthBackendConfig, scope constructs.Construct, id *string, config *SpiffeAuthBackendConfigConfig) {
 	_init_.Initialize()
 

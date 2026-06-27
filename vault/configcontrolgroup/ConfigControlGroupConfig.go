@@ -26,11 +26,11 @@ type ConfigControlGroupConfig struct {
 	//
 	// This can be provided in seconds or duration (for example, 2h).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group#max_ttl ConfigControlGroup#max_ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group#max_ttl ConfigControlGroup#max_ttl}
 	MaxTtl *string `field:"required" json:"maxTtl" yaml:"maxTtl"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group#namespace ConfigControlGroup#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group#namespace ConfigControlGroup#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

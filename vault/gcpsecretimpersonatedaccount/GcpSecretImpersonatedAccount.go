@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account}.
 type GcpSecretImpersonatedAccount interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -471,7 +471,7 @@ func (j *jsiiProxy_GcpSecretImpersonatedAccount) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource.
 func NewGcpSecretImpersonatedAccount(scope constructs.Construct, id *string, config *GcpSecretImpersonatedAccountConfig) GcpSecretImpersonatedAccount {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewGcpSecretImpersonatedAccount(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource.
 func NewGcpSecretImpersonatedAccount_Override(g GcpSecretImpersonatedAccount, scope constructs.Construct, id *string, config *GcpSecretImpersonatedAccountConfig) {
 	_init_.Initialize()
 

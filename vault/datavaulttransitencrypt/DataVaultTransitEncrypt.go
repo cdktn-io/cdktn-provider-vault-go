@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/transit_encrypt vault_transit_encrypt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/transit_encrypt vault_transit_encrypt}.
 type DataVaultTransitEncrypt interface {
 	cdktn.TerraformDataSource
 	Backend() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
 func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *DataVaultTransitEncryptConfig) DataVaultTransitEncrypt {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
 func NewDataVaultTransitEncrypt_Override(d DataVaultTransitEncrypt, scope constructs.Construct, id *string, config *DataVaultTransitEncryptConfig) {
 	_init_.Initialize()
 

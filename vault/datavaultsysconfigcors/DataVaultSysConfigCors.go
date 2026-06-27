@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/sys_config_cors vault_sys_config_cors}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/sys_config_cors vault_sys_config_cors}.
 type DataVaultSysConfigCors interface {
 	cdktn.TerraformDataSource
 	AllowedHeaders() *[]*string
@@ -283,7 +283,7 @@ func (j *jsiiProxy_DataVaultSysConfigCors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/sys_config_cors vault_sys_config_cors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/sys_config_cors vault_sys_config_cors} Data Source.
 func NewDataVaultSysConfigCors(scope constructs.Construct, id *string, config *DataVaultSysConfigCorsConfig) DataVaultSysConfigCors {
 	_init_.Initialize()
 
@@ -301,7 +301,7 @@ func NewDataVaultSysConfigCors(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/sys_config_cors vault_sys_config_cors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/sys_config_cors vault_sys_config_cors} Data Source.
 func NewDataVaultSysConfigCors_Override(d DataVaultSysConfigCors, scope constructs.Construct, id *string, config *DataVaultSysConfigCorsConfig) {
 	_init_.Initialize()
 

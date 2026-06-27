@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}.
 type IdentityGroupMemberEntityIds interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_IdentityGroupMemberEntityIds) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
 func NewIdentityGroupMemberEntityIds(scope constructs.Construct, id *string, config *IdentityGroupMemberEntityIdsConfig) IdentityGroupMemberEntityIds {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewIdentityGroupMemberEntityIds(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
 func NewIdentityGroupMemberEntityIds_Override(i IdentityGroupMemberEntityIds, scope constructs.Construct, id *string, config *IdentityGroupMemberEntityIdsConfig) {
 	_init_.Initialize()
 

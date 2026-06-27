@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend vault_radius_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend vault_radius_auth_backend}.
 type RadiusAuthBackend interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -782,7 +782,7 @@ func (j *jsiiProxy_RadiusAuthBackend) UnregisteredUserPoliciesInput() *[]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend vault_radius_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend vault_radius_auth_backend} Resource.
 func NewRadiusAuthBackend(scope constructs.Construct, id *string, config *RadiusAuthBackendConfig) RadiusAuthBackend {
 	_init_.Initialize()
 
@@ -800,7 +800,7 @@ func NewRadiusAuthBackend(scope constructs.Construct, id *string, config *Radius
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/radius_auth_backend vault_radius_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/radius_auth_backend vault_radius_auth_backend} Resource.
 func NewRadiusAuthBackend_Override(r RadiusAuthBackend, scope constructs.Construct, id *string, config *RadiusAuthBackendConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
 type PkiSecretBackendSign interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -76,9 +76,6 @@ type PkiSecretBackendSign interface {
 	SetIssuerRef(val *string)
 	IssuerRefInput() *string
 	IssuingCa() *string
-	JksPassword() *string
-	SetJksPassword(val *string)
-	JksPasswordInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -100,12 +97,6 @@ type PkiSecretBackendSign interface {
 	OtherSans() *[]*string
 	SetOtherSans(val *[]*string)
 	OtherSansInput() *[]*string
-	Pkcs12Encoder() *string
-	SetPkcs12Encoder(val *string)
-	Pkcs12EncoderInput() *string
-	Pkcs12Password() *string
-	SetPkcs12Password(val *string)
-	Pkcs12PasswordInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -184,7 +175,6 @@ type PkiSecretBackendSign interface {
 	ResetId()
 	ResetIpSans()
 	ResetIssuerRef()
-	ResetJksPassword()
 	ResetMinSecondsRemaining()
 	ResetNamespace()
 	ResetNotAfter()
@@ -192,8 +182,6 @@ type PkiSecretBackendSign interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPkcs12Encoder()
-	ResetPkcs12Password()
 	ResetRemoveRootsFromChain()
 	ResetTtl()
 	ResetUriSans()
@@ -564,26 +552,6 @@ func (j *jsiiProxy_PkiSecretBackendSign) IssuingCa() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendSign) JksPassword() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jksPassword",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) JksPasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jksPasswordInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PkiSecretBackendSign) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -699,46 +667,6 @@ func (j *jsiiProxy_PkiSecretBackendSign) OtherSansInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"otherSansInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) Pkcs12Encoder() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12Encoder",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) Pkcs12EncoderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12EncoderInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) Pkcs12Password() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12Password",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) Pkcs12PasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pkcs12PasswordInput",
 		&returns,
 	)
 	return returns
@@ -885,7 +813,7 @@ func (j *jsiiProxy_PkiSecretBackendSign) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) PkiSecretBackendSign {
 	_init_.Initialize()
 
@@ -903,7 +831,7 @@ func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign_Override(p PkiSecretBackendSign, scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) {
 	_init_.Initialize()
 
@@ -1073,17 +1001,6 @@ func (j *jsiiProxy_PkiSecretBackendSign)SetIssuerRef(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendSign)SetJksPassword(val *string) {
-	if err := j.validateSetJksPasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jksPassword",
-		val,
-	)
-}
-
 func (j *jsiiProxy_PkiSecretBackendSign)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1146,28 +1063,6 @@ func (j *jsiiProxy_PkiSecretBackendSign)SetOtherSans(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"otherSans",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign)SetPkcs12Encoder(val *string) {
-	if err := j.validateSetPkcs12EncoderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pkcs12Encoder",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign)SetPkcs12Password(val *string) {
-	if err := j.validateSetPkcs12PasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pkcs12Password",
 		val,
 	)
 }
@@ -1641,14 +1536,6 @@ func (p *jsiiProxy_PkiSecretBackendSign) ResetIssuerRef() {
 	)
 }
 
-func (p *jsiiProxy_PkiSecretBackendSign) ResetJksPassword() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetJksPassword",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PkiSecretBackendSign) ResetMinSecondsRemaining() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1685,22 +1572,6 @@ func (p *jsiiProxy_PkiSecretBackendSign) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PkiSecretBackendSign) ResetPkcs12Encoder() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPkcs12Encoder",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PkiSecretBackendSign) ResetPkcs12Password() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPkcs12Password",
 		nil, // no parameters
 	)
 }

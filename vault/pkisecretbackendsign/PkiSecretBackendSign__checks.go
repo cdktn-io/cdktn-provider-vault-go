@@ -449,14 +449,6 @@ func (j *jsiiProxy_PkiSecretBackendSign) validateSetIssuerRefParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_PkiSecretBackendSign) validateSetJksPasswordParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_PkiSecretBackendSign) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -498,22 +490,6 @@ func (j *jsiiProxy_PkiSecretBackendSign) validateSetNotAfterParameters(val *stri
 }
 
 func (j *jsiiProxy_PkiSecretBackendSign) validateSetOtherSansParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) validateSetPkcs12EncoderParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) validateSetPkcs12PasswordParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

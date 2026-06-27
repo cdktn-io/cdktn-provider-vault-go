@@ -453,22 +453,6 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetIssuerNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetJksPasswordParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetJksPrivateKeyAliasParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyBitsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -622,22 +606,6 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedIpRangesParamet
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedUriDomainsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPkcs12EncoderParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPkcs12PasswordParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

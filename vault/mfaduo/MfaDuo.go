@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/mfa_duo vault_mfa_duo}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/mfa_duo vault_mfa_duo}.
 type MfaDuo interface {
 	cdktn.TerraformResource
 	ApiHostname() *string
@@ -506,7 +506,7 @@ func (j *jsiiProxy_MfaDuo) UsernameFormatInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/mfa_duo vault_mfa_duo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/mfa_duo vault_mfa_duo} Resource.
 func NewMfaDuo(scope constructs.Construct, id *string, config *MfaDuoConfig) MfaDuo {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewMfaDuo(scope constructs.Construct, id *string, config *MfaDuoConfig) Mfa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/mfa_duo vault_mfa_duo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/mfa_duo vault_mfa_duo} Resource.
 func NewMfaDuo_Override(m MfaDuo, scope constructs.Construct, id *string, config *MfaDuoConfig) {
 	_init_.Initialize()
 

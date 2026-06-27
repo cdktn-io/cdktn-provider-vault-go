@@ -151,14 +151,6 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetIssuerNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetJksPasswordParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetJksPrivateKeyAliasParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyBitsParameters(val *float64) error {
 	return nil
 }
@@ -236,14 +228,6 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedIpRangesParamet
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedUriDomainsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPkcs12EncoderParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPkcs12PasswordParameters(val *string) error {
 	return nil
 }
 

@@ -143,10 +143,6 @@ func (j *jsiiProxy_PkiSecretBackendSign) validateSetIssuerRefParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_PkiSecretBackendSign) validateSetJksPasswordParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PkiSecretBackendSign) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -168,14 +164,6 @@ func (j *jsiiProxy_PkiSecretBackendSign) validateSetNotAfterParameters(val *stri
 }
 
 func (j *jsiiProxy_PkiSecretBackendSign) validateSetOtherSansParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) validateSetPkcs12EncoderParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PkiSecretBackendSign) validateSetPkcs12PasswordParameters(val *string) error {
 	return nil
 }
 

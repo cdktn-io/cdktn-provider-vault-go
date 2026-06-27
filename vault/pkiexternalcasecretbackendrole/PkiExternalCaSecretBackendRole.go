@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role}.
 type PkiExternalCaSecretBackendRole interface {
 	cdktn.TerraformResource
 	AcmeAccountName() *string
@@ -554,7 +554,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendRole) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role} Resource.
 func NewPkiExternalCaSecretBackendRole(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendRoleConfig) PkiExternalCaSecretBackendRole {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewPkiExternalCaSecretBackendRole(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role} Resource.
 func NewPkiExternalCaSecretBackendRole_Override(p PkiExternalCaSecretBackendRole, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendRoleConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role}.
 type SpiffeAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -653,7 +653,7 @@ func (j *jsiiProxy_SpiffeAuthBackendRole) WorkloadIdPatternsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
 func NewSpiffeAuthBackendRole(scope constructs.Construct, id *string, config *SpiffeAuthBackendRoleConfig) SpiffeAuthBackendRole {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewSpiffeAuthBackendRole(scope constructs.Construct, id *string, config *Sp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/spiffe_auth_backend_role vault_spiffe_auth_backend_role} Resource.
 func NewSpiffeAuthBackendRole_Override(s SpiffeAuthBackendRole, scope constructs.Construct, id *string, config *SpiffeAuthBackendRoleConfig) {
 	_init_.Initialize()
 

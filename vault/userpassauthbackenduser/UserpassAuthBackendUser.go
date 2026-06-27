@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/userpass_auth_backend_user vault_userpass_auth_backend_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/userpass_auth_backend_user vault_userpass_auth_backend_user}.
 type UserpassAuthBackendUser interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -701,7 +701,7 @@ func (j *jsiiProxy_UserpassAuthBackendUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/userpass_auth_backend_user vault_userpass_auth_backend_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/userpass_auth_backend_user vault_userpass_auth_backend_user} Resource.
 func NewUserpassAuthBackendUser(scope constructs.Construct, id *string, config *UserpassAuthBackendUserConfig) UserpassAuthBackendUser {
 	_init_.Initialize()
 
@@ -719,7 +719,7 @@ func NewUserpassAuthBackendUser(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/userpass_auth_backend_user vault_userpass_auth_backend_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/userpass_auth_backend_user vault_userpass_auth_backend_user} Resource.
 func NewUserpassAuthBackendUser_Override(u UserpassAuthBackendUser, scope constructs.Construct, id *string, config *UserpassAuthBackendUserConfig) {
 	_init_.Initialize()
 

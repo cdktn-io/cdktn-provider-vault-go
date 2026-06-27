@@ -24,7 +24,7 @@ type ActivationFlagsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Exact feature key to activate with PUT /sys/activation-flags/:feature/activate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/activation_flags#feature ActivationFlags#feature}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/activation_flags#feature ActivationFlags#feature}
 	Feature *string `field:"required" json:"feature" yaml:"feature"`
 }
 

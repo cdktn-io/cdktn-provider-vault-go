@@ -24,11 +24,11 @@ type ConfigUiHeaderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the custom header. Cannot start with `X-Vault-`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_header#name ConfigUiHeader#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_header#name ConfigUiHeader#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Set of values for the header. At least one value is required. Duplicates are automatically ignored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_header#values ConfigUiHeader#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_header#values ConfigUiHeader#values}
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 
