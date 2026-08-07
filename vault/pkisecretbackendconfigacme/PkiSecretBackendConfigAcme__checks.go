@@ -122,6 +122,14 @@ func (p *jsiiProxy_PkiSecretBackendConfigAcme) validateInterpolationForAttribute
 	return nil
 }
 
+func (p *jsiiProxy_PkiSecretBackendConfigAcme) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendConfigAcme) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (p *jsiiProxy_PkiSecretBackendConfigAcme) validateMoveToIdParameters(id *st
 func (p *jsiiProxy_PkiSecretBackendConfigAcme) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PkiSecretBackendConfigAcme) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

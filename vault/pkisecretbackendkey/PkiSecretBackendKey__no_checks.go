@@ -59,6 +59,10 @@ func (p *jsiiProxy_PkiSecretBackendKey) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (p *jsiiProxy_PkiSecretBackendKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (p *jsiiProxy_PkiSecretBackendKey) validateMoveToIdParameters(id *string) e
 }
 
 func (p *jsiiProxy_PkiSecretBackendKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PkiSecretBackendKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

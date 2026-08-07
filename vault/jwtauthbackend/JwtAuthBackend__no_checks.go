@@ -59,6 +59,10 @@ func (j *jsiiProxy_JwtAuthBackend) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_JwtAuthBackend) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (j *jsiiProxy_JwtAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_JwtAuthBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

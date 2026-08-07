@@ -59,6 +59,10 @@ func (l *jsiiProxy_LdapAuthBackendGroup) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (l *jsiiProxy_LdapAuthBackendGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapAuthBackendGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (l *jsiiProxy_LdapAuthBackendGroup) validateMoveToIdParameters(id *string) 
 }
 
 func (l *jsiiProxy_LdapAuthBackendGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapAuthBackendGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendOrderChallengeFulfilled) validateIn
 	return nil
 }
 
+func (p *jsiiProxy_PkiExternalCaSecretBackendOrderChallengeFulfilled) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiExternalCaSecretBackendOrderChallengeFulfilled) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendOrderChallengeFulfilled) validateMo
 }
 
 func (p *jsiiProxy_PkiExternalCaSecretBackendOrderChallengeFulfilled) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PkiExternalCaSecretBackendOrderChallengeFulfilled) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -68,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "policies", GoGetter: "Policies"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAliasId", GoMethod: "ResetAliasId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAliasMountAccessor", GoMethod: "ResetAliasMountAccessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAliasName", GoMethod: "ResetAliasName"},

@@ -122,6 +122,14 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SecretsSyncAzureDestination) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SecretsSyncAzureDestination) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) validateMoveToIdParameters(id *s
 func (s *jsiiProxy_SecretsSyncAzureDestination) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

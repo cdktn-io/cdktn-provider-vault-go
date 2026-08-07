@@ -59,6 +59,10 @@ func (q *jsiiProxy_QuotaRateLimit) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (q *jsiiProxy_QuotaRateLimit) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuotaRateLimit) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (q *jsiiProxy_QuotaRateLimit) validateMoveToIdParameters(id *string) error 
 }
 
 func (q *jsiiProxy_QuotaRateLimit) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuotaRateLimit) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

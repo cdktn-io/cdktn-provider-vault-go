@@ -59,6 +59,10 @@ func (m *jsiiProxy_MfaOkta) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (m *jsiiProxy_MfaOkta) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaOkta) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (m *jsiiProxy_MfaOkta) validateMoveToIdParameters(id *string) error {
 }
 
 func (m *jsiiProxy_MfaOkta) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MfaOkta) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

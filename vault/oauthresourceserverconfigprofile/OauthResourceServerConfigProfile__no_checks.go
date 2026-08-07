@@ -59,6 +59,10 @@ func (o *jsiiProxy_OauthResourceServerConfigProfile) validateInterpolationForAtt
 	return nil
 }
 
+func (o *jsiiProxy_OauthResourceServerConfigProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthResourceServerConfigProfile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (o *jsiiProxy_OauthResourceServerConfigProfile) validateOverrideLogicalIdPa
 }
 
 func (o *jsiiProxy_OauthResourceServerConfigProfile) validatePutPublicKeysParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OauthResourceServerConfigProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

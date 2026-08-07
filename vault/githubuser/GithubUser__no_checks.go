@@ -59,6 +59,10 @@ func (g *jsiiProxy_GithubUser) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (g *jsiiProxy_GithubUser) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GithubUser) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (g *jsiiProxy_GithubUser) validateMoveToIdParameters(id *string) error {
 }
 
 func (g *jsiiProxy_GithubUser) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

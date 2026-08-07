@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultSshSecretBackendSign) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultSshSecretBackendSign) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataVaultSshSecretBackendSign_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

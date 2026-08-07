@@ -59,6 +59,10 @@ func (s *jsiiProxy_SpiffeAuthBackendRole) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SpiffeAuthBackendRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpiffeAuthBackendRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_SpiffeAuthBackendRole) validateMoveToIdParameters(id *string)
 }
 
 func (s *jsiiProxy_SpiffeAuthBackendRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpiffeAuthBackendRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

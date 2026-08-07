@@ -59,6 +59,10 @@ func (r *jsiiProxy_RadiusAuthBackend) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_RadiusAuthBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RadiusAuthBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (r *jsiiProxy_RadiusAuthBackend) validateMoveToIdParameters(id *string) err
 }
 
 func (r *jsiiProxy_RadiusAuthBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RadiusAuthBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

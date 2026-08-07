@@ -59,6 +59,10 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateInterpolationF
 	return nil
 }
 
+func (p *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateMoveToIdParame
 }
 
 func (p *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

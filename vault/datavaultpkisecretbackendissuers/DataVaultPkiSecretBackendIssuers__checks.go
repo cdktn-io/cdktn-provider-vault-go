@@ -114,6 +114,14 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendIssuers) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultPkiSecretBackendIssuers) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateDataVaultPkiSecretBackendIssuers_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

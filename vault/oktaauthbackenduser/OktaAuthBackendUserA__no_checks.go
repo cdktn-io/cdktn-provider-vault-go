@@ -59,6 +59,10 @@ func (o *jsiiProxy_OktaAuthBackendUserA) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (o *jsiiProxy_OktaAuthBackendUserA) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OktaAuthBackendUserA) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (o *jsiiProxy_OktaAuthBackendUserA) validateMoveToIdParameters(id *string) 
 }
 
 func (o *jsiiProxy_OktaAuthBackendUserA) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendUserA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (m *jsiiProxy_MongodbatlasSecretBackend) validateInterpolationForAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MongodbatlasSecretBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MongodbatlasSecretBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (m *jsiiProxy_MongodbatlasSecretBackend) validateMoveToIdParameters(id *str
 }
 
 func (m *jsiiProxy_MongodbatlasSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MongodbatlasSecretBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

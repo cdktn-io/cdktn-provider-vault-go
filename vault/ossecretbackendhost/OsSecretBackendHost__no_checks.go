@@ -59,6 +59,10 @@ func (o *jsiiProxy_OsSecretBackendHost) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (o *jsiiProxy_OsSecretBackendHost) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OsSecretBackendHost) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (o *jsiiProxy_OsSecretBackendHost) validateMoveToIdParameters(id *string) e
 }
 
 func (o *jsiiProxy_OsSecretBackendHost) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OsSecretBackendHost) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateMoveToIdParameters(i
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

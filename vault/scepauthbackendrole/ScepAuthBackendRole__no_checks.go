@@ -59,6 +59,10 @@ func (s *jsiiProxy_ScepAuthBackendRole) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_ScepAuthBackendRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ScepAuthBackendRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_ScepAuthBackendRole) validateMoveToIdParameters(id *string) e
 }
 
 func (s *jsiiProxy_ScepAuthBackendRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ScepAuthBackendRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

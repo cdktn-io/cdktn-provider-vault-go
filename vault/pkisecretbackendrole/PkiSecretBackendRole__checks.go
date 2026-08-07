@@ -122,6 +122,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (p *jsiiProxy_PkiSecretBackendRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendRole) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -233,6 +241,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) validatePutPolicyIdentifierParameters(v
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PkiSecretBackendRolePolicyIdentifier; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

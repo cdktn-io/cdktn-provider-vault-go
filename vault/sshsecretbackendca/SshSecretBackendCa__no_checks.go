@@ -59,6 +59,10 @@ func (s *jsiiProxy_SshSecretBackendCa) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SshSecretBackendCa) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SshSecretBackendCa) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_SshSecretBackendCa) validateMoveToIdParameters(id *string) er
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SshSecretBackendCa) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

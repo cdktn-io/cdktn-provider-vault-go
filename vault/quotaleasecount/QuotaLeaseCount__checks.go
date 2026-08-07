@@ -122,6 +122,14 @@ func (q *jsiiProxy_QuotaLeaseCount) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (q *jsiiProxy_QuotaLeaseCount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (q *jsiiProxy_QuotaLeaseCount) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (q *jsiiProxy_QuotaLeaseCount) validateMoveToIdParameters(id *string) error
 func (q *jsiiProxy_QuotaLeaseCount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (q *jsiiProxy_QuotaLeaseCount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

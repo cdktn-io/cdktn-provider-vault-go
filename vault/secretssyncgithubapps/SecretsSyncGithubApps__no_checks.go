@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecretsSyncGithubApps) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SecretsSyncGithubApps) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretsSyncGithubApps) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_SecretsSyncGithubApps) validateMoveToIdParameters(id *string)
 }
 
 func (s *jsiiProxy_SecretsSyncGithubApps) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretsSyncGithubApps) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

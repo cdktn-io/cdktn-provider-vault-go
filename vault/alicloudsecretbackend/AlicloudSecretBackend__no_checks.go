@@ -59,6 +59,10 @@ func (a *jsiiProxy_AlicloudSecretBackend) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_AlicloudSecretBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlicloudSecretBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AlicloudSecretBackend) validateMoveToIdParameters(id *string)
 }
 
 func (a *jsiiProxy_AlicloudSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlicloudSecretBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

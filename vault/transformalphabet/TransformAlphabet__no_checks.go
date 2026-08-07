@@ -59,6 +59,10 @@ func (t *jsiiProxy_TransformAlphabet) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (t *jsiiProxy_TransformAlphabet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformAlphabet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (t *jsiiProxy_TransformAlphabet) validateMoveToIdParameters(id *string) err
 }
 
 func (t *jsiiProxy_TransformAlphabet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransformAlphabet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

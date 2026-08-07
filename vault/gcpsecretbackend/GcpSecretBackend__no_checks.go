@@ -59,6 +59,10 @@ func (g *jsiiProxy_GcpSecretBackend) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (g *jsiiProxy_GcpSecretBackend) validateMoveToIdParameters(id *string) erro
 }
 
 func (g *jsiiProxy_GcpSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GcpSecretBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

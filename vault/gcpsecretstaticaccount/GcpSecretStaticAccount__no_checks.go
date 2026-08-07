@@ -59,6 +59,10 @@ func (g *jsiiProxy_GcpSecretStaticAccount) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretStaticAccount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretStaticAccount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (g *jsiiProxy_GcpSecretStaticAccount) validateOverrideLogicalIdParameters(n
 }
 
 func (g *jsiiProxy_GcpSecretStaticAccount) validatePutBindingParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GcpSecretStaticAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

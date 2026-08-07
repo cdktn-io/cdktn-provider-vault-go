@@ -59,6 +59,10 @@ func (g *jsiiProxy_GcpAuthBackend) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GcpAuthBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpAuthBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (g *jsiiProxy_GcpAuthBackend) validatePutCustomEndpointParameters(value *Gc
 }
 
 func (g *jsiiProxy_GcpAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GcpAuthBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

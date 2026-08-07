@@ -59,6 +59,10 @@ func (g *jsiiProxy_GcpSecretRoleset) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretRoleset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretRoleset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (g *jsiiProxy_GcpSecretRoleset) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (g *jsiiProxy_GcpSecretRoleset) validatePutBindingParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GcpSecretRoleset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

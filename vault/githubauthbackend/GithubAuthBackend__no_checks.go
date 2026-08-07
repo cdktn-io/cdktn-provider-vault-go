@@ -59,6 +59,10 @@ func (g *jsiiProxy_GithubAuthBackend) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GithubAuthBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GithubAuthBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (g *jsiiProxy_GithubAuthBackend) validateOverrideLogicalIdParameters(newLog
 }
 
 func (g *jsiiProxy_GithubAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubAuthBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

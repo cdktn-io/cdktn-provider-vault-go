@@ -5,9 +5,9 @@ package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/databasesecretbackendconnection/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -47,13 +47,17 @@ type DatabaseSecretBackendConnectionSnowflakeOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	PasswordWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	SetPasswordWo(val *string)
 	PasswordWoInput() *string
 	PasswordWoVersion() *float64
 	SetPasswordWoVersion(val *float64)
 	PasswordWoVersionInput() *float64
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	PrivateKeyWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	SetPrivateKeyWo(val *string)
 	PrivateKeyWoInput() *string
 	PrivateKeyWoVersion() *float64

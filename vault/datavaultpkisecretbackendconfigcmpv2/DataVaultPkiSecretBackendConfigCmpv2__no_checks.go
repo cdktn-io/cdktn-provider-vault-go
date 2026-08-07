@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataVaultPkiSecretBackendConfigCmpv2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

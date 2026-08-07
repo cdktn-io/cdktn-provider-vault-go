@@ -59,6 +59,10 @@ func (a *jsiiProxy_AwsAuthBackendLogin) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AwsAuthBackendLogin) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsAuthBackendLogin) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AwsAuthBackendLogin) validateMoveToIdParameters(id *string) e
 }
 
 func (a *jsiiProxy_AwsAuthBackendLogin) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsAuthBackendLogin) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

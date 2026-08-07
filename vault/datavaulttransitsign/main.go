@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reference", GoGetter: "Reference"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceInput", GoGetter: "ReferenceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBatchInput", GoMethod: "ResetBatchInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBatchResults", GoMethod: "ResetBatchResults"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContext", GoMethod: "ResetContext"},

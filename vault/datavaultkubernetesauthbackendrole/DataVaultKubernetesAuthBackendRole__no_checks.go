@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataVaultKubernetesAuthBackendRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

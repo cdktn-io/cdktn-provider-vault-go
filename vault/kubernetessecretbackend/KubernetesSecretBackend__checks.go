@@ -122,6 +122,14 @@ func (k *jsiiProxy_KubernetesSecretBackend) validateInterpolationForAttributePar
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesSecretBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesSecretBackend) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (k *jsiiProxy_KubernetesSecretBackend) validateMoveToIdParameters(id *strin
 func (k *jsiiProxy_KubernetesSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

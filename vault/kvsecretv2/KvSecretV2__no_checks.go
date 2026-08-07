@@ -59,6 +59,10 @@ func (k *jsiiProxy_KvSecretV2) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (k *jsiiProxy_KvSecretV2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KvSecretV2) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (k *jsiiProxy_KvSecretV2) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (k *jsiiProxy_KvSecretV2) validatePutCustomMetadataParameters(value *KvSecretV2CustomMetadata) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

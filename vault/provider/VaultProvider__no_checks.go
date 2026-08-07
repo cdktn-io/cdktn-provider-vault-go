@@ -15,6 +15,10 @@ func (v *jsiiProxy_VaultProvider) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (v *jsiiProxy_VaultProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateVaultProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (r *jsiiProxy_RabbitmqSecretBackendRole) validateInterpolationForAttributeP
 	return nil
 }
 
+func (r *jsiiProxy_RabbitmqSecretBackendRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RabbitmqSecretBackendRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (r *jsiiProxy_RabbitmqSecretBackendRole) validatePutVhostParameters(value i
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRole) validatePutVhostTopicParameters(value interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RabbitmqSecretBackendRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

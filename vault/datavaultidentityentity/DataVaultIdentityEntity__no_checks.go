@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultIdentityEntity) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultIdentityEntity) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataVaultIdentityEntity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

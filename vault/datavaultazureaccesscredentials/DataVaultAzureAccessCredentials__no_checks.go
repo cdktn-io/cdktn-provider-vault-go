@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultAzureAccessCredentials) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataVaultAzureAccessCredentials_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

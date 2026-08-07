@@ -59,6 +59,10 @@ func (k *jsiiProxy_KmipSecretListener) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (k *jsiiProxy_KmipSecretListener) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmipSecretListener) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (k *jsiiProxy_KmipSecretListener) validateMoveToIdParameters(id *string) er
 }
 
 func (k *jsiiProxy_KmipSecretListener) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmipSecretListener) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

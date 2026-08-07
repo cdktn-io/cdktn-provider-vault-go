@@ -59,6 +59,10 @@ func (d *jsiiProxy_DatabaseSecretsMount) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -144,6 +148,10 @@ func (d *jsiiProxy_DatabaseSecretsMount) validatePutRedshiftParameters(value int
 }
 
 func (d *jsiiProxy_DatabaseSecretsMount) validatePutSnowflakeParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

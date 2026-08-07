@@ -59,6 +59,10 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendOrder) validateInterpolationForAttr
 	return nil
 }
 
+func (p *jsiiProxy_PkiExternalCaSecretBackendOrder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiExternalCaSecretBackendOrder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendOrder) validateMoveToIdParameters(i
 }
 
 func (p *jsiiProxy_PkiExternalCaSecretBackendOrder) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PkiExternalCaSecretBackendOrder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

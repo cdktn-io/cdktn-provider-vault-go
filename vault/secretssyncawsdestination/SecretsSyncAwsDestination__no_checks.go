@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecretsSyncAwsDestination) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SecretsSyncAwsDestination) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretsSyncAwsDestination) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_SecretsSyncAwsDestination) validateMoveToIdParameters(id *str
 }
 
 func (s *jsiiProxy_SecretsSyncAwsDestination) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretsSyncAwsDestination) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (r *jsiiProxy_RaftAutopilot) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_RaftAutopilot) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RaftAutopilot) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (r *jsiiProxy_RaftAutopilot) validateMoveToIdParameters(id *string) error {
 }
 
 func (r *jsiiProxy_RaftAutopilot) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RaftAutopilot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

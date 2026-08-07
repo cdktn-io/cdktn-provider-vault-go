@@ -59,6 +59,10 @@ func (u *jsiiProxy_UserpassAuthBackendUser) validateInterpolationForAttributePar
 	return nil
 }
 
+func (u *jsiiProxy_UserpassAuthBackendUser) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserpassAuthBackendUser) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (u *jsiiProxy_UserpassAuthBackendUser) validateMoveToIdParameters(id *strin
 }
 
 func (u *jsiiProxy_UserpassAuthBackendUser) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserpassAuthBackendUser) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

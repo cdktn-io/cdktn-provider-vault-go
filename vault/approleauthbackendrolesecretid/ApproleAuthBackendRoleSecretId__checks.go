@@ -122,6 +122,14 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) validateInterpolationForAttri
 	return nil
 }
 
+func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) validateMoveToIdParameters(id
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

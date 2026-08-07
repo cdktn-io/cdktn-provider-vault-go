@@ -59,6 +59,10 @@ func (a *jsiiProxy_AzureSecretBackendRole) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AzureSecretBackendRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureSecretBackendRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AzureSecretBackendRole) validatePutAzureGroupsParameters(valu
 }
 
 func (a *jsiiProxy_AzureSecretBackendRole) validatePutAzureRolesParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AzureSecretBackendRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (k *jsiiProxy_KeymgmtAwsKms) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (k *jsiiProxy_KeymgmtAwsKms) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeymgmtAwsKms) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (k *jsiiProxy_KeymgmtAwsKms) validateMoveToIdParameters(id *string) error {
 }
 
 func (k *jsiiProxy_KeymgmtAwsKms) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeymgmtAwsKms) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

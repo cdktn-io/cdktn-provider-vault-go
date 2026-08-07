@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataVaultPolicyDocument) validatePutRuleParameters(value inte
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultPolicyDocument) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataVaultPolicyDocument_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

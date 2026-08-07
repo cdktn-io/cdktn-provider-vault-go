@@ -59,6 +59,10 @@ func (m *jsiiProxy_ManagedKeys) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_ManagedKeys) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedKeys) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (m *jsiiProxy_ManagedKeys) validatePutGcpParameters(value interface{}) erro
 }
 
 func (m *jsiiProxy_ManagedKeys) validatePutPkcsParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedKeys) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

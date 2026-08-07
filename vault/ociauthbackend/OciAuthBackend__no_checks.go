@@ -59,6 +59,10 @@ func (o *jsiiProxy_OciAuthBackend) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (o *jsiiProxy_OciAuthBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OciAuthBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (o *jsiiProxy_OciAuthBackend) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (o *jsiiProxy_OciAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OciAuthBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

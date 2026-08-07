@@ -122,6 +122,14 @@ func (d *jsiiProxy_DatabaseSecretsMount) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -760,6 +768,14 @@ func (d *jsiiProxy_DatabaseSecretsMount) validatePutSnowflakeParameters(value in
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DatabaseSecretsMountSnowflake; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

@@ -5,9 +5,9 @@ package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretsmount/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/databasesecretsmount/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -62,7 +62,9 @@ type DatabaseSecretsMountSnowflakeOutputReference interface {
 	PasswordPolicy() *string
 	SetPasswordPolicy(val *string)
 	PasswordPolicyInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	PasswordWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	SetPasswordWo(val *string)
 	PasswordWoInput() *string
 	PasswordWoVersion() *float64
@@ -74,7 +76,9 @@ type DatabaseSecretsMountSnowflakeOutputReference interface {
 	PluginVersion() *string
 	SetPluginVersion(val *string)
 	PluginVersionInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	PrivateKeyWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	SetPrivateKeyWo(val *string)
 	PrivateKeyWoInput() *string
 	PrivateKeyWoVersion() *float64

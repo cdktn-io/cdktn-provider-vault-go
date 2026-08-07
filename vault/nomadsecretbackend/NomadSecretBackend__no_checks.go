@@ -59,6 +59,10 @@ func (n *jsiiProxy_NomadSecretBackend) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (n *jsiiProxy_NomadSecretBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NomadSecretBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (n *jsiiProxy_NomadSecretBackend) validateMoveToIdParameters(id *string) er
 }
 
 func (n *jsiiProxy_NomadSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NomadSecretBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

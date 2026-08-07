@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultRaftAutopilotState) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultRaftAutopilotState) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataVaultRaftAutopilotState_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

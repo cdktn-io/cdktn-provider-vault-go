@@ -59,6 +59,10 @@ func (c *jsiiProxy_ConfigUiCustomMessage) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ConfigUiCustomMessage) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigUiCustomMessage) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_ConfigUiCustomMessage) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_ConfigUiCustomMessage) validatePutLinkParameters(value *ConfigUiCustomMessageLink) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigUiCustomMessage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

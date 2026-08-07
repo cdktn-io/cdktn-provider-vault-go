@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultTransformEncode) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultTransformEncode) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataVaultTransformEncode_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

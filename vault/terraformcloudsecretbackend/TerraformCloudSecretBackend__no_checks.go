@@ -59,6 +59,10 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) validateInterpolationForAttribut
 	return nil
 }
 
+func (t *jsiiProxy_TerraformCloudSecretBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformCloudSecretBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) validateMoveToIdParameters(id *s
 }
 
 func (t *jsiiProxy_TerraformCloudSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

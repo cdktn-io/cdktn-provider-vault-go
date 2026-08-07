@@ -59,6 +59,10 @@ func (r *jsiiProxy_RabbitmqSecretBackend) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (r *jsiiProxy_RabbitmqSecretBackend) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RabbitmqSecretBackend) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (r *jsiiProxy_RabbitmqSecretBackend) validateMoveToIdParameters(id *string)
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RabbitmqSecretBackend) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
