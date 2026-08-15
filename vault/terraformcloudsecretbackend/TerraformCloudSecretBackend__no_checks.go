@@ -147,7 +147,15 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDescriptionParameters
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetExplicitMaxTtlParameters(val *float64) error {
 	return nil
 }
 
@@ -200,6 +208,18 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetPluginVersionParamete
 }
 
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

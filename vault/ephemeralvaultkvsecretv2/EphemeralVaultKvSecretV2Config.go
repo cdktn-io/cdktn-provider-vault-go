@@ -20,23 +20,23 @@ type EphemeralVaultKvSecretV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Mount path for the KVV2 engine in Vault.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#mount EphemeralVaultKvSecretV2#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#mount EphemeralVaultKvSecretV2#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// Full name of the secret.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#name EphemeralVaultKvSecretV2#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#name EphemeralVaultKvSecretV2#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#mount_id EphemeralVaultKvSecretV2#mount_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#mount_id EphemeralVaultKvSecretV2#mount_id}
 	MountId *string `field:"optional" json:"mountId" yaml:"mountId"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#namespace EphemeralVaultKvSecretV2#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#namespace EphemeralVaultKvSecretV2#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Version of the secret to retrieve.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#version EphemeralVaultKvSecretV2#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#version EphemeralVaultKvSecretV2#version}
 	Version *float64 `field:"optional" json:"version" yaml:"version"`
 }
 

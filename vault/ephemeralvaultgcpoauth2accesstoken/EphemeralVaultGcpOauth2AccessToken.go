@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/gcp_oauth2_access_token vault_gcp_oauth2_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcp_oauth2_access_token vault_gcp_oauth2_access_token}.
 type EphemeralVaultGcpOauth2AccessToken interface {
 	cdktn.TerraformEphemeralResource
 	// Experimental.
@@ -495,7 +495,7 @@ func (j *jsiiProxy_EphemeralVaultGcpOauth2AccessToken) TokenTtl() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/gcp_oauth2_access_token vault_gcp_oauth2_access_token} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcp_oauth2_access_token vault_gcp_oauth2_access_token} Ephemeral Resource.
 func NewEphemeralVaultGcpOauth2AccessToken(scope constructs.Construct, id *string, config *EphemeralVaultGcpOauth2AccessTokenConfig) EphemeralVaultGcpOauth2AccessToken {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewEphemeralVaultGcpOauth2AccessToken(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/gcp_oauth2_access_token vault_gcp_oauth2_access_token} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcp_oauth2_access_token vault_gcp_oauth2_access_token} Ephemeral Resource.
 func NewEphemeralVaultGcpOauth2AccessToken_Override(e EphemeralVaultGcpOauth2AccessToken, scope constructs.Construct, id *string, config *EphemeralVaultGcpOauth2AccessTokenConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
 type TerraformCloudSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -62,9 +62,15 @@ type TerraformCloudSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	DisableRemount() interface{}
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
+	ExplicitMaxTtl() *float64
+	SetExplicitMaxTtl(val *float64)
+	ExplicitMaxTtlInput() *float64
 	ExternalEntropyAccess() interface{}
 	SetExternalEntropyAccess(val interface{})
 	ExternalEntropyAccessInput() interface{}
@@ -122,6 +128,15 @@ type TerraformCloudSecretBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	SealWrap() interface{}
 	SetSealWrap(val interface{})
 	SealWrapInput() interface{}
@@ -244,7 +259,9 @@ type TerraformCloudSecretBackend interface {
 	ResetDefaultLeaseTtlSeconds()
 	ResetDelegatedAuthAccessors()
 	ResetDescription()
+	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
+	ResetExplicitMaxTtl()
 	ResetExternalEntropyAccess()
 	ResetForceNoCache()
 	ResetId()
@@ -259,6 +276,9 @@ type TerraformCloudSecretBackend interface {
 	ResetOverrideLogicalId()
 	ResetPassthroughRequestHeaders()
 	ResetPluginVersion()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetSealWrap()
 	ResetToken()
 	ResetTokenWo()
@@ -550,6 +570,26 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) DisableRemount() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -565,6 +605,26 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) DisableRemountInput() interface{
 	_jsii_.Get(
 		j,
 		"disableRemountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) ExplicitMaxTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"explicitMaxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) ExplicitMaxTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"explicitMaxTtlInput",
 		&returns,
 	)
 	return returns
@@ -870,6 +930,66 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) SealWrap() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -981,7 +1101,7 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) TokenWoVersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
 func NewTerraformCloudSecretBackend(scope constructs.Construct, id *string, config *TerraformCloudSecretBackendConfig) TerraformCloudSecretBackend {
 	_init_.Initialize()
 
@@ -999,7 +1119,7 @@ func NewTerraformCloudSecretBackend(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
 func NewTerraformCloudSecretBackend_Override(t TerraformCloudSecretBackend, scope constructs.Construct, id *string, config *TerraformCloudSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1150,6 +1270,17 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend)SetDisableRemount(val interface{}) {
 	if err := j.validateSetDisableRemountParameters(val); err != nil {
 		panic(err)
@@ -1157,6 +1288,17 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetDisableRemount(val interface{}
 	_jsii_.Set(
 		j,
 		"disableRemount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetExplicitMaxTtl(val *float64) {
+	if err := j.validateSetExplicitMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"explicitMaxTtl",
 		val,
 	)
 }
@@ -1316,6 +1458,39 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1824,10 +1999,26 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDescription() {
 	)
 }
 
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDisableRemount() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetDisableRemount",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetExplicitMaxTtl() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetExplicitMaxTtl",
 		nil, // no parameters
 	)
 }
@@ -1924,6 +2115,30 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) ResetPluginVersion() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPluginVersion",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

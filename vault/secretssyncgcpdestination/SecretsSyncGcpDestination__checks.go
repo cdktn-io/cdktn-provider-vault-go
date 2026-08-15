@@ -477,6 +477,14 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdentityTokenTtlParamet
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetKmsKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -558,6 +566,14 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetProvisionersParameters(
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktn.FileProvisioner, *cdktn.LocalExecProvisioner, *cdktn.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetReplicaRegionsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

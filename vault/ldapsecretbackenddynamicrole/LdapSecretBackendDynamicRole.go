@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role}.
 type LdapSecretBackendDynamicRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -66,6 +66,9 @@ type LdapSecretBackendDynamicRole interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -191,6 +194,7 @@ type LdapSecretBackendDynamicRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPasswordPolicy()
 	ResetRollbackLdif()
 	ResetUsernameTemplate()
 	SynthesizeAttributes() *map[string]interface{}
@@ -460,6 +464,26 @@ func (j *jsiiProxy_LdapSecretBackendDynamicRole) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackendDynamicRole) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendDynamicRole) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackendDynamicRole) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -581,7 +605,7 @@ func (j *jsiiProxy_LdapSecretBackendDynamicRole) UsernameTemplateInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role} Resource.
 func NewLdapSecretBackendDynamicRole(scope constructs.Construct, id *string, config *LdapSecretBackendDynamicRoleConfig) LdapSecretBackendDynamicRole {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewLdapSecretBackendDynamicRole(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role} Resource.
 func NewLdapSecretBackendDynamicRole_Override(l LdapSecretBackendDynamicRole, scope constructs.Construct, id *string, config *LdapSecretBackendDynamicRoleConfig) {
 	_init_.Initialize()
 
@@ -732,6 +756,17 @@ func (j *jsiiProxy_LdapSecretBackendDynamicRole)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendDynamicRole)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
 		val,
 	)
 }
@@ -1212,6 +1247,14 @@ func (l *jsiiProxy_LdapSecretBackendDynamicRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendDynamicRole) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPasswordPolicy",
 		nil, // no parameters
 	)
 }

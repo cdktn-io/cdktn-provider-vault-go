@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
 type SecretsSyncGcpDestination interface {
 	cdktn.TerraformResource
 	AllowedIpv4Addresses() *[]*string
@@ -85,6 +85,9 @@ type SecretsSyncGcpDestination interface {
 	SetIdentityTokenTtl(val *float64)
 	IdentityTokenTtlInput() *float64
 	IdInput() *string
+	KmsKeyId() *string
+	SetKmsKeyId(val *string)
+	KmsKeyIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -113,6 +116,9 @@ type SecretsSyncGcpDestination interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicaRegions() *map[string]*string
+	SetReplicaRegions(val *map[string]*string)
+	ReplicaRegionsInput() *map[string]*string
 	ReplicationLocations() *[]*string
 	SetReplicationLocations(val *[]*string)
 	ReplicationLocationsInput() *[]*string
@@ -235,12 +241,14 @@ type SecretsSyncGcpDestination interface {
 	ResetIdentityTokenKeyWo()
 	ResetIdentityTokenKeyWoVersion()
 	ResetIdentityTokenTtl()
+	ResetKmsKeyId()
 	ResetLocationalKmsKeys()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectId()
+	ResetReplicaRegions()
 	ResetReplicationLocations()
 	ResetSecretNameTemplate()
 	ResetServiceAccountEmail()
@@ -631,6 +639,26 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) KmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) KmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -761,6 +789,26 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) ReplicaRegions() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"replicaRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) ReplicaRegionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"replicaRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) ReplicationLocations() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -862,7 +910,7 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
 func NewSecretsSyncGcpDestination(scope constructs.Construct, id *string, config *SecretsSyncGcpDestinationConfig) SecretsSyncGcpDestination {
 	_init_.Initialize()
 
@@ -880,7 +928,7 @@ func NewSecretsSyncGcpDestination(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
 func NewSecretsSyncGcpDestination_Override(s SecretsSyncGcpDestination, scope constructs.Construct, id *string, config *SecretsSyncGcpDestinationConfig) {
 	_init_.Initialize()
 
@@ -1083,6 +1131,17 @@ func (j *jsiiProxy_SecretsSyncGcpDestination)SetIdentityTokenTtl(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1153,6 +1212,17 @@ func (j *jsiiProxy_SecretsSyncGcpDestination)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetReplicaRegions(val *map[string]*string) {
+	if err := j.validateSetReplicaRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaRegions",
 		val,
 	)
 }
@@ -1682,6 +1752,14 @@ func (s *jsiiProxy_SecretsSyncGcpDestination) ResetIdentityTokenTtl() {
 	)
 }
 
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetKmsKeyId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretsSyncGcpDestination) ResetLocationalKmsKeys() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1710,6 +1788,14 @@ func (s *jsiiProxy_SecretsSyncGcpDestination) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetReplicaRegions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReplicaRegions",
 		nil, // no parameters
 	)
 }

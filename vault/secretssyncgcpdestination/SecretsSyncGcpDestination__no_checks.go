@@ -163,6 +163,10 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdentityTokenTtlParamet
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetKmsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -184,6 +188,10 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetProjectIdParameters(val
 }
 
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetReplicaRegionsParameters(val *map[string]*string) error {
 	return nil
 }
 

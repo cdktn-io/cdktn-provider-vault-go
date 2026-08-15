@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias vault_identity_entity_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
 type IdentityEntityAlias interface {
 	cdktn.TerraformResource
 	CanonicalId() *string
@@ -37,6 +37,9 @@ type IdentityEntityAlias interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalId() *string
+	SetExternalId(val *string)
+	ExternalIdInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -48,6 +51,9 @@ type IdentityEntityAlias interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Issuer() *string
+	SetIssuer(val *string)
+	IssuerInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -172,7 +178,9 @@ type IdentityEntityAlias interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCustomMetadata()
+	ResetExternalId()
 	ResetId()
+	ResetIssuer()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -294,6 +302,26 @@ func (j *jsiiProxy_IdentityEntityAlias) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityEntityAlias) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntityAlias) ExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityEntityAlias) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -339,6 +367,26 @@ func (j *jsiiProxy_IdentityEntityAlias) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntityAlias) Issuer() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntityAlias) IssuerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerInput",
 		&returns,
 	)
 	return returns
@@ -485,7 +533,7 @@ func (j *jsiiProxy_IdentityEntityAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
 func NewIdentityEntityAlias(scope constructs.Construct, id *string, config *IdentityEntityAliasConfig) IdentityEntityAlias {
 	_init_.Initialize()
 
@@ -503,7 +551,7 @@ func NewIdentityEntityAlias(scope constructs.Construct, id *string, config *Iden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
 func NewIdentityEntityAlias_Override(i IdentityEntityAlias, scope constructs.Construct, id *string, config *IdentityEntityAliasConfig) {
 	_init_.Initialize()
 
@@ -566,6 +614,17 @@ func (j *jsiiProxy_IdentityEntityAlias)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_IdentityEntityAlias)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_IdentityEntityAlias)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -581,6 +640,17 @@ func (j *jsiiProxy_IdentityEntityAlias)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntityAlias)SetIssuer(val *string) {
+	if err := j.validateSetIssuerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issuer",
 		val,
 	)
 }
@@ -1036,10 +1106,26 @@ func (i *jsiiProxy_IdentityEntityAlias) ResetCustomMetadata() {
 	)
 }
 
+func (i *jsiiProxy_IdentityEntityAlias) ResetExternalId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetExternalId",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IdentityEntityAlias) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntityAlias) ResetIssuer() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetIssuer",
 		nil, // no parameters
 	)
 }

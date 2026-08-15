@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}.
 type SecretsSyncAwsDestination interface {
 	cdktn.TerraformResource
 	AccessKeyId() *string
@@ -85,6 +85,9 @@ type SecretsSyncAwsDestination interface {
 	SetIdentityTokenTtl(val *float64)
 	IdentityTokenTtlInput() *float64
 	IdInput() *string
+	KmsKeyId() *string
+	SetKmsKeyId(val *string)
+	KmsKeyIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -110,6 +113,9 @@ type SecretsSyncAwsDestination interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ReplicaRegions() *map[string]*string
+	SetReplicaRegions(val *map[string]*string)
+	ReplicaRegionsInput() *map[string]*string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -232,11 +238,13 @@ type SecretsSyncAwsDestination interface {
 	ResetIdentityTokenKeyWo()
 	ResetIdentityTokenKeyWoVersion()
 	ResetIdentityTokenTtl()
+	ResetKmsKeyId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetReplicaRegions()
 	ResetRoleArn()
 	ResetSecretAccessKey()
 	ResetSecretNameTemplate()
@@ -627,6 +635,26 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) KmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) KmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -737,6 +765,26 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) ReplicaRegions() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"replicaRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) ReplicaRegionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"replicaRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -838,7 +886,7 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
 func NewSecretsSyncAwsDestination(scope constructs.Construct, id *string, config *SecretsSyncAwsDestinationConfig) SecretsSyncAwsDestination {
 	_init_.Initialize()
 
@@ -856,7 +904,7 @@ func NewSecretsSyncAwsDestination(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
 func NewSecretsSyncAwsDestination_Override(s SecretsSyncAwsDestination, scope constructs.Construct, id *string, config *SecretsSyncAwsDestinationConfig) {
 	_init_.Initialize()
 
@@ -1059,6 +1107,17 @@ func (j *jsiiProxy_SecretsSyncAwsDestination)SetIdentityTokenTtl(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1118,6 +1177,17 @@ func (j *jsiiProxy_SecretsSyncAwsDestination)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination)SetReplicaRegions(val *map[string]*string) {
+	if err := j.validateSetReplicaRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaRegions",
 		val,
 	)
 }
@@ -1647,6 +1717,14 @@ func (s *jsiiProxy_SecretsSyncAwsDestination) ResetIdentityTokenTtl() {
 	)
 }
 
+func (s *jsiiProxy_SecretsSyncAwsDestination) ResetKmsKeyId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretsSyncAwsDestination) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1667,6 +1745,14 @@ func (s *jsiiProxy_SecretsSyncAwsDestination) ResetRegion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAwsDestination) ResetReplicaRegions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReplicaRegions",
 		nil, // no parameters
 	)
 }

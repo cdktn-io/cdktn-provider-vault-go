@@ -163,6 +163,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetIssuerRefPar
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetJksPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetKeyUsageParameters(val *[]*string) error {
 	return nil
 }
@@ -216,6 +220,14 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedIpR
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedUriDomainsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPkcs12EncoderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPkcs12PasswordParameters(val *string) error {
 	return nil
 }
 

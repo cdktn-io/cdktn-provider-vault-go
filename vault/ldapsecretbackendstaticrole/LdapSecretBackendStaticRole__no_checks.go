@@ -99,6 +99,10 @@ func validateLdapSecretBackendStaticRole_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetAutoUnlockParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -131,6 +135,10 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetNamespaceParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetPasswordWoParameters(val *string) error {
 	return nil
 }
@@ -144,6 +152,14 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetProvisionersParameter
 }
 
 func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRoleNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRotateOnReadParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRotateOnReadCooldownParameters(val *float64) error {
 	return nil
 }
 

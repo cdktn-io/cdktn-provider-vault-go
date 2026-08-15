@@ -139,6 +139,10 @@ func (j *jsiiProxy_LdapSecretBackendDynamicRole) validateSetNamespaceParameters(
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackendDynamicRole) validateSetPasswordPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackendDynamicRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

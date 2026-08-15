@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
 type PluginPinnedVersion interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_PluginPinnedVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
 func NewPluginPinnedVersion(scope constructs.Construct, id *string, config *PluginPinnedVersionConfig) PluginPinnedVersion {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewPluginPinnedVersion(scope constructs.Construct, id *string, config *Plug
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
 func NewPluginPinnedVersion_Override(p PluginPinnedVersion, scope constructs.Construct, id *string, config *PluginPinnedVersionConfig) {
 	_init_.Initialize()
 

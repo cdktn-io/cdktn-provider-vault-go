@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
 type LdapSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -28,6 +28,9 @@ type LdapSecretBackend interface {
 	AuditNonHmacResponseKeys() *[]*string
 	SetAuditNonHmacResponseKeys(val *[]*string)
 	AuditNonHmacResponseKeysInput() *[]*string
+	AutoUnlock() interface{}
+	SetAutoUnlock(val interface{})
+	AutoUnlockInput() interface{}
 	Binddn() *string
 	SetBinddn(val *string)
 	BinddnInput() *string
@@ -157,6 +160,12 @@ type LdapSecretBackend interface {
 	RequestTimeout() *float64
 	SetRequestTimeout(val *float64)
 	RequestTimeoutInput() *float64
+	RotateOnRead() interface{}
+	SetRotateOnRead(val interface{})
+	RotateOnReadCooldown() *float64
+	SetRotateOnReadCooldown(val *float64)
+	RotateOnReadCooldownInput() *float64
+	RotateOnReadInput() interface{}
 	RotationPeriod() *float64
 	SetRotationPeriod(val *float64)
 	RotationPeriodInput() *float64
@@ -295,6 +304,7 @@ type LdapSecretBackend interface {
 	ResetAllowedResponseHeaders()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
+	ResetAutoUnlock()
 	ResetBindpass()
 	ResetBindpassWo()
 	ResetBindpassWoVersion()
@@ -326,6 +336,8 @@ type LdapSecretBackend interface {
 	ResetPath()
 	ResetPluginVersion()
 	ResetRequestTimeout()
+	ResetRotateOnRead()
+	ResetRotateOnReadCooldown()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
@@ -450,6 +462,26 @@ func (j *jsiiProxy_LdapSecretBackend) AuditNonHmacResponseKeysInput() *[]*string
 	_jsii_.Get(
 		j,
 		"auditNonHmacResponseKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) AutoUnlock() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUnlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) AutoUnlockInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUnlockInput",
 		&returns,
 	)
 	return returns
@@ -1165,6 +1197,46 @@ func (j *jsiiProxy_LdapSecretBackend) RequestTimeoutInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackend) RotateOnRead() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotateOnRead",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) RotateOnReadCooldown() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotateOnReadCooldown",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) RotateOnReadCooldownInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotateOnReadCooldownInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) RotateOnReadInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotateOnReadInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackend) RotationPeriod() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1436,7 +1508,7 @@ func (j *jsiiProxy_LdapSecretBackend) UserdnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSecretBackendConfig) LdapSecretBackend {
 	_init_.Initialize()
 
@@ -1454,7 +1526,7 @@ func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend_Override(l LdapSecretBackend, scope constructs.Construct, id *string, config *LdapSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1505,6 +1577,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetAuditNonHmacResponseKeys(val *[]*string)
 	_jsii_.Set(
 		j,
 		"auditNonHmacResponseKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetAutoUnlock(val interface{}) {
+	if err := j.validateSetAutoUnlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoUnlock",
 		val,
 	)
 }
@@ -1892,6 +1975,28 @@ func (j *jsiiProxy_LdapSecretBackend)SetRequestTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"requestTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetRotateOnRead(val interface{}) {
+	if err := j.validateSetRotateOnReadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateOnRead",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetRotateOnReadCooldown(val *float64) {
+	if err := j.validateSetRotateOnReadCooldownParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateOnReadCooldown",
 		val,
 	)
 }
@@ -2440,6 +2545,14 @@ func (l *jsiiProxy_LdapSecretBackend) ResetAuditNonHmacResponseKeys() {
 	)
 }
 
+func (l *jsiiProxy_LdapSecretBackend) ResetAutoUnlock() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAutoUnlock",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapSecretBackend) ResetBindpass() {
 	_jsii_.InvokeVoid(
 		l,
@@ -2668,6 +2781,22 @@ func (l *jsiiProxy_LdapSecretBackend) ResetRequestTimeout() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetRequestTimeout",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetRotateOnRead() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotateOnRead",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetRotateOnReadCooldown() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotateOnReadCooldown",
 		nil, // no parameters
 	)
 }

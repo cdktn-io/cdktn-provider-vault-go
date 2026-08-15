@@ -115,6 +115,10 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetAuditNonHmacResponseKeysParamet
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetAutoUnlockParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetBinddnParameters(val *string) error {
 	return nil
 }
@@ -244,6 +248,14 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetProvisionersParameters(val *[]i
 }
 
 func (j *jsiiProxy_LdapSecretBackend) validateSetRequestTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetRotateOnReadParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetRotateOnReadCooldownParameters(val *float64) error {
 	return nil
 }
 

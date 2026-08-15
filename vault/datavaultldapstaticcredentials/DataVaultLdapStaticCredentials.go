@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials}.
 type DataVaultLdapStaticCredentials interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -63,6 +63,7 @@ type DataVaultLdapStaticCredentials interface {
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
+	RotatedOnRead() cdktn.IResolvable
 	RotationPeriod() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -373,6 +374,16 @@ func (j *jsiiProxy_DataVaultLdapStaticCredentials) RoleNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataVaultLdapStaticCredentials) RotatedOnRead() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"rotatedOnRead",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVaultLdapStaticCredentials) RotationPeriod() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -434,7 +445,7 @@ func (j *jsiiProxy_DataVaultLdapStaticCredentials) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source.
 func NewDataVaultLdapStaticCredentials(scope constructs.Construct, id *string, config *DataVaultLdapStaticCredentialsConfig) DataVaultLdapStaticCredentials {
 	_init_.Initialize()
 
@@ -452,7 +463,7 @@ func NewDataVaultLdapStaticCredentials(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source.
 func NewDataVaultLdapStaticCredentials_Override(d DataVaultLdapStaticCredentials, scope constructs.Construct, id *string, config *DataVaultLdapStaticCredentialsConfig) {
 	_init_.Initialize()
 

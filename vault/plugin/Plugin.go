@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin vault_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/plugin vault_plugin}.
 type Plugin interface {
 	cdktn.TerraformResource
 	Args() *[]*string
@@ -582,7 +582,7 @@ func (j *jsiiProxy_Plugin) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin vault_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/plugin vault_plugin} Resource.
 func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plugin {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin vault_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/plugin vault_plugin} Resource.
 func NewPlugin_Override(p Plugin, scope constructs.Construct, id *string, config *PluginConfig) {
 	_init_.Initialize()
 

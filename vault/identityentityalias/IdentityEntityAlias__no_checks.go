@@ -115,7 +115,15 @@ func (j *jsiiProxy_IdentityEntityAlias) validateSetCustomMetadataParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_IdentityEntityAlias) validateSetExternalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityEntityAlias) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityEntityAlias) validateSetIssuerParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_endpoint vault_generic_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_endpoint vault_generic_endpoint}.
 type EphemeralVaultGenericEndpoint interface {
 	cdktn.TerraformEphemeralResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_EphemeralVaultGenericEndpoint) WriteFieldsInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_endpoint vault_generic_endpoint} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_endpoint vault_generic_endpoint} Ephemeral Resource.
 func NewEphemeralVaultGenericEndpoint(scope constructs.Construct, id *string, config *EphemeralVaultGenericEndpointConfig) EphemeralVaultGenericEndpoint {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewEphemeralVaultGenericEndpoint(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_endpoint vault_generic_endpoint} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_endpoint vault_generic_endpoint} Ephemeral Resource.
 func NewEphemeralVaultGenericEndpoint_Override(e EphemeralVaultGenericEndpoint, scope constructs.Construct, id *string, config *EphemeralVaultGenericEndpointConfig) {
 	_init_.Initialize()
 

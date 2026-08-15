@@ -163,6 +163,10 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdentityTokenTtlParamet
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetKmsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -180,6 +184,10 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetReplicaRegionsParameters(val *map[string]*string) error {
 	return nil
 }
 

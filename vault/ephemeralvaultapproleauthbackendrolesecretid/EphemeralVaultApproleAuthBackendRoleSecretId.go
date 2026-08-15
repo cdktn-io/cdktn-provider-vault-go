@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
 type EphemeralVaultApproleAuthBackendRoleSecretId interface {
 	cdktn.TerraformEphemeralResource
 	Accessor() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_EphemeralVaultApproleAuthBackendRoleSecretId) TtlInput() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Ephemeral Resource.
 func NewEphemeralVaultApproleAuthBackendRoleSecretId(scope constructs.Construct, id *string, config *EphemeralVaultApproleAuthBackendRoleSecretIdConfig) EphemeralVaultApproleAuthBackendRoleSecretId {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewEphemeralVaultApproleAuthBackendRoleSecretId(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Ephemeral Resource.
 func NewEphemeralVaultApproleAuthBackendRoleSecretId_Override(e EphemeralVaultApproleAuthBackendRoleSecretId, scope constructs.Construct, id *string, config *EphemeralVaultApproleAuthBackendRoleSecretIdConfig) {
 	_init_.Initialize()
 

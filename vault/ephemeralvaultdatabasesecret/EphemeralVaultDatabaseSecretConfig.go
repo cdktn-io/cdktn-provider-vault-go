@@ -20,19 +20,19 @@ type EphemeralVaultDatabaseSecretConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Mount path for the DB engine in Vault.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret#mount EphemeralVaultDatabaseSecret#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret#mount EphemeralVaultDatabaseSecret#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// Specifies the name of the role to create credentials against.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret#name EphemeralVaultDatabaseSecret#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret#name EphemeralVaultDatabaseSecret#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret#mount_id EphemeralVaultDatabaseSecret#mount_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret#mount_id EphemeralVaultDatabaseSecret#mount_id}
 	MountId *string `field:"optional" json:"mountId" yaml:"mountId"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret#namespace EphemeralVaultDatabaseSecret#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret#namespace EphemeralVaultDatabaseSecret#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

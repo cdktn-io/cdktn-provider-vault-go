@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
 type KubernetesAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -798,7 +798,7 @@ func (j *jsiiProxy_KubernetesAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
 func NewKubernetesAuthBackendRole(scope constructs.Construct, id *string, config *KubernetesAuthBackendRoleConfig) KubernetesAuthBackendRole {
 	_init_.Initialize()
 
@@ -816,7 +816,7 @@ func NewKubernetesAuthBackendRole(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
 func NewKubernetesAuthBackendRole_Override(k KubernetesAuthBackendRole, scope constructs.Construct, id *string, config *KubernetesAuthBackendRoleConfig) {
 	_init_.Initialize()
 

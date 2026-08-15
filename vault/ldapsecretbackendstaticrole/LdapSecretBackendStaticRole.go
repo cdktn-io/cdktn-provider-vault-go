@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
 type LdapSecretBackendStaticRole interface {
 	cdktn.TerraformResource
+	AutoUnlock() interface{}
+	SetAutoUnlock(val interface{})
+	AutoUnlockInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -60,6 +63,9 @@ type LdapSecretBackendStaticRole interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PasswordPolicy() *string
+	SetPasswordPolicy(val *string)
+	PasswordPolicyInput() *string
 	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 	PasswordWo() *string
 	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
@@ -81,6 +87,12 @@ type LdapSecretBackendStaticRole interface {
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
+	RotateOnRead() interface{}
+	SetRotateOnRead(val interface{})
+	RotateOnReadCooldown() *float64
+	SetRotateOnReadCooldown(val *float64)
+	RotateOnReadCooldownInput() *float64
+	RotateOnReadInput() interface{}
 	RotationPeriod() *float64
 	SetRotationPeriod(val *float64)
 	RotationPeriodInput() *float64
@@ -197,6 +209,7 @@ type LdapSecretBackendStaticRole interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetAutoUnlock()
 	ResetDisableAutomatedRotation()
 	ResetDn()
 	ResetId()
@@ -205,8 +218,11 @@ type LdapSecretBackendStaticRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPasswordPolicy()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
+	ResetRotateOnRead()
+	ResetRotateOnReadCooldown()
 	ResetRotationPeriod()
 	ResetRotationPolicy()
 	ResetRotationSchedule()
@@ -237,6 +253,26 @@ type LdapSecretBackendStaticRole interface {
 // The jsii proxy struct for LdapSecretBackendStaticRole
 type jsiiProxy_LdapSecretBackendStaticRole struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) AutoUnlock() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUnlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) AutoUnlockInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUnlockInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LdapSecretBackendStaticRole) CdktfStack() cdktn.TerraformStack {
@@ -439,6 +475,26 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole) PasswordPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) PasswordPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole) PasswordWo() *string {
 	var returns *string
 	_jsii_.Get(
@@ -524,6 +580,46 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) RoleNameInput() *string {
 	_jsii_.Get(
 		j,
 		"roleNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotateOnRead() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotateOnRead",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotateOnReadCooldown() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotateOnReadCooldown",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotateOnReadCooldownInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotateOnReadCooldownInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) RotateOnReadInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotateOnReadInput",
 		&returns,
 	)
 	return returns
@@ -680,7 +776,7 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) LdapSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -698,7 +794,7 @@ func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole_Override(l LdapSecretBackendStaticRole, scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -706,6 +802,17 @@ func NewLdapSecretBackendStaticRole_Override(l LdapSecretBackendStaticRole, scop
 		"@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole",
 		[]interface{}{scope, id, config},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetAutoUnlock(val interface{}) {
+	if err := j.validateSetAutoUnlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoUnlock",
+		val,
 	)
 }
 
@@ -813,6 +920,17 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole)SetPasswordWo(val *string) {
 	if err := j.validateSetPasswordWoParameters(val); err != nil {
 		panic(err)
@@ -861,6 +979,28 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole)SetRoleName(val *string) {
 	_jsii_.Set(
 		j,
 		"roleName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetRotateOnRead(val interface{}) {
+	if err := j.validateSetRotateOnReadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateOnRead",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetRotateOnReadCooldown(val *float64) {
+	if err := j.validateSetRotateOnReadCooldownParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateOnReadCooldown",
 		val,
 	)
 }
@@ -1311,6 +1451,14 @@ func (l *jsiiProxy_LdapSecretBackendStaticRole) RegisterProviderFeatureUsage(fea
 	)
 }
 
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetAutoUnlock() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAutoUnlock",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetDisableAutomatedRotation() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1359,6 +1507,14 @@ func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetOverrideLogicalId() {
 	)
 }
 
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetPasswordWo() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1371,6 +1527,22 @@ func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetPasswordWoVersion() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPasswordWoVersion",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetRotateOnRead() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotateOnRead",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetRotateOnReadCooldown() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotateOnReadCooldown",
 		nil, // no parameters
 	)
 }

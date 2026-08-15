@@ -417,6 +417,14 @@ func (j *jsiiProxy_LdapSecretBackendDynamicRole) validateSetNamespaceParameters(
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackendDynamicRole) validateSetPasswordPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackendDynamicRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
