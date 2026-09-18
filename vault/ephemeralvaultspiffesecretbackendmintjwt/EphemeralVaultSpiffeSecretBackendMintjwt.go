@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt}.
 type EphemeralVaultSpiffeSecretBackendMintjwt interface {
 	cdktn.TerraformEphemeralResource
 	Audience() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_EphemeralVaultSpiffeSecretBackendMintjwt) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt} Ephemeral Resource.
 func NewEphemeralVaultSpiffeSecretBackendMintjwt(scope constructs.Construct, id *string, config *EphemeralVaultSpiffeSecretBackendMintjwtConfig) EphemeralVaultSpiffeSecretBackendMintjwt {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewEphemeralVaultSpiffeSecretBackendMintjwt(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt} Ephemeral Resource.
 func NewEphemeralVaultSpiffeSecretBackendMintjwt_Override(e EphemeralVaultSpiffeSecretBackendMintjwt, scope constructs.Construct, id *string, config *EphemeralVaultSpiffeSecretBackendMintjwtConfig) {
 	_init_.Initialize()
 

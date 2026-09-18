@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account}.
 type PkiExternalCaSecretBackendAcmeAccount interface {
 	cdktn.TerraformResource
 	ActiveKeyVersion() *float64
@@ -28,6 +28,9 @@ type PkiExternalCaSecretBackendAcmeAccount interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultNameserver() *string
+	SetDefaultNameserver(val *string)
+	DefaultNameserverInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -185,6 +188,7 @@ type PkiExternalCaSecretBackendAcmeAccount interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetDefaultNameserver()
 	ResetEabKey()
 	ResetEabKid()
 	ResetKeyType()
@@ -265,6 +269,26 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) DefaultNameserver() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultNameserver",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) DefaultNameserverInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultNameserverInput",
 		&returns,
 	)
 	return returns
@@ -571,7 +595,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) TrustedCaInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account} Resource.
 func NewPkiExternalCaSecretBackendAcmeAccount(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendAcmeAccountConfig) PkiExternalCaSecretBackendAcmeAccount {
 	_init_.Initialize()
 
@@ -589,7 +613,7 @@ func NewPkiExternalCaSecretBackendAcmeAccount(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account} Resource.
 func NewPkiExternalCaSecretBackendAcmeAccount_Override(p PkiExternalCaSecretBackendAcmeAccount, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendAcmeAccountConfig) {
 	_init_.Initialize()
 
@@ -618,6 +642,17 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount)SetCount(val interface{
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount)SetDefaultNameserver(val *string) {
+	if err := j.validateSetDefaultNameserverParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultNameserver",
 		val,
 	)
 }
@@ -1144,6 +1179,14 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) RegisterProviderFeatur
 		p,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (p *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) ResetDefaultNameserver() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDefaultNameserver",
+		nil, // no parameters
 	)
 }
 

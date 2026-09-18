@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled}.
 type PkiExternalCaSecretBackendOrderChallengeFulfilled interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -483,7 +483,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendOrderChallengeFulfilled) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled} Resource.
 func NewPkiExternalCaSecretBackendOrderChallengeFulfilled(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendOrderChallengeFulfilledConfig) PkiExternalCaSecretBackendOrderChallengeFulfilled {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewPkiExternalCaSecretBackendOrderChallengeFulfilled(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled} Resource.
 func NewPkiExternalCaSecretBackendOrderChallengeFulfilled_Override(p PkiExternalCaSecretBackendOrderChallengeFulfilled, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendOrderChallengeFulfilledConfig) {
 	_init_.Initialize()
 

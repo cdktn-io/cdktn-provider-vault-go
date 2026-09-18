@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/cf_auth_login vault_cf_auth_login}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/cf_auth_login vault_cf_auth_login}.
 type EphemeralVaultCfAuthLogin interface {
 	cdktn.TerraformEphemeralResource
 	Accessor() *string
@@ -481,7 +481,7 @@ func (j *jsiiProxy_EphemeralVaultCfAuthLogin) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/cf_auth_login vault_cf_auth_login} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/cf_auth_login vault_cf_auth_login} Ephemeral Resource.
 func NewEphemeralVaultCfAuthLogin(scope constructs.Construct, id *string, config *EphemeralVaultCfAuthLoginConfig) EphemeralVaultCfAuthLogin {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewEphemeralVaultCfAuthLogin(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/cf_auth_login vault_cf_auth_login} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/cf_auth_login vault_cf_auth_login} Ephemeral Resource.
 func NewEphemeralVaultCfAuthLogin_Override(e EphemeralVaultCfAuthLogin, scope constructs.Construct, id *string, config *EphemeralVaultCfAuthLoginConfig) {
 	_init_.Initialize()
 

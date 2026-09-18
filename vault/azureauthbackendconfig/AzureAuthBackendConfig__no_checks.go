@@ -99,6 +99,10 @@ func validateAzureAuthBackendConfig_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetBackendParameters(val *string) error {
 	return nil
 }

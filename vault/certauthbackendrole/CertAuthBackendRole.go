@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
 type CertAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -44,6 +44,14 @@ type CertAuthBackendRole interface {
 	Certificate() *string
 	SetCertificate(val *string)
 	CertificateInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	CertificateWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	SetCertificateWo(val *string)
+	CertificateWoInput() *string
+	CertificateWoVersion() *float64
+	SetCertificateWoVersion(val *float64)
+	CertificateWoVersionInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -251,6 +259,9 @@ type CertAuthBackendRole interface {
 	ResetAllowedOrganizationalUnits()
 	ResetAllowedUriSans()
 	ResetBackend()
+	ResetCertificate()
+	ResetCertificateWo()
+	ResetCertificateWoVersion()
 	ResetDisplayName()
 	ResetId()
 	ResetNamespace()
@@ -486,6 +497,46 @@ func (j *jsiiProxy_CertAuthBackendRole) CertificateInput() *string {
 	_jsii_.Get(
 		j,
 		"certificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) CertificateWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) CertificateWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) CertificateWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"certificateWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) CertificateWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"certificateWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -1062,7 +1113,7 @@ func (j *jsiiProxy_CertAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) CertAuthBackendRole {
 	_init_.Initialize()
 
@@ -1080,7 +1131,7 @@ func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *Cert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole_Override(c CertAuthBackendRole, scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1186,6 +1237,28 @@ func (j *jsiiProxy_CertAuthBackendRole)SetCertificate(val *string) {
 	_jsii_.Set(
 		j,
 		"certificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertAuthBackendRole)SetCertificateWo(val *string) {
+	if err := j.validateSetCertificateWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertAuthBackendRole)SetCertificateWoVersion(val *float64) {
+	if err := j.validateSetCertificateWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateWoVersion",
 		val,
 	)
 }
@@ -1929,6 +2002,30 @@ func (c *jsiiProxy_CertAuthBackendRole) ResetBackend() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBackend",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetCertificate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCertificate",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetCertificateWo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCertificateWo",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetCertificateWoVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCertificateWoVersion",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcp_service_account_key vault_gcp_service_account_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcp_service_account_key vault_gcp_service_account_key}.
 type EphemeralVaultGcpServiceAccountKey interface {
 	cdktn.TerraformEphemeralResource
 	// Experimental.
@@ -506,7 +506,7 @@ func (j *jsiiProxy_EphemeralVaultGcpServiceAccountKey) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcp_service_account_key vault_gcp_service_account_key} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcp_service_account_key vault_gcp_service_account_key} Ephemeral Resource.
 func NewEphemeralVaultGcpServiceAccountKey(scope constructs.Construct, id *string, config *EphemeralVaultGcpServiceAccountKeyConfig) EphemeralVaultGcpServiceAccountKey {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewEphemeralVaultGcpServiceAccountKey(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcp_service_account_key vault_gcp_service_account_key} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcp_service_account_key vault_gcp_service_account_key} Ephemeral Resource.
 func NewEphemeralVaultGcpServiceAccountKey_Override(e EphemeralVaultGcpServiceAccountKey, scope constructs.Construct, id *string, config *EphemeralVaultGcpServiceAccountKeyConfig) {
 	_init_.Initialize()
 

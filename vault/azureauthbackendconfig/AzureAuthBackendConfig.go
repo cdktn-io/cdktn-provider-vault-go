@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
 type AzureAuthBackendConfig interface {
 	cdktn.TerraformResource
+	AuthType() *string
+	SetAuthType(val *string)
+	AuthTypeInput() *string
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -212,6 +215,7 @@ type AzureAuthBackendConfig interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetAuthType()
 	ResetBackend()
 	ResetClientId()
 	ResetClientSecret()
@@ -257,6 +261,26 @@ type AzureAuthBackendConfig interface {
 // The jsii proxy struct for AzureAuthBackendConfig
 type jsiiProxy_AzureAuthBackendConfig struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) AuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) AuthTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AzureAuthBackendConfig) Backend() *string {
@@ -800,7 +824,7 @@ func (j *jsiiProxy_AzureAuthBackendConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) AzureAuthBackendConfig {
 	_init_.Initialize()
 
@@ -818,7 +842,7 @@ func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig_Override(a AzureAuthBackendConfig, scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -826,6 +850,17 @@ func NewAzureAuthBackendConfig_Override(a AzureAuthBackendConfig, scope construc
 		"@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authType",
+		val,
 	)
 }
 
@@ -1483,6 +1518,14 @@ func (a *jsiiProxy_AzureAuthBackendConfig) RegisterProviderFeatureUsage(feature 
 		a,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetAuthType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthType",
+		nil, // no parameters
 	)
 }
 

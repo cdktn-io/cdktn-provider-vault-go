@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcpkms_sign vault_gcpkms_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcpkms_sign vault_gcpkms_sign}.
 type EphemeralVaultGcpkmsSign interface {
 	cdktn.TerraformEphemeralResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_EphemeralVaultGcpkmsSign) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcpkms_sign vault_gcpkms_sign} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcpkms_sign vault_gcpkms_sign} Ephemeral Resource.
 func NewEphemeralVaultGcpkmsSign(scope constructs.Construct, id *string, config *EphemeralVaultGcpkmsSignConfig) EphemeralVaultGcpkmsSign {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewEphemeralVaultGcpkmsSign(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcpkms_sign vault_gcpkms_sign} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcpkms_sign vault_gcpkms_sign} Ephemeral Resource.
 func NewEphemeralVaultGcpkmsSign_Override(e EphemeralVaultGcpkmsSign, scope constructs.Construct, id *string, config *EphemeralVaultGcpkmsSignConfig) {
 	_init_.Initialize()
 

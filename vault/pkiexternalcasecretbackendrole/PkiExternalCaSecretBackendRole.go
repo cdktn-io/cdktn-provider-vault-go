@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role}.
 type PkiExternalCaSecretBackendRole interface {
 	cdktn.TerraformResource
 	AcmeAccountName() *string
@@ -50,6 +50,12 @@ type PkiExternalCaSecretBackendRole interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DnsProviderName() *string
+	SetDnsProviderName(val *string)
+	DnsProviderNameInput() *string
+	DnsProviderType() *string
+	SetDnsProviderType(val *string)
+	DnsProviderTypeInput() *string
 	Force() interface{}
 	SetForce(val interface{})
 	ForceInput() interface{}
@@ -61,7 +67,7 @@ type PkiExternalCaSecretBackendRole interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	LastUpdateDate() *string
+	LastUpdatedDate() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -190,6 +196,8 @@ type PkiExternalCaSecretBackendRole interface {
 	ResetAllowedDomains()
 	ResetCsrGenerateKeyType()
 	ResetCsrIdentifierPopulation()
+	ResetDnsProviderName()
+	ResetDnsProviderType()
 	ResetForce()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -402,6 +410,46 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendRole) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole) DnsProviderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsProviderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole) DnsProviderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsProviderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole) DnsProviderType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsProviderType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole) DnsProviderTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsProviderTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiExternalCaSecretBackendRole) Force() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -452,11 +500,11 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendRole) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PkiExternalCaSecretBackendRole) LastUpdateDate() *string {
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole) LastUpdatedDate() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"lastUpdateDate",
+		"lastUpdatedDate",
 		&returns,
 	)
 	return returns
@@ -603,7 +651,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendRole) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role} Resource.
 func NewPkiExternalCaSecretBackendRole(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendRoleConfig) PkiExternalCaSecretBackendRole {
 	_init_.Initialize()
 
@@ -621,7 +669,7 @@ func NewPkiExternalCaSecretBackendRole(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role} Resource.
 func NewPkiExternalCaSecretBackendRole_Override(p PkiExternalCaSecretBackendRole, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -724,6 +772,28 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole)SetDnsProviderName(val *string) {
+	if err := j.validateSetDnsProviderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsProviderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole)SetDnsProviderType(val *string) {
+	if err := j.validateSetDnsProviderTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsProviderType",
 		val,
 	)
 }
@@ -1226,6 +1296,22 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendRole) ResetCsrIdentifierPopulation(
 	_jsii_.InvokeVoid(
 		p,
 		"resetCsrIdentifierPopulation",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiExternalCaSecretBackendRole) ResetDnsProviderName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDnsProviderName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiExternalCaSecretBackendRole) ResetDnsProviderType() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDnsProviderType",
 		nil, // no parameters
 	)
 }

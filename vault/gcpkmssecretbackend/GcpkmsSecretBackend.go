@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/gcpkms_secret_backend vault_gcpkms_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/gcpkms_secret_backend vault_gcpkms_secret_backend}.
 type GcpkmsSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -905,7 +905,7 @@ func (j *jsiiProxy_GcpkmsSecretBackend) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/gcpkms_secret_backend vault_gcpkms_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/gcpkms_secret_backend vault_gcpkms_secret_backend} Resource.
 func NewGcpkmsSecretBackend(scope constructs.Construct, id *string, config *GcpkmsSecretBackendConfig) GcpkmsSecretBackend {
 	_init_.Initialize()
 
@@ -923,7 +923,7 @@ func NewGcpkmsSecretBackend(scope constructs.Construct, id *string, config *Gcpk
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/gcpkms_secret_backend vault_gcpkms_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/gcpkms_secret_backend vault_gcpkms_secret_backend} Resource.
 func NewGcpkmsSecretBackend_Override(g GcpkmsSecretBackend, scope constructs.Construct, id *string, config *GcpkmsSecretBackendConfig) {
 	_init_.Initialize()
 

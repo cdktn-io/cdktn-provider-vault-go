@@ -107,6 +107,10 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateSetCountParame
 	return nil
 }
 
+func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateSetDefaultNameserverParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) validateSetDirectoryUrlParameters(val *string) error {
 	return nil
 }

@@ -335,6 +335,22 @@ func (j *jsiiProxy_CertAuthBackendRole) validateSetCertificateParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_CertAuthBackendRole) validateSetCertificateWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) validateSetCertificateWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CertAuthBackendRole) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktn.SSHProvisionerConnection:

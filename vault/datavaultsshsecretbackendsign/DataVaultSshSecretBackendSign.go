@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign}.
 type DataVaultSshSecretBackendSign interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -546,7 +546,7 @@ func (j *jsiiProxy_DataVaultSshSecretBackendSign) ValidPrincipalsInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
 func NewDataVaultSshSecretBackendSign(scope constructs.Construct, id *string, config *DataVaultSshSecretBackendSignConfig) DataVaultSshSecretBackendSign {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewDataVaultSshSecretBackendSign(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source.
 func NewDataVaultSshSecretBackendSign_Override(d DataVaultSshSecretBackendSign, scope constructs.Construct, id *string, config *DataVaultSshSecretBackendSignConfig) {
 	_init_.Initialize()
 

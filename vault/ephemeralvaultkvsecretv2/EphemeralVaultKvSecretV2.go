@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2}.
 type EphemeralVaultKvSecretV2 interface {
 	cdktn.TerraformEphemeralResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_EphemeralVaultKvSecretV2) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2} Ephemeral Resource.
 func NewEphemeralVaultKvSecretV2(scope constructs.Construct, id *string, config *EphemeralVaultKvSecretV2Config) EphemeralVaultKvSecretV2 {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewEphemeralVaultKvSecretV2(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2} Ephemeral Resource.
 func NewEphemeralVaultKvSecretV2_Override(e EphemeralVaultKvSecretV2, scope constructs.Construct, id *string, config *EphemeralVaultKvSecretV2Config) {
 	_init_.Initialize()
 

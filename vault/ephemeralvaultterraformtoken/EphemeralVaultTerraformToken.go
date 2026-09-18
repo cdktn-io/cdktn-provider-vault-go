@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token vault_terraform_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/terraform_token vault_terraform_token}.
 type EphemeralVaultTerraformToken interface {
 	cdktn.TerraformEphemeralResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_EphemeralVaultTerraformToken) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token vault_terraform_token} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/terraform_token vault_terraform_token} Ephemeral Resource.
 func NewEphemeralVaultTerraformToken(scope constructs.Construct, id *string, config *EphemeralVaultTerraformTokenConfig) EphemeralVaultTerraformToken {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewEphemeralVaultTerraformToken(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token vault_terraform_token} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/terraform_token vault_terraform_token} Ephemeral Resource.
 func NewEphemeralVaultTerraformToken_Override(e EphemeralVaultTerraformToken, scope constructs.Construct, id *string, config *EphemeralVaultTerraformTokenConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret vault_generic_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/generic_secret vault_generic_secret}.
 type EphemeralVaultGenericSecret interface {
 	cdktn.TerraformEphemeralResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_EphemeralVaultGenericSecret) WithLeaseStartTimeInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret vault_generic_secret} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/generic_secret vault_generic_secret} Ephemeral Resource.
 func NewEphemeralVaultGenericSecret(scope constructs.Construct, id *string, config *EphemeralVaultGenericSecretConfig) EphemeralVaultGenericSecret {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewEphemeralVaultGenericSecret(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret vault_generic_secret} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/generic_secret vault_generic_secret} Ephemeral Resource.
 func NewEphemeralVaultGenericSecret_Override(e EphemeralVaultGenericSecret, scope constructs.Construct, id *string, config *EphemeralVaultGenericSecretConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret vault_database_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/database_secret vault_database_secret}.
 type EphemeralVaultDatabaseSecret interface {
 	cdktn.TerraformEphemeralResource
 	// Experimental.
@@ -422,7 +422,7 @@ func (j *jsiiProxy_EphemeralVaultDatabaseSecret) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret vault_database_secret} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/database_secret vault_database_secret} Ephemeral Resource.
 func NewEphemeralVaultDatabaseSecret(scope constructs.Construct, id *string, config *EphemeralVaultDatabaseSecretConfig) EphemeralVaultDatabaseSecret {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewEphemeralVaultDatabaseSecret(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret vault_database_secret} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/database_secret vault_database_secret} Ephemeral Resource.
 func NewEphemeralVaultDatabaseSecret_Override(e EphemeralVaultDatabaseSecret, scope constructs.Construct, id *string, config *EphemeralVaultDatabaseSecretConfig) {
 	_init_.Initialize()
 

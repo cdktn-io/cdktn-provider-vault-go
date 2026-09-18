@@ -131,6 +131,14 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendRole) validateSetCsrIdentifierPopul
 	return nil
 }
 
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole) validateSetDnsProviderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiExternalCaSecretBackendRole) validateSetDnsProviderTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiExternalCaSecretBackendRole) validateSetForceParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcpkms_decrypt vault_gcpkms_decrypt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcpkms_decrypt vault_gcpkms_decrypt}.
 type EphemeralVaultGcpkmsDecrypt interface {
 	cdktn.TerraformEphemeralResource
 	AdditionalAuthenticatedData() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_EphemeralVaultGcpkmsDecrypt) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcpkms_decrypt vault_gcpkms_decrypt} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcpkms_decrypt vault_gcpkms_decrypt} Ephemeral Resource.
 func NewEphemeralVaultGcpkmsDecrypt(scope constructs.Construct, id *string, config *EphemeralVaultGcpkmsDecryptConfig) EphemeralVaultGcpkmsDecrypt {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewEphemeralVaultGcpkmsDecrypt(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/gcpkms_decrypt vault_gcpkms_decrypt} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/gcpkms_decrypt vault_gcpkms_decrypt} Ephemeral Resource.
 func NewEphemeralVaultGcpkmsDecrypt_Override(e EphemeralVaultGcpkmsDecrypt, scope constructs.Construct, id *string, config *EphemeralVaultGcpkmsDecryptConfig) {
 	_init_.Initialize()
 

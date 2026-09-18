@@ -135,6 +135,14 @@ func (j *jsiiProxy_CertAuthBackendRole) validateSetCertificateParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_CertAuthBackendRole) validateSetCertificateWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) validateSetCertificateWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertAuthBackendRole) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

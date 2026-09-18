@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/transform_encode vault_transform_encode}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/transform_encode vault_transform_encode}.
 type DataVaultTransformEncode interface {
 	cdktn.TerraformDataSource
 	BatchInput() interface{}
@@ -501,7 +501,7 @@ func (j *jsiiProxy_DataVaultTransformEncode) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/transform_encode vault_transform_encode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/transform_encode vault_transform_encode} Data Source.
 func NewDataVaultTransformEncode(scope constructs.Construct, id *string, config *DataVaultTransformEncodeConfig) DataVaultTransformEncode {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewDataVaultTransformEncode(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/transform_encode vault_transform_encode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/transform_encode vault_transform_encode} Data Source.
 func NewDataVaultTransformEncode_Override(d DataVaultTransformEncode, scope constructs.Construct, id *string, config *DataVaultTransformEncodeConfig) {
 	_init_.Initialize()
 

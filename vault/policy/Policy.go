@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/policy vault_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/policy vault_policy}.
 type Policy interface {
 	cdktn.TerraformResource
 	AllowOverwrite() interface{}
@@ -462,7 +462,7 @@ func (j *jsiiProxy_Policy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/policy vault_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/policy vault_policy} Resource.
 func NewPolicy(scope constructs.Construct, id *string, config *PolicyConfig) Policy {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewPolicy(scope constructs.Construct, id *string, config *PolicyConfig) Pol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/policy vault_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/policy vault_policy} Resource.
 func NewPolicy_Override(p Policy, scope constructs.Construct, id *string, config *PolicyConfig) {
 	_init_.Initialize()
 

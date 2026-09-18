@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kerberos_auth_backend_login vault_kerberos_auth_backend_login}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kerberos_auth_backend_login vault_kerberos_auth_backend_login}.
 type EphemeralVaultKerberosAuthBackendLogin interface {
 	cdktn.TerraformEphemeralResource
 	Accessor() *string
@@ -606,7 +606,7 @@ func (j *jsiiProxy_EphemeralVaultKerberosAuthBackendLogin) UsernameInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kerberos_auth_backend_login vault_kerberos_auth_backend_login} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kerberos_auth_backend_login vault_kerberos_auth_backend_login} Ephemeral Resource.
 func NewEphemeralVaultKerberosAuthBackendLogin(scope constructs.Construct, id *string, config *EphemeralVaultKerberosAuthBackendLoginConfig) EphemeralVaultKerberosAuthBackendLogin {
 	_init_.Initialize()
 
@@ -624,7 +624,7 @@ func NewEphemeralVaultKerberosAuthBackendLogin(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kerberos_auth_backend_login vault_kerberos_auth_backend_login} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kerberos_auth_backend_login vault_kerberos_auth_backend_login} Ephemeral Resource.
 func NewEphemeralVaultKerberosAuthBackendLogin_Override(e EphemeralVaultKerberosAuthBackendLogin, scope constructs.Construct, id *string, config *EphemeralVaultKerberosAuthBackendLoginConfig) {
 	_init_.Initialize()
 

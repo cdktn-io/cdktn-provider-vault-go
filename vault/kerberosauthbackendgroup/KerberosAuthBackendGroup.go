@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_group vault_kerberos_auth_backend_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_group vault_kerberos_auth_backend_group}.
 type KerberosAuthBackendGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_KerberosAuthBackendGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_group vault_kerberos_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_group vault_kerberos_auth_backend_group} Resource.
 func NewKerberosAuthBackendGroup(scope constructs.Construct, id *string, config *KerberosAuthBackendGroupConfig) KerberosAuthBackendGroup {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewKerberosAuthBackendGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_group vault_kerberos_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_group vault_kerberos_auth_backend_group} Resource.
 func NewKerberosAuthBackendGroup_Override(k KerberosAuthBackendGroup, scope constructs.Construct, id *string, config *KerberosAuthBackendGroupConfig) {
 	_init_.Initialize()
 

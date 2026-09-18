@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/kv_secret vault_kv_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/kv_secret vault_kv_secret}.
 type DataVaultKvSecret interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataVaultKvSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/kv_secret vault_kv_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/kv_secret vault_kv_secret} Data Source.
 func NewDataVaultKvSecret(scope constructs.Construct, id *string, config *DataVaultKvSecretConfig) DataVaultKvSecret {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataVaultKvSecret(scope constructs.Construct, id *string, config *DataVa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/kv_secret vault_kv_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/kv_secret vault_kv_secret} Data Source.
 func NewDataVaultKvSecret_Override(d DataVaultKvSecret, scope constructs.Construct, id *string, config *DataVaultKvSecretConfig) {
 	_init_.Initialize()
 
