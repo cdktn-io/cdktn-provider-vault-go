@@ -231,6 +231,10 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetOuParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetParameterSetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedDnsDomainsParameters(val *[]*string) error {
 	return nil
 }

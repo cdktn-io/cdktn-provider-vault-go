@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/radius_auth_login vault_radius_auth_login}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/radius_auth_login vault_radius_auth_login}.
 type EphemeralVaultRadiusAuthLogin interface {
 	cdktn.TerraformEphemeralResource
 	Accessor() *string
@@ -533,7 +533,7 @@ func (j *jsiiProxy_EphemeralVaultRadiusAuthLogin) Warnings() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/radius_auth_login vault_radius_auth_login} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/radius_auth_login vault_radius_auth_login} Ephemeral Resource.
 func NewEphemeralVaultRadiusAuthLogin(scope constructs.Construct, id *string, config *EphemeralVaultRadiusAuthLoginConfig) EphemeralVaultRadiusAuthLogin {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewEphemeralVaultRadiusAuthLogin(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/radius_auth_login vault_radius_auth_login} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/radius_auth_login vault_radius_auth_login} Ephemeral Resource.
 func NewEphemeralVaultRadiusAuthLogin_Override(e EphemeralVaultRadiusAuthLogin, scope constructs.Construct, id *string, config *EphemeralVaultRadiusAuthLoginConfig) {
 	_init_.Initialize()
 

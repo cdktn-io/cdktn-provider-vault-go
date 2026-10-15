@@ -247,6 +247,10 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetSealWrapParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetSeamlessRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetSubscriptionIdParameters(val *string) error {
 	return nil
 }

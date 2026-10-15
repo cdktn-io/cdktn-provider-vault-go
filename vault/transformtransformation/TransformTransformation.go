@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation vault_transform_transformation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation vault_transform_transformation}.
 type TransformTransformation interface {
 	cdktn.TerraformResource
 	AllowedRoles() *[]*string
@@ -44,6 +44,7 @@ type TransformTransformation interface {
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktn.ITerraformIterator)
+	FpeAlgorithm() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -61,6 +62,9 @@ type TransformTransformation interface {
 	MaskingCharacter() *string
 	SetMaskingCharacter(val *string)
 	MaskingCharacterInput() *string
+	MaxTweakLen() *float64
+	SetMaxTweakLen(val *float64)
+	MaxTweakLenInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -201,6 +205,7 @@ type TransformTransformation interface {
 	ResetId()
 	ResetMappingMode()
 	ResetMaskingCharacter()
+	ResetMaxTweakLen()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -357,6 +362,16 @@ func (j *jsiiProxy_TransformTransformation) ForEach() cdktn.ITerraformIterator {
 	return returns
 }
 
+func (j *jsiiProxy_TransformTransformation) FpeAlgorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fpeAlgorithm",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransformTransformation) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -442,6 +457,26 @@ func (j *jsiiProxy_TransformTransformation) MaskingCharacterInput() *string {
 	_jsii_.Get(
 		j,
 		"maskingCharacterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) MaxTweakLen() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTweakLen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) MaxTweakLenInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTweakLenInput",
 		&returns,
 	)
 	return returns
@@ -678,7 +713,7 @@ func (j *jsiiProxy_TransformTransformation) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
 func NewTransformTransformation(scope constructs.Construct, id *string, config *TransformTransformationConfig) TransformTransformation {
 	_init_.Initialize()
 
@@ -696,7 +731,7 @@ func NewTransformTransformation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
 func NewTransformTransformation_Override(t TransformTransformation, scope constructs.Construct, id *string, config *TransformTransformationConfig) {
 	_init_.Initialize()
 
@@ -818,6 +853,17 @@ func (j *jsiiProxy_TransformTransformation)SetMaskingCharacter(val *string) {
 	_jsii_.Set(
 		j,
 		"maskingCharacter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransformTransformation)SetMaxTweakLen(val *float64) {
+	if err := j.validateSetMaxTweakLenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTweakLen",
 		val,
 	)
 }
@@ -1353,6 +1399,14 @@ func (t *jsiiProxy_TransformTransformation) ResetMaskingCharacter() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetMaskingCharacter",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransformTransformation) ResetMaxTweakLen() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetMaxTweakLen",
 		nil, // no parameters
 	)
 }

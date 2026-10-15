@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_gcp vault_pki_external_ca_secret_backend_dns_provider_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_gcp vault_pki_external_ca_secret_backend_dns_provider_gcp}.
 type PkiExternalCaSecretBackendDnsProviderGcp interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -629,7 +629,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendDnsProviderGcp) ZoneNameInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_gcp vault_pki_external_ca_secret_backend_dns_provider_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_gcp vault_pki_external_ca_secret_backend_dns_provider_gcp} Resource.
 func NewPkiExternalCaSecretBackendDnsProviderGcp(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendDnsProviderGcpConfig) PkiExternalCaSecretBackendDnsProviderGcp {
 	_init_.Initialize()
 
@@ -647,7 +647,7 @@ func NewPkiExternalCaSecretBackendDnsProviderGcp(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_gcp vault_pki_external_ca_secret_backend_dns_provider_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_gcp vault_pki_external_ca_secret_backend_dns_provider_gcp} Resource.
 func NewPkiExternalCaSecretBackendDnsProviderGcp_Override(p PkiExternalCaSecretBackendDnsProviderGcp, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendDnsProviderGcpConfig) {
 	_init_.Initialize()
 

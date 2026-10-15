@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration vault_transform_key_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_key_configuration vault_transform_key_configuration}.
 type TransformKeyConfiguration interface {
 	cdktn.TerraformResource
 	AutoRotatePeriod() *float64
@@ -508,7 +508,7 @@ func (j *jsiiProxy_TransformKeyConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration vault_transform_key_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_key_configuration vault_transform_key_configuration} Resource.
 func NewTransformKeyConfiguration(scope constructs.Construct, id *string, config *TransformKeyConfigurationConfig) TransformKeyConfiguration {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewTransformKeyConfiguration(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration vault_transform_key_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_key_configuration vault_transform_key_configuration} Resource.
 func NewTransformKeyConfiguration_Override(t TransformKeyConfiguration, scope constructs.Construct, id *string, config *TransformKeyConfigurationConfig) {
 	_init_.Initialize()
 

@@ -135,6 +135,10 @@ func (j *jsiiProxy_TransformTransformation) validateSetMaskingCharacterParameter
 	return nil
 }
 
+func (j *jsiiProxy_TransformTransformation) validateSetMaxTweakLenParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransformTransformation) validateSetNameParameters(val *string) error {
 	return nil
 }

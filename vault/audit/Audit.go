@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/audit vault_audit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/audit vault_audit}.
 type Audit interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -510,7 +510,7 @@ func (j *jsiiProxy_Audit) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/audit vault_audit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/audit vault_audit} Resource.
 func NewAudit(scope constructs.Construct, id *string, config *AuditConfig) Audit {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewAudit(scope constructs.Construct, id *string, config *AuditConfig) Audit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/audit vault_audit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/audit vault_audit} Resource.
 func NewAudit_Override(a Audit, scope constructs.Construct, id *string, config *AuditConfig) {
 	_init_.Initialize()
 

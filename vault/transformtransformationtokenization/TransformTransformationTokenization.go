@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization vault_transform_transformation_tokenization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization vault_transform_transformation_tokenization}.
 type TransformTransformationTokenization interface {
 	cdktn.TerraformResource
 	AllowedRoles() *[]*string
@@ -582,7 +582,7 @@ func (j *jsiiProxy_TransformTransformationTokenization) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization vault_transform_transformation_tokenization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization vault_transform_transformation_tokenization} Resource.
 func NewTransformTransformationTokenization(scope constructs.Construct, id *string, config *TransformTransformationTokenizationConfig) TransformTransformationTokenization {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewTransformTransformationTokenization(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization vault_transform_transformation_tokenization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization vault_transform_transformation_tokenization} Resource.
 func NewTransformTransformationTokenization_Override(t TransformTransformationTokenization, scope constructs.Construct, id *string, config *TransformTransformationTokenizationConfig) {
 	_init_.Initialize()
 

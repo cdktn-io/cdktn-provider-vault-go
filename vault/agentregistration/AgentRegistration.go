@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration vault_agent_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration vault_agent_registration}.
 type AgentRegistration interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type AgentRegistration interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Local() interface{}
+	SetLocal(val interface{})
+	LocalInput() interface{}
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -182,6 +185,7 @@ type AgentRegistration interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCeilingPolicies()
 	ResetDescription()
+	ResetLocal()
 	ResetNamespace()
 	ResetNoDefaultCeilingPolicy()
 	ResetOptionalAuthorizationDetails()
@@ -416,6 +420,26 @@ func (j *jsiiProxy_AgentRegistration) Lifecycle() *cdktn.TerraformResourceLifecy
 	return returns
 }
 
+func (j *jsiiProxy_AgentRegistration) Local() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"local",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AgentRegistration) LocalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AgentRegistration) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -567,7 +591,7 @@ func (j *jsiiProxy_AgentRegistration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration vault_agent_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration vault_agent_registration} Resource.
 func NewAgentRegistration(scope constructs.Construct, id *string, config *AgentRegistrationConfig) AgentRegistration {
 	_init_.Initialize()
 
@@ -585,7 +609,7 @@ func NewAgentRegistration(scope constructs.Construct, id *string, config *AgentR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration vault_agent_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration vault_agent_registration} Resource.
 func NewAgentRegistration_Override(a AgentRegistration, scope constructs.Construct, id *string, config *AgentRegistrationConfig) {
 	_init_.Initialize()
 
@@ -685,6 +709,17 @@ func (j *jsiiProxy_AgentRegistration)SetLifecycle(val *cdktn.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AgentRegistration)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"local",
 		val,
 	)
 }
@@ -1144,6 +1179,14 @@ func (a *jsiiProxy_AgentRegistration) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AgentRegistration) ResetLocal() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLocal",
 		nil, // no parameters
 	)
 }

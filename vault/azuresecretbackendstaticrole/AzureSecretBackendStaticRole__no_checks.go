@@ -147,6 +147,18 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) validateSetRoleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendStaticRole) validateSetRotationGracePeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) validateSetSeamlessRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendStaticRole) validateSetSecretIdParameters(val *string) error {
 	return nil
 }

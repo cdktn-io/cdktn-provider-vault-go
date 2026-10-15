@@ -12,12 +12,18 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile}.
 type OauthResourceServerConfigProfile interface {
 	cdktn.TerraformResource
+	ActorClaim() *string
+	SetActorClaim(val *string)
+	ActorClaimInput() *string
 	Audiences() *[]*string
 	SetAudiences(val *[]*string)
 	AudiencesInput() *[]*string
+	AuthorizationDetailsClaim() *string
+	SetAuthorizationDetailsClaim(val *string)
+	AuthorizationDetailsClaimInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	ClockSkewLeeway() *float64
@@ -65,6 +71,9 @@ type OauthResourceServerConfigProfile interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Local() interface{}
+	SetLocal(val interface{})
+	LocalInput() interface{}
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -100,6 +109,9 @@ type OauthResourceServerConfigProfile interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UniqueIdClaim() *string
+	SetUniqueIdClaim(val *string)
+	UniqueIdClaimInput() *string
 	UseJwks() interface{}
 	SetUseJwks(val interface{})
 	UseJwksInput() interface{}
@@ -199,12 +211,15 @@ type OauthResourceServerConfigProfile interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetActorClaim()
 	ResetAudiences()
+	ResetAuthorizationDetailsClaim()
 	ResetClockSkewLeeway()
 	ResetEnabled()
 	ResetJwksCaPem()
 	ResetJwksUri()
 	ResetJwtType()
+	ResetLocal()
 	ResetNamespace()
 	ResetNoDefaultPolicy()
 	ResetOptionalAuthorizationDetails()
@@ -213,6 +228,7 @@ type OauthResourceServerConfigProfile interface {
 	ResetOverrideLogicalId()
 	ResetPublicKeys()
 	ResetSupportedAlgorithms()
+	ResetUniqueIdClaim()
 	ResetUseJwks()
 	ResetUserClaim()
 	SynthesizeAttributes() *map[string]interface{}
@@ -242,6 +258,26 @@ type jsiiProxy_OauthResourceServerConfigProfile struct {
 	internal.Type__cdktnTerraformResource
 }
 
+func (j *jsiiProxy_OauthResourceServerConfigProfile) ActorClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actorClaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile) ActorClaimInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actorClaimInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OauthResourceServerConfigProfile) Audiences() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -257,6 +293,26 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile) AudiencesInput() *[]*string
 	_jsii_.Get(
 		j,
 		"audiencesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile) AuthorizationDetailsClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizationDetailsClaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile) AuthorizationDetailsClaimInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizationDetailsClaimInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +538,26 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile) Lifecycle() *cdktn.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_OauthResourceServerConfigProfile) Local() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"local",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile) LocalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OauthResourceServerConfigProfile) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -672,6 +748,26 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile) TerraformResourceType() *st
 	return returns
 }
 
+func (j *jsiiProxy_OauthResourceServerConfigProfile) UniqueIdClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uniqueIdClaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile) UniqueIdClaimInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uniqueIdClaimInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OauthResourceServerConfigProfile) UseJwks() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -713,7 +809,7 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile) UserClaimInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource.
 func NewOauthResourceServerConfigProfile(scope constructs.Construct, id *string, config *OauthResourceServerConfigProfileConfig) OauthResourceServerConfigProfile {
 	_init_.Initialize()
 
@@ -731,7 +827,7 @@ func NewOauthResourceServerConfigProfile(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource.
 func NewOauthResourceServerConfigProfile_Override(o OauthResourceServerConfigProfile, scope constructs.Construct, id *string, config *OauthResourceServerConfigProfileConfig) {
 	_init_.Initialize()
 
@@ -742,6 +838,17 @@ func NewOauthResourceServerConfigProfile_Override(o OauthResourceServerConfigPro
 	)
 }
 
+func (j *jsiiProxy_OauthResourceServerConfigProfile)SetActorClaim(val *string) {
+	if err := j.validateSetActorClaimParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"actorClaim",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OauthResourceServerConfigProfile)SetAudiences(val *[]*string) {
 	if err := j.validateSetAudiencesParameters(val); err != nil {
 		panic(err)
@@ -749,6 +856,17 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile)SetAudiences(val *[]*string)
 	_jsii_.Set(
 		j,
 		"audiences",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile)SetAuthorizationDetailsClaim(val *string) {
+	if err := j.validateSetAuthorizationDetailsClaimParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizationDetailsClaim",
 		val,
 	)
 }
@@ -868,6 +986,17 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile)SetLifecycle(val *cdktn.Terr
 	)
 }
 
+func (j *jsiiProxy_OauthResourceServerConfigProfile)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"local",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OauthResourceServerConfigProfile)SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
@@ -938,6 +1067,17 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile)SetSupportedAlgorithms(val *
 	_jsii_.Set(
 		j,
 		"supportedAlgorithms",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile)SetUniqueIdClaim(val *string) {
+	if err := j.validateSetUniqueIdClaimParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uniqueIdClaim",
 		val,
 	)
 }
@@ -1355,10 +1495,26 @@ func (o *jsiiProxy_OauthResourceServerConfigProfile) RegisterProviderFeatureUsag
 	)
 }
 
+func (o *jsiiProxy_OauthResourceServerConfigProfile) ResetActorClaim() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetActorClaim",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OauthResourceServerConfigProfile) ResetAudiences() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAudiences",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OauthResourceServerConfigProfile) ResetAuthorizationDetailsClaim() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAuthorizationDetailsClaim",
 		nil, // no parameters
 	)
 }
@@ -1399,6 +1555,14 @@ func (o *jsiiProxy_OauthResourceServerConfigProfile) ResetJwtType() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetJwtType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OauthResourceServerConfigProfile) ResetLocal() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLocal",
 		nil, // no parameters
 	)
 }
@@ -1447,6 +1611,14 @@ func (o *jsiiProxy_OauthResourceServerConfigProfile) ResetSupportedAlgorithms() 
 	_jsii_.InvokeVoid(
 		o,
 		"resetSupportedAlgorithms",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OauthResourceServerConfigProfile) ResetUniqueIdClaim() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUniqueIdClaim",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify}.
 type DataVaultGcpkmsVerify interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataVaultGcpkmsVerify) Valid() cdktn.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify} Data Source.
 func NewDataVaultGcpkmsVerify(scope constructs.Construct, id *string, config *DataVaultGcpkmsVerifyConfig) DataVaultGcpkmsVerify {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataVaultGcpkmsVerify(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify} Data Source.
 func NewDataVaultGcpkmsVerify_Override(d DataVaultGcpkmsVerify, scope constructs.Construct, id *string, config *DataVaultGcpkmsVerifyConfig) {
 	_init_.Initialize()
 

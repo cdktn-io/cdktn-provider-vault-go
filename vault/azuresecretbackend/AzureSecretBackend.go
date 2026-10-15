@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
 type AzureSecretBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -157,6 +157,9 @@ type AzureSecretBackend interface {
 	SealWrap() interface{}
 	SetSealWrap(val interface{})
 	SealWrapInput() interface{}
+	SeamlessRotation() interface{}
+	SetSeamlessRotation(val interface{})
+	SeamlessRotationInput() interface{}
 	SubscriptionId() *string
 	SetSubscriptionId(val *string)
 	SubscriptionIdInput() *string
@@ -297,6 +300,7 @@ type AzureSecretBackend interface {
 	ResetRotationSchedule()
 	ResetRotationWindow()
 	ResetSealWrap()
+	ResetSeamlessRotation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -1124,6 +1128,26 @@ func (j *jsiiProxy_AzureSecretBackend) SealWrapInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AzureSecretBackend) SeamlessRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"seamlessRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) SeamlessRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"seamlessRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureSecretBackend) SubscriptionId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1195,7 +1219,7 @@ func (j *jsiiProxy_AzureSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) AzureSecretBackend {
 	_init_.Initialize()
 
@@ -1213,7 +1237,7 @@ func NewAzureSecretBackend(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Construct, id *string, config *AzureSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1651,6 +1675,17 @@ func (j *jsiiProxy_AzureSecretBackend)SetSealWrap(val interface{}) {
 	_jsii_.Set(
 		j,
 		"sealWrap",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetSeamlessRotation(val interface{}) {
+	if err := j.validateSetSeamlessRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"seamlessRotation",
 		val,
 	)
 }
@@ -2325,6 +2360,14 @@ func (a *jsiiProxy_AzureSecretBackend) ResetSealWrap() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSealWrap",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetSeamlessRotation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSeamlessRotation",
 		nil, // no parameters
 	)
 }

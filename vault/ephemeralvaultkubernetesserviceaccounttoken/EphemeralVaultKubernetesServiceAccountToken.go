@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kubernetes_service_account_token vault_kubernetes_service_account_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/kubernetes_service_account_token vault_kubernetes_service_account_token}.
 type EphemeralVaultKubernetesServiceAccountToken interface {
 	cdktn.TerraformEphemeralResource
 	Backend() *string
@@ -493,7 +493,7 @@ func (j *jsiiProxy_EphemeralVaultKubernetesServiceAccountToken) TtlInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kubernetes_service_account_token vault_kubernetes_service_account_token} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/kubernetes_service_account_token vault_kubernetes_service_account_token} Ephemeral Resource.
 func NewEphemeralVaultKubernetesServiceAccountToken(scope constructs.Construct, id *string, config *EphemeralVaultKubernetesServiceAccountTokenConfig) EphemeralVaultKubernetesServiceAccountToken {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewEphemeralVaultKubernetesServiceAccountToken(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/kubernetes_service_account_token vault_kubernetes_service_account_token} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/kubernetes_service_account_token vault_kubernetes_service_account_token} Ephemeral Resource.
 func NewEphemeralVaultKubernetesServiceAccountToken_Override(e EphemeralVaultKubernetesServiceAccountToken, scope constructs.Construct, id *string, config *EphemeralVaultKubernetesServiceAccountTokenConfig) {
 	_init_.Initialize()
 

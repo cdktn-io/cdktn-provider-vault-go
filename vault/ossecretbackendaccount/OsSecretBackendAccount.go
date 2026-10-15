@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/os_secret_backend_account vault_os_secret_backend_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/os_secret_backend_account vault_os_secret_backend_account}.
 type OsSecretBackendAccount interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -699,7 +699,7 @@ func (j *jsiiProxy_OsSecretBackendAccount) VerifyConnectionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/os_secret_backend_account vault_os_secret_backend_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/os_secret_backend_account vault_os_secret_backend_account} Resource.
 func NewOsSecretBackendAccount(scope constructs.Construct, id *string, config *OsSecretBackendAccountConfig) OsSecretBackendAccount {
 	_init_.Initialize()
 
@@ -717,7 +717,7 @@ func NewOsSecretBackendAccount(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/os_secret_backend_account vault_os_secret_backend_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/os_secret_backend_account vault_os_secret_backend_account} Resource.
 func NewOsSecretBackendAccount_Override(o OsSecretBackendAccount, scope constructs.Construct, id *string, config *OsSecretBackendAccountConfig) {
 	_init_.Initialize()
 

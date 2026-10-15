@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_rfc2136 vault_pki_external_ca_secret_backend_dns_provider_rfc2136}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_rfc2136 vault_pki_external_ca_secret_backend_dns_provider_rfc2136}.
 type PkiExternalCaSecretBackendDnsProviderRfc2136 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -601,7 +601,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendDnsProviderRfc2136) TtlInput() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_rfc2136 vault_pki_external_ca_secret_backend_dns_provider_rfc2136} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_rfc2136 vault_pki_external_ca_secret_backend_dns_provider_rfc2136} Resource.
 func NewPkiExternalCaSecretBackendDnsProviderRfc2136(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendDnsProviderRfc2136Config) PkiExternalCaSecretBackendDnsProviderRfc2136 {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewPkiExternalCaSecretBackendDnsProviderRfc2136(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_rfc2136 vault_pki_external_ca_secret_backend_dns_provider_rfc2136} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_rfc2136 vault_pki_external_ca_secret_backend_dns_provider_rfc2136} Resource.
 func NewPkiExternalCaSecretBackendDnsProviderRfc2136_Override(p PkiExternalCaSecretBackendDnsProviderRfc2136, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendDnsProviderRfc2136Config) {
 	_init_.Initialize()
 

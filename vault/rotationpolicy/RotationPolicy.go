@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/rotation_policy vault_rotation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/rotation_policy vault_rotation_policy}.
 type RotationPolicy interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_RotationPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/rotation_policy vault_rotation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/rotation_policy vault_rotation_policy} Resource.
 func NewRotationPolicy(scope constructs.Construct, id *string, config *RotationPolicyConfig) RotationPolicy {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewRotationPolicy(scope constructs.Construct, id *string, config *RotationP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/rotation_policy vault_rotation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/rotation_policy vault_rotation_policy} Resource.
 func NewRotationPolicy_Override(r RotationPolicy, scope constructs.Construct, id *string, config *RotationPolicyConfig) {
 	_init_.Initialize()
 

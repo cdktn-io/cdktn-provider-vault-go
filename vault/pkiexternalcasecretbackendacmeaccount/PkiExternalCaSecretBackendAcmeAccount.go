@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account}.
 type PkiExternalCaSecretBackendAcmeAccount interface {
 	cdktn.TerraformResource
 	ActiveKeyVersion() *float64
@@ -595,7 +595,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendAcmeAccount) TrustedCaInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account} Resource.
 func NewPkiExternalCaSecretBackendAcmeAccount(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendAcmeAccountConfig) PkiExternalCaSecretBackendAcmeAccount {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewPkiExternalCaSecretBackendAcmeAccount(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account} Resource.
 func NewPkiExternalCaSecretBackendAcmeAccount_Override(p PkiExternalCaSecretBackendAcmeAccount, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendAcmeAccountConfig) {
 	_init_.Initialize()
 

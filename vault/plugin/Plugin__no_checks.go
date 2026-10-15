@@ -115,6 +115,10 @@ func (j *jsiiProxy_Plugin) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Plugin) validateSetDownloadParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Plugin) validateSetEnvParameters(val *[]*string) error {
 	return nil
 }

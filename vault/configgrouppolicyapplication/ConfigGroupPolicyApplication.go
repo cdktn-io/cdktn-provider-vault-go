@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/config_group_policy_application vault_config_group_policy_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/config_group_policy_application vault_config_group_policy_application}.
 type ConfigGroupPolicyApplication interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ConfigGroupPolicyApplication) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/config_group_policy_application vault_config_group_policy_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/config_group_policy_application vault_config_group_policy_application} Resource.
 func NewConfigGroupPolicyApplication(scope constructs.Construct, id *string, config *ConfigGroupPolicyApplicationConfig) ConfigGroupPolicyApplication {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewConfigGroupPolicyApplication(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/config_group_policy_application vault_config_group_policy_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/config_group_policy_application vault_config_group_policy_application} Resource.
 func NewConfigGroupPolicyApplication_Override(c ConfigGroupPolicyApplication, scope constructs.Construct, id *string, config *ConfigGroupPolicyApplicationConfig) {
 	_init_.Initialize()
 

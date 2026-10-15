@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/userpass_auth_login vault_userpass_auth_login}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/userpass_auth_login vault_userpass_auth_login}.
 type EphemeralVaultUserpassAuthLogin interface {
 	cdktn.TerraformEphemeralResource
 	Accessor() *string
@@ -434,7 +434,7 @@ func (j *jsiiProxy_EphemeralVaultUserpassAuthLogin) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/userpass_auth_login vault_userpass_auth_login} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/userpass_auth_login vault_userpass_auth_login} Ephemeral Resource.
 func NewEphemeralVaultUserpassAuthLogin(scope constructs.Construct, id *string, config *EphemeralVaultUserpassAuthLoginConfig) EphemeralVaultUserpassAuthLogin {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewEphemeralVaultUserpassAuthLogin(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/userpass_auth_login vault_userpass_auth_login} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/userpass_auth_login vault_userpass_auth_login} Ephemeral Resource.
 func NewEphemeralVaultUserpassAuthLogin_Override(e EphemeralVaultUserpassAuthLogin, scope constructs.Construct, id *string, config *EphemeralVaultUserpassAuthLoginConfig) {
 	_init_.Initialize()
 

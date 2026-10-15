@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization_store vault_transform_transformation_tokenization_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization_store vault_transform_transformation_tokenization_store}.
 type TransformTransformationTokenizationStore interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -673,7 +673,7 @@ func (j *jsiiProxy_TransformTransformationTokenizationStore) UsernameInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization_store vault_transform_transformation_tokenization_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization_store vault_transform_transformation_tokenization_store} Resource.
 func NewTransformTransformationTokenizationStore(scope constructs.Construct, id *string, config *TransformTransformationTokenizationStoreConfig) TransformTransformationTokenizationStore {
 	_init_.Initialize()
 
@@ -691,7 +691,7 @@ func NewTransformTransformationTokenizationStore(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization_store vault_transform_transformation_tokenization_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization_store vault_transform_transformation_tokenization_store} Resource.
 func NewTransformTransformationTokenizationStore_Override(t TransformTransformationTokenizationStore, scope constructs.Construct, id *string, config *TransformTransformationTokenizationStoreConfig) {
 	_init_.Initialize()
 

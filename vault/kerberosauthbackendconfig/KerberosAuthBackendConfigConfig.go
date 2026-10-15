@@ -24,31 +24,31 @@ type KerberosAuthBackendConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Base64-encoded keytab file content (write-only). Must contain an entry matching service_account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#keytab_wo KerberosAuthBackendConfig#keytab_wo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_config#keytab_wo KerberosAuthBackendConfig#keytab_wo}
 	KeytabWo *string `field:"required" json:"keytabWo" yaml:"keytabWo"`
 	// Version identifier for keytab updates. Increment this value to trigger a keytab update.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#keytab_wo_version KerberosAuthBackendConfig#keytab_wo_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_config#keytab_wo_version KerberosAuthBackendConfig#keytab_wo_version}
 	KeytabWoVersion *float64 `field:"required" json:"keytabWoVersion" yaml:"keytabWoVersion"`
 	// Path where the Kerberos auth method is mounted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#mount KerberosAuthBackendConfig#mount}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_config#mount KerberosAuthBackendConfig#mount}
 	Mount *string `field:"required" json:"mount" yaml:"mount"`
 	// The Kerberos service account associated with the keytab entry (e.g., 'vault_svc').
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#service_account KerberosAuthBackendConfig#service_account}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_config#service_account KerberosAuthBackendConfig#service_account}
 	ServiceAccount *string `field:"required" json:"serviceAccount" yaml:"serviceAccount"`
 	// Adds group aliases during authentication. Default: false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#add_group_aliases KerberosAuthBackendConfig#add_group_aliases}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_config#add_group_aliases KerberosAuthBackendConfig#add_group_aliases}
 	AddGroupAliases interface{} `field:"optional" json:"addGroupAliases" yaml:"addGroupAliases"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#namespace KerberosAuthBackendConfig#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_config#namespace KerberosAuthBackendConfig#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Removes instance names from Kerberos service principal names. Default: false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#remove_instance_name KerberosAuthBackendConfig#remove_instance_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_config#remove_instance_name KerberosAuthBackendConfig#remove_instance_name}
 	RemoveInstanceName interface{} `field:"optional" json:"removeInstanceName" yaml:"removeInstanceName"`
 }
 

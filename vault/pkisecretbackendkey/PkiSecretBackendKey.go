@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
 type PkiSecretBackendKey interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -70,6 +70,9 @@ type PkiSecretBackendKey interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ParameterSet() *string
+	SetParameterSet(val *string)
+	ParameterSetInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -191,6 +194,7 @@ type PkiSecretBackendKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParameterSet()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -488,6 +492,26 @@ func (j *jsiiProxy_PkiSecretBackendKey) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendKey) ParameterSet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendKey) ParameterSetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterSetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendKey) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -569,7 +593,7 @@ func (j *jsiiProxy_PkiSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
 func NewPkiSecretBackendKey(scope constructs.Construct, id *string, config *PkiSecretBackendKeyConfig) PkiSecretBackendKey {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewPkiSecretBackendKey(scope constructs.Construct, id *string, config *PkiS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource.
 func NewPkiSecretBackendKey_Override(p PkiSecretBackendKey, scope constructs.Construct, id *string, config *PkiSecretBackendKeyConfig) {
 	_init_.Initialize()
 
@@ -731,6 +755,17 @@ func (j *jsiiProxy_PkiSecretBackendKey)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendKey)SetParameterSet(val *string) {
+	if err := j.validateSetParameterSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameterSet",
 		val,
 	)
 }
@@ -1205,6 +1240,14 @@ func (p *jsiiProxy_PkiSecretBackendKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendKey) ResetParameterSet() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetParameterSet",
 		nil, // no parameters
 	)
 }

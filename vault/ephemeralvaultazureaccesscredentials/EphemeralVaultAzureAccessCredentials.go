@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials}.
 type EphemeralVaultAzureAccessCredentials interface {
 	cdktn.TerraformEphemeralResource
 	Backend() *string
@@ -625,7 +625,7 @@ func (j *jsiiProxy_EphemeralVaultAzureAccessCredentials) ValidateCredsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials} Ephemeral Resource.
 func NewEphemeralVaultAzureAccessCredentials(scope constructs.Construct, id *string, config *EphemeralVaultAzureAccessCredentialsConfig) EphemeralVaultAzureAccessCredentials {
 	_init_.Initialize()
 
@@ -643,7 +643,7 @@ func NewEphemeralVaultAzureAccessCredentials(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials} Ephemeral Resource.
 func NewEphemeralVaultAzureAccessCredentials_Override(e EphemeralVaultAzureAccessCredentials, scope constructs.Construct, id *string, config *EphemeralVaultAzureAccessCredentialsConfig) {
 	_init_.Initialize()
 

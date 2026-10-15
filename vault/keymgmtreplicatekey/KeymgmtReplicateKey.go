@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key}.
 type KeymgmtReplicateKey interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_KeymgmtReplicateKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key} Resource.
 func NewKeymgmtReplicateKey(scope constructs.Construct, id *string, config *KeymgmtReplicateKeyConfig) KeymgmtReplicateKey {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewKeymgmtReplicateKey(scope constructs.Construct, id *string, config *Keym
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key} Resource.
 func NewKeymgmtReplicateKey_Override(k KeymgmtReplicateKey, scope constructs.Construct, id *string, config *KeymgmtReplicateKeyConfig) {
 	_init_.Initialize()
 

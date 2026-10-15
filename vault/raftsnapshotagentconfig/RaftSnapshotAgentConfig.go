@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
 type RaftSnapshotAgentConfig interface {
 	cdktn.TerraformResource
 	AutoloadEnabled() interface{}
@@ -1145,7 +1145,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
 func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) RaftSnapshotAgentConfig {
 	_init_.Initialize()
 
@@ -1163,7 +1163,7 @@ func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
 func NewRaftSnapshotAgentConfig_Override(r RaftSnapshotAgentConfig, scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/identity_oidc_key vault_identity_oidc_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_oidc_key vault_identity_oidc_key}.
 type IdentityOidcKey interface {
 	cdktn.TerraformResource
 	Algorithm() *string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_IdentityOidcKey) VerificationTtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/identity_oidc_key vault_identity_oidc_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_oidc_key vault_identity_oidc_key} Resource.
 func NewIdentityOidcKey(scope constructs.Construct, id *string, config *IdentityOidcKeyConfig) IdentityOidcKey {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewIdentityOidcKey(scope constructs.Construct, id *string, config *Identity
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/identity_oidc_key vault_identity_oidc_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_oidc_key vault_identity_oidc_key} Resource.
 func NewIdentityOidcKey_Override(i IdentityOidcKey, scope constructs.Construct, id *string, config *IdentityOidcKeyConfig) {
 	_init_.Initialize()
 

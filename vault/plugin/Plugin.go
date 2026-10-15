@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin vault_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin vault_plugin}.
 type Plugin interface {
 	cdktn.TerraformResource
 	Args() *[]*string
@@ -37,6 +37,9 @@ type Plugin interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Download() interface{}
+	SetDownload(val interface{})
+	DownloadInput() interface{}
 	Env() *[]*string
 	SetEnv(val *[]*string)
 	EnvInput() *[]*string
@@ -185,6 +188,7 @@ type Plugin interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetArgs()
 	ResetCommand()
+	ResetDownload()
 	ResetEnv()
 	ResetId()
 	ResetOciImage()
@@ -306,6 +310,26 @@ func (j *jsiiProxy_Plugin) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Plugin) Download() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"download",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Plugin) DownloadInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"downloadInput",
 		&returns,
 	)
 	return returns
@@ -582,7 +606,7 @@ func (j *jsiiProxy_Plugin) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin vault_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin vault_plugin} Resource.
 func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plugin {
 	_init_.Initialize()
 
@@ -600,7 +624,7 @@ func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin vault_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin vault_plugin} Resource.
 func NewPlugin_Override(p Plugin, scope constructs.Construct, id *string, config *PluginConfig) {
 	_init_.Initialize()
 
@@ -659,6 +683,17 @@ func (j *jsiiProxy_Plugin)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Plugin)SetDownload(val interface{}) {
+	if err := j.validateSetDownloadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"download",
 		val,
 	)
 }
@@ -1181,6 +1216,14 @@ func (p *jsiiProxy_Plugin) ResetCommand() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCommand",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Plugin) ResetDownload() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDownload",
 		nil, // no parameters
 	)
 }

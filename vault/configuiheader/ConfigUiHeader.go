@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/config_ui_header vault_config_ui_header}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/config_ui_header vault_config_ui_header}.
 type ConfigUiHeader interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_ConfigUiHeader) ValuesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/config_ui_header vault_config_ui_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/config_ui_header vault_config_ui_header} Resource.
 func NewConfigUiHeader(scope constructs.Construct, id *string, config *ConfigUiHeaderConfig) ConfigUiHeader {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewConfigUiHeader(scope constructs.Construct, id *string, config *ConfigUiH
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/config_ui_header vault_config_ui_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/config_ui_header vault_config_ui_header} Resource.
 func NewConfigUiHeader_Override(c ConfigUiHeader, scope constructs.Construct, id *string, config *ConfigUiHeaderConfig) {
 	_init_.Initialize()
 

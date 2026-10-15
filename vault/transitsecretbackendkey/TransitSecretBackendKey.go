@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 type TransitSecretBackendKey interface {
 	cdktn.TerraformResource
 	AllowPlaintextBackup() interface{}
@@ -899,7 +899,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) TransitSecretBackendKey {
 	_init_.Initialize()
 
@@ -917,7 +917,7 @@ func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey_Override(t TransitSecretBackendKey, scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) {
 	_init_.Initialize()
 

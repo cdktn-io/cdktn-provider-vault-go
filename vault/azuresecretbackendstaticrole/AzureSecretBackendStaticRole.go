@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
 type AzureSecretBackendStaticRole interface {
 	cdktn.TerraformResource
 	ApplicationObjectId() *string
@@ -82,6 +82,15 @@ type AzureSecretBackendStaticRole interface {
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
+	RotationGracePeriod() *float64
+	SetRotationGracePeriod(val *float64)
+	RotationGracePeriodInput() *float64
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	SeamlessRotation() interface{}
+	SetSeamlessRotation(val interface{})
+	SeamlessRotationInput() interface{}
 	SecretId() *string
 	SetSecretId(val *string)
 	SecretIdInput() *string
@@ -197,6 +206,9 @@ type AzureSecretBackendStaticRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotationGracePeriod()
+	ResetRotationPeriod()
+	ResetSeamlessRotation()
 	ResetSecretId()
 	ResetSkipImportRotation()
 	ResetTtl()
@@ -527,6 +539,66 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) RoleInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzureSecretBackendStaticRole) RotationGracePeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationGracePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) RotationGracePeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationGracePeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) SeamlessRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"seamlessRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole) SeamlessRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"seamlessRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureSecretBackendStaticRole) SecretId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -618,7 +690,7 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
 func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, config *AzureSecretBackendStaticRoleConfig) AzureSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -636,7 +708,7 @@ func NewAzureSecretBackendStaticRole(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource.
 func NewAzureSecretBackendStaticRole_Override(a AzureSecretBackendStaticRole, scope constructs.Construct, id *string, config *AzureSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -799,6 +871,39 @@ func (j *jsiiProxy_AzureSecretBackendStaticRole)SetRole(val *string) {
 	_jsii_.Set(
 		j,
 		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole)SetRotationGracePeriod(val *float64) {
+	if err := j.validateSetRotationGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationGracePeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackendStaticRole)SetSeamlessRotation(val interface{}) {
+	if err := j.validateSetSeamlessRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"seamlessRotation",
 		val,
 	)
 }
@@ -1260,6 +1365,30 @@ func (a *jsiiProxy_AzureSecretBackendStaticRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackendStaticRole) ResetRotationGracePeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationGracePeriod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackendStaticRole) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackendStaticRole) ResetSeamlessRotation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSeamlessRotation",
 		nil, // no parameters
 	)
 }

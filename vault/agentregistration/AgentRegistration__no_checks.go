@@ -127,6 +127,10 @@ func (j *jsiiProxy_AgentRegistration) validateSetLifecycleParameters(val *cdktn.
 	return nil
 }
 
+func (j *jsiiProxy_AgentRegistration) validateSetLocalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AgentRegistration) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

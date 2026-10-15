@@ -103,7 +103,15 @@ func validateOauthResourceServerConfigProfile_IsTerraformResourceParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetActorClaimParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetAudiencesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetAuthorizationDetailsClaimParameters(val *string) error {
 	return nil
 }
 
@@ -143,6 +151,10 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetLocalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetNamespaceParameters(val *string) error {
 	return nil
 }
@@ -164,6 +176,10 @@ func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetProvisionersPara
 }
 
 func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetSupportedAlgorithmsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OauthResourceServerConfigProfile) validateSetUniqueIdClaimParameters(val *string) error {
 	return nil
 }
 

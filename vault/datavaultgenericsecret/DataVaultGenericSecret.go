@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/generic_secret vault_generic_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/generic_secret vault_generic_secret}.
 type DataVaultGenericSecret interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_DataVaultGenericSecret) WithLeaseStartTimeInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/generic_secret vault_generic_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/generic_secret vault_generic_secret} Data Source.
 func NewDataVaultGenericSecret(scope constructs.Construct, id *string, config *DataVaultGenericSecretConfig) DataVaultGenericSecret {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewDataVaultGenericSecret(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/generic_secret vault_generic_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/generic_secret vault_generic_secret} Data Source.
 func NewDataVaultGenericSecret_Override(d DataVaultGenericSecret, scope constructs.Construct, id *string, config *DataVaultGenericSecretConfig) {
 	_init_.Initialize()
 

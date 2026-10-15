@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/alicloud_access_credentials vault_alicloud_access_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/alicloud_access_credentials vault_alicloud_access_credentials}.
 type EphemeralVaultAlicloudAccessCredentials interface {
 	cdktn.TerraformEphemeralResource
 	AccessKey() *string
@@ -444,7 +444,7 @@ func (j *jsiiProxy_EphemeralVaultAlicloudAccessCredentials) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/alicloud_access_credentials vault_alicloud_access_credentials} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/alicloud_access_credentials vault_alicloud_access_credentials} Ephemeral Resource.
 func NewEphemeralVaultAlicloudAccessCredentials(scope constructs.Construct, id *string, config *EphemeralVaultAlicloudAccessCredentialsConfig) EphemeralVaultAlicloudAccessCredentials {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewEphemeralVaultAlicloudAccessCredentials(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/ephemeral-resources/alicloud_access_credentials vault_alicloud_access_credentials} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/alicloud_access_credentials vault_alicloud_access_credentials} Ephemeral Resource.
 func NewEphemeralVaultAlicloudAccessCredentials_Override(e EphemeralVaultAlicloudAccessCredentials, scope constructs.Construct, id *string, config *EphemeralVaultAlicloudAccessCredentialsConfig) {
 	_init_.Initialize()
 

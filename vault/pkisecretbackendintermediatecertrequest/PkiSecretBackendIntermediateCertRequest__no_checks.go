@@ -195,6 +195,10 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetOuParamet
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetParameterSetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetPostalCodeParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_ldap_config vault_kerberos_auth_backend_ldap_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_ldap_config vault_kerberos_auth_backend_ldap_config}.
 type KerberosAuthBackendLdapConfig interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -1381,7 +1381,7 @@ func (j *jsiiProxy_KerberosAuthBackendLdapConfig) UseTokenGroupsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_ldap_config vault_kerberos_auth_backend_ldap_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_ldap_config vault_kerberos_auth_backend_ldap_config} Resource.
 func NewKerberosAuthBackendLdapConfig(scope constructs.Construct, id *string, config *KerberosAuthBackendLdapConfigConfig) KerberosAuthBackendLdapConfig {
 	_init_.Initialize()
 
@@ -1399,7 +1399,7 @@ func NewKerberosAuthBackendLdapConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_ldap_config vault_kerberos_auth_backend_ldap_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/kerberos_auth_backend_ldap_config vault_kerberos_auth_backend_ldap_config} Resource.
 func NewKerberosAuthBackendLdapConfig_Override(k KerberosAuthBackendLdapConfig, scope constructs.Construct, id *string, config *KerberosAuthBackendLdapConfigConfig) {
 	_init_.Initialize()
 

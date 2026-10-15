@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/transit_verify vault_transit_verify}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_verify vault_transit_verify}.
 type DataVaultTransitVerify interface {
 	cdktn.TerraformDataSource
 	BatchInput() interface{}
@@ -741,7 +741,7 @@ func (j *jsiiProxy_DataVaultTransitVerify) ValidInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
 func NewDataVaultTransitVerify(scope constructs.Construct, id *string, config *DataVaultTransitVerifyConfig) DataVaultTransitVerify {
 	_init_.Initialize()
 
@@ -759,7 +759,7 @@ func NewDataVaultTransitVerify(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
 func NewDataVaultTransitVerify_Override(d DataVaultTransitVerify, scope constructs.Construct, id *string, config *DataVaultTransitVerifyConfig) {
 	_init_.Initialize()
 

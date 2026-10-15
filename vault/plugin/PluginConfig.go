@@ -24,25 +24,29 @@ type PluginConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the plugin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#name Plugin#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#name Plugin#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Type of plugin; one of "auth", "secret", or "database".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#type Plugin#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#type Plugin#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// List of additional arguments to pass to the plugin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#args Plugin#args}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#args Plugin#args}
 	Args *[]*string `field:"optional" json:"args" yaml:"args"`
 	// Command to execute the plugin, relative to the plugin_directory.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#command Plugin#command}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#command Plugin#command}
 	Command *string `field:"optional" json:"command" yaml:"command"`
+	// Whether Vault should download the plugin artifact from releases.hashicorp.com when registering it. Vault Enterprise 1.20+ only, and only for official enterprise plugins (version ending in +ent).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#download Plugin#download}
+	Download interface{} `field:"optional" json:"download" yaml:"download"`
 	// List of additional environment variables to run the plugin with in KEY=VALUE form.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#env Plugin#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#env Plugin#env}
 	Env *[]*string `field:"optional" json:"env" yaml:"env"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#id Plugin#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#id Plugin#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -51,19 +55,19 @@ type PluginConfig struct {
 	//
 	// If specified, setting command, args, and env will update the container's entrypoint, args, and environment variables (append-only) respectively.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#oci_image Plugin#oci_image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#oci_image Plugin#oci_image}
 	OciImage *string `field:"optional" json:"ociImage" yaml:"ociImage"`
 	// Vault plugin runtime to use if oci_image is specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#runtime Plugin#runtime}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#runtime Plugin#runtime}
 	Runtime *string `field:"optional" json:"runtime" yaml:"runtime"`
 	// SHA256 sum of the plugin binary.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#sha256 Plugin#sha256}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#sha256 Plugin#sha256}
 	Sha256 *string `field:"optional" json:"sha256" yaml:"sha256"`
 	// Semantic version of the plugin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#version Plugin#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#version Plugin#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_azure vault_pki_external_ca_secret_backend_dns_provider_azure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_azure vault_pki_external_ca_secret_backend_dns_provider_azure}.
 type PkiExternalCaSecretBackendDnsProviderAzure interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -701,7 +701,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendDnsProviderAzure) ZoneNameInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_azure vault_pki_external_ca_secret_backend_dns_provider_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_azure vault_pki_external_ca_secret_backend_dns_provider_azure} Resource.
 func NewPkiExternalCaSecretBackendDnsProviderAzure(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendDnsProviderAzureConfig) PkiExternalCaSecretBackendDnsProviderAzure {
 	_init_.Initialize()
 
@@ -719,7 +719,7 @@ func NewPkiExternalCaSecretBackendDnsProviderAzure(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_azure vault_pki_external_ca_secret_backend_dns_provider_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_azure vault_pki_external_ca_secret_backend_dns_provider_azure} Resource.
 func NewPkiExternalCaSecretBackendDnsProviderAzure_Override(p PkiExternalCaSecretBackendDnsProviderAzure, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendDnsProviderAzureConfig) {
 	_init_.Initialize()
 

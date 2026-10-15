@@ -275,6 +275,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetOuParameters(val *[]*string)
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetParameterSetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetPolicyIdentifiersParameters(val *[]*string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_aws_route53 vault_pki_external_ca_secret_backend_dns_provider_aws_route53}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_aws_route53 vault_pki_external_ca_secret_backend_dns_provider_aws_route53}.
 type PkiExternalCaSecretBackendDnsProviderAwsRoute53 interface {
 	cdktn.TerraformResource
 	AccessKeyId() *string
@@ -677,7 +677,7 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendDnsProviderAwsRoute53) TtlInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_aws_route53 vault_pki_external_ca_secret_backend_dns_provider_aws_route53} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_aws_route53 vault_pki_external_ca_secret_backend_dns_provider_aws_route53} Resource.
 func NewPkiExternalCaSecretBackendDnsProviderAwsRoute53(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendDnsProviderAwsRoute53Config) PkiExternalCaSecretBackendDnsProviderAwsRoute53 {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func NewPkiExternalCaSecretBackendDnsProviderAwsRoute53(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_dns_provider_aws_route53 vault_pki_external_ca_secret_backend_dns_provider_aws_route53} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_dns_provider_aws_route53 vault_pki_external_ca_secret_backend_dns_provider_aws_route53} Resource.
 func NewPkiExternalCaSecretBackendDnsProviderAwsRoute53_Override(p PkiExternalCaSecretBackendDnsProviderAwsRoute53, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendDnsProviderAwsRoute53Config) {
 	_init_.Initialize()
 

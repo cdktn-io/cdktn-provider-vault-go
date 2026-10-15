@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
 type LdapSecretBackendStaticRole interface {
 	cdktn.TerraformResource
 	AutoUnlock() interface{}
@@ -776,7 +776,7 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) LdapSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -794,7 +794,7 @@ func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole_Override(l LdapSecretBackendStaticRole, scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 

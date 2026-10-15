@@ -143,6 +143,10 @@ func (j *jsiiProxy_PkiSecretBackendKey) validateSetNamespaceParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendKey) validateSetParameterSetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendKey) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

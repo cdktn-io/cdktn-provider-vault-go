@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
 type PkiSecretBackendRootCert interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -139,6 +139,9 @@ type PkiSecretBackendRootCert interface {
 	Ou() *string
 	SetOu(val *string)
 	OuInput() *string
+	ParameterSet() *string
+	SetParameterSet(val *string)
+	ParameterSetInput() *string
 	PermittedDnsDomains() *[]*string
 	SetPermittedDnsDomains(val *[]*string)
 	PermittedDnsDomainsInput() *[]*string
@@ -324,6 +327,7 @@ type PkiSecretBackendRootCert interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParameterSet()
 	ResetPermittedDnsDomains()
 	ResetPermittedEmailAddresses()
 	ResetPermittedIpRanges()
@@ -1105,6 +1109,26 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) OuInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) ParameterSet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ParameterSetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterSetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) PermittedDnsDomains() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1476,7 +1500,7 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) UsePssInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) PkiSecretBackendRootCert {
 	_init_.Initialize()
 
@@ -1494,7 +1518,7 @@ func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert_Override(p PkiSecretBackendRootCert, scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) {
 	_init_.Initialize()
 
@@ -1880,6 +1904,17 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetOu(val *string) {
 	_jsii_.Set(
 		j,
 		"ou",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetParameterSet(val *string) {
+	if err := j.validateSetParameterSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameterSet",
 		val,
 	)
 }
@@ -2676,6 +2711,14 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetParameterSet() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetParameterSet",
 		nil, // no parameters
 	)
 }
