@@ -5,10 +5,10 @@ package configgrouppolicyapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configgrouppolicyapplication/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/configgrouppolicyapplication/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

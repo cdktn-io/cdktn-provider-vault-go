@@ -5,9 +5,9 @@ package gcpauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/gcpauthbackend/internal"
+	"github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/gcpauthbackend/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
