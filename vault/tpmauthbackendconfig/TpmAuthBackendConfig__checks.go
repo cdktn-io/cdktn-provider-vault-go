@@ -263,6 +263,14 @@ func validateTpmAuthBackendConfig_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_TpmAuthBackendConfig) validateSetAliasModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TpmAuthBackendConfig) validateSetCaLifetimeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

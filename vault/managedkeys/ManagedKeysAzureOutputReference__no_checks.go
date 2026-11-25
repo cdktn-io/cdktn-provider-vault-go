@@ -83,6 +83,10 @@ func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
+func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }

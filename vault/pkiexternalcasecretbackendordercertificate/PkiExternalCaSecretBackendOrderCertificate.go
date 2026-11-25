@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate}.
 type PkiExternalCaSecretBackendOrderCertificate interface {
 	cdktn.TerraformResource
 	CaChain() *[]*string
@@ -77,6 +77,8 @@ type PkiExternalCaSecretBackendOrderCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() PkiExternalCaSecretBackendOrderCertificateTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -156,6 +158,7 @@ type PkiExternalCaSecretBackendOrderCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *PkiExternalCaSecretBackendOrderCertificateTimeouts)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -173,6 +176,7 @@ type PkiExternalCaSecretBackendOrderCertificate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -480,8 +484,28 @@ func (j *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) Timeouts() PkiExternalCaSecretBackendOrderCertificateTimeoutsOutputReference {
+	var returns PkiExternalCaSecretBackendOrderCertificateTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate} Resource.
+func (j *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate} Resource.
 func NewPkiExternalCaSecretBackendOrderCertificate(scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendOrderCertificateConfig) PkiExternalCaSecretBackendOrderCertificate {
 	_init_.Initialize()
 
@@ -499,7 +523,7 @@ func NewPkiExternalCaSecretBackendOrderCertificate(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_external_ca_secret_backend_order_certificate vault_pki_external_ca_secret_backend_order_certificate} Resource.
 func NewPkiExternalCaSecretBackendOrderCertificate_Override(p PkiExternalCaSecretBackendOrderCertificate, scope constructs.Construct, id *string, config *PkiExternalCaSecretBackendOrderCertificateConfig) {
 	_init_.Initialize()
 
@@ -991,6 +1015,17 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) OverrideLogicalId
 	)
 }
 
+func (p *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) PutTimeouts(value *PkiExternalCaSecretBackendOrderCertificateTimeouts) {
+	if err := p.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := p.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -1014,6 +1049,14 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

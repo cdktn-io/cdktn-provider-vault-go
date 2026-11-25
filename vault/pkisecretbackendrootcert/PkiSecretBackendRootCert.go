@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
 type PkiSecretBackendRootCert interface {
 	cdktn.TerraformResource
 	AltNames() *[]*string
@@ -1500,7 +1500,7 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) UsePssInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) PkiSecretBackendRootCert {
 	_init_.Initialize()
 
@@ -1518,7 +1518,7 @@ func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert_Override(p PkiSecretBackendRootCert, scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) {
 	_init_.Initialize()
 

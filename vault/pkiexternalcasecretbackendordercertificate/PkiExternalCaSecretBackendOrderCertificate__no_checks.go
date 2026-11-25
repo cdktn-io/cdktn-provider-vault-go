@@ -79,6 +79,10 @@ func (p *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) validateOverrideL
 	return nil
 }
 
+func (p *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) validatePutTimeoutsParameters(value *PkiExternalCaSecretBackendOrderCertificateTimeouts) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiExternalCaSecretBackendOrderCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

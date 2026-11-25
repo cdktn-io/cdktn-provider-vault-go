@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation vault_transform_transformation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/transform_transformation vault_transform_transformation}.
 type TransformTransformation interface {
 	cdktn.TerraformResource
 	AllowedRoles() *[]*string
@@ -713,7 +713,7 @@ func (j *jsiiProxy_TransformTransformation) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
 func NewTransformTransformation(scope constructs.Construct, id *string, config *TransformTransformationConfig) TransformTransformation {
 	_init_.Initialize()
 
@@ -731,7 +731,7 @@ func NewTransformTransformation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/transform_transformation vault_transform_transformation} Resource.
 func NewTransformTransformation_Override(t TransformTransformation, scope constructs.Construct, id *string, config *TransformTransformationConfig) {
 	_init_.Initialize()
 

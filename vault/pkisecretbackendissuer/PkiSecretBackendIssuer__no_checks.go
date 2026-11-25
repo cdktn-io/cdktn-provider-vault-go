@@ -115,6 +115,10 @@ func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetCrlDistributionPointsParam
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetDeltaCrlDistributionPointsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetDisableCriticalExtensionChecksParameters(val interface{}) error {
 	return nil
 }

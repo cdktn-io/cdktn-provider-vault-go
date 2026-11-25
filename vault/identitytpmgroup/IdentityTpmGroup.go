@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group vault_identity_tpm_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group vault_identity_tpm_group}.
 type IdentityTpmGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_IdentityTpmGroup) TpmGroupId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group vault_identity_tpm_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group vault_identity_tpm_group} Resource.
 func NewIdentityTpmGroup(scope constructs.Construct, id *string, config *IdentityTpmGroupConfig) IdentityTpmGroup {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewIdentityTpmGroup(scope constructs.Construct, id *string, config *Identit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group vault_identity_tpm_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group vault_identity_tpm_group} Resource.
 func NewIdentityTpmGroup_Override(i IdentityTpmGroup, scope constructs.Construct, id *string, config *IdentityTpmGroupConfig) {
 	_init_.Initialize()
 

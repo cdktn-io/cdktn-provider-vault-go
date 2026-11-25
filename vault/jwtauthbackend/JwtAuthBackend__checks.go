@@ -552,6 +552,22 @@ func (j *jsiiProxy_JwtAuthBackend) validateSetOidcClientIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackend) validateSetOidcClientIdWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JwtAuthBackend) validateSetOidcClientIdWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackend) validateSetOidcClientSecretParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -671,6 +687,14 @@ func (j *jsiiProxy_JwtAuthBackend) validateSetProvisionersParameters(val *[]inte
 }
 
 func (j *jsiiProxy_JwtAuthBackend) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JwtAuthBackend) validateSetUnsupportedCriticalCertExtensionsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

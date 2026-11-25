@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client vault_scim_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client vault_scim_client}.
 type ScimClient interface {
 	cdktn.TerraformResource
 	AccessGrantPrincipal() *string
@@ -676,7 +676,7 @@ func (j *jsiiProxy_ScimClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client vault_scim_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client vault_scim_client} Resource.
 func NewScimClient(scope constructs.Construct, id *string, config *ScimClientConfig) ScimClient {
 	_init_.Initialize()
 
@@ -694,7 +694,7 @@ func NewScimClient(scope constructs.Construct, id *string, config *ScimClientCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client vault_scim_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client vault_scim_client} Resource.
 func NewScimClient_Override(s ScimClient, scope constructs.Construct, id *string, config *ScimClientConfig) {
 	_init_.Initialize()
 

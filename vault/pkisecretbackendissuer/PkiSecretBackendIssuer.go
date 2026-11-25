@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
 type PkiSecretBackendIssuer interface {
 	cdktn.TerraformResource
 	Backend() *string
@@ -33,6 +33,9 @@ type PkiSecretBackendIssuer interface {
 	CrlDistributionPoints() *[]*string
 	SetCrlDistributionPoints(val *[]*string)
 	CrlDistributionPointsInput() *[]*string
+	DeltaCrlDistributionPoints() *[]*string
+	SetDeltaCrlDistributionPoints(val *[]*string)
+	DeltaCrlDistributionPointsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -206,6 +209,7 @@ type PkiSecretBackendIssuer interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCrlDistributionPoints()
+	ResetDeltaCrlDistributionPoints()
 	ResetDisableCriticalExtensionChecks()
 	ResetDisableNameChecks()
 	ResetDisableNameConstraintChecks()
@@ -325,6 +329,26 @@ func (j *jsiiProxy_PkiSecretBackendIssuer) CrlDistributionPointsInput() *[]*stri
 	_jsii_.Get(
 		j,
 		"crlDistributionPointsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DeltaCrlDistributionPoints() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deltaCrlDistributionPoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DeltaCrlDistributionPointsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deltaCrlDistributionPointsInput",
 		&returns,
 	)
 	return returns
@@ -761,7 +785,7 @@ func (j *jsiiProxy_PkiSecretBackendIssuer) UsageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
 func NewPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *PkiSecretBackendIssuerConfig) PkiSecretBackendIssuer {
 	_init_.Initialize()
 
@@ -779,7 +803,7 @@ func NewPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
 func NewPkiSecretBackendIssuer_Override(p PkiSecretBackendIssuer, scope constructs.Construct, id *string, config *PkiSecretBackendIssuerConfig) {
 	_init_.Initialize()
 
@@ -830,6 +854,17 @@ func (j *jsiiProxy_PkiSecretBackendIssuer)SetCrlDistributionPoints(val *[]*strin
 	_jsii_.Set(
 		j,
 		"crlDistributionPoints",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer)SetDeltaCrlDistributionPoints(val *[]*string) {
+	if err := j.validateSetDeltaCrlDistributionPointsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deltaCrlDistributionPoints",
 		val,
 	)
 }
@@ -1429,6 +1464,14 @@ func (p *jsiiProxy_PkiSecretBackendIssuer) ResetCrlDistributionPoints() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCrlDistributionPoints",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIssuer) ResetDeltaCrlDistributionPoints() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDeltaCrlDistributionPoints",
 		nil, // no parameters
 	)
 }

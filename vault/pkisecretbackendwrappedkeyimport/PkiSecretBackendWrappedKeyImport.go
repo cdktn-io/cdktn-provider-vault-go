@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_wrapped_key_import vault_pki_secret_backend_wrapped_key_import}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_wrapped_key_import vault_pki_secret_backend_wrapped_key_import}.
 type PkiSecretBackendWrappedKeyImport interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_PkiSecretBackendWrappedKeyImport) WrappedKeyInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_wrapped_key_import vault_pki_secret_backend_wrapped_key_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_wrapped_key_import vault_pki_secret_backend_wrapped_key_import} Resource.
 func NewPkiSecretBackendWrappedKeyImport(scope constructs.Construct, id *string, config *PkiSecretBackendWrappedKeyImportConfig) PkiSecretBackendWrappedKeyImport {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewPkiSecretBackendWrappedKeyImport(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_wrapped_key_import vault_pki_secret_backend_wrapped_key_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_wrapped_key_import vault_pki_secret_backend_wrapped_key_import} Resource.
 func NewPkiSecretBackendWrappedKeyImport_Override(p PkiSecretBackendWrappedKeyImport, scope constructs.Construct, id *string, config *PkiSecretBackendWrappedKeyImportConfig) {
 	_init_.Initialize()
 

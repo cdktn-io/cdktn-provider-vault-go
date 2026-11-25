@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt vault_transit_encrypt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt vault_transit_encrypt}.
 type DataVaultTransitEncrypt interface {
 	cdktn.TerraformDataSource
 	Backend() *string
@@ -42,6 +42,9 @@ type DataVaultTransitEncrypt interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HashAlgorithm() *string
+	SetHashAlgorithm(val *string)
+	HashAlgorithmInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -60,6 +63,9 @@ type DataVaultTransitEncrypt interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PaddingScheme() *string
+	SetPaddingScheme(val *string)
+	PaddingSchemeInput() *string
 	Plaintext() *string
 	SetPlaintext(val *string)
 	PlaintextInput() *string
@@ -114,12 +120,14 @@ type DataVaultTransitEncrypt interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetContext()
+	ResetHashAlgorithm()
 	ResetId()
 	ResetKeyVersion()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPaddingScheme()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -268,6 +276,26 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataVaultTransitEncrypt) HashAlgorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hashAlgorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultTransitEncrypt) HashAlgorithmInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hashAlgorithmInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVaultTransitEncrypt) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +396,26 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataVaultTransitEncrypt) PaddingScheme() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"paddingScheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultTransitEncrypt) PaddingSchemeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"paddingSchemeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVaultTransitEncrypt) Plaintext() *string {
 	var returns *string
 	_jsii_.Get(
@@ -439,7 +487,7 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
 func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *DataVaultTransitEncryptConfig) DataVaultTransitEncrypt {
 	_init_.Initialize()
 
@@ -457,7 +505,7 @@ func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
 func NewDataVaultTransitEncrypt_Override(d DataVaultTransitEncrypt, scope constructs.Construct, id *string, config *DataVaultTransitEncryptConfig) {
 	_init_.Initialize()
 
@@ -517,6 +565,17 @@ func (j *jsiiProxy_DataVaultTransitEncrypt)SetForEach(val cdktn.ITerraformIterat
 	)
 }
 
+func (j *jsiiProxy_DataVaultTransitEncrypt)SetHashAlgorithm(val *string) {
+	if err := j.validateSetHashAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hashAlgorithm",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataVaultTransitEncrypt)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -568,6 +627,17 @@ func (j *jsiiProxy_DataVaultTransitEncrypt)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultTransitEncrypt)SetPaddingScheme(val *string) {
+	if err := j.validateSetPaddingSchemeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"paddingScheme",
 		val,
 	)
 }
@@ -895,6 +965,14 @@ func (d *jsiiProxy_DataVaultTransitEncrypt) ResetContext() {
 	)
 }
 
+func (d *jsiiProxy_DataVaultTransitEncrypt) ResetHashAlgorithm() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHashAlgorithm",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataVaultTransitEncrypt) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -923,6 +1001,14 @@ func (d *jsiiProxy_DataVaultTransitEncrypt) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultTransitEncrypt) ResetPaddingScheme() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPaddingScheme",
 		nil, // no parameters
 	)
 }

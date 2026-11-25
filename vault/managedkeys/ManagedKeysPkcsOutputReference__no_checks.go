@@ -119,6 +119,10 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetPinParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetRsaOaepHashParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference) validateSetSlotParameters(val *string) error {
 	return nil
 }

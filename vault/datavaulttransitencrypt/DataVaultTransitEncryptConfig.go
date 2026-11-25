@@ -24,32 +24,44 @@ type DataVaultTransitEncryptConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Transit secret backend the key belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
 	Backend *string `field:"required" json:"backend" yaml:"backend"`
 	// Name of the encryption key to use.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// Map of strings read from Vault.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
 	Plaintext *string `field:"required" json:"plaintext" yaml:"plaintext"`
 	// Specifies the context for key derivation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
 	Context *string `field:"optional" json:"context" yaml:"context"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}.
+	// Specifies the hash algorithm to use for RSA key encryption.
+	//
+	// Only applies to RSA key types; ignored for all other key types. Supported values are: sha1, sha2-224, sha2-256, sha2-384, sha2-512, sha3-224, sha3-256, sha3-384, sha3-512. If not set, Vault defaults to sha2-256 for RSA keys.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#hash_algorithm DataVaultTransitEncrypt#hash_algorithm}
+	HashAlgorithm *string `field:"optional" json:"hashAlgorithm" yaml:"hashAlgorithm"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The version of the key to use for encryption.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
 	KeyVersion *float64 `field:"optional" json:"keyVersion" yaml:"keyVersion"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
+	// Specifies the RSA padding scheme to use for encryption.
+	//
+	// Only applies to RSA key types; ignored for all other key types. Supported values are: oaep, pkcs1v15. If not set, Vault defaults to oaep for RSA keys.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#padding_scheme DataVaultTransitEncrypt#padding_scheme}
+	PaddingScheme *string `field:"optional" json:"paddingScheme" yaml:"paddingScheme"`
 }
 

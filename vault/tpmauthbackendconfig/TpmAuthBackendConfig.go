@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config}.
 type TpmAuthBackendConfig interface {
 	cdktn.TerraformResource
+	AliasMode() *string
+	SetAliasMode(val *string)
+	AliasModeInput() *string
 	CaLifetime() *float64
 	SetCaLifetime(val *float64)
 	CaLifetimeInput() *float64
@@ -168,6 +171,7 @@ type TpmAuthBackendConfig interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetAliasMode()
 	ResetCaLifetime()
 	ResetCaSoftExpiry()
 	ResetDefaultCertTtl()
@@ -200,6 +204,26 @@ type TpmAuthBackendConfig interface {
 // The jsii proxy struct for TpmAuthBackendConfig
 type jsiiProxy_TpmAuthBackendConfig struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_TpmAuthBackendConfig) AliasMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aliasMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TpmAuthBackendConfig) AliasModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aliasModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_TpmAuthBackendConfig) CaLifetime() *float64 {
@@ -463,7 +487,7 @@ func (j *jsiiProxy_TpmAuthBackendConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config} Resource.
 func NewTpmAuthBackendConfig(scope constructs.Construct, id *string, config *TpmAuthBackendConfigConfig) TpmAuthBackendConfig {
 	_init_.Initialize()
 
@@ -481,7 +505,7 @@ func NewTpmAuthBackendConfig(scope constructs.Construct, id *string, config *Tpm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config} Resource.
 func NewTpmAuthBackendConfig_Override(t TpmAuthBackendConfig, scope constructs.Construct, id *string, config *TpmAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -489,6 +513,17 @@ func NewTpmAuthBackendConfig_Override(t TpmAuthBackendConfig, scope constructs.C
 		"@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig",
 		[]interface{}{scope, id, config},
 		t,
+	)
+}
+
+func (j *jsiiProxy_TpmAuthBackendConfig)SetAliasMode(val *string) {
+	if err := j.validateSetAliasModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMode",
+		val,
 	)
 }
 
@@ -992,6 +1027,14 @@ func (t *jsiiProxy_TpmAuthBackendConfig) RegisterProviderFeatureUsage(feature cd
 		t,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (t *jsiiProxy_TpmAuthBackendConfig) ResetAliasMode() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAliasMode",
+		nil, // no parameters
 	)
 }
 

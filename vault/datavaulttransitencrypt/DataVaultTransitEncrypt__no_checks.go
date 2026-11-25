@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetHashAlgorithmParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetLifecycleParameters(val *
 }
 
 func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetPaddingSchemeParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_role vault_tpm_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_role vault_tpm_auth_backend_role}.
 type TpmAuthBackendRole interface {
 	cdktn.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -750,7 +750,7 @@ func (j *jsiiProxy_TpmAuthBackendRole) TpmIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_role vault_tpm_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_role vault_tpm_auth_backend_role} Resource.
 func NewTpmAuthBackendRole(scope constructs.Construct, id *string, config *TpmAuthBackendRoleConfig) TpmAuthBackendRole {
 	_init_.Initialize()
 
@@ -768,7 +768,7 @@ func NewTpmAuthBackendRole(scope constructs.Construct, id *string, config *TpmAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_role vault_tpm_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_role vault_tpm_auth_backend_role} Resource.
 func NewTpmAuthBackendRole_Override(t TpmAuthBackendRole, scope constructs.Construct, id *string, config *TpmAuthBackendRoleConfig) {
 	_init_.Initialize()
 

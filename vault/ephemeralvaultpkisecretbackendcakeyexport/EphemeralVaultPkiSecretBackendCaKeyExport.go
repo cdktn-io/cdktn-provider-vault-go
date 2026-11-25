@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/pki_secret_backend_ca_key_export vault_pki_secret_backend_ca_key_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/ephemeral-resources/pki_secret_backend_ca_key_export vault_pki_secret_backend_ca_key_export}.
 type EphemeralVaultPkiSecretBackendCaKeyExport interface {
 	cdktn.TerraformEphemeralResource
 	CaKeyUuid() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_EphemeralVaultPkiSecretBackendCaKeyExport) WrappedKey() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/pki_secret_backend_ca_key_export vault_pki_secret_backend_ca_key_export} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/ephemeral-resources/pki_secret_backend_ca_key_export vault_pki_secret_backend_ca_key_export} Ephemeral Resource.
 func NewEphemeralVaultPkiSecretBackendCaKeyExport(scope constructs.Construct, id *string, config *EphemeralVaultPkiSecretBackendCaKeyExportConfig) EphemeralVaultPkiSecretBackendCaKeyExport {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewEphemeralVaultPkiSecretBackendCaKeyExport(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/ephemeral-resources/pki_secret_backend_ca_key_export vault_pki_secret_backend_ca_key_export} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/ephemeral-resources/pki_secret_backend_ca_key_export vault_pki_secret_backend_ca_key_export} Ephemeral Resource.
 func NewEphemeralVaultPkiSecretBackendCaKeyExport_Override(e EphemeralVaultPkiSecretBackendCaKeyExport, scope constructs.Construct, id *string, config *EphemeralVaultPkiSecretBackendCaKeyExportConfig) {
 	_init_.Initialize()
 

@@ -243,6 +243,10 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetRotationWindowParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackend) validateSetSchemaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackend) validateSetStarttlsParameters(val interface{}) error {
 	return nil
 }

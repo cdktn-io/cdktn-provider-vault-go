@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
 type LdapAuthBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -151,6 +151,9 @@ type LdapAuthBackend interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	Schema() *string
+	SetSchema(val *string)
+	SchemaInput() *string
 	Starttls() interface{}
 	SetStarttls(val interface{})
 	StarttlsInput() interface{}
@@ -343,6 +346,7 @@ type LdapAuthBackend interface {
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSchema()
 	ResetStarttls()
 	ResetTlsMaxVersion()
 	ResetTlsMinVersion()
@@ -1149,6 +1153,26 @@ func (j *jsiiProxy_LdapAuthBackend) RotationWindowInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LdapAuthBackend) Schema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) SchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapAuthBackend) Starttls() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1580,7 +1604,7 @@ func (j *jsiiProxy_LdapAuthBackend) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuthBackendConfig) LdapAuthBackend {
 	_init_.Initialize()
 
@@ -1598,7 +1622,7 @@ func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend_Override(l LdapAuthBackend, scope constructs.Construct, id *string, config *LdapAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -2014,6 +2038,17 @@ func (j *jsiiProxy_LdapAuthBackend)SetRotationWindow(val *float64) {
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapAuthBackend)SetSchema(val *string) {
+	if err := j.validateSetSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schema",
 		val,
 	)
 }
@@ -2870,6 +2905,14 @@ func (l *jsiiProxy_LdapAuthBackend) ResetRotationWindow() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapAuthBackend) ResetSchema() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSchema",
 		nil, // no parameters
 	)
 }

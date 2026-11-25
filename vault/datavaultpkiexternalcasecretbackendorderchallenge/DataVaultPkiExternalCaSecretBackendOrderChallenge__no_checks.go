@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultPkiExternalCaSecretBackendOrderChallenge) validateOv
 	return nil
 }
 
+func (d *jsiiProxy_DataVaultPkiExternalCaSecretBackendOrderChallenge) validatePutTimeoutsParameters(value *DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataVaultPkiExternalCaSecretBackendOrderChallenge) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

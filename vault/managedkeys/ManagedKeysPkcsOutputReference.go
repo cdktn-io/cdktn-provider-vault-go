@@ -74,6 +74,9 @@ type ManagedKeysPkcsOutputReference interface {
 	Pin() *string
 	SetPin(val *string)
 	PinInput() *string
+	RsaOaepHash() *string
+	SetRsaOaepHash(val *string)
+	RsaOaepHashInput() *string
 	Slot() *string
 	SetSlot(val *string)
 	SlotInput() *string
@@ -126,6 +129,7 @@ type ManagedKeysPkcsOutputReference interface {
 	ResetKeyId()
 	ResetKeyLabel()
 	ResetMaxParallel()
+	ResetRsaOaepHash()
 	ResetSlot()
 	ResetTokenLabel()
 	ResetUsages()
@@ -474,6 +478,26 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference) PinInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) RsaOaepHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaOaepHash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference) RsaOaepHashInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaOaepHashInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedKeysPkcsOutputReference) Slot() *string {
 	var returns *string
 	_jsii_.Get(
@@ -775,6 +799,17 @@ func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetPin(val *string) {
 	_jsii_.Set(
 		j,
 		"pin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedKeysPkcsOutputReference)SetRsaOaepHash(val *string) {
+	if err := j.validateSetRsaOaepHashParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rsaOaepHash",
 		val,
 	)
 }
@@ -1096,6 +1131,14 @@ func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetMaxParallel() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetMaxParallel",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedKeysPkcsOutputReference) ResetRsaOaepHash() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRsaOaepHash",
 		nil, // no parameters
 	)
 }

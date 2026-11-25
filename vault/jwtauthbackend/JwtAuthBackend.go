@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend}.
 type JwtAuthBackend interface {
 	cdktn.TerraformResource
 	Accessor() *string
@@ -88,6 +88,14 @@ type JwtAuthBackend interface {
 	OidcClientId() *string
 	SetOidcClientId(val *string)
 	OidcClientIdInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	OidcClientIdWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	SetOidcClientIdWo(val *string)
+	OidcClientIdWoInput() *string
+	OidcClientIdWoVersion() *float64
+	SetOidcClientIdWoVersion(val *float64)
+	OidcClientIdWoVersionInput() *float64
 	OidcClientSecret() *string
 	SetOidcClientSecret(val *string)
 	OidcClientSecretInput() *string
@@ -138,6 +146,9 @@ type JwtAuthBackend interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	UnsupportedCriticalCertExtensions() *[]*string
+	SetUnsupportedCriticalCertExtensions(val *[]*string)
+	UnsupportedCriticalCertExtensionsInput() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -245,6 +256,8 @@ type JwtAuthBackend interface {
 	ResetNamespace()
 	ResetNamespaceInState()
 	ResetOidcClientId()
+	ResetOidcClientIdWo()
+	ResetOidcClientIdWoVersion()
 	ResetOidcClientSecret()
 	ResetOidcClientSecretWo()
 	ResetOidcClientSecretWoVersion()
@@ -259,6 +272,7 @@ type JwtAuthBackend interface {
 	ResetProviderConfig()
 	ResetTune()
 	ResetType()
+	ResetUnsupportedCriticalCertExtensions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -676,6 +690,46 @@ func (j *jsiiProxy_JwtAuthBackend) OidcClientIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_JwtAuthBackend) OidcClientIdWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcClientIdWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackend) OidcClientIdWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcClientIdWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackend) OidcClientIdWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"oidcClientIdWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackend) OidcClientIdWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"oidcClientIdWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JwtAuthBackend) OidcClientSecret() *string {
 	var returns *string
 	_jsii_.Get(
@@ -956,8 +1010,28 @@ func (j *jsiiProxy_JwtAuthBackend) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_JwtAuthBackend) UnsupportedCriticalCertExtensions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"unsupportedCriticalCertExtensions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
+func (j *jsiiProxy_JwtAuthBackend) UnsupportedCriticalCertExtensionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"unsupportedCriticalCertExtensionsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
 func NewJwtAuthBackend(scope constructs.Construct, id *string, config *JwtAuthBackendConfig) JwtAuthBackend {
 	_init_.Initialize()
 
@@ -975,7 +1049,7 @@ func NewJwtAuthBackend(scope constructs.Construct, id *string, config *JwtAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
 func NewJwtAuthBackend_Override(j JwtAuthBackend, scope constructs.Construct, id *string, config *JwtAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -1189,6 +1263,28 @@ func (j *jsiiProxy_JwtAuthBackend)SetOidcClientId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_JwtAuthBackend)SetOidcClientIdWo(val *string) {
+	if err := j.validateSetOidcClientIdWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oidcClientIdWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackend)SetOidcClientIdWoVersion(val *float64) {
+	if err := j.validateSetOidcClientIdWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oidcClientIdWoVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JwtAuthBackend)SetOidcClientSecret(val *string) {
 	if err := j.validateSetOidcClientSecretParameters(val); err != nil {
 		panic(err)
@@ -1314,6 +1410,17 @@ func (j *jsiiProxy_JwtAuthBackend)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackend)SetUnsupportedCriticalCertExtensions(val *[]*string) {
+	if err := j.validateSetUnsupportedCriticalCertExtensionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unsupportedCriticalCertExtensions",
 		val,
 	)
 }
@@ -1821,6 +1928,22 @@ func (j *jsiiProxy_JwtAuthBackend) ResetOidcClientId() {
 	)
 }
 
+func (j *jsiiProxy_JwtAuthBackend) ResetOidcClientIdWo() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOidcClientIdWo",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackend) ResetOidcClientIdWoVersion() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOidcClientIdWoVersion",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JwtAuthBackend) ResetOidcClientSecret() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1913,6 +2036,14 @@ func (j *jsiiProxy_JwtAuthBackend) ResetType() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackend) ResetUnsupportedCriticalCertExtensions() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetUnsupportedCriticalCertExtensions",
 		nil, // no parameters
 	)
 }

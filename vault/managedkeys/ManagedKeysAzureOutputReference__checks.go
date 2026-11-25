@@ -262,6 +262,14 @@ func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
+func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetEncryptionModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ManagedKeysAzureOutputReference) validateSetEnvironmentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -46,6 +46,9 @@ type ManagedKeysAzureOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EncryptionMode() *string
+	SetEncryptionMode(val *string)
+	EncryptionModeInput() *string
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
@@ -114,6 +117,7 @@ type ManagedKeysAzureOutputReference interface {
 	ResetAllowReplaceKey()
 	ResetAllowStoreKey()
 	ResetAnyMount()
+	ResetEncryptionMode()
 	ResetEnvironment()
 	ResetKeyBits()
 	ResetResource()
@@ -278,6 +282,26 @@ func (j *jsiiProxy_ManagedKeysAzureOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeysAzureOutputReference) EncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedKeysAzureOutputReference) EncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionModeInput",
 		&returns,
 	)
 	return returns
@@ -629,6 +653,17 @@ func (j *jsiiProxy_ManagedKeysAzureOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
+func (j *jsiiProxy_ManagedKeysAzureOutputReference)SetEncryptionMode(val *string) {
+	if err := j.validateSetEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ManagedKeysAzureOutputReference)SetEnvironment(val *string) {
 	if err := j.validateSetEnvironmentParameters(val); err != nil {
 		panic(err)
@@ -975,6 +1010,14 @@ func (m *jsiiProxy_ManagedKeysAzureOutputReference) ResetAnyMount() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAnyMount",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedKeysAzureOutputReference) ResetEncryptionMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEncryptionMode",
 		nil, // no parameters
 	)
 }

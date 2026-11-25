@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMode", GoGetter: "AliasMode"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasModeInput", GoGetter: "AliasModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caLifetime", GoGetter: "CaLifetime"},
 			_jsii_.MemberProperty{JsiiProperty: "caLifetimeInput", GoGetter: "CaLifetimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caSoftExpiry", GoGetter: "CaSoftExpiry"},
@@ -57,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAliasMode", GoMethod: "ResetAliasMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaLifetime", GoMethod: "ResetCaLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaSoftExpiry", GoMethod: "ResetCaSoftExpiry"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultCertTtl", GoMethod: "ResetDefaultCertTtl"},

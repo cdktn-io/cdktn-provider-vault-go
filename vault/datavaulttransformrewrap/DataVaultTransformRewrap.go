@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap vault_transform_rewrap}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transform_rewrap vault_transform_rewrap}.
 type DataVaultTransformRewrap interface {
 	cdktn.TerraformDataSource
 	BatchInput() interface{}
@@ -536,7 +536,7 @@ func (j *jsiiProxy_DataVaultTransformRewrap) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap vault_transform_rewrap} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transform_rewrap vault_transform_rewrap} Data Source.
 func NewDataVaultTransformRewrap(scope constructs.Construct, id *string, config *DataVaultTransformRewrapConfig) DataVaultTransformRewrap {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewDataVaultTransformRewrap(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap vault_transform_rewrap} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transform_rewrap vault_transform_rewrap} Data Source.
 func NewDataVaultTransformRewrap_Override(d DataVaultTransformRewrap, scope constructs.Construct, id *string, config *DataVaultTransformRewrapConfig) {
 	_init_.Initialize()
 

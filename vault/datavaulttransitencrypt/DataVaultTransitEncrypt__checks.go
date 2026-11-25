@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetHashAlgorithmParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -268,6 +276,14 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetLifecycleParameters(val *
 }
 
 func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetNamespaceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetPaddingSchemeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -99,6 +99,10 @@ func validateTpmAuthBackendConfig_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_TpmAuthBackendConfig) validateSetAliasModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TpmAuthBackendConfig) validateSetCaLifetimeParameters(val *float64) error {
 	return nil
 }

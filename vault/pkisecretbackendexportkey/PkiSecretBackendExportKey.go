@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key vault_pki_secret_backend_export_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key vault_pki_secret_backend_export_key}.
 type PkiSecretBackendExportKey interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_PkiSecretBackendExportKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key vault_pki_secret_backend_export_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key vault_pki_secret_backend_export_key} Resource.
 func NewPkiSecretBackendExportKey(scope constructs.Construct, id *string, config *PkiSecretBackendExportKeyConfig) PkiSecretBackendExportKey {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewPkiSecretBackendExportKey(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key vault_pki_secret_backend_export_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key vault_pki_secret_backend_export_key} Resource.
 func NewPkiSecretBackendExportKey_Override(p PkiSecretBackendExportKey, scope constructs.Construct, id *string, config *PkiSecretBackendExportKeyConfig) {
 	_init_.Initialize()
 

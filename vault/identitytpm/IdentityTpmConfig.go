@@ -24,23 +24,23 @@ type IdentityTpmConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// PEM-encoded TPM Endorsement Key (EK) public key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#tpm_ek_public_key IdentityTpm#tpm_ek_public_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#tpm_ek_public_key IdentityTpm#tpm_ek_public_key}
 	TpmEkPublicKey *string `field:"required" json:"tpmEkPublicKey" yaml:"tpmEkPublicKey"`
 	// Whether the TPM is disabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#disabled IdentityTpm#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#disabled IdentityTpm#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 	// Metadata to associate with the TPM record.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#metadata IdentityTpm#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#metadata IdentityTpm#metadata}
 	Metadata *map[string]*string `field:"optional" json:"metadata" yaml:"metadata"`
 	// Name of the TPM record. Vault generates a name if one is not specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#name IdentityTpm#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#name IdentityTpm#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#namespace IdentityTpm#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#namespace IdentityTpm#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 
